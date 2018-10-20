@@ -18,13 +18,13 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 2, 4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ 0.0, -0.867487, 0.0 ]
+"values": [ 3.16881, -0.971623, 3.2 ]
 }
 
 [node name="Vegetation01" type="Sprite" index="0"]
 
 modulate = Color( 1, 1, 1, 0.762431 )
-rotation = -0.0105193
+rotation = -0.0039221
 texture = ExtResource( 1 )
 offset = Vector2( -23.4255, -511.351 )
 _sections_unfolded = [ "Transform", "Visibility" ]
