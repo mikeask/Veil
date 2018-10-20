@@ -1,20 +1,16 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Scenes/Level.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/FullLevel.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Audio/MachinimaSound.com_-_Summer_Rain.wav" type="AudioStream" id=3]
 [ext_resource path="res://Sprites/Menu/MenuBackground.png" type="Texture" id=4]
-[ext_resource path="res://Sprites/Environment/Tree01.png" type="Texture" id=5]
-[ext_resource path="res://Sprites/Environment/Tree03.png" type="Texture" id=6]
-[ext_resource path="res://Sprites/Environment/Vegetation01.png" type="Texture" id=7]
-[ext_resource path="res://Scenes/bola.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Sprites/Menu/PauseMenuBackground.png" type="Texture" id=9]
-[ext_resource path="res://Sprites/Menu/Continue.png" type="Texture" id=10]
-[ext_resource path="res://Sprites/Menu/ContinueClick.png" type="Texture" id=11]
-[ext_resource path="res://Sprites/Menu/ContinueHover.png" type="Texture" id=12]
-[ext_resource path="res://Scenes/MenuOpts.tscn" type="PackedScene" id=13]
-[ext_resource path="res://Others/TextThemeCredits.tres" type="Theme" id=14]
-[ext_resource path="res://Animation/Bird.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Sprites/Menu/PauseMenuBackground.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Menu/Continue.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Menu/ContinueClick.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/Menu/ContinueHover.png" type="Texture" id=8]
+[ext_resource path="res://Scenes/MenuOpts.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Others/TextThemeCredits.tres" type="Theme" id=10]
+[ext_resource path="res://Animation/Bird.tscn" type="PackedScene" id=11]
 
 [node name="Level" type="Node2D" index="0"]
 
@@ -28,10 +24,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = -2239.0
-margin_top = -2246.0
-margin_right = 73338.0
-margin_bottom = 11128.0
+margin_left = -60449.0
+margin_top = -10687.0
+margin_right = 14664.0
+margin_bottom = 19486.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -60,43 +56,7 @@ position = Vector2( 7888.21, 814.444 )
 scale = Vector2( 23.4785, 23.4785 )
 texture = ExtResource( 4 )
 
-[node name="Tree01" type="Sprite" parent="." index="4"]
-
-position = Vector2( 1746.27, 400.423 )
-scale = Vector2( 0.500574, 0.500575 )
-texture = ExtResource( 5 )
-
-[node name="Tree03" type="Sprite" parent="." index="5"]
-
-position = Vector2( 60.3967, 592.572 )
-scale = Vector2( 1.22519, 1.22519 )
-texture = ExtResource( 6 )
-
-[node name="Vegetation01" type="Sprite" parent="." index="6"]
-
-position = Vector2( 1420.94, 1022.57 )
-scale = Vector2( 0.573887, 0.573887 )
-texture = ExtResource( 7 )
-
-[node name="Vegetation02" type="Sprite" parent="." index="7"]
-
-position = Vector2( 1039.91, 1020.12 )
-scale = Vector2( 0.619297, 0.619297 )
-texture = ExtResource( 7 )
-
-[node name="Vegetation03" type="Sprite" parent="." index="8"]
-
-position = Vector2( 660.153, 1029.93 )
-scale = Vector2( 0.635809, 0.635809 )
-texture = ExtResource( 7 )
-
-[node name="bola" parent="." index="9" instance=ExtResource( 8 )]
-
-position = Vector2( 2431.25, -97.821 )
-gravity_scale = 5.0
-_sections_unfolded = [ "Collision", "Pickable", "Transform" ]
-
-[node name="CanvasLayer" type="CanvasLayer" parent="." index="10"]
+[node name="CanvasLayer" type="CanvasLayer" parent="." index="4"]
 
 layer = 1
 offset = Vector2( 0, 0 )
@@ -126,7 +86,7 @@ _sections_unfolded = [ "Anchor", "Margin", "Rect", "Visibility" ]
 [node name="PauseMenuBackground" type="Sprite" parent="CanvasLayer/PauseMenu" index="0"]
 
 position = Vector2( 964.093, 536.649 )
-texture = ExtResource( 9 )
+texture = ExtResource( 5 )
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer/PauseMenu" index="1"]
 
@@ -168,12 +128,12 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 10 )
-texture_pressed = ExtResource( 11 )
-texture_hover = ExtResource( 12 )
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 7 )
+texture_hover = ExtResource( 8 )
 _sections_unfolded = [ "Rect", "Textures" ]
 
-[node name="MenuOpts" parent="CanvasLayer/PauseMenu" index="3" instance=ExtResource( 13 )]
+[node name="MenuOpts" parent="CanvasLayer/PauseMenu" index="3" instance=ExtResource( 9 )]
 
 position = Vector2( 846.071, 546.039 )
 
@@ -193,17 +153,17 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-theme = ExtResource( 14 )
+theme = ExtResource( 10 )
 text = "Pause"
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "Theme" ]
 
-[node name="Bird" parent="." index="11" instance=ExtResource( 15 )]
+[node name="Bird" parent="." index="5" instance=ExtResource( 11 )]
 
 pause_mode = 1
-position = Vector2( 936.17, 631.692 )
+position = Vector2( -56717.3, 1211.61 )
 _sections_unfolded = [ "Collision", "Pause", "Pickable", "Transform", "Z Index", "collision" ]
 
 [connection signal="button_down" from="CanvasLayer/PauseMenu/Continue" to="." method="_on_Continue_button_down"]
