@@ -842,7 +842,7 @@ tracks/5/keys = {
 "times": PoolRealArray( 0, 1.1, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ -1.06722e-007, 9.0207, -1.06722e-007 ]
+"values": [ 6.60815, 9.0207, -1.06722e-007 ]
 }
 tracks/6/type = "value"
 tracks/6/path = NodePath("Body/Tail:rotation_degrees")
@@ -916,6 +916,18 @@ tracks/11/keys = {
 "update": 1,
 "values": [ true, true ]
 }
+tracks/12/type = "value"
+tracks/12/path = NodePath("Body/Head:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0, 2.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 388.78, -889.292 ), Vector2( 388.78, -889.292 ) ]
+}
 
 [node name="Bird" type="KinematicBody2D" index="0"]
 
@@ -928,7 +940,7 @@ _sections_unfolded = [ "Collision", "Pickable", "Transform", "Z Index", "collisi
 
 [node name="Body" type="Sprite" parent="." index="0"]
 
-position = Vector2( -9.07874, -90.3325 )
+position = Vector2( -9.07874, -108.841 )
 rotation = 0.159951
 scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 2 )
@@ -946,7 +958,7 @@ _sections_unfolded = [ "Transform", "Visibility" ]
 [node name="Tail" type="Sprite" parent="Body" index="1"]
 
 position = Vector2( -490.961, -645.75 )
-rotation = -0.327656
+rotation = -9.31323e-010
 texture = ExtResource( 4 )
 offset = Vector2( -351.537, 52.0476 )
 _sections_unfolded = [ "Transform" ]
@@ -954,7 +966,7 @@ _sections_unfolded = [ "Transform" ]
 [node name="Head" type="Sprite" parent="Body" index="2"]
 
 position = Vector2( 388.78, -889.292 )
-rotation = 0.115334
+rotation = -1.86265e-009
 z_index = 1
 texture = ExtResource( 5 )
 offset = Vector2( 166.636, -322.659 )
@@ -980,8 +992,8 @@ _sections_unfolded = [ "Visibility" ]
 
 [node name="l_leg" type="Sprite" parent="." index="1"]
 
-position = Vector2( 28.5515, -76.4287 )
-rotation = -0.117944
+position = Vector2( 25.3047, -86.9807 )
+rotation = -0.440999
 scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 8 )
 offset = Vector2( 24.1047, 133.524 )
@@ -990,15 +1002,15 @@ _sections_unfolded = [ "Transform" ]
 [node name="bird_leg2" type="Sprite" parent="l_leg" index="0"]
 
 position = Vector2( 29.0013, 167.939 )
-rotation = -0.0493212
+rotation = -0.0493213
 texture = ExtResource( 9 )
 offset = Vector2( 32.5631, 90.5692 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="r_leg" type="Sprite" parent="." index="2"]
 
-position = Vector2( -21.1554, -64.395 )
-rotation = -0.203708
+position = Vector2( -17.9086, -81.4405 )
+rotation = -0.720313
 scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 8 )
 offset = Vector2( 29.4708, 122.546 )
