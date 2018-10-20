@@ -23,7 +23,7 @@ func _process(delta):
 		sprite.set_flip_h(true)
 		pass
 	if(Input.is_action_pressed("ui_right")):
-		vel_linear.x = vel_andar
+		vel_linear.x = vel_andar*delta
 		sprite.set_flip_h(false)
 		pass
 	if is_on_floor():
