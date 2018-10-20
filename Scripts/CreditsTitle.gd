@@ -10,7 +10,7 @@ func _ready():
 	pass
 
 func _process(delta):
-	$Text.translate(Vector2(0,-1.5))
+	$Text.translate(Vector2(0,-1.5) * delta * 100)
 	if($Text.position.y < -150):
 		$logoFixo.show()
 		pass
