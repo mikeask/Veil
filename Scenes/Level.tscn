@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Scenes/Level.gd" type="Script" id=1]
 [ext_resource path="res://Audio/MachinimaSound.com_-_Summer_Rain.wav" type="AudioStream" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://Scenes/MenuOpts.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Others/TextThemeCredits.tres" type="Theme" id=11]
 [ext_resource path="res://Animation/Bird.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Scenes/FullLevel.tscn" type="PackedScene" id=13]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -72,12 +73,12 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="GroundStaticBody" index="0"]
 
-position = Vector2( 7.82892, 3.99036 )
+position = Vector2( -2371.85, -2004.94 )
 shape = SubResource( 1 )
 
 [node name="bola" parent="." index="7" instance=ExtResource( 8 )]
 
-position = Vector2( 1393.52, 710.638 )
+position = Vector2( 1430.79, 1162.56 )
 gravity_scale = 5.0
 _sections_unfolded = [ "Collision", "Pickable", "Transform" ]
 
@@ -143,6 +144,10 @@ _sections_unfolded = [ "Theme" ]
 [node name="Bird" parent="." index="9" instance=ExtResource( 12 )]
 
 position = Vector2( 936.17, 631.692 )
+
+[node name="Node2D" parent="." index="10" instance=ExtResource( 13 )]
+
+position = Vector2( 855.593, 792.403 )
 
 [connection signal="button_down" from="CanvasLayer/PauseMenu/MenuOpts/PlayGame" to="." method="_on_PlayGame_button_down"]
 
