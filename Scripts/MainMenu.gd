@@ -24,11 +24,6 @@ func _process(delta):
 	pass
 
 
-func _on_PlayGame_button_down():
-	get_tree().change_scene("res://Scenes/Level.tscn");
-	pass # replace with function body
-
-
 func _on_Quit_button_down():
 	get_tree().quit();
 	pass # replace with function body
@@ -37,4 +32,9 @@ func _on_Quit_button_down():
 func _on_Credits_button_down():
 	print("aspas")
 	get_tree().change_scene("res://Scenes/CreditsTitle.tscn");
+	pass # replace with function body
+
+
+func _on_StartGame_button_down():
+	get_tree().change_scene("res://Scenes/Level.tscn");
 	pass # replace with function body
