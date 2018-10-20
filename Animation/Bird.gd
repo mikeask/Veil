@@ -38,7 +38,23 @@ func _process(delta):
 		if Input.is_action_pressed("ui_up"):
 			vel_linear.y = -vel_pulo*delta*100
 			novaAnimacao = "Jump"
-		pass
+			
+		if(Input.is_action_pressed("pushi") ):
+			novaAnimacao = "Pushing"
+			if get_node("gancho").is_colliding():
+				if get_node("gancho").get_collider().is_in_group("box"):
+					if direcao == "direita":
+				 		get_node("gancho").get_collider().vel_linear.x = 300
+					if direcao == "esquerda":
+				 		get_node("gancho").get_collider().vel_linear.x = -300
+				pass
+		if(Input.is_action_pressed("pull")):
+			novaAnimacao = "Pulling"
+			if get_node("gancho").is_colliding():
+				if get_node("gancho").get_collider().is_in_group("box"):
+					#get_node("gancho").get_collider().move_and_slide(Vector2(-1,-2)*delta*100, normal)
+					pass
+			pass
 	else:
 		vel_linear.y += gravidade*delta*100
 	move_and_slide(vel_linear, normal)
@@ -47,6 +63,25 @@ func _process(delta):
 #		print("foi")
 #		print(get_node("RayCast2D").get_collider().name)
 #		pass
+
+	if(Input.is_action_pressed("pushi") ):
+		novaAnimacao = "Pushing"
+		if get_node("gancho").is_colliding():
+			if get_node("gancho").get_collider().is_in_group("box"):
+				if direcao == "direita":
+				 	get_node("gancho").get_collider().vel_linear.x = 300
+				if direcao == "esquerda":
+				 	get_node("gancho").get_collider().vel_linear.x = -300
+			pass
+	if(Input.is_action_pressed("pull")):
+		novaAnimacao = "Pulling"
+		if get_node("gancho").is_colliding():
+			if get_node("gancho").get_collider().is_in_group("box"):
+				#get_node("gancho").get_collider().move_and_slide(Vector2(-1,-2)*delta*100, normal)
+				pass
+			
+		
+		
 	if animacao != novaAnimacao:
 		get_node("BirdAnimation").play(novaAnimacao)
 		animacao = novaAnimacao
@@ -60,4 +95,6 @@ func _process(delta):
 		if direcao == "esquerda":
 			scale.x = -1
 			direcao = "direita"
+	
+
 	pass

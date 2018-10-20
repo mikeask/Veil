@@ -940,8 +940,8 @@ _sections_unfolded = [ "Collision", "Pickable", "Transform", "Z Index", "collisi
 
 [node name="Body" type="Sprite" parent="." index="0"]
 
-position = Vector2( -9.07874, -108.841 )
-rotation = 0.159951
+position = Vector2( -10.296, -90.8936 )
+rotation = 0.543631
 scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 2 )
 offset = Vector2( 23.1897, -599.485 )
@@ -958,7 +958,7 @@ _sections_unfolded = [ "Transform", "Visibility" ]
 [node name="Tail" type="Sprite" parent="Body" index="1"]
 
 position = Vector2( -490.961, -645.75 )
-rotation = -9.31323e-010
+rotation = -0.152461
 texture = ExtResource( 4 )
 offset = Vector2( -351.537, 52.0476 )
 _sections_unfolded = [ "Transform" ]
@@ -966,7 +966,7 @@ _sections_unfolded = [ "Transform" ]
 [node name="Head" type="Sprite" parent="Body" index="2"]
 
 position = Vector2( 388.78, -889.292 )
-rotation = -1.86265e-009
+rotation = 0.243241
 z_index = 1
 texture = ExtResource( 5 )
 offset = Vector2( 166.636, -322.659 )
@@ -974,7 +974,6 @@ _sections_unfolded = [ "Transform", "Z Index" ]
 
 [node name="AngryEye" type="Sprite" parent="Body/Head" index="0"]
 
-visible = false
 position = Vector2( 397.792, -416.336 )
 rotation = -0.0575343
 scale = Vector2( 1.49211, 1.49211 )
@@ -984,6 +983,7 @@ _sections_unfolded = [ "Visibility", "Z Index" ]
 
 [node name="Eye" type="Sprite" parent="Body/Head" index="1"]
 
+visible = false
 position = Vector2( 307.329, -359.249 )
 rotation = -0.0575343
 scale = Vector2( 1.49211, 1.49211 )
@@ -992,8 +992,8 @@ _sections_unfolded = [ "Visibility" ]
 
 [node name="l_leg" type="Sprite" parent="." index="1"]
 
-position = Vector2( 25.3047, -86.9807 )
-rotation = -0.440999
+position = Vector2( 39.2725, -62.1498 )
+rotation = 0.458269
 scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 8 )
 offset = Vector2( 24.1047, 133.524 )
@@ -1009,8 +1009,8 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="r_leg" type="Sprite" parent="." index="2"]
 
-position = Vector2( -17.9086, -81.4405 )
-rotation = -0.720313
+position = Vector2( -8.09885, -79.4795 )
+rotation = 0.0444588
 scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 8 )
 offset = Vector2( 29.4708, 122.546 )
@@ -1081,5 +1081,13 @@ editor_draw_screen = true
 editor_draw_limits = false
 editor_draw_drag_margin = false
 _sections_unfolded = [ "Smoothing" ]
+
+[node name="gancho" type="RayCast2D" parent="." index="7"]
+
+position = Vector2( 303.301, -215.853 )
+enabled = true
+exclude_parent = true
+cast_to = Vector2( 3, 0 )
+collision_mask = 1
 
 
