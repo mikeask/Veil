@@ -980,7 +980,6 @@ _sections_unfolded = [ "Visibility" ]
 
 [node name="l_leg" type="Sprite" parent="." index="1"]
 
-visible = false
 position = Vector2( 28.5515, -76.4287 )
 rotation = -0.117944
 scale = Vector2( 0.2, 0.2 )
