@@ -15,15 +15,7 @@ func _ready():
 	pass
 
 func _process(delta):
-	if(Input.is_action_just_pressed("ui_cancel")):
-		print("cancel")
-		if(get_parent().get_node("CanvasLayer").get_node("PauseMenu").visible): 
-			get_parent().get_node("CanvasLayer").get_node("PauseMenu").hide()
-		else:
-			get_parent().get_node("CanvasLayer").get_node("PauseMenu").show()
-			
-			pass
-		pass
+	
 		
 	vel_linear.x = 0
 	if(Input.is_action_pressed("ui_left")):
