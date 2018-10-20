@@ -20,7 +20,6 @@ _sections_unfolded = [ "Invert", "Material", "Pause", "Texture", "Transform", "V
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." index="1"]
 
-editor/display_folded = true
 position = Vector2( 44607.8, 9895.45 )
 input_pickable = false
 collision_layer = 1

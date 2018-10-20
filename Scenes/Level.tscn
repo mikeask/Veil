@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Scenes/Level.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/FullLevel.tscn" type="PackedScene" id=2]
@@ -12,7 +12,6 @@
 [ext_resource path="res://Others/TextThemeCredits.tres" type="Theme" id=10]
 [ext_resource path="res://Animation/Bird.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Scenes/box.tscn" type="PackedScene" id=12]
-[ext_resource path="res://Sprites/Environment/Cage.png" type="Texture" id=13]
 
 [node name="Level" type="Node2D" index="0"]
 
@@ -172,34 +171,6 @@ _sections_unfolded = [ "Collision", "Pause", "Pickable", "Transform", "Z Index",
 [node name="box" parent="." index="6" instance=ExtResource( 12 )]
 
 position = Vector2( -936.504, 972.433 )
-
-[node name="ParallaxBackground" type="ParallaxBackground" parent="." index="7"]
-
-layer = -1
-offset = Vector2( 0, 0 )
-rotation = 0.0
-scale = Vector2( 1, 1 )
-transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-scroll_offset = Vector2( 0, 0 )
-scroll_base_offset = Vector2( 0, 0 )
-scroll_base_scale = Vector2( 1, 1 )
-scroll_limit_begin = Vector2( 0, 0 )
-scroll_limit_end = Vector2( 0, 0 )
-scroll_ignore_camera_zoom = false
-_sections_unfolded = [ "Pause", "Scroll" ]
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" index="0"]
-
-motion_scale = Vector2( 0.8, 1 )
-motion_offset = Vector2( 0, 0 )
-motion_mirroring = Vector2( 0, 0 )
-_sections_unfolded = [ "Motion" ]
-
-[node name="Cage" type="Sprite" parent="ParallaxBackground/ParallaxLayer" index="0"]
-
-position = Vector2( 0, 947.266 )
-texture = ExtResource( 13 )
-_sections_unfolded = [ "Animation", "Offset", "Region", "Transform" ]
 
 [connection signal="button_down" from="CanvasLayer/PauseMenu/Continue" to="." method="_on_Continue_button_down"]
 
