@@ -6,3 +6,5 @@ export_presets.cfg
 
 # Mono-specific ignores
 .mono/
+Animation/Bird.gd
+Animation/Bird.tscn
