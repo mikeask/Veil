@@ -1,93 +1,156 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=14 format=2]
 
-[ext_resource path="res://Sprites/Menu/MenuBackground.png" type="Texture" id=1]
-[ext_resource path="res://Sprites/Environment/Tree01.png" type="Texture" id=2]
-[ext_resource path="res://Sprites/Environment/Tree03.png" type="Texture" id=3]
-[ext_resource path="res://Sprites/Environment/Vegetation01.png" type="Texture" id=4]
-[ext_resource path="res://Sprites/logo.png" type="Texture" id=5]
+[ext_resource path="res://Scenes/Level.gd" type="Script" id=1]
+[ext_resource path="res://Audio/MachinimaSound.com_-_Summer_Rain.wav" type="AudioStream" id=2]
+[ext_resource path="res://Sprites/Menu/MenuBackground.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Environment/ground.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Environment/Tree01.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Environment/Tree03.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Environment/Vegetation01.png" type="Texture" id=7]
+[ext_resource path="res://Scenes/bola.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Sprites/Menu/PauseMenuBackground.png" type="Texture" id=10]
+[ext_resource path="res://Scenes/MenuOpts.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Others/TextThemeCredits.tres" type="Theme" id=12]
 
-[node name="Node2D" type="Node2D" index="0"]
+[sub_resource type="RectangleShape2D" id=1]
 
-[node name="MenuBackground" type="Sprite" parent="." index="0"]
+custom_solver_bias = 0.0
+extents = Vector2( 1044.77, 10 )
+
+[node name="Level" type="Node2D" index="0"]
+
+script = ExtResource( 1 )
+
+[node name="InGameTheme" type="AudioStreamPlayer2D" parent="." index="0"]
+
+position = Vector2( 966.061, 545.703 )
+stream = ExtResource( 2 )
+volume_db = 0.0
+pitch_scale = 1.0
+autoplay = true
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+
+[node name="MenuBackground" type="Sprite" parent="." index="1"]
 
 position = Vector2( 961.855, 539.307 )
-texture = ExtResource( 1 )
-
-[node name="Tree01" type="Sprite" parent="." index="1"]
-
-position = Vector2( 1620.95, 542.605 )
-scale = Vector2( 0.303853, 0.303853 )
-texture = ExtResource( 2 )
-
-[node name="Tree03" type="Sprite" parent="." index="2"]
-
-position = Vector2( 524.092, 702.931 )
-scale = Vector2( 0.601516, 0.601516 )
 texture = ExtResource( 3 )
 
-[node name="Vegetation01" type="Sprite" parent="." index="3"]
+[node name="ground" type="Sprite" parent="." index="2"]
 
-position = Vector2( 1353.5, 882.287 )
-scale = Vector2( 0.404438, 0.404438 )
+position = Vector2( 959.92, 542.683 )
 texture = ExtResource( 4 )
 
-[node name="Label2" type="Label" parent="." index="4"]
+[node name="Tree01" type="Sprite" parent="." index="3"]
 
-modulate = Color( 0, 0, 0, 1 )
-self_modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 1620.95, 382.605 )
+scale = Vector2( 0.303853, 0.303853 )
+texture = ExtResource( 5 )
+
+[node name="Tree03" type="Sprite" parent="." index="4"]
+
+position = Vector2( 524.092, 542.931 )
+scale = Vector2( 0.601516, 0.601516 )
+texture = ExtResource( 6 )
+
+[node name="Vegetation01" type="Sprite" parent="." index="5"]
+
+position = Vector2( 1396.09, 679.84 )
+scale = Vector2( 0.404438, 0.404438 )
+texture = ExtResource( 7 )
+
+[node name="GroundStaticBody" type="StaticBody2D" parent="." index="6"]
+
+editor/display_folded = true
+position = Vector2( 930.353, 890.172 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GroundStaticBody" index="0"]
+
+position = Vector2( 7.82892, 3.99036 )
+shape = SubResource( 1 )
+
+[node name="bola" parent="." index="7" instance=ExtResource( 8 )]
+
+position = Vector2( 1393.52, 710.638 )
+gravity_scale = 5.0
+_sections_unfolded = [ "Collision", "Pickable", "Transform" ]
+
+[node name="Player" parent="." index="8" instance=ExtResource( 9 )]
+
+position = Vector2( 932.959, 502.658 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." index="9"]
+
+layer = 1
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+
+[node name="PauseMenu" type="Control" parent="CanvasLayer" index="0"]
+
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -960.041
+margin_top = -540.342
+margin_right = 959.959
+margin_bottom = 539.658
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+_sections_unfolded = [ "Anchor", "Margin", "Rect", "Visibility" ]
+
+[node name="PauseMenuBackground" type="Sprite" parent="CanvasLayer/PauseMenu" index="0"]
+
+position = Vector2( 964.093, 536.649 )
+texture = ExtResource( 10 )
+
+[node name="MenuOpts" parent="CanvasLayer/PauseMenu" index="1" instance=ExtResource( 11 )]
+
+position = Vector2( 807.393, 394.843 )
+
+[node name="PauseLabel" type="Label" parent="CanvasLayer/PauseMenu" index="2"]
+
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 1000.0
-margin_top = 713.0
-margin_right = 1034.0
-margin_bottom = 733.0
-rect_scale = Vector2( 10, 10 )
+margin_left = 852.0
+margin_top = 289.0
+margin_right = 1055.0
+margin_bottom = 376.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-text = "Level"
+theme = ExtResource( 12 )
+text = "Pause"
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
-_sections_unfolded = [ "Rect", "Size Flags", "Visibility" ]
+_sections_unfolded = [ "Theme" ]
 
-[node name="logo" type="Sprite" parent="." index="5"]
+[connection signal="button_down" from="CanvasLayer/PauseMenu/MenuOpts/PlayGame" to="." method="_on_PlayGame_button_down"]
 
-position = Vector2( 1093.38, 495.815 )
-scale = Vector2( 0.192411, 0.192411 )
-texture = ExtResource( 5 )
-
-[node name="Camera2D" type="Camera2D" parent="logo" index="0"]
-
-position = Vector2( -703.361, 231.947 )
-scale = Vector2( 5.1972, 5.1972 )
-anchor_mode = 1
-rotating = false
-current = true
-zoom = Vector2( 1, 1 )
-limit_left = -10000000
-limit_top = -10000000
-limit_right = 10000000
-limit_bottom = 10000000
-limit_smoothed = false
-drag_margin_h_enabled = true
-drag_margin_v_enabled = true
-smoothing_enabled = false
-smoothing_speed = 5.0
-offset_v = 0.0
-offset_h = 0.0
-drag_margin_left = 0.2
-drag_margin_top = 0.2
-drag_margin_right = 0.2
-drag_margin_bottom = 0.2
-editor_draw_screen = true
-editor_draw_limits = false
-editor_draw_drag_margin = false
-_sections_unfolded = [ "Drag Margin", "Editor", "Limit", "Material", "Offset", "Smoothing", "Visibility" ]
+[connection signal="button_down" from="CanvasLayer/PauseMenu/MenuOpts/Quit" to="." method="_on_Quit_button_down"]
 
 
+[editable path="CanvasLayer/PauseMenu/MenuOpts"]
