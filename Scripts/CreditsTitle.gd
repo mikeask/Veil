@@ -14,4 +14,8 @@ func _process(delta):
 	if($Text.position.y < -150):
 		$logoFixo.show()
 		pass
+	
+	if(Input.is_action_just_pressed("ui_cancel")):
+		get_tree().change_scene("res://Scenes/MainMenu.tscn")
+		pass
 	pass

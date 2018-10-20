@@ -14,10 +14,10 @@ func _ready():
 func _process(delta):
 	$Light2D.energy = $Light2D.energy+delta*lumini
 	
-	if($Light2D.energy < 0):
+	if($Light2D.energy < 0.5):
 		lumini=1
 		pass
-	elif($Light2D.energy > 3):
+	elif($Light2D.energy > 2):
 		lumini=-1
 		pass
 		
