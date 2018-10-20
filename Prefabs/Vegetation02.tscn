@@ -21,7 +21,7 @@ tracks/0/keys = {
 "values": [ -6.88581, -8.71942, -6.88581 ]
 }
 
-[node name="Vegetation02" type="Sprite" index="0"]
+[node name="Vegetation02" type="Sprite"]
 
 modulate = Color( 1, 1, 1, 0.66298 )
 rotation = -0.12018
