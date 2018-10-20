@@ -15,6 +15,16 @@ func _ready():
 func _process(delta):
 	if Input.is_action_just_pressed("ui_cancel"):
 		pauseMenu.hide()
+	
+	if(Input.is_action_just_pressed("ui_cancel")):
+		print("cancel")
+		if(get_node("CanvasLayer").get_node("PauseMenu").visible): 
+			get_node("CanvasLayer").get_node("PauseMenu").hide()
+		else:
+			get_node("CanvasLayer").get_node("PauseMenu").show()
+			
+			pass
+		pass
 		
 		pass
 	pass
