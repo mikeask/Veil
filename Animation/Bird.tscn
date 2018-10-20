@@ -917,7 +917,7 @@ tracks/11/keys = {
 "values": [ true, true ]
 }
 
-[node name="Bird" type="KinematicBody2D" index="0"]
+[node name="Bird" type="KinematicBody2D"]
 
 input_pickable = false
 collision_layer = 1
@@ -928,8 +928,8 @@ _sections_unfolded = [ "Collision", "Pickable", "Transform", "Z Index", "collisi
 
 [node name="Body" type="Sprite" parent="." index="0"]
 
-position = Vector2( -10.296, -90.8936 )
-rotation = 0.541715
+position = Vector2( -9.07874, -108.841 )
+rotation = 0.159951
 scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 2 )
 offset = Vector2( 23.1897, -599.485 )
@@ -946,7 +946,7 @@ _sections_unfolded = [ "Transform", "Visibility" ]
 [node name="Tail" type="Sprite" parent="Body" index="1"]
 
 position = Vector2( -490.961, -645.75 )
-rotation = -0.150244
+rotation = -9.31323e-010
 texture = ExtResource( 4 )
 offset = Vector2( -351.537, 52.0476 )
 _sections_unfolded = [ "Transform" ]
@@ -954,7 +954,7 @@ _sections_unfolded = [ "Transform" ]
 [node name="Head" type="Sprite" parent="Body" index="2"]
 
 position = Vector2( 388.78, -889.292 )
-rotation = 0.24653
+rotation = -1.86265e-009
 z_index = 1
 texture = ExtResource( 5 )
 offset = Vector2( 166.636, -322.659 )
@@ -962,6 +962,7 @@ _sections_unfolded = [ "Transform", "Z Index" ]
 
 [node name="AngryEye" type="Sprite" parent="Body/Head" index="0"]
 
+visible = false
 position = Vector2( 397.792, -416.336 )
 rotation = -0.0575343
 scale = Vector2( 1.49211, 1.49211 )
@@ -971,7 +972,6 @@ _sections_unfolded = [ "Visibility", "Z Index" ]
 
 [node name="Eye" type="Sprite" parent="Body/Head" index="1"]
 
-visible = false
 position = Vector2( 307.329, -359.249 )
 rotation = -0.0575343
 scale = Vector2( 1.49211, 1.49211 )
@@ -980,8 +980,8 @@ _sections_unfolded = [ "Visibility" ]
 
 [node name="l_leg" type="Sprite" parent="." index="1"]
 
-position = Vector2( 52.7975, -90.3269 )
-rotation = 0.438507
+position = Vector2( 25.3047, -86.9807 )
+rotation = -0.440999
 scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 8 )
 offset = Vector2( 24.1047, 133.524 )
@@ -990,15 +990,15 @@ _sections_unfolded = [ "Transform" ]
 [node name="bird_leg2" type="Sprite" parent="l_leg" index="0"]
 
 position = Vector2( 29.0013, 167.939 )
-rotation = -0.0493212
+rotation = -0.0493213
 texture = ExtResource( 9 )
 offset = Vector2( 32.5631, 90.5692 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="r_leg" type="Sprite" parent="." index="2"]
 
-position = Vector2( -7.06167, -61.8473 )
-rotation = 0.170031
+position = Vector2( -17.9086, -81.4405 )
+rotation = -0.720313
 scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 8 )
 offset = Vector2( 29.4708, 122.546 )
@@ -1049,7 +1049,7 @@ polygon = PoolVector2Array( 100.772, -99.3729, 46.4781, -65.0237, 81.9354, -12.9
 anchor_mode = 1
 rotating = false
 current = true
-zoom = Vector2( 1, 1 )
+zoom = Vector2( 3, 3 )
 limit_left = -10000000
 limit_top = -10000000
 limit_right = 10000000
@@ -1069,13 +1069,5 @@ editor_draw_screen = true
 editor_draw_limits = false
 editor_draw_drag_margin = false
 _sections_unfolded = [ "Smoothing" ]
-
-[node name="RayCast2D" type="RayCast2D" parent="." index="7"]
-
-position = Vector2( 301.729, -216.104 )
-enabled = false
-exclude_parent = true
-cast_to = Vector2( 6, 0 )
-collision_mask = 1
 
 
