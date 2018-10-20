@@ -116,16 +116,13 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "Theme" ]
 
-[node name="CreditsTheme" type="AudioStreamPlayer2D" parent="." index="4"]
+[node name="CreditsTheme" type="AudioStreamPlayer" parent="." index="4"]
 
-position = Vector2( 927.16, 540.38 )
 stream = ExtResource( 5 )
 volume_db = 0.0
 pitch_scale = 1.0
 autoplay = true
-max_distance = 2000.0
-attenuation = 1.0
+mix_target = 0
 bus = "Master"
-area_mask = 1
 
 

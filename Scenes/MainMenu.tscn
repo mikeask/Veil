@@ -1,18 +1,20 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Scripts/MainMenu.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/Menu/MenuBackground.png" type="Texture" id=2]
 [ext_resource path="res://Scenes/MenuOpts.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Sprites/Menu/blue button.png" type="Texture" id=4]
-[ext_resource path="res://Sprites/Environment/Tree01.png" type="Texture" id=5]
-[ext_resource path="res://Sprites/Environment/Vegetation01.png" type="Texture" id=6]
-[ext_resource path="res://Sprites/logo.png" type="Texture" id=7]
-[ext_resource path="res://Sprites/Environment/Tree03.png" type="Texture" id=8]
-[ext_resource path="res://Sprites/light.png" type="Texture" id=9]
-[ext_resource path="res://Sprites/Environment/Vine01.png" type="Texture" id=10]
-[ext_resource path="res://Audio/The Outer Forest.wav" type="AudioStream" id=11]
+[ext_resource path="res://Sprites/Menu/Credits.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Menu/CreditsClick.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Menu/CreditsHover.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Environment/Tree01.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/Environment/Vegetation01.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/logo.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/Environment/Tree03.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/light.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/Environment/Vine01.png" type="Texture" id=12]
+[ext_resource path="res://Audio/The Outer Forest.wav" type="AudioStream" id=13]
 
-[node name="Title" type="Node2D"]
+[node name="Title" type="Node2D" index="0"]
 
 script = ExtResource( 1 )
 
@@ -23,7 +25,8 @@ texture = ExtResource( 2 )
 
 [node name="MenuOpts" parent="." index="1" instance=ExtResource( 3 )]
 
-position = Vector2( 216, 500 )
+position = Vector2( 211.086, 532.098 )
+scale = Vector2( 0.90427, 0.90427 )
 
 [node name="Credits" type="TextureButton" parent="." index="2"]
 
@@ -33,8 +36,8 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 217.0
 margin_top = 822.0
-margin_right = 517.0
-margin_bottom = 902.0
+margin_right = 405.0
+margin_bottom = 886.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -47,49 +50,51 @@ enabled_focus_mode = 2
 shortcut = null
 group = null
 texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 6 )
 _sections_unfolded = [ "Textures" ]
 
 [node name="Tree01" type="Sprite" parent="." index="3"]
 
 position = Vector2( 1679.61, 477.285 )
 scale = Vector2( 0.339368, 0.339368 )
-texture = ExtResource( 5 )
+texture = ExtResource( 7 )
 
 [node name="Tree02" type="Sprite" parent="." index="4"]
 
 position = Vector2( 889.396, 493.94 )
 scale = Vector2( 0.339368, 0.339368 )
-texture = ExtResource( 5 )
+texture = ExtResource( 7 )
 
 [node name="Vegetation01" type="Sprite" parent="." index="5"]
 
 position = Vector2( 1571.9, 670.226 )
 scale = Vector2( 0.827613, 0.827613 )
-texture = ExtResource( 6 )
+texture = ExtResource( 8 )
 
 [node name="Vegetation02" type="Sprite" parent="." index="6"]
 
 position = Vector2( 990.25, 667.953 )
 scale = Vector2( 0.827613, 0.827613 )
-texture = ExtResource( 6 )
+texture = ExtResource( 8 )
 
 [node name="logo" type="Sprite" parent="." index="7"]
 
 position = Vector2( 361.276, 250.128 )
 scale = Vector2( 0.2167, 0.2167 )
-texture = ExtResource( 7 )
+texture = ExtResource( 9 )
 
 [node name="Tree03" type="Sprite" parent="." index="8"]
 
 position = Vector2( 1131.71, 539.357 )
-texture = ExtResource( 8 )
+texture = ExtResource( 10 )
 
 [node name="Light2D" type="Light2D" parent="." index="9"]
 
 position = Vector2( 1362.21, 667.989 )
 enabled = true
 editor_only = false
-texture = ExtResource( 9 )
+texture = ExtResource( 11 )
 offset = Vector2( 0, 0 )
 texture_scale = 1.58
 color = Color( 0.141479, 0.743873, 0.953125, 1 )
@@ -114,19 +119,16 @@ _sections_unfolded = [ "Shadow" ]
 
 position = Vector2( 635.429, 212.615 )
 scale = Vector2( 0.26139, 0.26139 )
-texture = ExtResource( 10 )
+texture = ExtResource( 12 )
 
-[node name="MenuTheme" type="AudioStreamPlayer2D" parent="." index="11"]
+[node name="MainMenuTheme" type="AudioStreamPlayer" parent="." index="11"]
 
-position = Vector2( 926.45, 538.751 )
-stream = ExtResource( 11 )
+stream = ExtResource( 13 )
 volume_db = 0.0
 pitch_scale = 1.0
 autoplay = true
-max_distance = 2000.0
-attenuation = 1.0
+mix_target = 0
 bus = "Master"
-area_mask = 1
 
 [connection signal="button_down" from="MenuOpts/PlayGame" to="." method="_on_PlayGame_button_down"]
 

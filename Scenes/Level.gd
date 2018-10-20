@@ -15,14 +15,14 @@ func _ready():
 func _process(delta):
 	if Input.is_action_just_pressed("ui_cancel"):
 		pauseMenu.hide()
-		$Player.pause_mode = Node.PAUSE_MODE_STOP
+		
 		pass
 	pass
 
 
 func _on_PlayGame_button_down():
 	pauseMenu.hide()
-	$Player.set_process(false)
+	
 	pass # replace with function body
 
 

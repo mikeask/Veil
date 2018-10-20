@@ -1,8 +1,14 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://Sprites/Menu/Play blue button 300x80.png" type="Texture" id=1]
-[ext_resource path="res://Sprites/Menu/options blue button 300x80.png" type="Texture" id=2]
-[ext_resource path="res://Sprites/Menu/Quit blue button 300x80.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Menu/Start.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/Menu/StartClick.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Menu/StartHover.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Menu/Options.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Menu/OptionsClick.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Menu/OptionsHover.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Menu/Quit.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/Menu/QuitClick.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/Menu/QuitHover.png" type="Texture" id=9]
 
 [node name="MenuOpts" type="Node2D"]
 
@@ -12,8 +18,8 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 300.0
-margin_bottom = 80.0
+margin_right = 210.0
+margin_bottom = 94.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -26,6 +32,8 @@ enabled_focus_mode = 2
 shortcut = null
 group = null
 texture_normal = ExtResource( 1 )
+texture_pressed = ExtResource( 2 )
+texture_hover = ExtResource( 3 )
 _sections_unfolded = [ "Rect", "Textures" ]
 
 [node name="Options" type="TextureButton" parent="." index="1"]
@@ -35,8 +43,8 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 105.0
-margin_right = 300.0
-margin_bottom = 185.0
+margin_right = 210.0
+margin_bottom = 186.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -48,7 +56,9 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 2 )
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 6 )
 _sections_unfolded = [ "Rect", "Textures" ]
 
 [node name="Quit" type="TextureButton" parent="." index="2"]
@@ -58,8 +68,8 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 212.0
-margin_right = 300.0
-margin_bottom = 292.0
+margin_right = 210.0
+margin_bottom = 297.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -71,7 +81,9 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 3 )
+texture_normal = ExtResource( 7 )
+texture_pressed = ExtResource( 8 )
+texture_hover = ExtResource( 9 )
 _sections_unfolded = [ "Rect", "Textures" ]
 
 

@@ -21,7 +21,7 @@ func _process(delta):
 			get_parent().get_node("CanvasLayer").get_node("PauseMenu").hide()
 		else:
 			get_parent().get_node("CanvasLayer").get_node("PauseMenu").show()
-			self.set_process(false)
+			
 			pass
 		pass
 		
