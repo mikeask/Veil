@@ -56,6 +56,8 @@ func _process(delta):
 					pass
 			pass
 	else:
+		if(vel_linear.y > 0 and !get_node("pe2").is_colliding()and !get_node("pe1").is_colliding()):
+			novaAnimacao = "Falling"
 		vel_linear.y += gravidade*delta*100
 	move_and_slide(vel_linear, normal)
 	
