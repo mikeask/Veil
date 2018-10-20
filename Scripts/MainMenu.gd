@@ -3,6 +3,7 @@ extends Node2D
 # class member variables go here, for example:
 # var a = 2
 # var b = "textvar"
+var lumini = -1;
 
 func _ready():
 	# Called when the node is added to the scene for the first time.
@@ -10,10 +11,17 @@ func _ready():
 	
 	pass
 
-#func _process(delta):
-#	# Called every frame. Delta is time since last frame.
-#	# Update game logic here.
-#	pass
+func _process(delta):
+	$Light2D.energy = $Light2D.energy+delta*lumini
+	
+	if($Light2D.energy < 0):
+		lumini=1
+		pass
+	elif($Light2D.energy > 3):
+		lumini=-1
+		pass
+		
+	pass
 
 
 func _on_PlayGame_button_down():
@@ -23,4 +31,9 @@ func _on_PlayGame_button_down():
 
 func _on_Quit_button_down():
 	get_tree().quit();
+	pass # replace with function body
+
+
+func _on_Credits_button_down():
+	get_tree().change_scene("res://Scenes/CreditsTitle.tscn");
 	pass # replace with function body
