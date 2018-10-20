@@ -8,10 +8,10 @@
 [ext_resource path="res://Sprites/Environment/Tree03.png" type="Texture" id=6]
 [ext_resource path="res://Sprites/Environment/Vegetation01.png" type="Texture" id=7]
 [ext_resource path="res://Scenes/bola.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=9]
-[ext_resource path="res://Sprites/Menu/PauseMenuBackground.png" type="Texture" id=10]
-[ext_resource path="res://Scenes/MenuOpts.tscn" type="PackedScene" id=11]
-[ext_resource path="res://Others/TextThemeCredits.tres" type="Theme" id=12]
+[ext_resource path="res://Sprites/Menu/PauseMenuBackground.png" type="Texture" id=9]
+[ext_resource path="res://Scenes/MenuOpts.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Others/TextThemeCredits.tres" type="Theme" id=11]
+[ext_resource path="res://Animation/Bird.tscn" type="PackedScene" id=12]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -81,11 +81,7 @@ position = Vector2( 1393.52, 710.638 )
 gravity_scale = 5.0
 _sections_unfolded = [ "Collision", "Pickable", "Transform" ]
 
-[node name="Player" parent="." index="8" instance=ExtResource( 9 )]
-
-position = Vector2( 932.959, 502.658 )
-
-[node name="CanvasLayer" type="CanvasLayer" parent="." index="9"]
+[node name="CanvasLayer" type="CanvasLayer" parent="." index="8"]
 
 layer = 1
 offset = Vector2( 0, 0 )
@@ -115,9 +111,9 @@ _sections_unfolded = [ "Anchor", "Margin", "Rect", "Visibility" ]
 [node name="PauseMenuBackground" type="Sprite" parent="CanvasLayer/PauseMenu" index="0"]
 
 position = Vector2( 964.093, 536.649 )
-texture = ExtResource( 10 )
+texture = ExtResource( 9 )
 
-[node name="MenuOpts" parent="CanvasLayer/PauseMenu" index="1" instance=ExtResource( 11 )]
+[node name="MenuOpts" parent="CanvasLayer/PauseMenu" index="1" instance=ExtResource( 10 )]
 
 position = Vector2( 807.393, 394.843 )
 
@@ -137,12 +133,16 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-theme = ExtResource( 12 )
+theme = ExtResource( 11 )
 text = "Pause"
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "Theme" ]
+
+[node name="Bird" parent="." index="9" instance=ExtResource( 12 )]
+
+position = Vector2( 936.17, 631.692 )
 
 [connection signal="button_down" from="CanvasLayer/PauseMenu/MenuOpts/PlayGame" to="." method="_on_PlayGame_button_down"]
 
