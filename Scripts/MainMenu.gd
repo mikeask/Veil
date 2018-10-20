@@ -35,5 +35,6 @@ func _on_Quit_button_down():
 
 
 func _on_Credits_button_down():
+	print("aspas")
 	get_tree().change_scene("res://Scenes/CreditsTitle.tscn");
 	pass # replace with function body
