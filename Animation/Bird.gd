@@ -59,7 +59,7 @@ func _process(delta):
 	if Input.is_action_just_pressed("ui_left"):
 		scale.x = -1
 	if Input.is_action_just_pressed("ui_right"):
-		scale.x = 1
+		scale.x = -1
 		
 	
 	
