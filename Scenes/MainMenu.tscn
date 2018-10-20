@@ -110,7 +110,7 @@ texture = ExtResource( 7 )
 
 [node name="Tree03" type="Sprite" parent="." index="7"]
 
-position = Vector2( 1224.86, 555.262 )
+position = Vector2( 1213.5, 557.534 )
 texture = ExtResource( 8 )
 
 [connection signal="button_down" from="PlayGame" to="." method="_on_PlayGame_button_down"]

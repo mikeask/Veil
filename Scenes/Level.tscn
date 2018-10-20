@@ -2,8 +2,8 @@
 
 [ext_resource path="res://Sprites/Menu/MenuBackground.png" type="Texture" id=1]
 [ext_resource path="res://Sprites/Environment/Tree01.png" type="Texture" id=2]
-[ext_resource path="res://Sprites/Environment/Vegetation01.png" type="Texture" id=3]
-[ext_resource path="res://Sprites/Environment/Tree03.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Environment/Tree03.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Environment/Vegetation01.png" type="Texture" id=4]
 
 [node name="Node2D" type="Node2D"]
 
@@ -18,16 +18,66 @@ position = Vector2( 1620.95, 542.605 )
 scale = Vector2( 0.303853, 0.303853 )
 texture = ExtResource( 2 )
 
-[node name="Vegetation01" type="Sprite" parent="." index="2"]
+[node name="Tree03" type="Sprite" parent="." index="2"]
+
+position = Vector2( 524.092, 702.931 )
+scale = Vector2( 0.601516, 0.601516 )
+texture = ExtResource( 3 )
+
+[node name="Vegetation01" type="Sprite" parent="." index="3"]
 
 position = Vector2( 1353.5, 882.287 )
 scale = Vector2( 0.404438, 0.404438 )
-texture = ExtResource( 3 )
-
-[node name="Tree03" type="Sprite" parent="Vegetation01" index="0"]
-
-position = Vector2( -2050.77, -443.47 )
-scale = Vector2( 1.48729, 1.48729 )
 texture = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="." index="4"]
+
+modulate = Color( 0, 0, 0, 1 )
+self_modulate = Color( 0, 0, 0, 1 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 831.0
+margin_top = 441.0
+margin_right = 855.0
+margin_bottom = 461.0
+rect_scale = Vector2( 20, 20 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "Veil"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "Size Flags", "Visibility" ]
+
+[node name="Label2" type="Label" parent="." index="5"]
+
+modulate = Color( 0, 0, 0, 1 )
+self_modulate = Color( 0, 0, 0, 1 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1000.0
+margin_top = 713.0
+margin_right = 1034.0
+margin_bottom = 733.0
+rect_scale = Vector2( 10, 10 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "Level"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "Size Flags", "Visibility" ]
 
 
