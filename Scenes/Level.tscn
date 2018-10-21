@@ -1909,7 +1909,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0, 0.2, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 8353.14, 2477.78 ), Vector2( 8353.14, 2477.78 ), Vector2( 8353.14, 2477.78 ) ]
+"values": [ Vector2( 8393.17, 2164.22 ), Vector2( 8353.14, 2477.78 ), Vector2( 8393.17, 2164.22 ) ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("../Rope:scale")
@@ -1934,18 +1934,6 @@ tracks/3/keys = {
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
 "values": [ -95.805, -95.805, -51.5813, -95.805 ]
-}
-tracks/4/type = "value"
-tracks/4/path = NodePath("../Rope:position")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/keys = {
-"times": PoolRealArray( 0, 0.15, 0.2, 3 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
-"update": 0,
-"values": [ Vector2( 7283.52, 2889.72 ), Vector2( 7281.71, 2889.9 ), Vector2( 7282.09, 2889.86 ), Vector2( 7283.52, 2889.72 ) ]
 }
 
 [sub_resource type="RectangleShape2D" id=21]
@@ -2399,7 +2387,6 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="porta" type="KinematicBody2D" parent="." index="5"]
 
-editor/display_folded = true
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -2441,8 +2428,7 @@ blend_times = [  ]
 "alavanca",
 ]]
 
-editor/display_folded = true
-position = Vector2( -824.564, 5283.54 )
+position = Vector2( -650.676, 5000.97 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -2561,7 +2547,7 @@ position = Vector2( 307.955, 1155.6 )
 [node name="box3" parent="." index="11" instance=ExtResource( 38 )]
 
 editor/display_folded = true
-position = Vector2( 11640.9, 4581.55 )
+position = Vector2( 11851.5, 4372.81 )
 _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index", "collision" ]
 
 [node name="CollisionShape2D" parent="box3" index="1"]
@@ -2572,13 +2558,13 @@ _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 "catapult",
 ]]
 
-editor/display_folded = true
-position = Vector2( 8353.14, 2477.78 )
+position = Vector2( 8393.17, 2164.22 )
 scale = Vector2( 1, 6.08439 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
 collision/safe_margin = 0.08
+_sections_unfolded = [ "Transform" ]
 
 [node name="Catapult" type="Sprite" parent="catapult" index="0"]
 
@@ -2615,7 +2601,7 @@ one_way_collision = true
 
 [node name="Rope" type="Sprite" parent="." index="13"]
 
-position = Vector2( 7283.52, 2889.72 )
+position = Vector2( 7348.59, 2580.63 )
 rotation = -1.67211
 scale = Vector2( 0.159214, 0.637877 )
 texture = ExtResource( 40 )

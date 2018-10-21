@@ -20,7 +20,7 @@
 [ext_resource path="res://Sprites/Environment/Tree03.png" type="Texture" id=18]
 [ext_resource path="res://Sprites/light.png" type="Texture" id=19]
 [ext_resource path="res://Sprites/Environment/Vine01.png" type="Texture" id=20]
-[ext_resource path="res://Audio/MachinimaSound.com_-_Winter_Dawn.wav" type="AudioStream" id=21]
+[ext_resource path="res://Audio/The Outer Forest.wav" type="AudioStream" id=21]
 [ext_resource path="res://Prefabs/Vegetation05.tscn" type="PackedScene" id=22]
 [ext_resource path="res://Prefabs/Vegetation05_2.tscn" type="PackedScene" id=23]
 
@@ -30,11 +30,8 @@ script = ExtResource( 1 )
 
 [node name="MenuBackground" type="Sprite" parent="." index="0"]
 
-position = Vector2( 960.614, 539.548 )
-scale = Vector2( 1.02224, 1.02874 )
-z_index = -10
+position = Vector2( 964.378, 541.243 )
 texture = ExtResource( 2 )
-_sections_unfolded = [ "Z Index" ]
 
 [node name="StartGame" type="TextureButton" parent="." index="1"]
 
@@ -99,23 +96,19 @@ _sections_unfolded = [ "Textures" ]
 position = Vector2( 1619.39, 313.627 )
 rotation = -0.00129618
 scale = Vector2( 0.240689, 0.240689 )
-z_index = -6
 texture = ExtResource( 10 )
-_sections_unfolded = [ "Z Index" ]
 
 [node name="Gate" type="Sprite" parent="." index="5"]
 
 position = Vector2( 1616.36, 318.761 )
 rotation = -1.48341e-005
 scale = Vector2( 0.242857, 0.242857 )
-z_index = -6
 texture = ExtResource( 11 )
-_sections_unfolded = [ "Z Index" ]
 
 [node name="Fog01" parent="." index="6" instance=ExtResource( 12 )]
 
-position = Vector2( 1463.71, 535.019 )
-scale = Vector2( 1.27465, 1.27465 )
+position = Vector2( 2926.23, 417.468 )
+scale = Vector2( 1.27211, 1.27211 )
 
 [node name="Vegetation03" parent="." index="7" instance=ExtResource( 13 )]
 
@@ -232,31 +225,27 @@ scale = Vector2( 0.502366, 0.502366 )
 
 [node name="Vegetation11" parent="." index="23" instance=ExtResource( 23 )]
 
-modulate = Color( 1, 1, 1, 1 )
+modulate = Color( 1, 1, 1, 0.292784 )
 position = Vector2( 1344.04, 681.018 )
 scale = Vector2( 0.424595, 0.424595 )
-z_index = -6
 
 [node name="Vegetation13" parent="." index="24" instance=ExtResource( 23 )]
 
-modulate = Color( 1, 1, 1, 1 )
+modulate = Color( 1, 1, 1, 0.292784 )
 position = Vector2( 1760.53, 654.024 )
 scale = Vector2( 0.378068, 0.378068 )
-z_index = -6
 
 [node name="Vegetation12" parent="." index="25" instance=ExtResource( 23 )]
 
-modulate = Color( 1, 1, 1, 1 )
+modulate = Color( 1, 1, 1, 0.292784 )
 position = Vector2( 1403.74, 686.836 )
 scale = Vector2( 0.401917, 0.401917 )
-z_index = -6
 
 [node name="Vegetation14" parent="." index="26" instance=ExtResource( 23 )]
 
-modulate = Color( 1, 1, 1, 1 )
+modulate = Color( 1, 1, 1, 0.292784 )
 position = Vector2( 1818.49, 653.283 )
 scale = Vector2( 0.365057, 0.365057 )
-z_index = -6
 
 [connection signal="button_down" from="StartGame" to="." method="_on_StartGame_button_down"]
 
