@@ -1846,7 +1846,7 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 color = Color( 0.195129, 0.494054, 0.542969, 1 )
 
-[node name="InGameTheme" type="AudioStreamPlayer" parent="." index="1"]
+[node name="InGameTheme" type="AudioStreamPlayer" parent="." index="2"]
 
 stream = ExtResource( 2 )
 volume_db = -15.0
@@ -1855,7 +1855,7 @@ autoplay = true
 mix_target = 0
 bus = "Master"
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." index="2"]
+[node name="CanvasLayer" type="CanvasLayer" parent="." index="3"]
 
 editor/display_folded = true
 layer = 1
@@ -1960,19 +1960,19 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "Theme" ]
 
-[node name="SkyBG" type="Sprite" parent="." index="3"]
+[node name="SkyBG" type="Sprite" parent="." index="4"]
 
-visible = false
 position = Vector2( 26434, 3325.52 )
 scale = Vector2( 97.0396, 97.0396 )
 texture = ExtResource( 9 )
 
-[node name="Bird" type="KinematicBody2D" parent="." index="4" groups=[
+[node name="Bird" type="KinematicBody2D" parent="." index="5" groups=[
 "player",
 ]]
 
 pause_mode = 1
-position = Vector2( 14381.9, 4380.94 )
+editor/display_folded = true
+position = Vector2( 13764.8, 2052.61 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -2150,7 +2150,7 @@ _sections_unfolded = [ "Pause", "Playback Options" ]
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Bird" index="6"]
 
 build_mode = 0
-polygon = PoolVector2Array( 100.772, -99.3729, 46.4781, -65.0237, 47.4933, -48.4507, 46.6236, -22.4489, -39.5943, -22.4489, -73.6113, -74.3857, -112.464, -121.872, -134.049, -180.151, -114.622, -223.321, -95.1963, -255.698, -69.2939, -268.648, 36.4707, -333.403, 109.859, -400.315, 202.674, -391.682, 230.412, -377.49, 280.274, -279.983, 243.709, -242.31, 204.927, -235.661, 198.279, -215.717, 193.847, -178.043, 172.794, -147.018, 131.797, -119.318 )
+polygon = PoolVector2Array( 100.772, -99.3729, 46.4781, -65.0237, 47.4933, -48.4507, 46.6236, -22.4489, -39.5943, -22.4489, -73.6113, -74.3857, -112.464, -121.872, -134.049, -180.151, -114.622, -223.321, -95.1963, -255.698, -61.7637, -261.02, 127.194, -350.628, 246.023, -346.732, 280.274, -279.983, 243.709, -242.31, 204.927, -235.661, 198.279, -215.717, 193.847, -178.043, 172.794, -147.018, 131.797, -119.318 )
 
 [node name="Camera2D" type="Camera2D" parent="Bird" index="7"]
 
@@ -2233,16 +2233,16 @@ exclude_parent = true
 cast_to = Vector2( 0, 10 )
 collision_mask = 1
 
-[node name="box" parent="." index="5" instance=ExtResource( 29 )]
+[node name="box" parent="." index="6" instance=ExtResource( 29 )]
 
 position = Vector2( -30510.2, 1418.59 )
 
-[node name="Node2D" parent="." index="6" instance=ExtResource( 30 )]
+[node name="Node2D" parent="." index="7" instance=ExtResource( 30 )]
 
 position = Vector2( 54021.4, 1603.87 )
 _sections_unfolded = [ "Z Index" ]
 
-[node name="GiantButton" type="Polygon2D" parent="." index="7"]
+[node name="GiantButton" type="Polygon2D" parent="." index="8"]
 
 position = Vector2( 0, 173.565 )
 polygon = PoolVector2Array( 152107, 15505.9, 156017, 15487.7, 156235, 15409.6, 156580, 15409.6, 156767, 15484.3, 161011, 15464.5, 161038, 15525.9, 160886, 15733.7, 157056, 15733.7, 157051, 15802.7, 157517, 15882.9, 157541, 16247.9, 155162, 16251.9, 155178, 15911, 155523, 15806.7, 155524, 15733.7, 152208, 15747.9, 152082, 15570.1 )
@@ -2259,7 +2259,7 @@ invert_enable = false
 invert_border = 100.0
 _sections_unfolded = [ "Transform" ]
 
-[node name="GateFrame" type="Sprite" parent="." index="8"]
+[node name="GateFrame" type="Sprite" parent="." index="9"]
 
 position = Vector2( 164178, 13729.1 )
 scale = Vector2( 1.6171, 1.6171 )
@@ -2273,7 +2273,7 @@ texture = ExtResource( 32 )
 offset = Vector2( -727.191, -392.785 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="KinematicBody2D" type="KinematicBody2D" parent="." index="9" groups=[
+[node name="KinematicBody2D" type="KinematicBody2D" parent="." index="10" groups=[
 "tree",
 ]]
 
@@ -2316,7 +2316,7 @@ scale = Vector2( 1.2924, 5.58267 )
 shape = SubResource( 14 )
 one_way_collision = true
 
-[node name="Light" type="Sprite" parent="." index="10"]
+[node name="Light" type="Sprite" parent="." index="11"]
 
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 157516, 13838 )
@@ -2324,20 +2324,20 @@ scale = Vector2( 3.17889, 3.10709 )
 texture = ExtResource( 35 )
 _sections_unfolded = [ "Visibility" ]
 
-[node name="box2" parent="." index="11" instance=ExtResource( 29 )]
+[node name="box2" parent="." index="12" instance=ExtResource( 29 )]
 
 position = Vector2( 501.426, 1542.54 )
 
-[node name="box3" parent="." index="12" instance=ExtResource( 29 )]
+[node name="box3" parent="." index="13" instance=ExtResource( 29 )]
 
-position = Vector2( 12831.1, 4677.31 )
+position = Vector2( 11640.9, 4581.55 )
 _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index", "collision" ]
 
 [node name="CollisionShape2D" parent="box3" index="1"]
 
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
-[node name="catapult" type="KinematicBody2D" parent="." index="13" groups=[
+[node name="catapult" type="KinematicBody2D" parent="." index="14" groups=[
 "catapult",
 ]]
 
@@ -2381,7 +2381,7 @@ rotation = -0.0200053
 shape = SubResource( 16 )
 one_way_collision = true
 
-[node name="Rope" type="Sprite" parent="." index="14"]
+[node name="Rope" type="Sprite" parent="." index="15"]
 
 position = Vector2( 7283.52, 2889.72 )
 rotation = -1.67211

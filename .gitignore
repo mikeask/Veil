@@ -6,3 +6,6 @@ export_presets.cfg
 
 # Mono-specific ignores
 .mono/
+Scenes/box.gd
+Scenes/Level.tscn
+Scenes/Level.tscn
