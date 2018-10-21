@@ -1972,7 +1972,7 @@ texture = ExtResource( 9 )
 ]]
 
 pause_mode = 1
-position = Vector2( 6821.55, 1619.39 )
+position = Vector2( 14381.9, 4380.94 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -2150,7 +2150,7 @@ _sections_unfolded = [ "Pause", "Playback Options" ]
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Bird" index="6"]
 
 build_mode = 0
-polygon = PoolVector2Array( 100.772, -99.3729, 46.4781, -65.0237, 47.4933, -48.4507, 46.6236, -22.4489, -39.5943, -22.4489, -38.8406, -49.5112, -111.971, -108.237, -146.32, -162.531, -250.476, -149.235, -251.584, -272.227, -108.126, -296.401, 15.4531, -335.385, 81.9354, -422.92, 157.282, -446.188, 230.412, -377.49, 280.274, -279.983, 243.709, -242.31, 204.927, -235.661, 198.279, -215.717, 193.847, -178.043, 172.794, -147.018, 131.797, -119.318 )
+polygon = PoolVector2Array( 100.772, -99.3729, 46.4781, -65.0237, 47.4933, -48.4507, 46.6236, -22.4489, -39.5943, -22.4489, -73.6113, -74.3857, -112.464, -121.872, -134.049, -180.151, -114.622, -223.321, -95.1963, -255.698, -69.2939, -268.648, 36.4707, -333.403, 109.859, -400.315, 202.674, -391.682, 230.412, -377.49, 280.274, -279.983, 243.709, -242.31, 204.927, -235.661, 198.279, -215.717, 193.847, -178.043, 172.794, -147.018, 131.797, -119.318 )
 
 [node name="Camera2D" type="Camera2D" parent="Bird" index="7"]
 
@@ -2239,7 +2239,7 @@ position = Vector2( -30510.2, 1418.59 )
 
 [node name="Node2D" parent="." index="6" instance=ExtResource( 30 )]
 
-position = Vector2( 54019.2, 1595.24 )
+position = Vector2( 54021.4, 1603.87 )
 _sections_unfolded = [ "Z Index" ]
 
 [node name="GiantButton" type="Polygon2D" parent="." index="7"]
@@ -2328,7 +2328,16 @@ _sections_unfolded = [ "Visibility" ]
 
 position = Vector2( 501.426, 1542.54 )
 
-[node name="catapult" type="KinematicBody2D" parent="." index="12" groups=[
+[node name="box3" parent="." index="12" instance=ExtResource( 29 )]
+
+position = Vector2( 12831.1, 4677.31 )
+_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index", "collision" ]
+
+[node name="CollisionShape2D" parent="box3" index="1"]
+
+_sections_unfolded = [ "Material", "Transform", "Visibility" ]
+
+[node name="catapult" type="KinematicBody2D" parent="." index="13" groups=[
 "catapult",
 ]]
 
@@ -2372,7 +2381,7 @@ rotation = -0.0200053
 shape = SubResource( 16 )
 one_way_collision = true
 
-[node name="Rope" type="Sprite" parent="." index="13"]
+[node name="Rope" type="Sprite" parent="." index="14"]
 
 position = Vector2( 7283.52, 2889.72 )
 rotation = -1.67211
@@ -2391,3 +2400,4 @@ _sections_unfolded = [ "Transform" ]
 
 
 [editable path="CanvasLayer/PauseMenu/MenuOpts"]
+[editable path="box3"]
