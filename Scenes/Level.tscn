@@ -2,18 +2,18 @@
 
 [ext_resource path="res://Scenes/Level.gd" type="Script" id=1]
 [ext_resource path="res://Audio/MachinimaSound.com_-_Summer_Rain.wav" type="AudioStream" id=2]
-[ext_resource path="res://Sprites/Menu/MenuBackground.png" type="Texture" id=3]
-[ext_resource path="res://Sprites/Menu/PauseMenuBackground.png" type="Texture" id=4]
-[ext_resource path="res://Sprites/Menu/Continue.png" type="Texture" id=5]
-[ext_resource path="res://Sprites/Menu/ContinueClick.png" type="Texture" id=6]
-[ext_resource path="res://Sprites/Menu/ContinueHover.png" type="Texture" id=7]
-[ext_resource path="res://Scenes/MenuOpts.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Others/TextThemeCredits.tres" type="Theme" id=9]
+[ext_resource path="res://Sprites/Menu/PauseMenuBackground.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Menu/Continue.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Menu/ContinueClick.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Menu/ContinueHover.png" type="Texture" id=6]
+[ext_resource path="res://Scenes/MenuOpts.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Others/TextThemeCredits.tres" type="Theme" id=8]
+[ext_resource path="res://Sprites/Environment/SkyBG.png" type="Texture" id=9]
 [ext_resource path="res://Animation/Bird.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Scenes/box.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Scenes/FullLevel.tscn" type="PackedScene" id=12]
 
-[node name="Level" type="Node2D" index="0"]
+[node name="Level" type="Node2D"]
 
 pause_mode = 2
 script = ExtResource( 1 )
@@ -47,13 +47,7 @@ autoplay = true
 mix_target = 0
 bus = "Master"
 
-[node name="MenuBackground" type="Sprite" parent="." index="2"]
-
-position = Vector2( 44395.6, -530.567 )
-scale = Vector2( 23.4785, 23.4785 )
-texture = ExtResource( 3 )
-
-[node name="CanvasLayer" type="CanvasLayer" parent="." index="3"]
+[node name="CanvasLayer" type="CanvasLayer" parent="." index="2"]
 
 editor/display_folded = true
 layer = 1
@@ -84,7 +78,7 @@ _sections_unfolded = [ "Anchor", "Margin", "Rect", "Visibility" ]
 [node name="PauseMenuBackground" type="Sprite" parent="CanvasLayer/PauseMenu" index="0"]
 
 position = Vector2( 964.093, 536.649 )
-texture = ExtResource( 4 )
+texture = ExtResource( 3 )
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer/PauseMenu" index="1"]
 
@@ -126,12 +120,12 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 5 )
-texture_pressed = ExtResource( 6 )
-texture_hover = ExtResource( 7 )
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 6 )
 _sections_unfolded = [ "Rect", "Textures" ]
 
-[node name="MenuOpts" parent="CanvasLayer/PauseMenu" index="3" instance=ExtResource( 8 )]
+[node name="MenuOpts" parent="CanvasLayer/PauseMenu" index="3" instance=ExtResource( 7 )]
 
 position = Vector2( 846.071, 546.039 )
 
@@ -151,17 +145,24 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-theme = ExtResource( 9 )
+theme = ExtResource( 8 )
 text = "Pause"
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "Theme" ]
 
+[node name="SkyBG" type="Sprite" parent="." index="3"]
+
+visible = false
+position = Vector2( 26434, 3325.52 )
+scale = Vector2( 97.0396, 97.0396 )
+texture = ExtResource( 9 )
+
 [node name="Bird" parent="." index="4" instance=ExtResource( 10 )]
 
 pause_mode = 1
-position = Vector2( 2750.27, -621.637 )
+position = Vector2( 55416.6, 626.701 )
 _sections_unfolded = [ "Collision", "Pause", "Pickable", "Transform", "Z Index", "collision" ]
 
 [node name="box" parent="." index="5" instance=ExtResource( 11 )]
@@ -170,7 +171,28 @@ position = Vector2( -30510.2, 1418.59 )
 
 [node name="Node2D" parent="." index="6" instance=ExtResource( 12 )]
 
-position = Vector2( 54020.1, 1600.75 )
+position = Vector2( 54020.1, 1614.43 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." index="7"]
+
+layer = 0
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+scroll_offset = Vector2( 0, 0 )
+scroll_base_offset = Vector2( 0, 0 )
+scroll_base_scale = Vector2( 1, 1 )
+scroll_limit_begin = Vector2( 0, 0 )
+scroll_limit_end = Vector2( 0, 0 )
+scroll_ignore_camera_zoom = false
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" index="0"]
+
+motion_scale = Vector2( 0.4, 1 )
+motion_offset = Vector2( 0, 0 )
+motion_mirroring = Vector2( 0, 0 )
+_sections_unfolded = [ "Material", "Motion", "Visibility", "Z Index" ]
 
 [connection signal="button_down" from="CanvasLayer/PauseMenu/Continue" to="." method="_on_Continue_button_down"]
 
