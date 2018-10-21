@@ -24,7 +24,7 @@
 [ext_resource path="res://Prefabs/Fog01.tscn" type="PackedScene" id=22]
 [ext_resource path="res://Sprites/Environment/SkyBG.png" type="Texture" id=23]
 
-[node name="Node2D" type="Node2D" index="0"]
+[node name="Node2D" type="Node2D"]
 
 [node name="01" parent="." index="0" instance=ExtResource( 1 )]
 
