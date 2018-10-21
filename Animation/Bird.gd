@@ -25,6 +25,8 @@ func _ready():
 func endgame():
 	final = true
 	get_parent().get_node("KinematicBody2D/AnimationPlayer").play("TreeFall")
+	get_parent().get_node("InGameTheme").stop()
+	get_parent().get_node("EndingTheme").play()
 
 func _process(delta):
 	
@@ -149,4 +151,13 @@ func _on_Area2D_body_entered(body):
 			pass
 		
 		
+	pass # replace with function body
+
+
+
+
+
+func _on_CollisionShape2D_tree_entered(body):
+	print("aaa")
+	endgame()
 	pass # replace with function body
