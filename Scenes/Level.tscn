@@ -2547,7 +2547,7 @@ position = Vector2( 307.955, 1155.6 )
 [node name="box3" parent="." index="11" instance=ExtResource( 38 )]
 
 editor/display_folded = true
-position = Vector2( 11851.5, 4372.81 )
+position = Vector2( 9813.14, 6055.48 )
 _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index", "collision" ]
 
 [node name="CollisionShape2D" parent="box3" index="1"]
