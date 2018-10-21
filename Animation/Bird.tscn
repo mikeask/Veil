@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://Animation/Bird.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/Characters/bird.png" type="Texture" id=2]
@@ -19,12 +19,7 @@
 [ext_resource path="res://Sprites/Wings/w9.png" type="Texture" id=17]
 [ext_resource path="res://Sprites/Characters/Eye2.png" type="Texture" id=18]
 
-[sub_resource type="CircleShape2D" id=1]
-
-custom_solver_bias = 0.0
-radius = 23.4238
-
-[sub_resource type="SpriteFrames" id=2]
+[sub_resource type="SpriteFrames" id=1]
 
 animations = [ {
 "frames": [ ExtResource( 3 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ) ],
@@ -34,7 +29,7 @@ animations = [ {
 } ]
 _sections_unfolded = [ "Resource" ]
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=2]
 
 length = 4.0
 loop = true
@@ -52,7 +47,7 @@ tracks/0/keys = {
 "values": [ ExtResource( 7 ), ExtResource( 18 ), ExtResource( 7 ), ExtResource( 7 ) ]
 }
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=3]
 
 length = 5.0
 loop = false
@@ -94,8 +89,9 @@ tracks/2/keys = {
 "values": [ false, false ]
 }
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=4]
 
+resource_name = "Falling"
 length = 4.0
 loop = true
 step = 0.1
@@ -280,7 +276,7 @@ tracks/14/keys = {
 "values": [ true ]
 }
 
-[sub_resource type="Animation" id=6]
+[sub_resource type="Animation" id=5]
 
 length = 9.0
 loop = true
@@ -478,7 +474,7 @@ tracks/15/keys = {
 "values": [ false, false ]
 }
 
-[sub_resource type="Animation" id=7]
+[sub_resource type="Animation" id=6]
 
 length = 6.0
 loop = true
@@ -664,7 +660,7 @@ tracks/14/keys = {
 "values": [ false, false ]
 }
 
-[sub_resource type="Animation" id=8]
+[sub_resource type="Animation" id=7]
 
 length = 4.0
 loop = true
@@ -838,10 +834,10 @@ tracks/13/keys = {
 "values": [ true, true ]
 }
 
-[sub_resource type="Animation" id=9]
+[sub_resource type="Animation" id=8]
 
 length = 4.0
-loop = true
+loop = false
 step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("r_leg:position")
@@ -925,7 +921,7 @@ tracks/6/keys = {
 "times": PoolRealArray( 0, 1.2, 4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ 0.0, -27.1454, -6.58654 ]
+"values": [ -6.58654, -27.1454, -6.58654 ]
 }
 tracks/7/type = "value"
 tracks/7/path = NodePath("Body/Tail:position")
@@ -975,22 +971,8 @@ tracks/10/keys = {
 "update": 1,
 "values": [ false, false ]
 }
-tracks/11/type = "method"
-tracks/11/path = NodePath(".")
-tracks/11/interp = 1
-tracks/11/loop_wrap = true
-tracks/11/imported = false
-tracks/11/enabled = true
-tracks/11/keys = {
-"times": PoolRealArray( 4 ),
-"transitions": PoolRealArray( 1 ),
-"values": [ {
-"args": [  ],
-"method": "self.pickup = false"
-} ]
-}
 
-[sub_resource type="Animation" id=10]
+[sub_resource type="Animation" id=9]
 
 length = 5.0
 loop = true
@@ -1188,7 +1170,7 @@ tracks/15/keys = {
 "values": [ false, false ]
 }
 
-[sub_resource type="Animation" id=11]
+[sub_resource type="Animation" id=10]
 
 length = 5.0
 loop = true
@@ -1374,7 +1356,7 @@ tracks/14/keys = {
 "values": [ false, false ]
 }
 
-[sub_resource type="Animation" id=12]
+[sub_resource type="Animation" id=11]
 
 length = 2.5
 loop = true
@@ -1571,12 +1553,12 @@ _sections_unfolded = [ "Collision", "Pickable", "Transform", "Z Index", "collisi
 
 [node name="Body" type="Sprite" parent="." index="0"]
 
-position = Vector2( -9.07874, -108.841 )
-rotation = 0.0254561
+position = Vector2( -10.296, -90.8936 )
+rotation = 0.565735
 scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 2 )
 offset = Vector2( 23.1897, -599.485 )
-_sections_unfolded = [ "Transform", "Z Index" ]
+_sections_unfolded = [ "Transform" ]
 
 [node name="Wing01" type="Sprite" parent="Body" index="0"]
 
@@ -1604,21 +1586,22 @@ _sections_unfolded = [ "Offset", "Transform", "Visibility" ]
 [node name="Tail" type="Sprite" parent="Body" index="2"]
 
 position = Vector2( -490.961, -645.75 )
+rotation = -0.178043
 texture = ExtResource( 4 )
 offset = Vector2( -351.537, 52.0476 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="Head" type="Sprite" parent="Body" index="3"]
 
-position = Vector2( 346.275, -833.268 )
-rotation = 0.0320781
+position = Vector2( 388.78, -889.292 )
+rotation = 0.205293
+z_index = 1
 texture = ExtResource( 5 )
 offset = Vector2( 166.636, -322.659 )
 _sections_unfolded = [ "Transform", "Z Index" ]
 
 [node name="AngryEye" type="Sprite" parent="Body/Head" index="0"]
 
-visible = false
 position = Vector2( 397.792, -416.336 )
 rotation = -0.0575343
 scale = Vector2( 1.49211, 1.49211 )
@@ -1628,39 +1611,18 @@ _sections_unfolded = [ "Visibility", "Z Index" ]
 
 [node name="Eye" type="Sprite" parent="Body/Head" index="1"]
 
+visible = false
 position = Vector2( 307.329, -359.249 )
 rotation = -0.0575343
 scale = Vector2( 1.49211, 1.49211 )
 texture = ExtResource( 7 )
 _sections_unfolded = [ "Visibility" ]
 
-[node name="Position2D" type="Position2D" parent="Body/Head" index="2"]
-
-position = Vector2( 699.758, -257.151 )
-
-[node name="Area2D" type="Area2D" parent="Body/Head/Position2D" index="0"]
-
-position = Vector2( -941.602, 1551.85 )
-rotation = -0.0575343
-scale = Vector2( 5, 5 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-
-[node name="bico" type="CollisionShape2D" parent="Body/Head/Position2D/Area2D" index="0"]
-
-position = Vector2( 216.044, -300.377 )
-shape = SubResource( 1 )
-
 [node name="l_leg" type="Sprite" parent="." index="1"]
 
 editor/display_folded = true
-position = Vector2( 28.8149, -75.5725 )
-rotation = -0.0917316
+position = Vector2( 39.2725, -62.1498 )
+rotation = 0.686267
 scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 8 )
 offset = Vector2( 24.1047, 133.524 )
@@ -1677,8 +1639,8 @@ _sections_unfolded = [ "Transform" ]
 [node name="r_leg" type="Sprite" parent="." index="2"]
 
 editor/display_folded = true
-position = Vector2( -21.7945, -64.3028 )
-rotation = 0.209473
+position = Vector2( -7.06167, -61.8473 )
+rotation = -0.0680966
 scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 8 )
 offset = Vector2( 29.4708, 122.546 )
@@ -1697,7 +1659,7 @@ _sections_unfolded = [ "Transform" ]
 visible = false
 position = Vector2( 185.314, -275.925 )
 scale = Vector2( 3.71757, 3.71757 )
-frames = SubResource( 2 )
+frames = SubResource( 1 )
 animation = "default"
 frame = 5
 flip_h = true
@@ -1710,7 +1672,7 @@ autoplay = "Blink"
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 1.0
-anims/Blink = SubResource( 3 )
+anims/Blink = SubResource( 2 )
 blend_times = [  ]
 
 [node name="BirdAnimation" type="AnimationPlayer" parent="." index="5"]
@@ -1720,15 +1682,15 @@ autoplay = "Idle"
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 4.0
-anims/Eating = SubResource( 4 )
-anims/Falling = SubResource( 5 )
-anims/Flying = SubResource( 6 )
-anims/Idle = SubResource( 7 )
-anims/Jump = SubResource( 8 )
-anims/Pickup = SubResource( 9 )
-anims/Pulling = SubResource( 10 )
-anims/Pushing = SubResource( 11 )
-anims/Walk = SubResource( 12 )
+anims/Eating = SubResource( 3 )
+anims/Falling = SubResource( 4 )
+anims/Flying = SubResource( 5 )
+anims/Idle = SubResource( 6 )
+anims/Jump = SubResource( 7 )
+anims/Pickup = SubResource( 8 )
+anims/Pulling = SubResource( 9 )
+anims/Pushing = SubResource( 10 )
+anims/Walk = SubResource( 11 )
 blend_times = [  ]
 _sections_unfolded = [ "Pause", "Playback Options" ]
 
@@ -1765,28 +1727,34 @@ _sections_unfolded = [ "Smoothing" ]
 
 [node name="gancho" type="RayCast2D" parent="." index="8"]
 
-position = Vector2( 303.301, -215.853 )
+position = Vector2( 314.381, -267.931 )
 enabled = true
 exclude_parent = true
-cast_to = Vector2( 3, 0 )
+cast_to = Vector2( 5, 0 )
 collision_mask = 1
 
-[node name="pe1" type="RayCast2D" parent="." index="9"]
+[node name="gancho2" type="RayCast2D" parent="." index="9"]
+
+position = Vector2( 279.651, -323.823 )
+enabled = true
+exclude_parent = true
+cast_to = Vector2( 50, -20 )
+collision_mask = 1
+
+[node name="pe1" type="RayCast2D" parent="." index="10"]
 
 position = Vector2( -38.4717, -22.819 )
 enabled = true
 exclude_parent = true
-cast_to = Vector2( 0, 10 )
+cast_to = Vector2( 0, 30 )
 collision_mask = 1
 
-[node name="pe2" type="RayCast2D" parent="." index="10"]
+[node name="pe2" type="RayCast2D" parent="." index="11"]
 
 position = Vector2( 45.3067, -22.2999 )
 enabled = true
 exclude_parent = true
-cast_to = Vector2( 0, 10 )
+cast_to = Vector2( 0, 30 )
 collision_mask = 1
-
-[connection signal="body_entered" from="Body/Head/Position2D/Area2D" to="." method="_on_Area2D_body_entered"]
 
 

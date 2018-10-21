@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 const vel_andar = 600
-const gravidade = 60
+const gravidade = 90
 const vel_pulo = 1600
 const normal = Vector2(0,-1)
 
@@ -46,20 +46,13 @@ func _process(delta):
 				
 			if(Input.is_action_pressed("pushi") ):
 				novaAnimacao = "Pushing"
-				if get_node("gancho").is_colliding():
-					if get_node("gancho").get_collider().is_in_group("box"):
+				if get_node("gancho").is_colliding() or get_node("gancho2").is_colliding():
+					if get_node("gancho").get_collider().is_in_group("box") or get_node("gancho2").get_collider().is_in_group("box"):
 						if direcao == "direita":
 					 		get_node("gancho").get_collider().vel_linear.x = 300
 						if direcao == "esquerda":
 					 		get_node("gancho").get_collider().vel_linear.x = -300
 					pass
-			if(Input.is_action_pressed("pull")):
-				novaAnimacao = "Pulling"
-				if get_node("gancho").is_colliding():
-					if get_node("gancho").get_collider().is_in_group("box"):
-						#get_node("gancho").get_collider().move_and_slide(Vector2(-1,-2)*delta*100, normal)
-						pass
-				pass
 		else:
 			if(vel_linear.y > 0 and !get_node("pe2").is_colliding()and !get_node("pe1").is_colliding()):
 				novaAnimacao = "Falling"

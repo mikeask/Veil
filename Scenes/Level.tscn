@@ -1746,7 +1746,7 @@ tracks/12/keys = {
 custom_solver_bias = 0.0
 extents = Vector2( 133.531, 56.9409 )
 
-[node name="Level" type="Node2D"]
+[node name="Level" type="Node2D" index="0"]
 
 pause_mode = 2
 script = ExtResource( 1 )
@@ -1897,7 +1897,7 @@ texture = ExtResource( 9 )
 ]]
 
 pause_mode = 1
-position = Vector2( 149434, 16004.8 )
+position = Vector2( -1140.68, 1260.42 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -1907,8 +1907,8 @@ _sections_unfolded = [ "Collision", "Pause", "Pickable", "Transform", "Z Index",
 
 [node name="Body" type="Sprite" parent="Bird" index="0"]
 
-position = Vector2( -9.07874, -97.79 )
-rotation = 0.159951
+position = Vector2( -10.296, -90.8936 )
+rotation = 0.565735
 scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 11 )
 offset = Vector2( 23.1897, -599.485 )
@@ -1940,7 +1940,7 @@ _sections_unfolded = [ "Offset", "Transform", "Visibility" ]
 [node name="Tail" type="Sprite" parent="Bird/Body" index="2"]
 
 position = Vector2( -490.961, -645.75 )
-rotation = -0.195638
+rotation = -0.178043
 texture = ExtResource( 13 )
 offset = Vector2( -351.537, 52.0476 )
 _sections_unfolded = [ "Transform" ]
@@ -1948,14 +1948,13 @@ _sections_unfolded = [ "Transform" ]
 [node name="Head" type="Sprite" parent="Bird/Body" index="3"]
 
 position = Vector2( 388.78, -889.292 )
-rotation = 0.0688637
+rotation = 0.205293
 texture = ExtResource( 14 )
 offset = Vector2( 166.636, -322.659 )
 _sections_unfolded = [ "Transform", "Z Index" ]
 
 [node name="AngryEye" type="Sprite" parent="Bird/Body/Head" index="0"]
 
-visible = false
 position = Vector2( 397.792, -416.336 )
 rotation = -0.0575343
 scale = Vector2( 1.49211, 1.49211 )
@@ -1965,6 +1964,7 @@ _sections_unfolded = [ "Visibility", "Z Index" ]
 
 [node name="Eye" type="Sprite" parent="Bird/Body/Head" index="1"]
 
+visible = false
 position = Vector2( 307.329, -359.249 )
 rotation = -0.0575343
 scale = Vector2( 1.49211, 1.49211 )
@@ -1996,8 +1996,8 @@ shape = SubResource( 1 )
 [node name="l_leg" type="Sprite" parent="Bird" index="1"]
 
 editor/display_folded = true
-position = Vector2( 27.2433, -80.6803 )
-rotation = -0.248109
+position = Vector2( 39.2725, -62.1498 )
+rotation = 0.686267
 scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 17 )
 offset = Vector2( 24.1047, 133.524 )
@@ -2014,8 +2014,8 @@ _sections_unfolded = [ "Transform" ]
 [node name="r_leg" type="Sprite" parent="Bird" index="2"]
 
 editor/display_folded = true
-position = Vector2( -19.8472, -71.2629 )
-rotation = -0.411857
+position = Vector2( -7.06167, -61.8473 )
+rotation = -0.0680966
 scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 17 )
 offset = Vector2( 29.4708, 122.546 )
@@ -2132,7 +2132,15 @@ exclude_parent = true
 cast_to = Vector2( 3, 0 )
 collision_mask = 1
 
-[node name="pe1" type="RayCast2D" parent="Bird" index="9"]
+[node name="gancho2" type="RayCast2D" parent="Bird" index="9"]
+
+position = Vector2( 276.808, -320.615 )
+enabled = true
+exclude_parent = true
+cast_to = Vector2( 50, -10 )
+collision_mask = 1
+
+[node name="pe1" type="RayCast2D" parent="Bird" index="10"]
 
 position = Vector2( -38.4717, -22.819 )
 enabled = true
@@ -2140,7 +2148,7 @@ exclude_parent = true
 cast_to = Vector2( 0, 10 )
 collision_mask = 1
 
-[node name="pe2" type="RayCast2D" parent="Bird" index="10"]
+[node name="pe2" type="RayCast2D" parent="Bird" index="11"]
 
 position = Vector2( 45.3067, -22.2999 )
 enabled = true
@@ -2154,7 +2162,7 @@ position = Vector2( -30510.2, 1418.59 )
 
 [node name="Node2D" parent="." index="6" instance=ExtResource( 30 )]
 
-position = Vector2( 53997.2, 1644.52 )
+position = Vector2( 53999.5, 1648.69 )
 _sections_unfolded = [ "Z Index" ]
 
 [node name="GiantButton" type="Polygon2D" parent="." index="7"]
@@ -2237,6 +2245,10 @@ position = Vector2( 157516, 13838 )
 scale = Vector2( 3.17889, 3.10709 )
 texture = ExtResource( 35 )
 _sections_unfolded = [ "Visibility" ]
+
+[node name="box2" parent="." index="11" instance=ExtResource( 29 )]
+
+position = Vector2( 501.426, 1542.54 )
 
 [connection signal="button_down" from="CanvasLayer/PauseMenu/Continue" to="." method="_on_Continue_button_down"]
 
