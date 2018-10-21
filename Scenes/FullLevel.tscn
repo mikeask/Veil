@@ -1,27 +1,26 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://Scenes/FullLevelPoly2d.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Prefabs/Vegetation02.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Prefabs/Vegetation03.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Prefabs/Vegetation01.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Prefabs/Tree04.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Sprites/Environment/Box.png" type="Texture" id=6]
-[ext_resource path="res://Prefabs/Vegetation05.tscn" type="PackedScene" id=7]
-[ext_resource path="res://Prefabs/Vegetation05_2.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Sprites/Environment/Tree01.png" type="Texture" id=9]
-[ext_resource path="res://Sprites/Environment/Tree05.png" type="Texture" id=10]
-[ext_resource path="res://Sprites/Environment/Vine02.png" type="Texture" id=11]
-[ext_resource path="res://Sprites/Environment/Vine01.png" type="Texture" id=12]
-[ext_resource path="res://Sprites/Environment/Rock01.png" type="Texture" id=13]
-[ext_resource path="res://Sprites/Environment/Tree02.png" type="Texture" id=14]
-[ext_resource path="res://Sprites/Environment/Tree03.png" type="Texture" id=15]
-[ext_resource path="res://Sprites/Environment/Vegetation04.png" type="Texture" id=16]
-[ext_resource path="res://Sprites/Environment/Vegetation01.png" type="Texture" id=17]
-[ext_resource path="res://Sprites/Environment/BackBushes.png" type="Texture" id=18]
-[ext_resource path="res://Prefabs/Fog01.tscn" type="PackedScene" id=19]
-[ext_resource path="res://Sprites/Environment/SkyBG.png" type="Texture" id=20]
-[ext_resource path="res://Sprites/Environment/Tree01white.png" type="Texture" id=21]
-[ext_resource path="res://Sprites/Environment/blurTree.png" type="Texture" id=22]
+[ext_resource path="res://Sprites/Environment/Box.png" type="Texture" id=5]
+[ext_resource path="res://Prefabs/Vegetation05.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Prefabs/Vegetation05_2.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Sprites/Environment/Tree01.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/Environment/Tree05.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/Environment/Vine02.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/Environment/Vine01.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/Environment/Rock01.png" type="Texture" id=12]
+[ext_resource path="res://Sprites/Environment/Tree02.png" type="Texture" id=13]
+[ext_resource path="res://Sprites/Environment/Tree03.png" type="Texture" id=14]
+[ext_resource path="res://Sprites/Environment/Vegetation04.png" type="Texture" id=15]
+[ext_resource path="res://Sprites/Environment/Vegetation01.png" type="Texture" id=16]
+[ext_resource path="res://Sprites/Environment/BackBushes.png" type="Texture" id=17]
+[ext_resource path="res://Prefabs/Fog01.tscn" type="PackedScene" id=18]
+[ext_resource path="res://Sprites/Environment/SkyBG.png" type="Texture" id=19]
+[ext_resource path="res://Sprites/Environment/Tree01white.png" type="Texture" id=20]
+[ext_resource path="res://Sprites/Environment/blurTree.png" type="Texture" id=21]
 
 [node name="Node2D" type="Node2D"]
 
@@ -39,9 +38,9 @@ _sections_unfolded = [ "Invert", "Material", "Pause", "Texture", "Transform", "V
 
 [node name="02" type="Polygon2D" parent="." index="1"]
 
-position = Vector2( -387193, -4836.54 )
+position = Vector2( -449923, -14207.9 )
 scale = Vector2( 24.5838, 1 )
-polygon = PoolVector2Array( 15287.5, 6357.84, 15256.1, 17397.3, 15264.9, 40895, 19423, 40679.6, 19434.9, 20192.4, 19399.2, 17559.3, 19354.1, 15994.7, 19275, 15193.3, 19208.6, 15040.2, 19078.2, 15031.6, 19064, 14653.6, 19056.9, 14653.9, 19051.9, 14962.5, 18992.6, 14962.5, 18899.7, 14999.6, 18760.6, 15024.3, 18695.3, 14987.2, 18687.8, 14667.3, 18678.9, 14667.6, 18662.9, 15004.2, 18421.8, 14940.2, 18222.4, 18014.5, 18081.8, 19839.9, 17927.9, 20808.8, 17921.5, 20992.8, 17926.6, 22320.4, 17917.6, 22433.9, 17632.3, 22337.8, 17621.7, 22126.5, 17636.3, 15708.8, 17648.1, 15550, 17769.1, 15612.7, 17773, 15364.4, 17775.3, 11385.5, 17770.5, 11319.2, 17697.1, 11481.6, 17691.7, 11281.6, 17693.2, 4084.04, 17686.7, 3920.86, 17634.5, 3876.29, 17626.8, 3987.97, 17630.5, 11021.7, 17626.8, 11193.4, 17466.6, 11097.3, 17458.9, 10992.8, 17458.8, 7638.72, 17454.1, 7585.61, 17407.6, 7704.64, 17400.1, 7830.87, 17417.6, 10892.5, 17408, 11001.3, 17354.7, 11158.5, 17286.8, 11097.3, 17200.5, 9138.16, 17080.6, 8065.36, 16999.7, 7557.95, 16891.4, 7515.67, 16497.1, 7457.93, 16449.2, 7401.83, 16443, 10794.8, 16434.9, 11193.4, 16422.3, 11261.6, 16234.6, 11205.7, 16180.9, 11097.3, 16179.3, 10591.6, 16171.7, 10424.1, 16155.8, 10381.4, 16135.4, 10293.8, 16132.9, 10188.6, 16137.8, 9595.3, 16136, 9390.44, 16125.1, 9052.26, 16108.9, 8804.99, 16091.6, 8569.56, 16071.4, 8503.37, 16052.3, 8491.43, 16030.1, 8500.51, 16008, 8527.73, 15985.7, 8617.83, 15977.6, 8695.52, 15894.3, 9789.27, 15821.3, 10713, 15810.1, 10784.5, 15702.9, 10670.8, 15661.3, 10726.6, 15617.4, 10763.9, 15569.7, 10615, 15527.7, 10547.6, 15519.7, 10347.8, 15506.1, 8567.84, 15497.8, 8158.41, 15490, 6251.19, 15478.3, 6038.88 )
+polygon = PoolVector2Array( 17874.6, 40783.3, 19423, 40679.6, 19434.9, 20192.4, 19399.2, 17559.3, 19354.1, 15994.7, 19275, 15193.3, 19208.6, 15040.2, 19078.2, 15031.6, 19064, 14653.6, 19056.9, 14653.9, 19051.9, 14962.5, 18992.6, 14962.5, 18899.7, 14999.6, 18760.6, 15024.3, 18695.3, 14987.2, 18687.8, 14667.3, 18678.9, 14667.6, 18662.9, 15004.2, 18421.8, 14940.2, 18412.2, 15001.8, 18226.6, 17793.9, 18161.5, 18845, 18094.5, 19488.6, 18036.8, 19488.6, 18003.9, 19350.4, 17976.4, 19100.2, 17941.6, 18410.6, 17906.7, 17500.8, 17885.5, 16652.2, 17866.5, 15727.8, 17841.3, 15727.8 )
 uv = PoolVector2Array(  )
 color = Color( 0, 0, 0, 1 )
 vertex_colors = PoolColorArray(  )
@@ -57,7 +56,7 @@ _sections_unfolded = [ "Invert", "Material", "Pause", "Texture", "Transform", "V
 
 [node name="03" type="Polygon2D" parent="." index="2"]
 
-position = Vector2( -30668.2, -4562.89 )
+position = Vector2( -99648.3, -19262 )
 polygon = PoolVector2Array( 83895.2, 887.774, 83895.2, 6369.47, 84176.3, 8337.26, 83988.9, 9836.53, 83660.7, 11101.5, 83702.3, 13053.1, 83402.1, 13048.8, 83069.5, 13093.2, 82655.5, 13026.6, 82322.8, 13122.7, 82108.5, 13255.8, 82095.5, 13356.3, 82367.2, 13270.6, 82685.1, 13233.6, 83032.5, 13366.7, 83357.8, 13381.5, 83702.3, 13432.1, 83779.2, 14884.4, 83945.9, 16157.7, 84082.4, 16703.4, 83665.3, 17127.9, 83660.7, 17581, 83878.7, 17772.1, 84176.3, 17848.2, 85881.5, 17568.9, 87596.5, 17051.8, 89361.6, 16266.2, 91063.6, 15271.4, 94015.2, 13537.8, 96217.3, 12694.5, 96685.8, 11991.7, 96123.6, 1496.85, 95701, 1286.55, 84255.7, 697.46 )
 uv = PoolVector2Array(  )
 color = Color( 0, 0, 0, 1 )
@@ -73,7 +72,7 @@ invert_border = 100.0
 
 [node name="04" type="Polygon2D" parent="." index="3"]
 
-position = Vector2( -33388.6, -6554.37 )
+position = Vector2( -46645.8, -5088.43 )
 polygon = PoolVector2Array( 37668.3, -8749.16, 38556.5, 7150.88, 38860.3, 7429.36, 39493.2, 7657.21, 42135.6, 7612.57, 42531.3, 7682.53, 42799.3, 7562.29, 42911, 7302.78, 43249.8, -8833.72 )
 uv = PoolVector2Array(  )
 color = Color( 0, 0, 0, 1 )
@@ -89,7 +88,7 @@ invert_border = 100.0
 
 [node name="05" type="Polygon2D" parent="." index="4"]
 
-position = Vector2( -29271.9, -7532.38 )
+position = Vector2( -42529.1, -6066.44 )
 polygon = PoolVector2Array( 39090.8, -7813.43, 39629.8, 6230.1, 39781.7, 6660.49, 40262.7, 6837.71, 42161.5, 6761.76, 42478.1, 6596.44, 42617.2, 6204.79, 43403.8, -7771.15 )
 uv = PoolVector2Array(  )
 color = Color( 0, 0, 0, 1 )
@@ -105,7 +104,7 @@ invert_border = 100.0
 
 [node name="06" type="Polygon2D" parent="." index="5"]
 
-position = Vector2( -25428.1, -9352.96 )
+position = Vector2( -38685.3, -7887.02 )
 polygon = PoolVector2Array( 39559.9, -5866, 39561.4, 7370.41, 39590.8, 7683.5, 39795.9, 7851.92, 40055.2, 7913.66, 40549.7, 7773.16, 41515.1, 7451.36, 42586.3, 7259.29, 42846.6, 7006.95, 42993.7, 6716.05, 42308.4, -5866 )
 uv = PoolVector2Array(  )
 color = Color( 0, 0, 0, 1 )
@@ -160,32 +159,35 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Col02" type="CollisionPolygon2D" parent="StaticBody2D" index="1"]
 
-position = Vector2( -432474, -15404.5 )
+position = Vector2( -495192, -24767.9 )
 scale = Vector2( 24.5838, 1 )
 build_mode = 0
-polygon = PoolVector2Array( 15287.5, 6357.84, 15256.1, 17397.3, 15264.9, 40895, 19423, 40679.6, 19434.9, 20192.4, 19399.2, 17559.3, 19354.1, 15994.7, 19275, 15193.3, 19208.6, 15040.2, 19078.2, 15031.6, 19064, 14653.6, 19056.9, 14653.9, 19051.9, 14962.5, 18992.6, 14962.5, 18899.7, 14999.6, 18760.6, 15024.3, 18695.3, 14987.2, 18687.8, 14667.3, 18678.9, 14667.6, 18662.9, 15004.2, 18421.8, 14940.2, 18222.4, 18014.5, 18081.8, 19839.9, 17927.9, 20808.8, 17921.5, 20992.8, 17926.6, 22320.4, 17917.6, 22433.9, 17632.3, 22337.8, 17621.7, 22126.5, 17636.3, 15708.8, 17648.1, 15550, 17769.1, 15612.7, 17773, 15364.4, 17775.3, 11385.5, 17770.5, 11319.2, 17697.1, 11481.6, 17691.7, 11281.6, 17693.2, 4084.04, 17686.7, 3920.86, 17634.5, 3876.29, 17626.8, 3987.97, 17630.5, 11021.7, 17626.8, 11193.4, 17466.6, 11097.3, 17458.9, 10992.8, 17458.8, 7638.72, 17454.1, 7585.61, 17407.6, 7704.64, 17400.1, 7830.87, 17417.6, 10892.5, 17408, 11001.3, 17354.7, 11158.5, 17286.8, 11097.3, 17200.5, 9138.16, 17080.6, 8065.36, 16999.7, 7557.95, 16891.4, 7515.67, 16497.1, 7457.93, 16449.2, 7401.83, 16443, 10794.8, 16434.9, 11193.4, 16422.3, 11261.6, 16234.6, 11205.7, 16180.9, 11097.3, 16179.3, 10591.6, 16171.7, 10424.1, 16155.8, 10381.4, 16135.4, 10293.8, 16132.9, 10188.6, 16137.8, 9595.3, 16136, 9390.44, 16125.1, 9052.26, 16108.9, 8804.99, 16091.6, 8569.56, 16071.4, 8503.37, 16052.3, 8491.43, 16030.1, 8500.51, 16008, 8527.73, 15985.7, 8617.83, 15977.6, 8695.52, 15894.3, 9789.27, 15821.3, 10713, 15810.1, 10784.5, 15702.9, 10670.8, 15661.3, 10726.6, 15617.4, 10763.9, 15569.7, 10615, 15527.7, 10547.6, 15519.7, 10347.8, 15506.1, 8567.84, 15497.8, 8158.41, 15490, 6251.19, 15478.3, 6038.88 )
+polygon = PoolVector2Array( 17874.6, 40783.3, 19423, 40679.6, 19434.9, 20192.4, 19399.2, 17559.3, 19354.1, 15994.7, 19275, 15193.3, 19208.6, 15040.2, 19078.6, 14925, 18695.1, 14933.8, 18421.8, 14940.2, 18412.2, 15001.8, 18226.6, 17793.9, 18161.5, 18845, 18094.5, 19488.6, 18036.8, 19488.6, 18003.9, 19350.4, 17976.4, 19100.2, 17941.6, 18410.6, 17906.7, 17500.8, 17885.5, 16652.2, 17866.5, 15727.8, 17841.3, 15727.8 )
 
 [node name="Col03" type="CollisionPolygon2D" parent="StaticBody2D" index="2"]
 
-position = Vector2( -75952.1, -15129.1 )
+position = Vector2( -144938, -29849.8 )
 build_mode = 0
 polygon = PoolVector2Array( 83895.2, 887.774, 83895.2, 6369.47, 84176.3, 8337.26, 83988.9, 9836.53, 83660.7, 11101.5, 83702.3, 13053.1, 83402.1, 13048.8, 83069.5, 13093.2, 82655.5, 13026.6, 82322.8, 13122.7, 82108.5, 13255.8, 82095.5, 13356.3, 82367.2, 13270.6, 82685.1, 13233.6, 83032.5, 13366.7, 83357.8, 13381.5, 83702.3, 13432.1, 83779.2, 14884.4, 83945.9, 16157.7, 84082.4, 16703.4, 83665.3, 17127.9, 83660.7, 17581, 83878.7, 17772.1, 84176.3, 17848.2, 85881.5, 17568.9, 87596.5, 17051.8, 89361.6, 16266.2, 91063.6, 15271.4, 94015.2, 13537.8, 96217.3, 12694.5, 96685.8, 11991.7, 96123.6, 1496.85, 95701, 1286.55, 84255.7, 697.46 )
 
 [node name="Col04" type="CollisionPolygon2D" parent="StaticBody2D" index="3"]
 
-position = Vector2( -78660.1, -17114.9 )
+position = Vector2( -91918.7, -15650.4 )
+scale = Vector2( 1, 1 )
 build_mode = 0
 polygon = PoolVector2Array( 37668.3, -8749.16, 38556.5, 7150.88, 38860.3, 7429.36, 39493.2, 7657.21, 42135.6, 7612.57, 42531.3, 7682.53, 42799.3, 7562.29, 42911, 7302.78, 43249.8, -8833.72 )
 
 [node name="Col05" type="CollisionPolygon2D" parent="StaticBody2D" index="4"]
 
-position = Vector2( -74551.9, -18101.8 )
+position = Vector2( -87810.5, -16637.3 )
+scale = Vector2( 1, 1 )
 build_mode = 0
 polygon = PoolVector2Array( 39090.8, -7813.43, 39629.8, 6230.1, 39781.7, 6660.49, 40262.7, 6837.71, 42161.5, 6761.76, 42478.1, 6596.44, 42617.2, 6204.79, 43403.8, -7771.15 )
 
 [node name="Col06" type="CollisionPolygon2D" parent="StaticBody2D" index="5"]
 
-position = Vector2( -70718.1, -19917.1 )
+position = Vector2( -83976.7, -18452.6 )
+scale = Vector2( 1, 1 )
 build_mode = 0
 polygon = PoolVector2Array( 39559.9, -5866, 39561.4, 7370.41, 39590.8, 7683.5, 39795.9, 7851.92, 40055.2, 7913.66, 40549.7, 7773.16, 41515.1, 7451.36, 42586.3, 7259.29, 42846.6, 7006.95, 42993.7, 6716.05, 42308.4, -5866 )
 
@@ -199,7 +201,6 @@ polygon = PoolVector2Array( -1502.3, -525.654, -1485.9, -192.641, -1485.12, -187
 
 [node name="Mid" type="ParallaxLayer" parent="." index="8"]
 
-editor/display_folded = true
 motion_scale = Vector2( 1, 1 )
 motion_offset = Vector2( 0, 0 )
 motion_mirroring = Vector2( 0, 0 )
@@ -207,18 +208,18 @@ _sections_unfolded = [ "Material", "Motion", "Transform", "Visibility", "Z Index
 
 [node name="Vegetation02" parent="Mid" index="0" instance=ExtResource( 2 )]
 
-position = Vector2( -51368, 938.401 )
+position = Vector2( -50760.9, 618.167 )
 rotation = -0.130699
 
 [node name="Vegetation10" parent="Mid" index="1" instance=ExtResource( 2 )]
 
-position = Vector2( -48836.3, 4862.54 )
+position = Vector2( -48958.9, 3692.56 )
 rotation = -0.130699
 
 [node name="Vegetation32" parent="Mid" index="2" instance=ExtResource( 2 )]
 
 modulate = Color( 1, 1, 1, 1 )
-position = Vector2( -49320.2, 4471.5 )
+position = Vector2( -49442.8, 3301.52 )
 rotation = -0.130699
 scale = Vector2( 3.73818, 3.73818 )
 
@@ -229,35 +230,35 @@ rotation = -0.130699
 
 [node name="Vegetation12" parent="Mid" index="4" instance=ExtResource( 2 )]
 
-position = Vector2( -27838, 1818.22 )
+position = Vector2( -27969.1, 1326.77 )
 rotation = -0.130699
 
 [node name="Vegetation13" parent="Mid" index="5" instance=ExtResource( 2 )]
 
 modulate = Color( 1, 1, 1, 1 )
-position = Vector2( -27380.8, 1663.76 )
+position = Vector2( -27511.9, 1172.3 )
 rotation = -0.130699
 scale = Vector2( 3.14324, 3.14324 )
 
 [node name="Vegetation14" parent="Mid" index="6" instance=ExtResource( 2 )]
 
 modulate = Color( 1, 1, 1, 1 )
-position = Vector2( -16453.7, -341.402 )
+position = Vector2( -15813.9, -2740.51 )
 rotation = -0.130699
 scale = Vector2( 3.14324, 3.14324 )
 
 [node name="Vegetation15" parent="Mid" index="7" instance=ExtResource( 2 )]
 
 modulate = Color( 1, 1, 1, 1 )
-position = Vector2( -4751.36, 5701.53 )
-rotation = -0.130699
+position = Vector2( -7825.64, 4676.77 )
+rotation = 1.70801
 scale = Vector2( 3.79413, 3.79413 )
 
 [node name="Vegetation24" parent="Mid" index="8" instance=ExtResource( 2 )]
 
 modulate = Color( 1, 1, 1, 1 )
 self_modulate = Color( 1, 1, 1, 0.723765 )
-position = Vector2( -5231.75, 6141.22 )
+position = Vector2( -8478.88, 4388.02 )
 rotation = -0.130699
 scale = Vector2( 2.7654, 2.7654 )
 
@@ -265,7 +266,7 @@ scale = Vector2( 2.7654, 2.7654 )
 
 modulate = Color( 1, 1, 1, 1 )
 self_modulate = Color( 1, 1, 1, 0.723765 )
-position = Vector2( 19936, 8844.78 )
+position = Vector2( 7150.89, 642.059 )
 rotation = -0.130699
 scale = Vector2( 2.7654, 2.7654 )
 
@@ -273,7 +274,7 @@ scale = Vector2( 2.7654, 2.7654 )
 
 modulate = Color( 1, 1, 1, 1 )
 self_modulate = Color( 1, 1, 1, 0.723765 )
-position = Vector2( 42954.2, 7105.64 )
+position = Vector2( -36961.1, 2735.36 )
 rotation = -0.130699
 scale = Vector2( 2.7654, 2.7654 )
 
@@ -281,1110 +282,918 @@ scale = Vector2( 2.7654, 2.7654 )
 
 modulate = Color( 1, 1, 1, 1 )
 self_modulate = Color( 1, 1, 1, 0.723765 )
-position = Vector2( 42692, 10179.8 )
-rotation = -0.130699
+position = Vector2( -36203, 1715.14 )
+rotation = -2.70165
 scale = Vector2( 2.7654, 2.7654 )
 
-[node name="Vegetation28" parent="Mid" index="12" instance=ExtResource( 2 )]
+[node name="Vegetation29" parent="Mid" index="12" instance=ExtResource( 2 )]
 
 modulate = Color( 1, 1, 1, 1 )
 self_modulate = Color( 1, 1, 1, 0.723765 )
-position = Vector2( 57842, 5791.22 )
+position = Vector2( 3124.31, 444.223 )
 rotation = -0.130699
 scale = Vector2( 2.7654, 2.7654 )
 
-[node name="Vegetation29" parent="Mid" index="13" instance=ExtResource( 2 )]
+[node name="Vegetation30" parent="Mid" index="13" instance=ExtResource( 2 )]
 
 modulate = Color( 1, 1, 1, 1 )
 self_modulate = Color( 1, 1, 1, 0.723765 )
-position = Vector2( 67781.1, 9763.25 )
+position = Vector2( 21480.4, -8388.44 )
 rotation = -0.130699
 scale = Vector2( 2.7654, 2.7654 )
 
-[node name="Vegetation30" parent="Mid" index="14" instance=ExtResource( 2 )]
+[node name="Vegetation31" parent="Mid" index="14" instance=ExtResource( 2 )]
 
 modulate = Color( 1, 1, 1, 1 )
 self_modulate = Color( 1, 1, 1, 0.723765 )
-position = Vector2( 86137.2, 930.589 )
+position = Vector2( 21480.4, -8388.44 )
 rotation = -0.130699
 scale = Vector2( 2.7654, 2.7654 )
 
-[node name="Vegetation31" parent="Mid" index="15" instance=ExtResource( 2 )]
-
-modulate = Color( 1, 1, 1, 1 )
-self_modulate = Color( 1, 1, 1, 0.723765 )
-position = Vector2( 86137.2, 930.589 )
-rotation = -0.130699
-scale = Vector2( 2.7654, 2.7654 )
-
-[node name="Vegetation16" parent="Mid" index="16" instance=ExtResource( 2 )]
+[node name="Vegetation16" parent="Mid" index="15" instance=ExtResource( 2 )]
 
 modulate = Color( 1, 1, 1, 1 )
 position = Vector2( 3238.84, 1818.61 )
 rotation = -0.130699
 scale = Vector2( 3.14324, 3.14324 )
 
-[node name="Vegetation17" parent="Mid" index="17" instance=ExtResource( 2 )]
+[node name="Vegetation17" parent="Mid" index="16" instance=ExtResource( 2 )]
 
 modulate = Color( 1, 1, 1, 1 )
-position = Vector2( 12329.7, 5585.42 )
+position = Vector2( 19772.9, 749.865 )
 rotation = -0.130699
 scale = Vector2( 4.1236, 4.1236 )
 
-[node name="Vegetation18" parent="Mid" index="18" instance=ExtResource( 2 )]
+[node name="Vegetation18" parent="Mid" index="17" instance=ExtResource( 2 )]
 
 modulate = Color( 1, 1, 1, 1 )
-position = Vector2( 30505.9, 8045.58 )
+position = Vector2( -1680.63, 3321.43 )
 rotation = -0.130699
 scale = Vector2( 3.14324, 3.14324 )
 
-[node name="Vegetation19" parent="Mid" index="19" instance=ExtResource( 2 )]
+[node name="Vegetation19" parent="Mid" index="18" instance=ExtResource( 2 )]
 
 modulate = Color( 1, 1, 1, 1 )
-position = Vector2( 42897.9, 7819.97 )
-rotation = -0.130699
+position = Vector2( -34762.1, 4036.93 )
+rotation = 0.441217
 scale = Vector2( 4.45512, 4.45512 )
 
-[node name="Vegetation20" parent="Mid" index="20" instance=ExtResource( 2 )]
+[node name="Vegetation21" parent="Mid" index="19" instance=ExtResource( 2 )]
 
 modulate = Color( 1, 1, 1, 1 )
-position = Vector2( 57254, 5470.49 )
-rotation = 1.41522
-scale = Vector2( 5.27417, 5.27417 )
-
-[node name="Vegetation21" parent="Mid" index="21" instance=ExtResource( 2 )]
-
-modulate = Color( 1, 1, 1, 1 )
-position = Vector2( 68160, 10151.3 )
+position = Vector2( 3503.21, 832.271 )
 rotation = 1.41522
 scale = Vector2( 3.14324, 3.14324 )
 
-[node name="Vegetation22" parent="Mid" index="22" instance=ExtResource( 2 )]
+[node name="Vegetation22" parent="Mid" index="20" instance=ExtResource( 2 )]
 
 modulate = Color( 1, 1, 1, 1 )
-position = Vector2( 96691.4, 13894.3 )
+position = Vector2( 9073.29, 348.077 )
 rotation = 1.41522
 scale = Vector2( 3.14324, 3.14324 )
 
-[node name="Vegetation23" parent="Mid" index="23" instance=ExtResource( 2 )]
+[node name="Vegetation23" parent="Mid" index="21" instance=ExtResource( 2 )]
 
 modulate = Color( 1, 1, 1, 1 )
-position = Vector2( 85744.9, 546.707 )
+position = Vector2( 21088.1, -8772.32 )
 rotation = 1.41522
 scale = Vector2( 3.14324, 3.14324 )
 
-[node name="Vegetation03" parent="Mid" index="24" instance=ExtResource( 3 )]
+[node name="Vegetation03" parent="Mid" index="22" instance=ExtResource( 3 )]
 
-position = Vector2( -53676.2, 180.086 )
+position = Vector2( -53654.2, -176.282 )
 rotation = 0.382438
+scale = Vector2( 1, 1 )
 
-[node name="Vegetation04" parent="Mid" index="25" instance=ExtResource( 3 )]
+[node name="Vegetation04" parent="Mid" index="23" instance=ExtResource( 3 )]
 
-position = Vector2( -54036.9, -987.426 )
+position = Vector2( -54014.9, -1259.2 )
 rotation = -0.0561015
 scale = Vector2( 0.636433, 0.636433 )
 
-[node name="Vegetation01" parent="Mid" index="26" instance=ExtResource( 4 )]
+[node name="Vegetation01" parent="Mid" index="24" instance=ExtResource( 4 )]
 
-position = Vector2( -55805, -16.2907 )
+position = Vector2( -55961.9, -325.255 )
 scale = Vector2( 0.615944, 0.615944 )
 
-[node name="Tree04" parent="Mid" index="27" instance=ExtResource( 5 )]
-
-position = Vector2( 14690.7, 4936.11 )
-scale = Vector2( 2.21006, 2.21006 )
-
-[node name="Box" type="Sprite" parent="Mid" index="28"]
+[node name="Box" type="Sprite" parent="Mid" index="25"]
 
 position = Vector2( 7718.43, 5383.52 )
-texture = ExtResource( 6 )
+texture = ExtResource( 5 )
 
-[node name="Vegetation06" parent="Mid" index="29" instance=ExtResource( 7 )]
+[node name="Vegetation06" parent="Mid" index="26" instance=ExtResource( 6 )]
 
-position = Vector2( -53970.4, 89.6671 )
+position = Vector2( -54114.4, -237.419 )
 
-[node name="Vegetation08" parent="Mid" index="30" instance=ExtResource( 7 )]
+[node name="Vegetation08" parent="Mid" index="27" instance=ExtResource( 6 )]
 
-position = Vector2( -54904.2, 40.7494 )
+position = Vector2( -54966, -278.098 )
 scale = Vector2( 0.807248, 0.807248 )
 
-[node name="Vegetation34" parent="Mid" index="31" instance=ExtResource( 7 )]
+[node name="Vegetation34" parent="Mid" index="28" instance=ExtResource( 6 )]
 
-position = Vector2( -55623.1, -0.1591 )
+position = Vector2( -55561.3, -305.993 )
 scale = Vector2( 0.807248, 0.807248 )
 
-[node name="Vegetation35" parent="Mid" index="32" instance=ExtResource( 7 )]
+[node name="Vegetation35" parent="Mid" index="29" instance=ExtResource( 6 )]
 
-position = Vector2( -53925.7, -1074.57 )
+position = Vector2( -53903.7, -1346.34 )
 scale = Vector2( 0.807248, 0.807248 )
 
-[node name="Vegetation37" parent="Mid" index="33" instance=ExtResource( 7 )]
+[node name="Vegetation37" parent="Mid" index="30" instance=ExtResource( 6 )]
 
-position = Vector2( -48839, 987.289 )
+position = Vector2( -48647.7, 683.229 )
 scale = Vector2( 0.807248, 0.807248 )
 
-[node name="Vegetation39" parent="Mid" index="34" instance=ExtResource( 7 )]
+[node name="Vegetation39" parent="Mid" index="31" instance=ExtResource( 6 )]
 
 position = Vector2( -44727.6, -914.067 )
 scale = Vector2( 0.807248, 0.807248 )
 
-[node name="Vegetation42" parent="Mid" index="35" instance=ExtResource( 7 )]
+[node name="Vegetation42" parent="Mid" index="32" instance=ExtResource( 6 )]
 
-position = Vector2( -39743.8, 3080.6 )
+position = Vector2( -39723.1, 2865.61 )
 scale = Vector2( 0.807248, 0.807248 )
 
-[node name="Vegetation44" parent="Mid" index="36" instance=ExtResource( 7 )]
+[node name="Vegetation44" parent="Mid" index="33" instance=ExtResource( 6 )]
 
 position = Vector2( -34188.5, 3162.52 )
 scale = Vector2( 0.807248, 0.807248 )
 
-[node name="Vegetation46" parent="Mid" index="37" instance=ExtResource( 7 )]
+[node name="Vegetation46" parent="Mid" index="34" instance=ExtResource( 6 )]
 
-position = Vector2( -30910.1, 940.08 )
+position = Vector2( -30980.9, 1477.69 )
 scale = Vector2( 0.807248, 0.807248 )
 
-[node name="Vegetation48" parent="Mid" index="38" instance=ExtResource( 7 )]
+[node name="Vegetation48" parent="Mid" index="35" instance=ExtResource( 6 )]
 
-position = Vector2( -29985.1, 891.394 )
+position = Vector2( -30055.9, 1429 )
 scale = Vector2( 0.807248, 0.807248 )
 
-[node name="Vegetation50" parent="Mid" index="39" instance=ExtResource( 7 )]
+[node name="Vegetation50" parent="Mid" index="36" instance=ExtResource( 6 )]
 
-position = Vector2( -29741.4, 876.248 )
+position = Vector2( -29812.2, 1413.86 )
 scale = Vector2( 0.807248, 0.807248 )
 
-[node name="Vegetation52" parent="Mid" index="40" instance=ExtResource( 7 )]
+[node name="Vegetation52" parent="Mid" index="37" instance=ExtResource( 6 )]
 
-position = Vector2( -25455.4, 777.673 )
+position = Vector2( -25447.2, 1449.33 )
 scale = Vector2( 0.807248, 0.807248 )
 
-[node name="Vegetation54" parent="Mid" index="41" instance=ExtResource( 7 )]
+[node name="Vegetation54" parent="Mid" index="38" instance=ExtResource( 6 )]
 
-position = Vector2( -23249.2, 766.858 )
+position = Vector2( -23241, 1438.51 )
 scale = Vector2( 0.807248, 0.807248 )
 
-[node name="Vegetation56" parent="Mid" index="42" instance=ExtResource( 7 )]
+[node name="Vegetation56" parent="Mid" index="39" instance=ExtResource( 6 )]
 
-position = Vector2( -20577.3, 1526.37 )
+position = Vector2( -20577.3, 1440.92 )
 rotation = 0.815479
 scale = Vector2( 0.807248, 0.807248 )
 
-[node name="Vegetation09" parent="Mid" index="43" instance=ExtResource( 7 )]
+[node name="Vegetation09" parent="Mid" index="40" instance=ExtResource( 6 )]
 
 modulate = Color( 1, 1, 1, 1 )
-position = Vector2( -54814.6, 35.9349 )
+position = Vector2( -54876.4, -282.913 )
 
-[node name="Vegetation33" parent="Mid" index="44" instance=ExtResource( 7 )]
-
-modulate = Color( 1, 1, 1, 1 )
-position = Vector2( -55533.4, -4.97336 )
-
-[node name="Vegetation36" parent="Mid" index="45" instance=ExtResource( 7 )]
+[node name="Vegetation33" parent="Mid" index="41" instance=ExtResource( 6 )]
 
 modulate = Color( 1, 1, 1, 1 )
-position = Vector2( -53836.1, -1079.39 )
+position = Vector2( -55420.6, -313.938 )
 
-[node name="Vegetation38" parent="Mid" index="46" instance=ExtResource( 7 )]
+[node name="Vegetation36" parent="Mid" index="42" instance=ExtResource( 6 )]
 
 modulate = Color( 1, 1, 1, 1 )
-position = Vector2( -48749.4, 982.474 )
+position = Vector2( -53814.1, -1351.17 )
 
-[node name="Vegetation40" parent="Mid" index="47" instance=ExtResource( 7 )]
+[node name="Vegetation38" parent="Mid" index="43" instance=ExtResource( 6 )]
+
+modulate = Color( 1, 1, 1, 1 )
+position = Vector2( -48558.1, 678.414 )
+
+[node name="Vegetation40" parent="Mid" index="44" instance=ExtResource( 6 )]
 
 modulate = Color( 1, 1, 1, 1 )
 position = Vector2( -44638, -918.882 )
 
-[node name="Vegetation41" parent="Mid" index="48" instance=ExtResource( 7 )]
+[node name="Vegetation41" parent="Mid" index="45" instance=ExtResource( 6 )]
 
 modulate = Color( 1, 1, 1, 1 )
-position = Vector2( -39654.2, 3075.78 )
+position = Vector2( -39582.6, 2808.13 )
 
-[node name="Vegetation43" parent="Mid" index="49" instance=ExtResource( 7 )]
+[node name="Vegetation43" parent="Mid" index="46" instance=ExtResource( 6 )]
 
 modulate = Color( 1, 1, 1, 1 )
 position = Vector2( -34098.9, 3157.7 )
 
-[node name="Vegetation45" parent="Mid" index="50" instance=ExtResource( 7 )]
+[node name="Vegetation45" parent="Mid" index="47" instance=ExtResource( 6 )]
 
 modulate = Color( 1, 1, 1, 1 )
-position = Vector2( -30820.5, 935.265 )
+position = Vector2( -30891.3, 1472.87 )
 
-[node name="Vegetation47" parent="Mid" index="51" instance=ExtResource( 7 )]
-
-modulate = Color( 1, 1, 1, 1 )
-position = Vector2( -29895.5, 886.579 )
-
-[node name="Vegetation49" parent="Mid" index="52" instance=ExtResource( 7 )]
+[node name="Vegetation47" parent="Mid" index="48" instance=ExtResource( 6 )]
 
 modulate = Color( 1, 1, 1, 1 )
-position = Vector2( -29651.8, 871.433 )
+position = Vector2( -29966.3, 1424.19 )
 
-[node name="Vegetation51" parent="Mid" index="53" instance=ExtResource( 7 )]
-
-modulate = Color( 1, 1, 1, 1 )
-position = Vector2( -25365.8, 772.858 )
-
-[node name="Vegetation53" parent="Mid" index="54" instance=ExtResource( 7 )]
+[node name="Vegetation49" parent="Mid" index="49" instance=ExtResource( 6 )]
 
 modulate = Color( 1, 1, 1, 1 )
-position = Vector2( -23159.5, 762.043 )
+position = Vector2( -29722.6, 1409.04 )
 
-[node name="Vegetation55" parent="Mid" index="55" instance=ExtResource( 7 )]
+[node name="Vegetation51" parent="Mid" index="50" instance=ExtResource( 6 )]
 
 modulate = Color( 1, 1, 1, 1 )
-position = Vector2( -20662.4, 1503.3 )
+position = Vector2( -25357.6, 1444.51 )
+
+[node name="Vegetation53" parent="Mid" index="51" instance=ExtResource( 6 )]
+
+modulate = Color( 1, 1, 1, 1 )
+position = Vector2( -23151.3, 1433.7 )
+
+[node name="Vegetation55" parent="Mid" index="52" instance=ExtResource( 6 )]
+
+modulate = Color( 1, 1, 1, 1 )
+position = Vector2( -20662.4, 1417.85 )
 rotation = 0.401523
 
-[node name="Vegetation05" parent="Mid" index="56" instance=ExtResource( 8 )]
+[node name="Vegetation05" parent="Mid" index="53" instance=ExtResource( 7 )]
 
-position = Vector2( -54708.1, 55.5992 )
+position = Vector2( -54769.9, -263.248 )
 
-[node name="Vegetation07" parent="Mid" index="57" instance=ExtResource( 8 )]
+[node name="Vegetation07" parent="Mid" index="54" instance=ExtResource( 7 )]
 
-position = Vector2( -54098.6, 104.826 )
+position = Vector2( -54343.4, -238.528 )
 
 [node name="coliders" type="Node2D" parent="." index="9"]
 
 [node name="Tree01" type="Sprite" parent="coliders" index="0"]
 
-position = Vector2( -57593.2, -6030.95 )
+position = Vector2( -57518.8, -6496.21 )
 scale = Vector2( 1.58088, 1.58088 )
-texture = ExtResource( 9 )
+texture = ExtResource( 8 )
 
 [node name="Tree08" type="Sprite" parent="coliders" index="1"]
 
-position = Vector2( -30638, -2367.35 )
+position = Vector2( -30722, -1762.7 )
 scale = Vector2( 1.86364, 1.86364 )
+texture = ExtResource( 9 )
+
+[node name="Vine02" type="Sprite" parent="coliders" index="2"]
+
+position = Vector2( -54643.7, 2258.29 )
 texture = ExtResource( 10 )
 
-[node name="Tree12" type="Sprite" parent="coliders" index="2"]
+[node name="Vine01" type="Sprite" parent="coliders" index="3"]
 
-position = Vector2( 83713.5, -2411.32 )
-scale = Vector2( 1.86364, 1.86364 )
-texture = ExtResource( 10 )
-
-[node name="Tree14" type="Sprite" parent="coliders" index="3"]
-
-position = Vector2( 80831.3, 16803.2 )
-scale = Vector2( 1.86364, 1.86364 )
-texture = ExtResource( 10 )
-
-[node name="Vine02" type="Sprite" parent="coliders" index="4"]
-
-position = Vector2( -54694, 2539.87 )
+position = Vector2( -53211.8, -724.14 )
+scale = Vector2( 0.670598, 0.670598 )
 texture = ExtResource( 11 )
 
-[node name="Vine01" type="Sprite" parent="coliders" index="5"]
+[node name="Rock01" type="Sprite" parent="coliders" index="4"]
 
-position = Vector2( -53233.8, -452.364 )
-scale = Vector2( 0.670598, 0.670598 )
+position = Vector2( -48971.5, 626.159 )
+rotation = 0.266401
 texture = ExtResource( 12 )
 
-[node name="Rock01" type="Sprite" parent="coliders" index="6"]
+[node name="Tree02" type="Sprite" parent="coliders" index="5"]
 
-position = Vector2( -49162.8, 930.22 )
-rotation = 0.266401
+position = Vector2( -45518.2, 598.844 )
 texture = ExtResource( 13 )
 
-[node name="Tree02" type="Sprite" parent="coliders" index="7"]
+[node name="Tree03" type="Sprite" parent="coliders" index="6"]
 
-position = Vector2( -45518.2, 1190.03 )
+position = Vector2( -4527.97, 4845.56 )
+rotation = 1.03582
 texture = ExtResource( 14 )
 
-[node name="Tree03" type="Sprite" parent="coliders" index="8"]
+[node name="Vegetation04" type="Sprite" parent="coliders" index="7"]
 
-position = Vector2( -9627.2, 8375.64 )
-rotation = 1.03582
+position = Vector2( -2473.96, 3924.96 )
 texture = ExtResource( 15 )
 
-[node name="Vegetation04" type="Sprite" parent="coliders" index="9"]
-
-position = Vector2( -2468.53, 4424.89 )
-texture = ExtResource( 16 )
-
-[node name="Vegetation05" type="Sprite" parent="coliders" index="10"]
+[node name="Vegetation05" type="Sprite" parent="coliders" index="8"]
 
 modulate = Color( 1, 1, 1, 0.762431 )
-position = Vector2( -2379.42, 4473.88 )
-rotation = 0.452087
+position = Vector2( -2379.42, 3919.61 )
+rotation = -0.333431
 scale = Vector2( 0.723765, 0.723765 )
-texture = ExtResource( 16 )
+texture = ExtResource( 15 )
 _sections_unfolded = [ "Visibility" ]
 
-[node name="Vegetation01" type="Sprite" parent="coliders" index="11"]
+[node name="Vegetation01" type="Sprite" parent="coliders" index="9"]
 
-position = Vector2( -2536.25, 4315.61 )
+position = Vector2( -1989.04, 1073.37 )
 rotation = 0.00470011
 scale = Vector2( 0.48587, 0.48587 )
-texture = ExtResource( 17 )
+texture = ExtResource( 16 )
 
-[node name="Tree04" type="Sprite" parent="coliders" index="12"]
+[node name="Tree04" type="Sprite" parent="coliders" index="10"]
 
 position = Vector2( 3704.95, -5955.89 )
 scale = Vector2( 2.06748, 2.06748 )
-texture = ExtResource( 9 )
+texture = ExtResource( 8 )
 
-[node name="Tree07" type="Sprite" parent="coliders" index="13"]
+[node name="Tree07" type="Sprite" parent="coliders" index="11"]
 
-position = Vector2( -66526.3, -7950.11 )
+position = Vector2( -66917.1, -8322.32 )
 scale = Vector2( 2.06748, 2.06748 )
-texture = ExtResource( 9 )
+texture = ExtResource( 8 )
 
-[node name="Tree05" type="Sprite" parent="coliders" index="14"]
+[node name="Tree05" type="Sprite" parent="coliders" index="12"]
 
-position = Vector2( 24676.4, 2182.27 )
+position = Vector2( 24862.9, -4873.5 )
 scale = Vector2( 2.06748, 2.06748 )
-texture = ExtResource( 9 )
+texture = ExtResource( 8 )
 
-[node name="Tree06" type="Sprite" parent="coliders" index="15"]
-
-position = Vector2( 49482.1, -3373.59 )
-scale = Vector2( 2.06748, 2.06748 )
-texture = ExtResource( 9 )
-
-[node name="BackBushes" type="Sprite" parent="coliders" index="16"]
+[node name="BackBushes" type="Sprite" parent="coliders" index="13"]
 
 position = Vector2( -59261.6, 663.281 )
 scale = Vector2( 2.49478, 2.49478 )
 z_index = -5
-texture = ExtResource( 18 )
+texture = ExtResource( 17 )
 _sections_unfolded = [ "Z Index" ]
 
-[node name="BackBushes8" type="Sprite" parent="coliders" index="17"]
+[node name="BackBushes8" type="Sprite" parent="coliders" index="14"]
 
-position = Vector2( -49049.4, 871.09 )
+position = Vector2( -48578.6, 611.167 )
 scale = Vector2( 1.05285, 1.05285 )
 z_index = -5
-texture = ExtResource( 18 )
+texture = ExtResource( 17 )
 _sections_unfolded = [ "Z Index" ]
 
-[node name="BackBushes9" type="Sprite" parent="coliders" index="18"]
+[node name="BackBushes9" type="Sprite" parent="coliders" index="15"]
 
 modulate = Color( 1, 1, 1, 0.795569 )
 position = Vector2( -50008.3, 295.436 )
 rotation = 0.77367
 scale = Vector2( 0.774766, 0.774766 )
 z_index = -5
-texture = ExtResource( 18 )
+texture = ExtResource( 17 )
 _sections_unfolded = [ "Visibility", "Z Index" ]
 
-[node name="BackBushes2" type="Sprite" parent="coliders" index="19"]
+[node name="BackBushes2" type="Sprite" parent="coliders" index="16"]
 
 position = Vector2( -30325.2, 1938.01 )
 scale = Vector2( 2.49478, 2.49478 )
 z_index = -5
-texture = ExtResource( 18 )
+texture = ExtResource( 17 )
 _sections_unfolded = [ "Z Index" ]
 
-[node name="BackBushes3" type="Sprite" parent="coliders" index="20"]
+[node name="BackBushes3" type="Sprite" parent="coliders" index="17"]
 
-position = Vector2( -2199.29, 5728.33 )
+position = Vector2( 1918.49, 5057.99 )
 rotation = 1.08232
 scale = Vector2( 2.16599, 2.16599 )
 z_index = -5
-texture = ExtResource( 18 )
+texture = ExtResource( 17 )
 _sections_unfolded = [ "Z Index" ]
 
-[node name="BackBushes4" type="Sprite" parent="coliders" index="21"]
+[node name="BackBushes4" type="Sprite" parent="coliders" index="18"]
 
 modulate = Color( 1, 1, 1, 0.66298 )
 position = Vector2( -948.264, 4679.58 )
 rotation = 1.08232
 scale = Vector2( 0.929387, 0.929387 )
 z_index = -5
-texture = ExtResource( 18 )
+texture = ExtResource( 17 )
 _sections_unfolded = [ "Visibility", "Z Index" ]
 
-[node name="BackBushes5" type="Sprite" parent="coliders" index="22"]
+[node name="BackBushes5" type="Sprite" parent="coliders" index="19"]
 
 modulate = Color( 1, 1, 1, 0.66298 )
-position = Vector2( 11015.5, 6011.24 )
+position = Vector2( 5445.75, 1175.69 )
 rotation = 3.12476
 scale = Vector2( 1.70599, 1.70599 )
 z_index = -5
-texture = ExtResource( 18 )
+texture = ExtResource( 17 )
 _sections_unfolded = [ "Visibility", "Z Index" ]
 
-[node name="BackBushes6" type="Sprite" parent="coliders" index="23"]
+[node name="BackBushes6" type="Sprite" parent="coliders" index="20"]
 
 modulate = Color( 1, 1, 1, 0.66298 )
-position = Vector2( 28011.6, 9535.1 )
+position = Vector2( -4554.28, 5688.17 )
 rotation = 3.12476
 scale = Vector2( 2.66562, 2.66562 )
 z_index = -5
-texture = ExtResource( 18 )
+texture = ExtResource( 17 )
 _sections_unfolded = [ "Visibility", "Z Index" ]
 
-[node name="BackBushes7" type="Sprite" parent="coliders" index="24"]
+[node name="BackBushes7" type="Sprite" parent="coliders" index="21"]
 
 position = Vector2( 24265.7, 10094.4 )
 rotation = 3.12476
 scale = Vector2( 1.85234, 1.85234 )
 z_index = -5
-texture = ExtResource( 18 )
+texture = ExtResource( 17 )
 _sections_unfolded = [ "Visibility", "Z Index" ]
 
-[node name="Fog04" parent="coliders" index="25" instance=ExtResource( 19 )]
+[node name="Fog04" parent="coliders" index="22" instance=ExtResource( 18 )]
 
 modulate = Color( 1, 1, 1, 0.795569 )
 position = Vector2( -10183.2, 8919.04 )
 
-[node name="Fog03" parent="coliders" index="26" instance=ExtResource( 19 )]
+[node name="Fog03" parent="coliders" index="23" instance=ExtResource( 18 )]
 
 modulate = Color( 1, 1, 1, 0.795569 )
 position = Vector2( -8140.22, 8664.61 )
 scale = Vector2( 1.06619, 1.03826 )
 
-[node name="Fog01" parent="coliders" index="27" instance=ExtResource( 19 )]
+[node name="Fog01" parent="coliders" index="24" instance=ExtResource( 18 )]
 
 modulate = Color( 1, 1, 1, 0.674039 )
 position = Vector2( -45287.7, 6632.96 )
 
-[node name="Fog02" parent="coliders" index="28" instance=ExtResource( 19 )]
+[node name="Fog02" parent="coliders" index="25" instance=ExtResource( 18 )]
 
 modulate = Color( 1, 1, 1, 0.674039 )
 position = Vector2( -43244.7, 6378.53 )
 scale = Vector2( 1.06619, 1.03826 )
 
-[node name="SkyBG" type="Sprite" parent="coliders" index="29"]
+[node name="SkyBG" type="Sprite" parent="coliders" index="26"]
 
-position = Vector2( -28339.6, 4512.12 )
+position = Vector2( -28316.8, 4557.82 )
 scale = Vector2( 93.2044, 98.1681 )
 z_index = -10
-texture = ExtResource( 20 )
+texture = ExtResource( 19 )
 _sections_unfolded = [ "Visibility", "Z Index" ]
 
-[node name="SkyBG2" type="Sprite" parent="coliders" index="30"]
+[node name="SkyBG2" type="Sprite" parent="coliders" index="27"]
 
-position = Vector2( 86596.9, 8189.74 )
+position = Vector2( 83906.9, 3860.13 )
 rotation = -3.14159
 scale = Vector2( 125.588, -95.8076 )
 z_index = -10
-texture = ExtResource( 20 )
+texture = ExtResource( 19 )
 _sections_unfolded = [ "Visibility", "Z Index" ]
 
-[node name="Tree01white" type="Sprite" parent="coliders" index="31"]
+[node name="Tree01white" type="Sprite" parent="coliders" index="28"]
 
 modulate = Color( 0.0820313, 0.0820313, 0.0820313, 1 )
-position = Vector2( 92835.6, 4982.87 )
+position = Vector2( 5217.48, -8563.35 )
 scale = Vector2( 2.51502, 2.51502 )
 z_index = -1
-texture = ExtResource( 21 )
+texture = ExtResource( 20 )
 _sections_unfolded = [ "Visibility" ]
 
-[node name="Tree01white2" type="Sprite" parent="coliders" index="32"]
+[node name="Tree01white2" type="Sprite" parent="coliders" index="29"]
 
 modulate = Color( 0.046875, 0.046875, 0.046875, 1 )
-position = Vector2( 100219, 5040.39 )
+position = Vector2( 12600.9, -8505.83 )
 rotation = -0.0732373
 scale = Vector2( 2.51502, 2.51502 )
 z_index = -1
-texture = ExtResource( 21 )
+texture = ExtResource( 20 )
 _sections_unfolded = [ "Visibility" ]
 
-[node name="Tree01white3" type="Sprite" parent="coliders" index="33"]
+[node name="Tree01white3" type="Sprite" parent="coliders" index="30"]
 
 modulate = Color( 0.113281, 0.113281, 0.113281, 1 )
-position = Vector2( 111581, 5037.55 )
+position = Vector2( 23962.9, -8508.67 )
 rotation = -0.0341153
 scale = Vector2( 2.51502, 2.51502 )
 z_index = -1
-texture = ExtResource( 21 )
+texture = ExtResource( 20 )
 _sections_unfolded = [ "Visibility" ]
 
-[node name="Tree01white4" type="Sprite" parent="coliders" index="34"]
+[node name="Tree01white4" type="Sprite" parent="coliders" index="31"]
 
 modulate = Color( 0.03125, 0.03125, 0.03125, 1 )
-position = Vector2( 99020.4, 6004.29 )
+position = Vector2( 11402.3, -7541.93 )
 scale = Vector2( 2.29503, 2.29503 )
 z_index = -1
-texture = ExtResource( 21 )
+texture = ExtResource( 20 )
 _sections_unfolded = [ "Visibility" ]
 
-[node name="Tree01white5" type="Sprite" parent="coliders" index="35"]
+[node name="Tree01white5" type="Sprite" parent="coliders" index="32"]
 
 modulate = Color( 0.0820313, 0.0820313, 0.0820313, 1 )
-position = Vector2( 97739.8, 4925.34 )
+position = Vector2( 10121.7, -8620.88 )
 scale = Vector2( 2.0377, 2.51502 )
 z_index = -1
-texture = ExtResource( 21 )
+texture = ExtResource( 20 )
 flip_h = true
 _sections_unfolded = [ "Offset", "Visibility" ]
 
-[node name="Tree01white6" type="Sprite" parent="coliders" index="36"]
+[node name="Tree01white6" type="Sprite" parent="coliders" index="33"]
 
 modulate = Color( 0.0820313, 0.0820313, 0.0820313, 1 )
-position = Vector2( 108235, 7335.82 )
+position = Vector2( 20616.9, -6210.4 )
 rotation = 0.049206
 scale = Vector2( 2.51502, 2.51502 )
 z_index = -1
-texture = ExtResource( 21 )
+texture = ExtResource( 20 )
 _sections_unfolded = [ "Visibility" ]
 
-[node name="Tree01white7" type="Sprite" parent="coliders" index="37"]
+[node name="Tree01white7" type="Sprite" parent="coliders" index="34"]
 
 modulate = Color( 0, 0, 0, 1 )
-position = Vector2( 105778, 4948.42 )
+position = Vector2( 18159.9, -8597.8 )
 scale = Vector2( 2.51502, 2.51502 )
 z_index = -1
-texture = ExtResource( 21 )
+texture = ExtResource( 20 )
 _sections_unfolded = [ "Visibility" ]
 
-[node name="Tree01white8" type="Sprite" parent="coliders" index="38"]
+[node name="Tree01white8" type="Sprite" parent="coliders" index="35"]
 
 modulate = Color( 0.0820313, 0.0820313, 0.0820313, 1 )
-position = Vector2( 103190, 4982.86 )
+position = Vector2( 15571.9, -8563.36 )
 scale = Vector2( 2.51502, 2.51502 )
 z_index = -1
-texture = ExtResource( 21 )
+texture = ExtResource( 20 )
 flip_h = true
 _sections_unfolded = [ "Offset", "Visibility" ]
 
-[node name="Vegetation02" parent="coliders" index="39" instance=ExtResource( 4 )]
+[node name="Vegetation02" parent="coliders" index="36" instance=ExtResource( 4 )]
 
-position = Vector2( 93663.6, 14335.1 )
+position = Vector2( 6045.48, 788.873 )
 
-[node name="Vegetation03" parent="coliders" index="40" instance=ExtResource( 4 )]
+[node name="Vegetation03" parent="coliders" index="37" instance=ExtResource( 4 )]
 
-position = Vector2( 111733, 14466.3 )
+position = Vector2( 24114.9, 920.08 )
 scale = Vector2( 1.26402, 1.26402 )
 
-[node name="Vegetation06" parent="coliders" index="41" instance=ExtResource( 3 )]
+[node name="Vegetation06" parent="coliders" index="38" instance=ExtResource( 3 )]
 
 modulate = Color( 1, 1, 1, 0.751373 )
-position = Vector2( 96345.9, 14269.2 )
+position = Vector2( 8727.79, 722.978 )
 rotation = -0.53952
 
-[node name="Vegetation07" parent="coliders" index="42" instance=ExtResource( 7 )]
+[node name="Vegetation07" parent="coliders" index="39" instance=ExtResource( 6 )]
 
-position = Vector2( 91705.4, 14228.6 )
+position = Vector2( 4087.29, 682.38 )
 
-[node name="Vegetation08" parent="coliders" index="43" instance=ExtResource( 7 )]
+[node name="Vegetation08" parent="coliders" index="40" instance=ExtResource( 6 )]
 
-position = Vector2( 92660.6, 14222.9 )
+position = Vector2( 5042.48, 676.682 )
 scale = Vector2( 1.93838, 1.93838 )
 
-[node name="Vegetation09" parent="coliders" index="44" instance=ExtResource( 7 )]
+[node name="Vegetation09" parent="coliders" index="41" instance=ExtResource( 6 )]
 
-position = Vector2( 107592, 14277.4 )
+position = Vector2( 19973.9, 731.182 )
 scale = Vector2( 1.93838, 1.93838 )
 
-[node name="Vegetation10" parent="coliders" index="45" instance=ExtResource( 2 )]
+[node name="Vegetation10" parent="coliders" index="42" instance=ExtResource( 2 )]
 
 modulate = Color( 1, 1, 1, 0.723765 )
-position = Vector2( 113073, 14682.8 )
+position = Vector2( 25454.9, 1136.58 )
 rotation = 2.25693
 scale = Vector2( 6.20818, 6.20818 )
 
-[node name="blurTree" type="Sprite" parent="coliders" index="46"]
-
-modulate = Color( 0, 0, 0, 0.784549 )
-position = Vector2( 91650.1, 3105.85 )
-scale = Vector2( 2.96191, 2.96191 )
-z_index = -6
-texture = ExtResource( 22 )
-_sections_unfolded = [ "Visibility" ]
-
-[node name="blurTree23" type="Sprite" parent="coliders" index="47"]
-
-modulate = Color( 0, 0, 0, 0.784549 )
-position = Vector2( 46729.1, -1952.18 )
-scale = Vector2( 2.96191, 2.96191 )
-z_index = -6
-texture = ExtResource( 22 )
-_sections_unfolded = [ "Visibility" ]
-
-[node name="blurTree36" type="Sprite" parent="coliders" index="48"]
+[node name="blurTree36" type="Sprite" parent="coliders" index="43"]
 
 modulate = Color( 0, 0, 0, 0.784549 )
 position = Vector2( -1115.06, -3693.31 )
 scale = Vector2( 2.96191, 2.96191 )
 z_index = -6
-texture = ExtResource( 22 )
+texture = ExtResource( 21 )
 _sections_unfolded = [ "Visibility" ]
 
-[node name="blurTree45" type="Sprite" parent="coliders" index="49"]
+[node name="blurTree45" type="Sprite" parent="coliders" index="44"]
 
 modulate = Color( 0, 0, 0, 0.784549 )
-position = Vector2( -38409.3, -5201.45 )
+position = Vector2( -38409.3, -5223.74 )
 scale = Vector2( 2.96191, 2.96191 )
 z_index = -6
-texture = ExtResource( 22 )
+texture = ExtResource( 21 )
 _sections_unfolded = [ "Visibility" ]
 
-[node name="blurTree52" type="Sprite" parent="coliders" index="50"]
+[node name="blurTree52" type="Sprite" parent="coliders" index="45"]
 
 modulate = Color( 0, 0, 0, 0.784549 )
 position = Vector2( -63381.1, -9174.23 )
 scale = Vector2( 2.96191, 2.96191 )
 z_index = -6
-texture = ExtResource( 22 )
+texture = ExtResource( 21 )
 _sections_unfolded = [ "Visibility" ]
 
-[node name="blurTree2" type="Sprite" parent="coliders" index="51"]
-
-modulate = Color( 0, 0, 0, 0.784549 )
-position = Vector2( 103191, 3124.09 )
-rotation = -0.0644646
-scale = Vector2( 2.96191, 2.96191 )
-z_index = -6
-texture = ExtResource( 22 )
-_sections_unfolded = [ "Visibility" ]
-
-[node name="blurTree25" type="Sprite" parent="coliders" index="52"]
-
-modulate = Color( 0, 0, 0, 0.784549 )
-position = Vector2( 57991.1, -1883.3 )
-rotation = -0.0644646
-scale = Vector2( 2.96191, 2.96191 )
-z_index = -6
-texture = ExtResource( 22 )
-_sections_unfolded = [ "Visibility" ]
-
-[node name="blurTree32" type="Sprite" parent="coliders" index="53"]
+[node name="blurTree32" type="Sprite" parent="coliders" index="46"]
 
 modulate = Color( 0, 0, 0, 0.784549 )
 position = Vector2( 10147, -3624.43 )
 rotation = -0.0644646
 scale = Vector2( 2.9619, 2.96191 )
 z_index = -6
-texture = ExtResource( 22 )
+texture = ExtResource( 21 )
 _sections_unfolded = [ "Visibility" ]
 
-[node name="blurTree37" type="Sprite" parent="coliders" index="54"]
+[node name="blurTree37" type="Sprite" parent="coliders" index="47"]
 
 modulate = Color( 0, 0, 0, 0.784549 )
-position = Vector2( -27541.1, -5023.23 )
+position = Vector2( -27931.9, -8856.96 )
 rotation = -0.0644646
 scale = Vector2( 2.9619, 2.96191 )
 z_index = -6
-texture = ExtResource( 22 )
+texture = ExtResource( 21 )
 _sections_unfolded = [ "Visibility" ]
 
-[node name="blurTree50" type="Sprite" parent="coliders" index="55"]
+[node name="blurTree50" type="Sprite" parent="coliders" index="48"]
 
 modulate = Color( 0, 0, 0, 0.784549 )
 position = Vector2( -66201.4, -11262 )
 rotation = -0.0644646
 scale = Vector2( 2.9619, 2.96191 )
 z_index = -6
-texture = ExtResource( 22 )
+texture = ExtResource( 21 )
 _sections_unfolded = [ "Visibility" ]
 
-[node name="blurTree16" type="Sprite" parent="coliders" index="56"]
+[node name="blurTree16" type="Sprite" parent="coliders" index="49"]
 
 modulate = Color( 0, 0, 0, 0.392274 )
-position = Vector2( 82479.8, 10315.4 )
+position = Vector2( 17823, 996.371 )
 rotation = -0.0644646
 scale = Vector2( 2.96191, 2.96191 )
 z_index = -6
-texture = ExtResource( 22 )
+texture = ExtResource( 21 )
 _sections_unfolded = [ "Visibility" ]
 
-[node name="blurTree3" type="Sprite" parent="coliders" index="57"]
+[node name="blurTree30" type="Sprite" parent="coliders" index="50"]
 
 modulate = Color( 0, 0, 0, 0.784549 )
-position = Vector2( 94801.3, 3127.33 )
-rotation = 0.0421531
-scale = Vector2( 2.96191, 2.96191 )
-z_index = -6
-texture = ExtResource( 22 )
-_sections_unfolded = [ "Visibility" ]
-
-[node name="blurTree22" type="Sprite" parent="coliders" index="58"]
-
-modulate = Color( 0, 0, 0, 0.784549 )
-position = Vector2( 49449.9, 2525.11 )
-rotation = 0.0421531
-scale = Vector2( 2.96191, 2.96191 )
-z_index = -6
-texture = ExtResource( 22 )
-_sections_unfolded = [ "Visibility" ]
-
-[node name="blurTree30" type="Sprite" parent="coliders" index="59"]
-
-modulate = Color( 0, 0, 0, 0.784549 )
-position = Vector2( 1605.76, 783.974 )
+position = Vector2( 1592.08, 783.974 )
 rotation = 0.0421531
 scale = Vector2( 2.9619, 2.96191 )
 z_index = -6
-texture = ExtResource( 22 )
+texture = ExtResource( 21 )
 _sections_unfolded = [ "Visibility" ]
 
-[node name="blurTree51" type="Sprite" parent="coliders" index="60"]
+[node name="blurTree51" type="Sprite" parent="coliders" index="51"]
 
 modulate = Color( 0, 0, 0, 0.784549 )
 position = Vector2( -73075.9, -11411.1 )
 rotation = 0.0421531
 scale = Vector2( 2.9619, 2.96191 )
 z_index = -6
-texture = ExtResource( 22 )
+texture = ExtResource( 21 )
 _sections_unfolded = [ "Visibility" ]
 
-[node name="blurTree4" type="Sprite" parent="coliders" index="61"]
-
-modulate = Color( 0, 0, 0, 0.784549 )
-position = Vector2( 96410, 3158.34 )
-rotation = 0.0421531
-scale = Vector2( 2.96191, 2.96191 )
-z_index = -6
-texture = ExtResource( 22 )
-_sections_unfolded = [ "Visibility" ]
-
-[node name="blurTree19" type="Sprite" parent="coliders" index="62"]
-
-modulate = Color( 0, 0, 0, 0.784549 )
-position = Vector2( 51413, 1113.04 )
-rotation = 0.0421531
-scale = Vector2( 2.96191, 2.96191 )
-z_index = -6
-texture = ExtResource( 22 )
-_sections_unfolded = [ "Visibility" ]
-
-[node name="blurTree33" type="Sprite" parent="coliders" index="63"]
+[node name="blurTree33" type="Sprite" parent="coliders" index="52"]
 
 modulate = Color( 0, 0, 0, 0.784549 )
 position = Vector2( 3568.87, -628.092 )
 rotation = 0.0421531
 scale = Vector2( 2.9619, 2.96191 )
 z_index = -6
-texture = ExtResource( 22 )
+texture = ExtResource( 21 )
 _sections_unfolded = [ "Visibility" ]
 
-[node name="blurTree40" type="Sprite" parent="coliders" index="64"]
+[node name="blurTree40" type="Sprite" parent="coliders" index="53"]
 
 modulate = Color( 0, 0, 0, 0.784549 )
 position = Vector2( -34379.8, -724.165 )
 rotation = 0.0421531
 scale = Vector2( 2.9619, 2.96191 )
 z_index = -6
-texture = ExtResource( 22 )
+texture = ExtResource( 21 )
 _sections_unfolded = [ "Visibility" ]
 
-[node name="blurTree49" type="Sprite" parent="coliders" index="65"]
+[node name="blurTree49" type="Sprite" parent="coliders" index="54"]
 
 modulate = Color( 0, 0, 0, 0.784549 )
 position = Vector2( -71274.7, -11425.9 )
 rotation = 0.0421531
 scale = Vector2( 2.9619, 2.96191 )
 z_index = -6
-texture = ExtResource( 22 )
+texture = ExtResource( 21 )
 _sections_unfolded = [ "Visibility" ]
 
-[node name="blurTree5" type="Sprite" parent="coliders" index="66"]
-
-modulate = Color( 0, 0, 0, 0.784549 )
-position = Vector2( 100389, 2902.21 )
-rotation = 0.0421531
-scale = Vector2( 2.96191, 2.96191 )
-z_index = -6
-texture = ExtResource( 22 )
-_sections_unfolded = [ "Visibility" ]
-
-[node name="blurTree20" type="Sprite" parent="coliders" index="67"]
-
-modulate = Color( 0, 0, 0, 0.784549 )
-position = Vector2( 55442.5, 1388.57 )
-rotation = 0.0421531
-scale = Vector2( 2.96191, 2.96191 )
-z_index = -6
-texture = ExtResource( 22 )
-_sections_unfolded = [ "Visibility" ]
-
-[node name="blurTree34" type="Sprite" parent="coliders" index="68"]
+[node name="blurTree34" type="Sprite" parent="coliders" index="55"]
 
 modulate = Color( 0, 0, 0, 0.784549 )
 position = Vector2( 7598.42, -352.565 )
 rotation = 0.0421531
 scale = Vector2( 2.9619, 2.96191 )
 z_index = -6
-texture = ExtResource( 22 )
+texture = ExtResource( 21 )
 _sections_unfolded = [ "Visibility" ]
 
-[node name="blurTree42" type="Sprite" parent="coliders" index="69"]
+[node name="blurTree42" type="Sprite" parent="coliders" index="56"]
 
+visible = false
 modulate = Color( 0, 0, 0, 0.784549 )
-position = Vector2( -30350.2, -448.638 )
+position = Vector2( -30387.4, -448.638 )
 rotation = 0.0421531
 scale = Vector2( 2.9619, 2.96191 )
 z_index = -6
-texture = ExtResource( 22 )
+texture = ExtResource( 21 )
 _sections_unfolded = [ "Visibility" ]
 
-[node name="blurTree46" type="Sprite" parent="coliders" index="70"]
+[node name="blurTree46" type="Sprite" parent="coliders" index="57"]
 
 modulate = Color( 0, 0, 0, 0.784549 )
 position = Vector2( -68626.9, -11287.1 )
 rotation = 0.0421531
 scale = Vector2( 2.9619, 2.96191 )
 z_index = -6
-texture = ExtResource( 22 )
+texture = ExtResource( 21 )
 _sections_unfolded = [ "Visibility" ]
 
-[node name="blurTree6" type="Sprite" parent="coliders" index="71"]
+[node name="blurTree29" type="Sprite" parent="coliders" index="58"]
 
 modulate = Color( 0, 0, 0, 0.784549 )
-position = Vector2( 107169, 2974.05 )
-rotation = 0.0421531
-scale = Vector2( 2.96191, 2.96191 )
-z_index = -6
-texture = ExtResource( 22 )
-_sections_unfolded = [ "Visibility" ]
-
-[node name="blurTree21" type="Sprite" parent="coliders" index="72"]
-
-modulate = Color( 0, 0, 0, 0.784549 )
-position = Vector2( 61159.7, 1181.92 )
-rotation = 0.0421531
-scale = Vector2( 2.96191, 2.96191 )
-z_index = -6
-texture = ExtResource( 22 )
-_sections_unfolded = [ "Visibility" ]
-
-[node name="blurTree29" type="Sprite" parent="coliders" index="73"]
-
-modulate = Color( 0, 0, 0, 0.784549 )
-position = Vector2( 13143, -5391.07 )
+position = Vector2( 14586.1, -10403.8 )
 rotation = 0.0421531
 scale = Vector2( 2.9619, 2.96191 )
 z_index = -6
-texture = ExtResource( 22 )
+texture = ExtResource( 21 )
 _sections_unfolded = [ "Visibility" ]
 
-[node name="blurTree41" type="Sprite" parent="coliders" index="74"]
+[node name="blurTree41" type="Sprite" parent="coliders" index="59"]
 
 modulate = Color( 0, 0, 0, 0.784549 )
-position = Vector2( -24287.9, -10434.1 )
+position = Vector2( -24194.8, -9708.3 )
 rotation = 0.0421531
 scale = Vector2( 2.9619, 2.96191 )
 z_index = -6
-texture = ExtResource( 22 )
+texture = ExtResource( 21 )
 _sections_unfolded = [ "Visibility" ]
 
-[node name="blurTree53" type="Sprite" parent="coliders" index="75"]
+[node name="blurTree53" type="Sprite" parent="coliders" index="60"]
 
 modulate = Color( 0, 0, 0, 0.784549 )
 position = Vector2( -62591.7, -9868.47 )
 rotation = -0.0482893
 scale = Vector2( 2.9619, 2.96191 )
 z_index = -6
-texture = ExtResource( 22 )
+texture = ExtResource( 21 )
 _sections_unfolded = [ "Visibility" ]
 
-[node name="blurTree7" type="Sprite" parent="coliders" index="76"]
+[node name="blurTree31" type="Sprite" parent="coliders" index="61"]
 
 modulate = Color( 0, 0, 0, 0.784549 )
-position = Vector2( 109891, 3400.33 )
-rotation = 0.0421531
-scale = Vector2( 2.96191, 2.96191 )
-z_index = -6
-texture = ExtResource( 22 )
-_sections_unfolded = [ "Visibility" ]
-
-[node name="blurTree27" type="Sprite" parent="coliders" index="77"]
-
-modulate = Color( 0, 0, 0, 0.784549 )
-position = Vector2( 64362.7, 975.279 )
-rotation = 0.0421531
-scale = Vector2( 2.96191, 2.96191 )
-z_index = -6
-texture = ExtResource( 22 )
-_sections_unfolded = [ "Visibility" ]
-
-[node name="blurTree31" type="Sprite" parent="coliders" index="78"]
-
-modulate = Color( 0, 0, 0, 0.784549 )
-position = Vector2( 16518.6, -765.854 )
+position = Vector2( 16687.7, -723.571 )
 rotation = 0.0421531
 scale = Vector2( 2.9619, 2.96191 )
 z_index = -6
-texture = ExtResource( 22 )
+texture = ExtResource( 21 )
 _sections_unfolded = [ "Visibility" ]
 
-[node name="blurTree39" type="Sprite" parent="coliders" index="79"]
+[node name="blurTree39" type="Sprite" parent="coliders" index="62"]
 
 modulate = Color( 0, 0, 0, 0.784549 )
-position = Vector2( -21430.1, -861.927 )
+position = Vector2( -21169.6, -8343.29 )
 rotation = 0.0421531
 scale = Vector2( 2.9619, 2.96191 )
 z_index = -6
-texture = ExtResource( 22 )
+texture = ExtResource( 21 )
 _sections_unfolded = [ "Visibility" ]
 
-[node name="blurTree48" type="Sprite" parent="coliders" index="80"]
+[node name="blurTree48" type="Sprite" parent="coliders" index="63"]
 
 modulate = Color( 0, 0, 0, 0.784549 )
 position = Vector2( -59767.7, -10469.2 )
 rotation = 0.0421531
 scale = Vector2( 2.9619, 2.96191 )
 z_index = -6
-texture = ExtResource( 22 )
+texture = ExtResource( 21 )
 _sections_unfolded = [ "Visibility" ]
 
-[node name="blurTree8" type="Sprite" parent="coliders" index="81"]
+[node name="blurTree26" type="Sprite" parent="coliders" index="64"]
 
 modulate = Color( 0, 0, 0, 0.784549 )
-position = Vector2( 113395, 3832.77 )
+position = Vector2( 3184.43, -8240.43 )
 rotation = 0.0421531
 scale = Vector2( 2.96191, 2.96191 )
 z_index = -6
-texture = ExtResource( 22 )
+texture = ExtResource( 21 )
 _sections_unfolded = [ "Visibility" ]
 
-[node name="blurTree26" type="Sprite" parent="coliders" index="82"]
-
-modulate = Color( 0, 0, 0, 0.784549 )
-position = Vector2( 67841.2, 1078.6 )
-rotation = 0.0421531
-scale = Vector2( 2.96191, 2.96191 )
-z_index = -6
-texture = ExtResource( 22 )
-_sections_unfolded = [ "Visibility" ]
-
-[node name="blurTree35" type="Sprite" parent="coliders" index="83"]
+[node name="blurTree35" type="Sprite" parent="coliders" index="65"]
 
 modulate = Color( 0, 0, 0, 0.784549 )
 position = Vector2( 22355.5, -1352.8 )
 rotation = 0.0421531
 scale = Vector2( 2.9619, 2.96191 )
 z_index = -6
-texture = ExtResource( 22 )
+texture = ExtResource( 21 )
 _sections_unfolded = [ "Visibility" ]
 
-[node name="blurTree43" type="Sprite" parent="coliders" index="84"]
+[node name="blurTree43" type="Sprite" parent="coliders" index="66"]
 
 modulate = Color( 0, 0, 0, 0.784549 )
-position = Vector2( -17318.8, -11227.6 )
+position = Vector2( -17433.3, -9968.27 )
 rotation = 0.0421531
 scale = Vector2( 2.9619, 2.96191 )
 z_index = -6
-texture = ExtResource( 22 )
+texture = ExtResource( 21 )
 _sections_unfolded = [ "Visibility" ]
 
-[node name="blurTree47" type="Sprite" parent="coliders" index="85"]
+[node name="blurTree47" type="Sprite" parent="coliders" index="67"]
 
 modulate = Color( 0, 0, 0, 0.784549 )
 position = Vector2( -56046.7, -10987.4 )
 rotation = 0.0421531
 scale = Vector2( 2.9619, 2.96191 )
 z_index = -6
-texture = ExtResource( 22 )
+texture = ExtResource( 21 )
 _sections_unfolded = [ "Visibility" ]
 
-[node name="blurTree17" type="Sprite" parent="coliders" index="86"]
+[node name="blurTree9" type="Sprite" parent="coliders" index="68"]
 
-modulate = Color( 0, 0, 0, 0.392274 )
-position = Vector2( 87542.6, 10832 )
+modulate = Color( 0, 0, 0, 0.784549 )
+position = Vector2( 25049.3, -3440.39 )
 rotation = 0.0421531
 scale = Vector2( 2.96191, 2.96191 )
 z_index = -6
-texture = ExtResource( 22 )
+texture = ExtResource( 21 )
 _sections_unfolded = [ "Visibility" ]
 
-[node name="blurTree9" type="Sprite" parent="coliders" index="87"]
+[node name="blurTree28" type="Sprite" parent="coliders" index="69"]
 
 modulate = Color( 0, 0, 0, 0.784549 )
-position = Vector2( 89706.1, 5878.64 )
-rotation = 0.0421531
-scale = Vector2( 2.96191, 2.96191 )
-z_index = -6
-texture = ExtResource( 22 )
-_sections_unfolded = [ "Visibility" ]
-
-[node name="blurTree24" type="Sprite" parent="coliders" index="88"]
-
-modulate = Color( 0, 0, 0, 0.784549 )
-position = Vector2( 44456, -1711.09 )
-rotation = 0.0421531
-scale = Vector2( 2.96191, 2.96191 )
-z_index = -6
-texture = ExtResource( 22 )
-_sections_unfolded = [ "Visibility" ]
-
-[node name="blurTree28" type="Sprite" parent="coliders" index="89"]
-
-modulate = Color( 0, 0, 0, 0.784549 )
-position = Vector2( -5573.98, -5925.68 )
+position = Vector2( -5573.98, -5913.33 )
 rotation = -0.124982
 scale = Vector2( 2.96191, 2.96191 )
 z_index = -6
-texture = ExtResource( 22 )
+texture = ExtResource( 21 )
 _sections_unfolded = [ "Visibility" ]
 
-[node name="blurTree38" type="Sprite" parent="coliders" index="90"]
+[node name="blurTree38" type="Sprite" parent="coliders" index="70"]
 
 modulate = Color( 0, 0, 0, 0.784549 )
 position = Vector2( -40763.9, -6167.89 )
 rotation = 0.0421531
 scale = Vector2( 2.96191, 2.96191 )
 z_index = -6
-texture = ExtResource( 22 )
+texture = ExtResource( 21 )
 _sections_unfolded = [ "Visibility" ]
 
-[node name="blurTree54" type="Sprite" parent="coliders" index="91"]
+[node name="blurTree54" type="Sprite" parent="coliders" index="71"]
 
 modulate = Color( 0, 0, 0, 0.784549 )
-position = Vector2( -43803.5, -11895 )
+position = Vector2( -52065.7, -12375.4 )
 rotation = 0.0421531
 scale = Vector2( 2.96191, 2.96191 )
 z_index = -6
-texture = ExtResource( 22 )
+texture = ExtResource( 21 )
 _sections_unfolded = [ "Visibility" ]
 
-[node name="Vine03" type="Sprite" parent="coliders" index="92"]
+[node name="Vine03" type="Sprite" parent="coliders" index="72"]
 
-position = Vector2( 37059.4, 3596.51 )
-texture = ExtResource( 12 )
-
-[node name="Vine04" type="Sprite" parent="coliders" index="93"]
-
-position = Vector2( 37811, 3664.84 )
+position = Vector2( -3134.81, 1291.94 )
 texture = ExtResource( 11 )
 
-[node name="BackBushes10" type="Sprite" parent="coliders" index="94"]
+[node name="Vine04" type="Sprite" parent="coliders" index="73"]
 
-position = Vector2( 64225.8, 10670.4 )
+position = Vector2( -2383.21, 1360.27 )
+texture = ExtResource( 10 )
+
+[node name="BackBushes10" type="Sprite" parent="coliders" index="74"]
+
+position = Vector2( 26853.6, 3945.33 )
 rotation = 0.336878
 scale = Vector2( 2.35741, 2.35741 )
 z_index = -1
-texture = ExtResource( 18 )
+texture = ExtResource( 17 )
 _sections_unfolded = [ "Visibility", "Z Index" ]
 
-[node name="BackBushes11" type="Sprite" parent="coliders" index="95"]
+[node name="BackBushes11" type="Sprite" parent="coliders" index="75"]
 
 modulate = Color( 1, 1, 1, 0.674039 )
-position = Vector2( 62599.9, 9548.45 )
+position = Vector2( 26380.6, 2439.08 )
 rotation = 0.336878
 scale = Vector2( 1.05124, 1.05124 )
 z_index = -1
-texture = ExtResource( 18 )
+texture = ExtResource( 17 )
 _sections_unfolded = [ "Visibility", "Z Index" ]
 
-[node name="BackBushes12" type="Sprite" parent="coliders" index="96"]
+[node name="BackBushes12" type="Sprite" parent="coliders" index="76"]
 
-position = Vector2( 73279.5, 21417.3 )
+position = Vector2( 8622.71, 12098.3 )
 rotation = -3.01572
 scale = Vector2( 1.05124, 1.05124 )
 z_index = -1
-texture = ExtResource( 18 )
+texture = ExtResource( 17 )
 _sections_unfolded = [ "Visibility", "Z Index" ]
 
-[node name="BackBushes13" type="Sprite" parent="coliders" index="97"]
+[node name="BackBushes13" type="Sprite" parent="coliders" index="77"]
 
 modulate = Color( 1, 1, 1, 0.685059 )
-position = Vector2( 74556.6, 21098.8 )
+position = Vector2( 9899.82, 11683.7 )
 rotation = -2.97551
 scale = Vector2( 1.37457, 1.37457 )
 z_index = -1
-texture = ExtResource( 18 )
+texture = ExtResource( 17 )
 _sections_unfolded = [ "Visibility", "Z Index" ]
 
-[node name="Vegetation11" parent="coliders" index="98" instance=ExtResource( 4 )]
+[node name="Vegetation11" parent="coliders" index="78" instance=ExtResource( 4 )]
 
-position = Vector2( 33040.6, 7979.6 )
+position = Vector2( -316.522, 2671.55 )
+rotation = -0.221631
 
-[node name="Vegetation12" parent="coliders" index="99" instance=ExtResource( 4 )]
+[node name="Polygon2D" type="Polygon2D" parent="." index="10"]
 
-position = Vector2( 54061.5, 4542.97 )
+polygon = PoolVector2Array(  )
+uv = PoolVector2Array(  )
+color = Color( 1, 1, 1, 1 )
+vertex_colors = PoolColorArray(  )
+offset = Vector2( 0, 0 )
+antialiased = false
+texture = null
+texture_offset = Vector2( 0, 0 )
+texture_scale = Vector2( 1, 1 )
+texture_rotation_degrees = 0.0
+invert_enable = false
+invert_border = 100.0
 
 

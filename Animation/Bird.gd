@@ -108,8 +108,8 @@ func _process(delta):
 
 func _on_Area2D_body_entered(body):
 	if(body.is_in_group("tree")):
-		final = true
-		get_node("Body/Head/Position2D/Area2D/bico").queue_free()
+		#final = true
+		#get_node("Body/Head/Position2D/Area2D/bico").queue_free()
 		endgame()
 		
 	if(body.is_in_group("catapult")):
