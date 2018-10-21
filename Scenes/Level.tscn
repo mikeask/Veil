@@ -2556,7 +2556,7 @@ _sections_unfolded = [ "Visibility" ]
 
 [node name="box2" parent="." index="10" instance=ExtResource( 38 )]
 
-position = Vector2( 501.426, 1542.54 )
+position = Vector2( 307.955, 1155.6 )
 
 [node name="box3" parent="." index="11" instance=ExtResource( 38 )]
 
