@@ -1746,7 +1746,7 @@ tracks/12/keys = {
 custom_solver_bias = 0.0
 extents = Vector2( 133.531, 56.9409 )
 
-[node name="Level" type="Node2D" index="0"]
+[node name="Level" type="Node2D"]
 
 pause_mode = 2
 script = ExtResource( 1 )

@@ -1542,7 +1542,7 @@ tracks/14/keys = {
 "values": [ false, false ]
 }
 
-[node name="Bird" type="KinematicBody2D"]
+[node name="Bird" type="KinematicBody2D" index="0"]
 
 input_pickable = false
 collision_layer = 1
