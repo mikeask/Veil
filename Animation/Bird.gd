@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 const vel_andar = 600
-const gravidade = 10
+const gravidade = 90
 const vel_pulo = 1600
 const normal = Vector2(0,-1)
 
@@ -13,6 +13,8 @@ var final = false
 var direcao = "direita"
 var pickup = false
 var time = 1
+var time_alavanca = 22
+var aberto = false
 
 
 func _ready():
@@ -89,6 +91,15 @@ func _process(delta):
 			pickup = false
 			get_node("Body/Head/Position2D/Area2D/bico").set_disabled(true) 
 		time -=delta
+		
+		
+	if aberto:
+		if time_alavanca<=0:
+			time_alavanca= 22
+			aberto = false
+			get_parent().get_node("porta/AnimationPlayer").play("descer")
+			get_parent().get_node("alavanca/AnimationPlayer").play("fechar")
+		time_alavanca -=delta
 
 	pass
 
@@ -97,8 +108,14 @@ func _on_Area2D_body_entered(body):
 		final = true
 		get_node("Body/Head/Position2D/Area2D/bico").queue_free()
 		endgame()
+		
 	if(body.is_in_group("catapult")):
 		vel_linear.y = -vel_pulo*8
 		body.get_node("CatapultAnimation").play("Catapult")
+		
+	if(body.is_in_group("alavanca")):
+		get_parent().get_node("porta/AnimationPlayer").play("subir")
+		get_parent().get_node("alavanca/AnimationPlayer").play("abrir")
+		aberto = true
 		
 	pass # replace with function body
