@@ -1,4 +1,4 @@
-[gd_scene load_steps=61 format=2]
+[gd_scene load_steps=62 format=2]
 
 [ext_resource path="res://Scenes/Level.gd" type="Script" id=1]
 [ext_resource path="res://Audio/MachinimaSound.com_-_Summer_Rain.wav" type="AudioStream" id=2]
@@ -1925,6 +1925,37 @@ tracks/4/keys = {
 custom_solver_bias = 0.0
 extents = Vector2( 221.761, 3.82904 )
 
+[sub_resource type="Animation" id=22]
+
+resource_name = "descer"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 90.8155 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 37773, 2455.75 ), Vector2( 38697.6, 2521.34 ) ]
+}
+
 [node name="Level" type="Node2D" index="0"]
 
 pause_mode = 2
@@ -2075,7 +2106,7 @@ texture = ExtResource( 9 )
 
 pause_mode = 1
 editor/display_folded = true
-position = Vector2( 1214.71, 5255.25 )
+position = Vector2( 30793.4, 2915.8 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -2570,6 +2601,144 @@ scale = Vector2( 0.159214, 0.637877 )
 texture = ExtResource( 39 )
 offset = Vector2( 0.00537109, 306.088 )
 _sections_unfolded = [ "Transform" ]
+
+[node name="pilar" type="KinematicBody2D" parent="." index="16" groups=[
+"pilar",
+]]
+
+position = Vector2( 31755.7, 2587.55 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="pilar" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -110.32, 475.781, 127.217, 475.781, 110.834, -228.636, -118.51, -187.681 )
+one_way_collision = true
+
+[node name="Polygon2D" type="Polygon2D" parent="pilar" index="1"]
+
+polygon = PoolVector2Array( -110.32, 475.781, 127.217, 475.781, 110.834, -228.636, -118.51, -187.681 )
+uv = PoolVector2Array(  )
+color = Color( 0.0551126, 0.0340729, 0.113281, 1 )
+vertex_colors = PoolColorArray(  )
+offset = Vector2( 0, 0 )
+antialiased = false
+texture = null
+texture_offset = Vector2( 0, 0 )
+texture_scale = Vector2( 1, 1 )
+texture_rotation_degrees = 0.0
+invert_enable = false
+invert_border = 100.0
+
+[node name="pilar2" type="KinematicBody2D" parent="." index="17" groups=[
+"pilar",
+]]
+
+position = Vector2( 32679.4, 2603.65 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="pilar2" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -110.32, 475.781, 127.217, 475.781, 110.834, -228.636, -118.51, -187.681 )
+one_way_collision = true
+
+[node name="Polygon2D" type="Polygon2D" parent="pilar2" index="1"]
+
+polygon = PoolVector2Array( -110.32, 475.781, 127.217, 475.781, 110.834, -228.636, -118.51, -187.681 )
+uv = PoolVector2Array(  )
+color = Color( 0.0551126, 0.0340729, 0.113281, 1 )
+vertex_colors = PoolColorArray(  )
+offset = Vector2( 0, 0 )
+antialiased = false
+texture = null
+texture_offset = Vector2( 0, 0 )
+texture_scale = Vector2( 1, 1 )
+texture_rotation_degrees = 0.0
+invert_enable = false
+invert_border = 100.0
+
+[node name="pilar3" type="KinematicBody2D" parent="." index="18" groups=[
+"pilar",
+]]
+
+position = Vector2( 33604.3, 2603.07 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="pilar3" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -110.32, 475.781, 127.217, 475.781, 110.834, -228.636, -118.51, -187.681 )
+one_way_collision = true
+
+[node name="Polygon2D" type="Polygon2D" parent="pilar3" index="1"]
+
+polygon = PoolVector2Array( -110.32, 475.781, 127.217, 475.781, 110.834, -228.636, -118.51, -187.681 )
+uv = PoolVector2Array(  )
+color = Color( 0.0551126, 0.0340729, 0.113281, 1 )
+vertex_colors = PoolColorArray(  )
+offset = Vector2( 0, 0 )
+antialiased = false
+texture = null
+texture_offset = Vector2( 0, 0 )
+texture_scale = Vector2( 1, 1 )
+texture_rotation_degrees = 0.0
+invert_enable = false
+invert_border = 100.0
+
+[node name="ponte" type="KinematicBody2D" parent="." index="19"]
+
+position = Vector2( 37773, 2455.75 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+_sections_unfolded = [ "Transform" ]
+
+[node name="Polygon2D" type="Polygon2D" parent="ponte" index="0"]
+
+position = Vector2( 463.039, 498.501 )
+rotation = -1.58176
+polygon = PoolVector2Array( 329.148, 551.684, 4989.77, 649.975, 4973.39, 559.875, 329.149, 453.393 )
+uv = PoolVector2Array(  )
+color = Color( 0.183594, 0.183594, 0.183594, 1 )
+vertex_colors = PoolColorArray(  )
+offset = Vector2( -463.039, -498.501 )
+antialiased = false
+texture = null
+texture_offset = Vector2( 0, 0 )
+texture_scale = Vector2( 1, 1 )
+texture_rotation_degrees = 0.0
+invert_enable = false
+invert_border = 100.0
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ponte" index="1"]
+
+position = Vector2( -30.3477, 966.988 )
+rotation = -1.58176
+build_mode = 0
+polygon = PoolVector2Array( 329.148, 551.684, 4989.77, 649.975, 4973.39, 559.875, 329.149, 453.393 )
+one_way_collision = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="ponte" index="2"]
+
+root_node = NodePath("..")
+autoplay = ""
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+playback_speed = 1.0
+anims/descer = SubResource( 22 )
+blend_times = [  ]
 
 [connection signal="button_down" from="CanvasLayer/PauseMenu/Continue" to="." method="_on_Continue_button_down"]
 

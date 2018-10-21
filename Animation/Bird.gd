@@ -15,6 +15,7 @@ var pickup = false
 var time = 1
 var time_alavanca = 22
 var aberto = false
+var sequencia = 0;
 
 
 func _ready():
@@ -117,5 +118,35 @@ func _on_Area2D_body_entered(body):
 		get_parent().get_node("porta/AnimationPlayer").play("subir")
 		get_parent().get_node("alavanca/AnimationPlayer").play("abrir")
 		aberto = true
+	if(body.is_in_group("pilar")):
+		
+		if body.get_name() == "pilar2" and sequencia == 0:
+			sequencia = 1
+			
+		elif body.get_name() == "pilar2" and sequencia == 1: 
+			sequencia = 1
+			
+			
+		elif body.get_name() == "pilar" and sequencia == 1:
+			sequencia = 2
+			
+		elif body.get_name() == "pilar" and sequencia == 2: 
+			sequencia = 2
+			
+			
+		elif body.get_name() == "pilar3" and sequencia == 2:
+			sequencia = 3
+			
+		elif body.get_name() == "pilar3" and sequencia == 3: 
+			sequencia = 3
+			
+		else :
+			sequencia = 0
+			
+			
+		if sequencia == 3:
+			get_parent().get_node("ponte/AnimationPlayer").play("descer")
+			pass
+		
 		
 	pass # replace with function body
