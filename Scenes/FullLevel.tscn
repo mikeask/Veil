@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://Scenes/FullLevelPoly2d.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Prefabs/Vegetation02.tscn" type="PackedScene" id=2]
@@ -21,8 +21,9 @@
 [ext_resource path="res://Sprites/Environment/SkyBG.png" type="Texture" id=19]
 [ext_resource path="res://Sprites/Environment/Tree01white.png" type="Texture" id=20]
 [ext_resource path="res://Sprites/Environment/blurTree.png" type="Texture" id=21]
+[ext_resource path="res://Sprites/Environment/Nest.png" type="Texture" id=22]
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D" type="Node2D" index="0"]
 
 __meta__ = {
 "_edit_horizontal_guides_": [ -11799.0 ]
@@ -1195,5 +1196,12 @@ texture_scale = Vector2( 1, 1 )
 texture_rotation_degrees = 0.0
 invert_enable = false
 invert_border = 100.0
+
+[node name="Nest" type="Sprite" parent="." index="11"]
+
+position = Vector2( -66279.1, -688.645 )
+rotation = 0.404635
+scale = Vector2( 1.28744, 1.28744 )
+texture = ExtResource( 22 )
 
 

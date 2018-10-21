@@ -1984,7 +1984,7 @@ tracks/1/keys = {
 "values": [ Vector2( 37773, 2455.75 ), Vector2( 38697.6, 2521.34 ) ]
 }
 
-[node name="Level" type="Node2D" index="0"]
+[node name="Level" type="Node2D"]
 
 pause_mode = 2
 script = ExtResource( 1 )
@@ -2014,7 +2014,7 @@ bus = "Master"
 
 pause_mode = 1
 editor/display_folded = true
-position = Vector2( 30308.4, 2382.63 )
+position = Vector2( -11925.7, 974.248 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
