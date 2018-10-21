@@ -16,7 +16,7 @@ var time = 1
 
 
 func _ready():
-		
+	get_node("Body/Head/Position2D/Area2D/bico")
 	pass
 	
 func endgame():
@@ -61,6 +61,7 @@ func _process(delta):
 					 		get_node("gancho2").get_collider().vel_linear.x = -300
 			if Input.is_action_just_pressed("pickup"):
 				pickup = true
+				get_node("Body/Head/Position2D/Area2D/bico").set_disabled(false)
 				novaAnimacao = "Pickup"
 		else:
 			if(vel_linear.y > 0 and !get_node("pe2").is_colliding()and !get_node("pe1").is_colliding()):
@@ -86,6 +87,7 @@ func _process(delta):
 		if time<=0:
 			time = 1
 			pickup = false
+			get_node("Body/Head/Position2D/Area2D/bico").set_disabled(true) 
 		time -=delta
 
 	pass
@@ -95,4 +97,8 @@ func _on_Area2D_body_entered(body):
 		final = true
 		get_node("Body/Head/Position2D/Area2D/bico").queue_free()
 		endgame()
+	if(body.is_in_group("catapult")):
+		vel_linear.y = -vel_pulo*8
+		body.get_node("CatapultAnimation").play("Catapult")
+		
 	pass # replace with function body

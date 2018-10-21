@@ -1,4 +1,4 @@
-[gd_scene load_steps=53 format=2]
+[gd_scene load_steps=54 format=2]
 
 [ext_resource path="res://Scenes/Level.gd" type="Script" id=1]
 [ext_resource path="res://Audio/MachinimaSound.com_-_Summer_Rain.wav" type="AudioStream" id=2]
@@ -38,10 +38,11 @@
 [ext_resource path="res://Sprites/Environment/Catapult.png" type="Texture" id=36]
 [ext_resource path="res://Sprites/Puzzles/Rope.png" type="Texture" id=37]
 
-[sub_resource type="CircleShape2D" id=1]
+[sub_resource type="CapsuleShape2D" id=1]
 
 custom_solver_bias = 0.0
-radius = 23.4238
+radius = 10.0
+height = 87.3691
 
 [sub_resource type="SpriteFrames" id=2]
 
@@ -1815,6 +1816,11 @@ tracks/4/keys = {
 "values": [ Vector2( 7283.52, 2889.72 ), Vector2( 7281.71, 2889.9 ), Vector2( 7282.09, 2889.86 ) ]
 }
 
+[sub_resource type="RectangleShape2D" id=16]
+
+custom_solver_bias = 0.0
+extents = Vector2( 221.761, 3.82904 )
+
 [node name="Level" type="Node2D" index="0"]
 
 pause_mode = 2
@@ -1966,7 +1972,7 @@ texture = ExtResource( 9 )
 ]]
 
 pause_mode = 1
-position = Vector2( -1140.68, 1260.42 )
+position = Vector2( 6821.55, 1619.39 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -1976,8 +1982,8 @@ _sections_unfolded = [ "Collision", "Pause", "Pickable", "Transform", "Z Index",
 
 [node name="Body" type="Sprite" parent="Bird" index="0"]
 
-position = Vector2( -10.296, -90.8936 )
-rotation = 0.565735
+position = Vector2( -10.9523, -89.581 )
+rotation = 0.135507
 scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 11 )
 offset = Vector2( 23.1897, -599.485 )
@@ -2009,21 +2015,22 @@ _sections_unfolded = [ "Offset", "Transform", "Visibility" ]
 [node name="Tail" type="Sprite" parent="Bird/Body" index="2"]
 
 position = Vector2( -490.961, -645.75 )
-rotation = -0.178043
+rotation = -0.0793814
 texture = ExtResource( 13 )
 offset = Vector2( -351.537, 52.0476 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="Head" type="Sprite" parent="Bird/Body" index="3"]
 
-position = Vector2( 388.78, -889.292 )
-rotation = 0.205293
+position = Vector2( 369.631, -829.521 )
+rotation = -0.0157064
 texture = ExtResource( 14 )
 offset = Vector2( 166.636, -322.659 )
 _sections_unfolded = [ "Transform", "Z Index" ]
 
 [node name="AngryEye" type="Sprite" parent="Bird/Body/Head" index="0"]
 
+visible = false
 position = Vector2( 397.792, -416.336 )
 rotation = -0.0575343
 scale = Vector2( 1.49211, 1.49211 )
@@ -2033,7 +2040,6 @@ _sections_unfolded = [ "Visibility", "Z Index" ]
 
 [node name="Eye" type="Sprite" parent="Bird/Body/Head" index="1"]
 
-visible = false
 position = Vector2( 307.329, -359.249 )
 rotation = -0.0575343
 scale = Vector2( 1.49211, 1.49211 )
@@ -2059,14 +2065,16 @@ audio_bus_name = "Master"
 
 [node name="bico" type="CollisionShape2D" parent="Bird/Body/Head/Position2D/Area2D" index="0"]
 
-position = Vector2( 216.044, -300.377 )
+position = Vector2( 247.88, -282.819 )
+rotation = 2.06134
 shape = SubResource( 1 )
+disabled = true
 
 [node name="l_leg" type="Sprite" parent="Bird" index="1"]
 
 editor/display_folded = true
-position = Vector2( 39.2725, -62.1498 )
-rotation = 0.686267
+position = Vector2( 25.477, -71.0161 )
+rotation = -0.0857217
 scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 17 )
 offset = Vector2( 24.1047, 133.524 )
@@ -2083,8 +2091,8 @@ _sections_unfolded = [ "Transform" ]
 [node name="r_leg" type="Sprite" parent="Bird" index="2"]
 
 editor/display_folded = true
-position = Vector2( -7.06167, -61.8473 )
-rotation = -0.0680966
+position = Vector2( -21.7945, -64.3028 )
+rotation = 0.104548
 scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 17 )
 offset = Vector2( 29.4708, 122.546 )
@@ -2231,7 +2239,7 @@ position = Vector2( -30510.2, 1418.59 )
 
 [node name="Node2D" parent="." index="6" instance=ExtResource( 30 )]
 
-position = Vector2( 53988.9, 1640.71 )
+position = Vector2( 54019.2, 1595.24 )
 _sections_unfolded = [ "Z Index" ]
 
 [node name="GiantButton" type="Polygon2D" parent="." index="7"]
@@ -2320,15 +2328,26 @@ _sections_unfolded = [ "Visibility" ]
 
 position = Vector2( 501.426, 1542.54 )
 
-[node name="Catapult" type="Sprite" parent="." index="12"]
+[node name="catapult" type="KinematicBody2D" parent="." index="12" groups=[
+"catapult",
+]]
 
 position = Vector2( 8353.14, 2477.78 )
-rotation = 1.85353
+scale = Vector2( 1, 6.08439 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+
+[node name="Catapult" type="Sprite" parent="catapult" index="0"]
+
+position = Vector2( 5.46094, 0.102081 )
+scale = Vector2( 1, 0.164355 )
 texture = ExtResource( 36 )
 offset = Vector2( -365.547, 137.207 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="CatapultAnimation" type="AnimationPlayer" parent="Catapult" index="0"]
+[node name="CatapultAnimation" type="AnimationPlayer" parent="catapult" index="1"]
 
 root_node = NodePath("..")
 autoplay = ""
@@ -2338,11 +2357,26 @@ playback_speed = 1.0
 anims/Catapult = SubResource( 15 )
 blend_times = [  ]
 
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="catapult" index="2"]
+
+position = Vector2( 1.31152, 0.494965 )
+scale = Vector2( 1, 0.164355 )
+build_mode = 0
+polygon = PoolVector2Array( -0.980469, -26.6375, -28.417, 69.3884, -36.9014, 56.3904, -58.2607, 63.0476, -75.7363, 71.9241, -106.249, 89.677, -155.899, 117.39, -212.386, 147.567, -322.262, 227.267, -418.985, 317.025, -469.281, 371.19, -483.209, 376.606, -501.779, 364.226, -605.466, 378.928, -656.952, 385.142, -700.678, 381.713, -709.252, 379.998, -711.824, 356.849, -661.239, 358.563, -590.934, 353.419, -523.202, 337.987, -492.336, 314.837, -422.031, 235.959, -372.303, 188.803, -289.138, 115.927, -207.688, 61.0547, -120.236, 6.18286, -50.7891, -25.54 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="corda" type="CollisionShape2D" parent="catapult" index="3"]
+
+position = Vector2( -855.901, 64.8088 )
+rotation = -0.0200053
+shape = SubResource( 16 )
+one_way_collision = true
+
 [node name="Rope" type="Sprite" parent="." index="13"]
 
-position = Vector2( 7282.09, 2889.86 )
-rotation = -0.900263
-scale = Vector2( 0.159214, 0.145239 )
+position = Vector2( 7283.52, 2889.72 )
+rotation = -1.67211
+scale = Vector2( 0.159214, 0.637877 )
 texture = ExtResource( 37 )
 offset = Vector2( 0.00537109, 306.088 )
 _sections_unfolded = [ "Transform" ]
