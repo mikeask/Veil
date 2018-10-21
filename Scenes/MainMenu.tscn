@@ -114,8 +114,8 @@ _sections_unfolded = [ "Z Index" ]
 
 [node name="Fog01" parent="." index="6" instance=ExtResource( 12 )]
 
-position = Vector2( 2926.23, 417.468 )
-scale = Vector2( 1.27211, 1.27211 )
+position = Vector2( 1463.71, 535.019 )
+scale = Vector2( 1.27465, 1.27465 )
 
 [node name="Vegetation03" parent="." index="7" instance=ExtResource( 13 )]
 
