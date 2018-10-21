@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/MachinimaSound.com_-_Winter_Dawn.wav-7918e6acbf84401ceda098a35790b8e4.sample"
+
+[deps]
+
+source_file="res://Audio/MachinimaSound.com_-_Winter_Dawn.wav"
+dest_files=[ "res://.import/MachinimaSound.com_-_Winter_Dawn.wav-7918e6acbf84401ceda098a35790b8e4.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
