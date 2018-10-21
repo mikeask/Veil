@@ -1,4 +1,4 @@
-[gd_scene load_steps=50 format=2]
+[gd_scene load_steps=53 format=2]
 
 [ext_resource path="res://Scenes/Level.gd" type="Script" id=1]
 [ext_resource path="res://Audio/MachinimaSound.com_-_Summer_Rain.wav" type="AudioStream" id=2]
@@ -35,6 +35,8 @@
 [ext_resource path="res://Sprites/Environment/BrokenTree1.png" type="Texture" id=33]
 [ext_resource path="res://Sprites/Environment/BrokenTree2.png" type="Texture" id=34]
 [ext_resource path="res://Sprites/Environment/Light.png" type="Texture" id=35]
+[ext_resource path="res://Sprites/Environment/Catapult.png" type="Texture" id=36]
+[ext_resource path="res://Sprites/Puzzles/Rope.png" type="Texture" id=37]
 
 [sub_resource type="CircleShape2D" id=1]
 
@@ -1746,7 +1748,74 @@ tracks/12/keys = {
 custom_solver_bias = 0.0
 extents = Vector2( 133.531, 56.9409 )
 
-[node name="Level" type="Node2D"]
+[sub_resource type="Animation" id=15]
+
+resource_name = "Catapult"
+length = 0.2
+loop = false
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 106.199 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 8353.14, 2477.78 ), Vector2( 8353.14, 2477.78 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("../Rope:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.15, 0.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.159214, 0.637877 ), Vector2( 0.159214, 0.0118064 ), Vector2( 0.159214, 0.145239 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("../Rope:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.15, 0.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ -95.805, -95.805, -51.5813 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("../Rope:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.15, 0.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 7283.52, 2889.72 ), Vector2( 7281.71, 2889.9 ), Vector2( 7282.09, 2889.86 ) ]
+}
+
+[node name="Level" type="Node2D" index="0"]
 
 pause_mode = 2
 script = ExtResource( 1 )
@@ -2162,7 +2231,7 @@ position = Vector2( -30510.2, 1418.59 )
 
 [node name="Node2D" parent="." index="6" instance=ExtResource( 30 )]
 
-position = Vector2( 53999.5, 1648.69 )
+position = Vector2( 53988.9, 1640.71 )
 _sections_unfolded = [ "Z Index" ]
 
 [node name="GiantButton" type="Polygon2D" parent="." index="7"]
@@ -2200,6 +2269,7 @@ _sections_unfolded = [ "Transform" ]
 "tree",
 ]]
 
+editor/display_folded = true
 position = Vector2( 148479, 12009.8 )
 input_pickable = false
 collision_layer = 1
@@ -2249,6 +2319,33 @@ _sections_unfolded = [ "Visibility" ]
 [node name="box2" parent="." index="11" instance=ExtResource( 29 )]
 
 position = Vector2( 501.426, 1542.54 )
+
+[node name="Catapult" type="Sprite" parent="." index="12"]
+
+position = Vector2( 8353.14, 2477.78 )
+rotation = 1.85353
+texture = ExtResource( 36 )
+offset = Vector2( -365.547, 137.207 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CatapultAnimation" type="AnimationPlayer" parent="Catapult" index="0"]
+
+root_node = NodePath("..")
+autoplay = ""
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+playback_speed = 1.0
+anims/Catapult = SubResource( 15 )
+blend_times = [  ]
+
+[node name="Rope" type="Sprite" parent="." index="13"]
+
+position = Vector2( 7282.09, 2889.86 )
+rotation = -0.900263
+scale = Vector2( 0.159214, 0.145239 )
+texture = ExtResource( 37 )
+offset = Vector2( 0.00537109, 306.088 )
+_sections_unfolded = [ "Transform" ]
 
 [connection signal="button_down" from="CanvasLayer/PauseMenu/Continue" to="." method="_on_Continue_button_down"]
 
