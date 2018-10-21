@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://Scripts/CreditsTitle.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/CreditsTitle.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/logo.png" type="Texture" id=2]
 [ext_resource path="res://Others/TextHintsTheme.tres" type="Theme" id=3]
 [ext_resource path="res://Others/TextThemeCredits.tres" type="Theme" id=4]
@@ -73,9 +73,10 @@ tracks/4/keys = {
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.196078 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.196078 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.196078 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.196078 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.196078 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.196078 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.196078 ), Color( 1, 1, 1, 0.196078 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.196078 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.196078 ), Color( 1, 1, 1, 1 ) ]
 }
 
-[node name="CreditsTitle" type="Node2D"]
+[node name="CreditsTitle" type="Node2D" index="0"]
 
 script = ExtResource( 1 )
+_sections_unfolded = [ "Pause" ]
 
 [node name="ColorRect" type="ColorRect" parent="." index="0"]
 
@@ -186,28 +187,28 @@ theme = ExtResource( 4 )
 text = "						
 PROGRAMMING
 Michael Vivaldini
-Tácio Barreto
+Tacio Barreto
 
+GENERAL DESIGN
+Daniel Quevedo
 
 							LEVEL DESIGN
 							Daniel Quevedo
 							Douglas Rodrigues
+							Tacio Barreto
 							
 							
 UI DEVELOPMENT
 Daniel Quevedo
 Michael Vivaldini
-
-
-GENERAL DESIGN
-Daniel Quevedo
-							
+		
 							
 							IDEALIZATION AND HISTORY
 							Daniel Quevedo
 							Douglas Rodrigues
 							Michael Vivaldini
-							Tácio Barreto
+							Tacio Barreto
+						
 							
 							MUSIC CREDITS
 							Main Menu and Ingame Theme

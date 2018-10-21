@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/MachinimaSound.com_-_Fields_of_Green(EndingTheme).wav-ae6f3f1b5a48ef5b4140540ac323feff.sample"
+
+[deps]
+
+source_file="res://Audio/MachinimaSound.com_-_Fields_of_Green(EndingTheme).wav"
+dest_files=[ "res://.import/MachinimaSound.com_-_Fields_of_Green(EndingTheme).wav-ae6f3f1b5a48ef5b4140540ac323feff.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
