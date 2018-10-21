@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://Animation/Bird.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/Characters/bird.png" type="Texture" id=2]
@@ -18,6 +18,11 @@
 [ext_resource path="res://Sprites/Wings/w8.png" type="Texture" id=16]
 [ext_resource path="res://Sprites/Wings/w9.png" type="Texture" id=17]
 [ext_resource path="res://Sprites/Characters/Eye2.png" type="Texture" id=18]
+
+[sub_resource type="CircleShape2D" id=12]
+
+custom_solver_bias = 0.0
+radius = 23.4238
 
 [sub_resource type="SpriteFrames" id=1]
 
@@ -837,7 +842,7 @@ tracks/13/keys = {
 [sub_resource type="Animation" id=8]
 
 length = 4.0
-loop = false
+loop = true
 step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("r_leg:position")
@@ -921,7 +926,7 @@ tracks/6/keys = {
 "times": PoolRealArray( 0, 1.2, 4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ -6.58654, -27.1454, -6.58654 ]
+"values": [ 0.0, -27.1454, -6.58654 ]
 }
 tracks/7/type = "value"
 tracks/7/path = NodePath("Body/Tail:position")
@@ -970,6 +975,20 @@ tracks/10/keys = {
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ false, false ]
+}
+tracks/11/type = "method"
+tracks/11/path = NodePath(".")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 4 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "self.pickup = false"
+} ]
 }
 
 [sub_resource type="Animation" id=9]
@@ -1553,8 +1572,8 @@ _sections_unfolded = [ "Collision", "Pickable", "Transform", "Z Index", "collisi
 
 [node name="Body" type="Sprite" parent="." index="0"]
 
-position = Vector2( -9.07874, -88.8309 )
-rotation = 0.159951
+position = Vector2( -10.296, -90.8936 )
+rotation = 0.0254561
 scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 2 )
 offset = Vector2( 23.1897, -599.485 )
@@ -1586,15 +1605,14 @@ _sections_unfolded = [ "Offset", "Transform", "Visibility" ]
 [node name="Tail" type="Sprite" parent="Body" index="2"]
 
 position = Vector2( -490.961, -645.75 )
-rotation = -0.354243
 texture = ExtResource( 4 )
 offset = Vector2( -351.537, 52.0476 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="Head" type="Sprite" parent="Body" index="3"]
 
-position = Vector2( 388.78, -889.292 )
-rotation = 0.124692
+position = Vector2( 346.275, -833.268 )
+rotation = 0.0320781
 z_index = 1
 texture = ExtResource( 5 )
 offset = Vector2( 166.636, -322.659 )
@@ -1618,6 +1636,28 @@ scale = Vector2( 1.49211, 1.49211 )
 texture = ExtResource( 7 )
 _sections_unfolded = [ "Visibility" ]
 
+[node name="Position2D" type="Position2D" parent="Body/Head" index="2"]
+
+position = Vector2( 699.758, -257.151 )
+
+[node name="Area2D" type="Area2D" parent="Body/Head/Position2D" index="0"]
+
+position = Vector2( -941.602, 1551.85 )
+rotation = -0.0575343
+scale = Vector2( 5, 5 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+
+[node name="bico" type="CollisionShape2D" parent="Body/Head/Position2D/Area2D" index="0"]
+
+position = Vector2( 216.044, -300.377 )
+shape = SubResource( 12 )
+
 [node name="l_leg" type="Sprite" parent="." index="1"]
 
 editor/display_folded = true
@@ -1639,8 +1679,8 @@ _sections_unfolded = [ "Transform" ]
 [node name="r_leg" type="Sprite" parent="." index="2"]
 
 editor/display_folded = true
-position = Vector2( -21.4189, -63.0119 )
-rotation = -0.16179
+position = Vector2( -21.7945, -64.3028 )
+rotation = 0.209473
 scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 8 )
 offset = Vector2( 29.4708, 122.546 )
@@ -1748,5 +1788,7 @@ enabled = true
 exclude_parent = true
 cast_to = Vector2( 0, 10 )
 collision_mask = 1
+
+[connection signal="body_entered" from="Body/Head/Position2D/Area2D" to="." method="_on_Area2D_body_entered"]
 
 
