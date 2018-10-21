@@ -1752,7 +1752,7 @@ extents = Vector2( 133.531, 56.9409 )
 [sub_resource type="Animation" id=15]
 
 resource_name = "Catapult"
-length = 0.2
+length = 3.0
 loop = false
 step = 0.05
 tracks/0/type = "value"
@@ -1762,10 +1762,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.2 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 0.2, 3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ 0.0, 106.199 ]
+"values": [ 0.0, 106.199, 0.0 ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath(".:position")
@@ -1774,10 +1774,10 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.2 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 0.2, 3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 8353.14, 2477.78 ), Vector2( 8353.14, 2477.78 ) ]
+"values": [ Vector2( 8353.14, 2477.78 ), Vector2( 8353.14, 2477.78 ), Vector2( 8353.14, 2477.78 ) ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("../Rope:scale")
@@ -1786,10 +1786,10 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 0.15, 0.2 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.15, 0.2, 3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 0.159214, 0.637877 ), Vector2( 0.159214, 0.0118064 ), Vector2( 0.159214, 0.145239 ) ]
+"values": [ Vector2( 0.159214, 0.637877 ), Vector2( 0.159214, 0.0118064 ), Vector2( 0.159214, 0.145239 ), Vector2( 0.159214, 0.637877 ) ]
 }
 tracks/3/type = "value"
 tracks/3/path = NodePath("../Rope:rotation_degrees")
@@ -1798,10 +1798,10 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0, 0.15, 0.2 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.15, 0.2, 3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
-"values": [ -95.805, -95.805, -51.5813 ]
+"values": [ -95.805, -95.805, -51.5813, -95.805 ]
 }
 tracks/4/type = "value"
 tracks/4/path = NodePath("../Rope:position")
@@ -1810,10 +1810,10 @@ tracks/4/loop_wrap = true
 tracks/4/imported = false
 tracks/4/enabled = true
 tracks/4/keys = {
-"times": PoolRealArray( 0, 0.15, 0.2 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.15, 0.2, 3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 7283.52, 2889.72 ), Vector2( 7281.71, 2889.9 ), Vector2( 7282.09, 2889.86 ) ]
+"values": [ Vector2( 7283.52, 2889.72 ), Vector2( 7281.71, 2889.9 ), Vector2( 7282.09, 2889.86 ), Vector2( 7283.52, 2889.72 ) ]
 }
 
 [sub_resource type="RectangleShape2D" id=16]
@@ -1982,7 +1982,7 @@ _sections_unfolded = [ "Collision", "Pause", "Pickable", "Transform", "Z Index",
 
 [node name="Body" type="Sprite" parent="Bird" index="0"]
 
-position = Vector2( -10.9523, -89.581 )
+position = Vector2( -10.1399, -91.2057 )
 rotation = 0.135507
 scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 11 )
@@ -2015,7 +2015,7 @@ _sections_unfolded = [ "Offset", "Transform", "Visibility" ]
 [node name="Tail" type="Sprite" parent="Bird/Body" index="2"]
 
 position = Vector2( -490.961, -645.75 )
-rotation = -0.0793814
+rotation = -0.123417
 texture = ExtResource( 13 )
 offset = Vector2( -351.537, 52.0476 )
 _sections_unfolded = [ "Transform" ]
@@ -2023,7 +2023,7 @@ _sections_unfolded = [ "Transform" ]
 [node name="Head" type="Sprite" parent="Bird/Body" index="3"]
 
 position = Vector2( 369.631, -829.521 )
-rotation = -0.0157064
+rotation = 0.0434425
 texture = ExtResource( 14 )
 offset = Vector2( 166.636, -322.659 )
 _sections_unfolded = [ "Transform", "Z Index" ]
