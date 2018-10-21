@@ -12,12 +12,12 @@ func _ready():
 	pass
 
 func _process(delta):
-	$Light2D.energy = $Light2D.energy+delta*lumini
-	
+	$Light2D.energy = $Light2D.energy+(delta/10)*lumini
+	$Fog01.rotate(delta/100);
 	if($Light2D.energy < 0.5):
 		lumini=1
 		pass
-	elif($Light2D.energy > 2):
+	elif($Light2D.energy > 1.5):
 		lumini=-1
 		pass
 		

@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://Scripts/MainMenu.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/Menu/MenuBackground.png" type="Texture" id=2]
@@ -9,15 +9,22 @@
 [ext_resource path="res://Sprites/Menu/Credits.png" type="Texture" id=7]
 [ext_resource path="res://Sprites/Menu/CreditsClick.png" type="Texture" id=8]
 [ext_resource path="res://Sprites/Menu/CreditsHover.png" type="Texture" id=9]
-[ext_resource path="res://Sprites/Environment/Tree01.png" type="Texture" id=10]
-[ext_resource path="res://Sprites/Environment/Vegetation01.png" type="Texture" id=11]
-[ext_resource path="res://Sprites/logo.png" type="Texture" id=12]
-[ext_resource path="res://Sprites/Environment/Tree03.png" type="Texture" id=13]
-[ext_resource path="res://Sprites/light.png" type="Texture" id=14]
-[ext_resource path="res://Sprites/Environment/Vine01.png" type="Texture" id=15]
-[ext_resource path="res://Audio/The Outer Forest.wav" type="AudioStream" id=16]
+[ext_resource path="res://Sprites/Environment/GateFrame.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/Environment/Gate.png" type="Texture" id=11]
+[ext_resource path="res://Prefabs/Fog01.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Prefabs/Vegetation03.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Prefabs/Vegetation02.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Prefabs/Vegetation01.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Sprites/Environment/Tree01.png" type="Texture" id=16]
+[ext_resource path="res://Sprites/logo.png" type="Texture" id=17]
+[ext_resource path="res://Sprites/Environment/Tree03.png" type="Texture" id=18]
+[ext_resource path="res://Sprites/light.png" type="Texture" id=19]
+[ext_resource path="res://Sprites/Environment/Vine01.png" type="Texture" id=20]
+[ext_resource path="res://Audio/The Outer Forest.wav" type="AudioStream" id=21]
+[ext_resource path="res://Prefabs/Vegetation05.tscn" type="PackedScene" id=22]
+[ext_resource path="res://Prefabs/Vegetation05_2.tscn" type="PackedScene" id=23]
 
-[node name="Title" type="Node2D"]
+[node name="Title" type="Node2D" index="0"]
 
 script = ExtResource( 1 )
 
@@ -50,7 +57,7 @@ group = null
 texture_normal = ExtResource( 3 )
 texture_pressed = ExtResource( 4 )
 texture_hover = ExtResource( 5 )
-_sections_unfolded = [ "Textures" ]
+_sections_unfolded = [ "Textures", "Visibility" ]
 
 [node name="MenuOpts" parent="." index="2" instance=ExtResource( 6 )]
 
@@ -84,51 +91,78 @@ texture_pressed = ExtResource( 8 )
 texture_hover = ExtResource( 9 )
 _sections_unfolded = [ "Textures" ]
 
-[node name="Tree01" type="Sprite" parent="." index="4"]
+[node name="GateFrame" type="Sprite" parent="." index="4"]
+
+position = Vector2( 1619.39, 313.627 )
+rotation = -0.00129618
+scale = Vector2( 0.240689, 0.240689 )
+texture = ExtResource( 10 )
+
+[node name="Gate" type="Sprite" parent="." index="5"]
+
+position = Vector2( 1616.36, 318.761 )
+rotation = -1.48341e-005
+scale = Vector2( 0.242857, 0.242857 )
+texture = ExtResource( 11 )
+
+[node name="Fog01" parent="." index="6" instance=ExtResource( 12 )]
+
+position = Vector2( 2926.23, 417.468 )
+scale = Vector2( 1.27211, 1.27211 )
+
+[node name="Vegetation03" parent="." index="7" instance=ExtResource( 13 )]
+
+position = Vector2( 1449.57, 1071.94 )
+rotation = -0.108255
+scale = Vector2( 0.700978, 0.700978 )
+
+[node name="Vegetation02" parent="." index="8" instance=ExtResource( 14 )]
+
+position = Vector2( 1517.17, 1031.44 )
+rotation = -0.0940589
+scale = Vector2( 0.700978, 0.700978 )
+
+[node name="Vegetation01" parent="." index="9" instance=ExtResource( 15 )]
+
+position = Vector2( 1014.95, 1032.6 )
+rotation = 0.0261211
+scale = Vector2( 0.554972, 0.554972 )
+
+[node name="Tree01" type="Sprite" parent="." index="10"]
 
 position = Vector2( 1679.61, 477.285 )
 scale = Vector2( 0.339368, 0.339368 )
-texture = ExtResource( 10 )
+texture = ExtResource( 16 )
 
-[node name="Tree02" type="Sprite" parent="." index="5"]
+[node name="Tree02" type="Sprite" parent="." index="11"]
 
 position = Vector2( 889.396, 493.94 )
 scale = Vector2( 0.339368, 0.339368 )
-texture = ExtResource( 10 )
+texture = ExtResource( 16 )
 
-[node name="Vegetation01" type="Sprite" parent="." index="6"]
-
-position = Vector2( 1571.9, 670.226 )
-scale = Vector2( 0.827613, 0.827613 )
-texture = ExtResource( 11 )
-
-[node name="Vegetation02" type="Sprite" parent="." index="7"]
-
-position = Vector2( 990.25, 667.953 )
-scale = Vector2( 0.827613, 0.827613 )
-texture = ExtResource( 11 )
-
-[node name="logo" type="Sprite" parent="." index="8"]
+[node name="logo" type="Sprite" parent="." index="12"]
 
 position = Vector2( 361.276, 250.128 )
 scale = Vector2( 0.2167, 0.2167 )
-texture = ExtResource( 12 )
+texture = ExtResource( 17 )
 
-[node name="Tree03" type="Sprite" parent="." index="9"]
+[node name="Tree03" type="Sprite" parent="." index="13"]
 
-position = Vector2( 1131.71, 539.357 )
-texture = ExtResource( 13 )
+position = Vector2( 1131.71, 563.964 )
+texture = ExtResource( 18 )
+_sections_unfolded = [ "Visibility" ]
 
-[node name="Light2D" type="Light2D" parent="." index="10"]
+[node name="Light2D" type="Light2D" parent="." index="14"]
 
-position = Vector2( 1362.21, 667.989 )
+position = Vector2( 1563.21, 445.798 )
+scale = Vector2( 0.222459, 0.222459 )
 enabled = true
 editor_only = false
-texture = ExtResource( 14 )
+texture = ExtResource( 19 )
 offset = Vector2( 0, 0 )
 texture_scale = 1.58
-color = Color( 0.141479, 0.743873, 0.953125, 1 )
-energy = 3.0
+color = Color( 1, 1, 1, 1 )
+energy = 0.5
 mode = 0
 range_height = 0.0
 range_z_min = -1024
@@ -145,20 +179,73 @@ shadow_filter_smooth = 0.0
 shadow_item_cull_mask = 1
 _sections_unfolded = [ "Shadow" ]
 
-[node name="Vine01" type="Sprite" parent="." index="11"]
+[node name="Vine01" type="Sprite" parent="." index="15"]
 
 position = Vector2( 635.429, 212.615 )
 scale = Vector2( 0.26139, 0.26139 )
-texture = ExtResource( 15 )
+texture = ExtResource( 20 )
 
-[node name="MainMenuTheme" type="AudioStreamPlayer" parent="." index="12"]
+[node name="MainMenuTheme" type="AudioStreamPlayer" parent="." index="16"]
 
-stream = ExtResource( 16 )
+stream = ExtResource( 21 )
 volume_db = 0.0
 pitch_scale = 1.0
 autoplay = true
 mix_target = 0
 bus = "Master"
+
+[node name="Vegetation05" parent="." index="17" instance=ExtResource( 22 )]
+
+position = Vector2( 774.447, 1066.91 )
+
+[node name="Vegetation06" parent="." index="18" instance=ExtResource( 22 )]
+
+position = Vector2( 1805.13, 1067.32 )
+
+[node name="Vegetation07" parent="." index="19" instance=ExtResource( 23 )]
+
+position = Vector2( 1642.88, 1067.43 )
+
+[node name="Vegetation08" parent="." index="20" instance=ExtResource( 23 )]
+
+position = Vector2( 1608.8, 913.433 )
+scale = Vector2( 0.502366, 0.502366 )
+
+[node name="Vegetation09" parent="." index="21" instance=ExtResource( 23 )]
+
+modulate = Color( 1, 1, 1, 0.602196 )
+position = Vector2( 1541.53, 829.338 )
+scale = Vector2( 0.502366, 0.502366 )
+
+[node name="Vegetation10" parent="." index="22" instance=ExtResource( 23 )]
+
+modulate = Color( 1, 1, 1, 0.292784 )
+position = Vector2( 1423.79, 787.291 )
+scale = Vector2( 0.502366, 0.502366 )
+
+[node name="Vegetation11" parent="." index="23" instance=ExtResource( 23 )]
+
+modulate = Color( 1, 1, 1, 0.292784 )
+position = Vector2( 1344.04, 681.018 )
+scale = Vector2( 0.424595, 0.424595 )
+
+[node name="Vegetation13" parent="." index="24" instance=ExtResource( 23 )]
+
+modulate = Color( 1, 1, 1, 0.292784 )
+position = Vector2( 1760.53, 654.024 )
+scale = Vector2( 0.378068, 0.378068 )
+
+[node name="Vegetation12" parent="." index="25" instance=ExtResource( 23 )]
+
+modulate = Color( 1, 1, 1, 0.292784 )
+position = Vector2( 1403.74, 686.836 )
+scale = Vector2( 0.401917, 0.401917 )
+
+[node name="Vegetation14" parent="." index="26" instance=ExtResource( 23 )]
+
+modulate = Color( 1, 1, 1, 0.292784 )
+position = Vector2( 1818.49, 653.283 )
+scale = Vector2( 0.365057, 0.365057 )
 
 [connection signal="button_down" from="StartGame" to="." method="_on_StartGame_button_down"]
 
