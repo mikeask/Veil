@@ -2542,12 +2542,12 @@ _sections_unfolded = [ "Visibility" ]
 
 [node name="box2" parent="." index="10" instance=ExtResource( 38 )]
 
-position = Vector2( 307.955, 1155.6 )
+position = Vector2( -114.788, 1149.37 )
 
 [node name="box3" parent="." index="11" instance=ExtResource( 38 )]
 
 editor/display_folded = true
-position = Vector2( 9813.14, 6055.48 )
+position = Vector2( 8191.35, 6030.91 )
 _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index", "collision" ]
 
 [node name="CollisionShape2D" parent="box3" index="1"]
