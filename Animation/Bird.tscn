@@ -19,12 +19,12 @@
 [ext_resource path="res://Sprites/Wings/w9.png" type="Texture" id=17]
 [ext_resource path="res://Sprites/Characters/Eye2.png" type="Texture" id=18]
 
-[sub_resource type="CircleShape2D" id=12]
+[sub_resource type="CircleShape2D" id=1]
 
 custom_solver_bias = 0.0
 radius = 23.4238
 
-[sub_resource type="SpriteFrames" id=1]
+[sub_resource type="SpriteFrames" id=2]
 
 animations = [ {
 "frames": [ ExtResource( 3 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ) ],
@@ -34,7 +34,7 @@ animations = [ {
 } ]
 _sections_unfolded = [ "Resource" ]
 
-[sub_resource type="Animation" id=2]
+[sub_resource type="Animation" id=3]
 
 length = 4.0
 loop = true
@@ -52,7 +52,7 @@ tracks/0/keys = {
 "values": [ ExtResource( 7 ), ExtResource( 18 ), ExtResource( 7 ), ExtResource( 7 ) ]
 }
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=4]
 
 length = 5.0
 loop = false
@@ -94,9 +94,8 @@ tracks/2/keys = {
 "values": [ false, false ]
 }
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=5]
 
-resource_name = "Falling"
 length = 4.0
 loop = true
 step = 0.1
@@ -281,7 +280,7 @@ tracks/14/keys = {
 "values": [ true ]
 }
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=6]
 
 length = 9.0
 loop = true
@@ -479,7 +478,7 @@ tracks/15/keys = {
 "values": [ false, false ]
 }
 
-[sub_resource type="Animation" id=6]
+[sub_resource type="Animation" id=7]
 
 length = 6.0
 loop = true
@@ -665,7 +664,7 @@ tracks/14/keys = {
 "values": [ false, false ]
 }
 
-[sub_resource type="Animation" id=7]
+[sub_resource type="Animation" id=8]
 
 length = 4.0
 loop = true
@@ -839,7 +838,7 @@ tracks/13/keys = {
 "values": [ true, true ]
 }
 
-[sub_resource type="Animation" id=8]
+[sub_resource type="Animation" id=9]
 
 length = 4.0
 loop = true
@@ -991,7 +990,7 @@ tracks/11/keys = {
 } ]
 }
 
-[sub_resource type="Animation" id=9]
+[sub_resource type="Animation" id=10]
 
 length = 5.0
 loop = true
@@ -1189,7 +1188,7 @@ tracks/15/keys = {
 "values": [ false, false ]
 }
 
-[sub_resource type="Animation" id=10]
+[sub_resource type="Animation" id=11]
 
 length = 5.0
 loop = true
@@ -1375,7 +1374,7 @@ tracks/14/keys = {
 "values": [ false, false ]
 }
 
-[sub_resource type="Animation" id=11]
+[sub_resource type="Animation" id=12]
 
 length = 2.5
 loop = true
@@ -1561,7 +1560,7 @@ tracks/14/keys = {
 "values": [ false, false ]
 }
 
-[node name="Bird" type="KinematicBody2D" index="0"]
+[node name="Bird" type="KinematicBody2D"]
 
 input_pickable = false
 collision_layer = 1
@@ -1572,12 +1571,12 @@ _sections_unfolded = [ "Collision", "Pickable", "Transform", "Z Index", "collisi
 
 [node name="Body" type="Sprite" parent="." index="0"]
 
-position = Vector2( -10.296, -90.8936 )
+position = Vector2( -9.07874, -108.841 )
 rotation = 0.0254561
 scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 2 )
 offset = Vector2( 23.1897, -599.485 )
-_sections_unfolded = [ "Transform" ]
+_sections_unfolded = [ "Transform", "Z Index" ]
 
 [node name="Wing01" type="Sprite" parent="Body" index="0"]
 
@@ -1613,7 +1612,6 @@ _sections_unfolded = [ "Transform" ]
 
 position = Vector2( 346.275, -833.268 )
 rotation = 0.0320781
-z_index = 1
 texture = ExtResource( 5 )
 offset = Vector2( 166.636, -322.659 )
 _sections_unfolded = [ "Transform", "Z Index" ]
@@ -1656,7 +1654,7 @@ audio_bus_name = "Master"
 [node name="bico" type="CollisionShape2D" parent="Body/Head/Position2D/Area2D" index="0"]
 
 position = Vector2( 216.044, -300.377 )
-shape = SubResource( 12 )
+shape = SubResource( 1 )
 
 [node name="l_leg" type="Sprite" parent="." index="1"]
 
@@ -1699,7 +1697,7 @@ _sections_unfolded = [ "Transform" ]
 visible = false
 position = Vector2( 185.314, -275.925 )
 scale = Vector2( 3.71757, 3.71757 )
-frames = SubResource( 1 )
+frames = SubResource( 2 )
 animation = "default"
 frame = 5
 flip_h = true
@@ -1712,7 +1710,7 @@ autoplay = "Blink"
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 1.0
-anims/Blink = SubResource( 2 )
+anims/Blink = SubResource( 3 )
 blend_times = [  ]
 
 [node name="BirdAnimation" type="AnimationPlayer" parent="." index="5"]
@@ -1722,15 +1720,15 @@ autoplay = "Idle"
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 4.0
-anims/Eating = SubResource( 3 )
-anims/Falling = SubResource( 4 )
-anims/Flying = SubResource( 5 )
-anims/Idle = SubResource( 6 )
-anims/Jump = SubResource( 7 )
-anims/Pickup = SubResource( 8 )
-anims/Pulling = SubResource( 9 )
-anims/Pushing = SubResource( 10 )
-anims/Walk = SubResource( 11 )
+anims/Eating = SubResource( 4 )
+anims/Falling = SubResource( 5 )
+anims/Flying = SubResource( 6 )
+anims/Idle = SubResource( 7 )
+anims/Jump = SubResource( 8 )
+anims/Pickup = SubResource( 9 )
+anims/Pulling = SubResource( 10 )
+anims/Pushing = SubResource( 11 )
+anims/Walk = SubResource( 12 )
 blend_times = [  ]
 _sections_unfolded = [ "Pause", "Playback Options" ]
 
