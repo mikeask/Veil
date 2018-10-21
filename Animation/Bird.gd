@@ -123,6 +123,7 @@ func _on_Area2D_body_entered(body):
 	if(body.is_in_group("pilar")):
 		
 		if body.get_name() == "pilar2" and sequencia == 0:
+			get_parent().get_node("pilar2/AnimationPlayer").play("LightOn")
 			sequencia = 1
 			
 		elif body.get_name() == "pilar2" and sequencia == 1: 
@@ -130,6 +131,7 @@ func _on_Area2D_body_entered(body):
 			
 			
 		elif body.get_name() == "pilar" and sequencia == 1:
+			get_parent().get_node("pilar/AnimationPlayer").play("LightOn")
 			sequencia = 2
 			
 		elif body.get_name() == "pilar" and sequencia == 2: 
@@ -137,12 +139,16 @@ func _on_Area2D_body_entered(body):
 			
 			
 		elif body.get_name() == "pilar3" and sequencia == 2:
+			get_parent().get_node("pilar3/AnimationPlayer").play("LightOn")
 			sequencia = 3
 			
 		elif body.get_name() == "pilar3" and sequencia == 3: 
 			sequencia = 3
 			
 		else :
+			get_parent().get_node("pilar/AnimationPlayer").play("LightOff")
+			get_parent().get_node("pilar2/AnimationPlayer").play("LightOff")
+			get_parent().get_node("pilar3/AnimationPlayer").play("LightOff")
 			sequencia = 0
 			
 			
@@ -154,7 +160,10 @@ func _on_Area2D_body_entered(body):
 	pass # replace with function body
 
 
-
+func callCredits():
+	get_tree().change_scene("res://Scenes/FinalScene.tscn")
+	endgame()
+	pass # replace with function body
 
 
 func _on_CollisionShape2D_tree_entered(body):

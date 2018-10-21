@@ -1,4 +1,4 @@
-[gd_scene load_steps=63 format=2]
+[gd_scene load_steps=64 format=2]
 
 [ext_resource path="res://Scenes/Level.gd" type="Script" id=1]
 [ext_resource path="res://Audio/MachinimaSound.com_-_Winter_Dawn.wav" type="AudioStream" id=2]
@@ -40,6 +40,7 @@
 [ext_resource path="res://Scenes/box.tscn" type="PackedScene" id=38]
 [ext_resource path="res://Sprites/Environment/Catapult.png" type="Texture" id=39]
 [ext_resource path="res://Sprites/Puzzles/Rope.png" type="Texture" id=40]
+[ext_resource path="res://Animation/Token.tscn" type="PackedScene" id=41]
 
 [sub_resource type="CapsuleShape2D" id=1]
 
@@ -1758,7 +1759,7 @@ tracks/5/loop_wrap = true
 tracks/5/imported = false
 tracks/5/enabled = true
 tracks/5/keys = {
-"times": PoolRealArray( 0, 7.2, 22.4 ),
+"times": PoolRealArray( 0, 7.2, 22.3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( 61564.6, 2382.63 ), Vector2( 61564.6, 2382.63 ), Vector2( 75696.3, 2453.92 ) ]
@@ -1860,6 +1861,20 @@ tracks/13/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 1,
 "values": [ false ]
+}
+tracks/14/type = "method"
+tracks/14/path = NodePath("../Bird")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 22.7 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "callCredits"
+} ]
 }
 
 [sub_resource type="RectangleShape2D" id=19]
@@ -1998,7 +2013,8 @@ bus = "Master"
 ]]
 
 pause_mode = 1
-position = Vector2( 61564.6, 2382.63 )
+editor/display_folded = true
+position = Vector2( 30308.4, 2382.63 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -2606,103 +2622,7 @@ texture = ExtResource( 40 )
 offset = Vector2( 0.00537109, 306.088 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="pilar" type="KinematicBody2D" parent="." index="14" groups=[
-"pilar",
-]]
-
-editor/display_folded = true
-position = Vector2( 31755.7, 2587.55 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-collision/safe_margin = 0.08
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="pilar" index="0"]
-
-build_mode = 0
-polygon = PoolVector2Array( -110.32, 475.781, 127.217, 475.781, 110.834, -228.636, -118.51, -187.681 )
-one_way_collision = true
-
-[node name="Polygon2D" type="Polygon2D" parent="pilar" index="1"]
-
-polygon = PoolVector2Array( -110.32, 475.781, 127.217, 475.781, 110.834, -228.636, -118.51, -187.681 )
-uv = PoolVector2Array(  )
-color = Color( 0.0551126, 0.0340729, 0.113281, 1 )
-vertex_colors = PoolColorArray(  )
-offset = Vector2( 0, 0 )
-antialiased = false
-texture = null
-texture_offset = Vector2( 0, 0 )
-texture_scale = Vector2( 1, 1 )
-texture_rotation_degrees = 0.0
-invert_enable = false
-invert_border = 100.0
-
-[node name="pilar2" type="KinematicBody2D" parent="." index="15" groups=[
-"pilar",
-]]
-
-editor/display_folded = true
-position = Vector2( 32679.4, 2603.65 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-collision/safe_margin = 0.08
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="pilar2" index="0"]
-
-build_mode = 0
-polygon = PoolVector2Array( -110.32, 475.781, 127.217, 475.781, 110.834, -228.636, -118.51, -187.681 )
-one_way_collision = true
-
-[node name="Polygon2D" type="Polygon2D" parent="pilar2" index="1"]
-
-polygon = PoolVector2Array( -110.32, 475.781, 127.217, 475.781, 110.834, -228.636, -118.51, -187.681 )
-uv = PoolVector2Array(  )
-color = Color( 0.0551126, 0.0340729, 0.113281, 1 )
-vertex_colors = PoolColorArray(  )
-offset = Vector2( 0, 0 )
-antialiased = false
-texture = null
-texture_offset = Vector2( 0, 0 )
-texture_scale = Vector2( 1, 1 )
-texture_rotation_degrees = 0.0
-invert_enable = false
-invert_border = 100.0
-
-[node name="pilar3" type="KinematicBody2D" parent="." index="16" groups=[
-"pilar",
-]]
-
-editor/display_folded = true
-position = Vector2( 33604.3, 2603.07 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-collision/safe_margin = 0.08
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="pilar3" index="0"]
-
-build_mode = 0
-polygon = PoolVector2Array( -110.32, 475.781, 127.217, 475.781, 110.834, -228.636, -118.51, -187.681 )
-one_way_collision = true
-
-[node name="Polygon2D" type="Polygon2D" parent="pilar3" index="1"]
-
-polygon = PoolVector2Array( -110.32, 475.781, 127.217, 475.781, 110.834, -228.636, -118.51, -187.681 )
-uv = PoolVector2Array(  )
-color = Color( 0.0551126, 0.0340729, 0.113281, 1 )
-vertex_colors = PoolColorArray(  )
-offset = Vector2( 0, 0 )
-antialiased = false
-texture = null
-texture_offset = Vector2( 0, 0 )
-texture_scale = Vector2( 1, 1 )
-texture_rotation_degrees = 0.0
-invert_enable = false
-invert_border = 100.0
-
-[node name="ponte" type="KinematicBody2D" parent="." index="17"]
+[node name="ponte" type="KinematicBody2D" parent="." index="14"]
 
 editor/display_folded = true
 position = Vector2( 37773, 2455.75 )
@@ -2748,6 +2668,38 @@ playback_speed = 1.0
 anims/descer = SubResource( 22 )
 blend_times = [  ]
 
+[node name="pilar" parent="." index="15" instance=ExtResource( 41 )]
+
+position = Vector2( 31197.9, 2353.96 )
+
+[node name="CollisionShape2D" parent="pilar" index="2"]
+
+one_way_collision = true
+
+[node name="pilar2" parent="." index="16" instance=ExtResource( 41 )]
+
+position = Vector2( 32097.4, 2336.26 )
+
+[node name="CollisionShape2D" parent="pilar2" index="2"]
+
+one_way_collision = true
+
+[node name="pilar3" parent="." index="17" instance=ExtResource( 41 )]
+
+position = Vector2( 32931, 2317.07 )
+
+[node name="Light2D" parent="pilar3" index="0"]
+
+energy = 0.01
+
+[node name="light" parent="pilar3/Light2D" index="0"]
+
+modulate = Color( 1, 1, 1, 0 )
+
+[node name="CollisionShape2D" parent="pilar3" index="2"]
+
+one_way_collision = true
+
 [connection signal="button_down" from="Bird/Camera2D/CanvasLayer/PauseMenu/Continue" to="." method="_on_Continue_button_down"]
 
 [connection signal="button_down" from="Bird/Camera2D/CanvasLayer/PauseMenu/MenuOpts/Quit" to="." method="_on_Quit_button_down"]
@@ -2759,3 +2711,6 @@ blend_times = [  ]
 
 [editable path="Bird/Camera2D/CanvasLayer/PauseMenu/MenuOpts"]
 [editable path="box3"]
+[editable path="pilar"]
+[editable path="pilar2"]
+[editable path="pilar3"]

@@ -83,6 +83,7 @@ _sections_unfolded = [ "collision" ]
 
 [node name="Light2D" type="Light2D" parent="." index="0"]
 
+editor/display_folded = true
 position = Vector2( -17.4829, -458.709 )
 scale = Vector2( 0.889898, 0.889898 )
 z_index = 5
@@ -139,22 +140,5 @@ playback_speed = 1.0
 anims/LightOff = SubResource( 2 )
 anims/LightOn = SubResource( 3 )
 blend_times = [  ]
-
-[node name="Polygon2D" type="Polygon2D" parent="." index="4"]
-
-z_index = -10
-polygon = PoolVector2Array( -1410.05, -1672.63, -1563.79, 675.507, 1366.72, 670.848, 1357.4, -1705.24 )
-uv = PoolVector2Array(  )
-color = Color( 0, 0.286285, 0.621094, 1 )
-vertex_colors = PoolColorArray(  )
-offset = Vector2( 0, 0 )
-antialiased = false
-texture = null
-texture_offset = Vector2( 0, 0 )
-texture_scale = Vector2( 1, 1 )
-texture_rotation_degrees = 0.0
-invert_enable = false
-invert_border = 100.0
-_sections_unfolded = [ "Z Index" ]
 
 
