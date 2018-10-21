@@ -148,7 +148,7 @@ texture = ExtResource( 17 )
 
 [node name="Tree03" type="Sprite" parent="." index="13"]
 
-position = Vector2( 1131.71, 563.964 )
+position = Vector2( 1102.28, 589.192 )
 texture = ExtResource( 18 )
 _sections_unfolded = [ "Visibility" ]
 
