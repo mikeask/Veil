@@ -1994,7 +1994,7 @@ tracks/1/keys = {
 "values": [ Vector2( 37773, 2455.75 ), Vector2( 38697.6, 2521.34 ) ]
 }
 
-[node name="Level" type="Node2D" index="0"]
+[node name="Level" type="Node2D"]
 
 pause_mode = 2
 position = Vector2( 27202.9, -5191.39 )
@@ -2033,7 +2033,7 @@ bus = "Master"
 ]]
 
 pause_mode = 1
-position = Vector2( -12177.3, 692.498 )
+position = Vector2( 6850.21, 1179.07 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -2647,7 +2647,16 @@ collision_mask = 1
 collision/safe_margin = 0.08
 _sections_unfolded = [ "Transform" ]
 
-[node name="Catapult" type="Sprite" parent="catapult" index="0"]
+[node name="catapultSound" type="AudioStreamPlayer" parent="catapult" index="0"]
+
+stream = ExtResource( 40 )
+volume_db = 0.0
+pitch_scale = 1.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+[node name="Catapult" type="Sprite" parent="catapult" index="1"]
 
 position = Vector2( 5.46094, 0.102081 )
 scale = Vector2( 1, 0.164355 )
@@ -2655,7 +2664,7 @@ texture = ExtResource( 43 )
 offset = Vector2( -365.547, 137.207 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="CatapultAnimation" type="AnimationPlayer" parent="catapult" index="1"]
+[node name="CatapultAnimation" type="AnimationPlayer" parent="catapult" index="2"]
 
 root_node = NodePath("..")
 autoplay = ""
@@ -2665,7 +2674,7 @@ playback_speed = 1.0
 anims/Catapult = SubResource( 20 )
 blend_times = [  ]
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="catapult" index="2"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="catapult" index="3"]
 
 position = Vector2( 1.31152, 0.494965 )
 scale = Vector2( 1, 0.164355 )
@@ -2673,7 +2682,7 @@ build_mode = 0
 polygon = PoolVector2Array( -0.980469, -26.6375, -28.417, 69.3884, -36.9014, 56.3904, -58.2607, 63.0476, -75.7363, 71.9241, -106.249, 89.677, -155.899, 117.39, -212.386, 147.567, -322.262, 227.267, -418.985, 317.025, -469.281, 371.19, -483.209, 376.606, -501.779, 364.226, -605.466, 378.928, -656.952, 385.142, -700.678, 381.713, -709.252, 379.998, -711.824, 356.849, -661.239, 358.563, -590.934, 353.419, -523.202, 337.987, -492.336, 314.837, -422.031, 235.959, -372.303, 188.803, -289.138, 115.927, -207.688, 61.0547, -120.236, 6.18286, -50.7891, -25.54 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="corda" type="CollisionShape2D" parent="catapult" index="3"]
+[node name="corda" type="CollisionShape2D" parent="catapult" index="4"]
 
 position = Vector2( -855.901, 64.8088 )
 rotation = -0.0200053
@@ -2691,8 +2700,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="ponte" type="KinematicBody2D" parent="." index="15"]
 
-editor/display_folded = true
-position = Vector2( 37773, 2455.75 )
+position = Vector2( 37713, 2455.75 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -2715,7 +2723,7 @@ texture_scale = Vector2( 1, 1 )
 texture_rotation_degrees = 0.0
 invert_enable = false
 invert_border = 100.0
-_sections_unfolded = [ "Transform" ]
+_sections_unfolded = [ "Texture", "Transform" ]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ponte" index="1"]
 
@@ -2723,7 +2731,6 @@ position = Vector2( -30.3477, 966.988 )
 rotation = -1.58176
 build_mode = 0
 polygon = PoolVector2Array( 329.148, 551.684, 4989.77, 649.975, 4973.39, 559.875, 329.149, 453.393 )
-one_way_collision = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="ponte" index="2"]
 
@@ -2769,8 +2776,18 @@ one_way_collision = true
 
 [node name="Fog01" parent="." index="19" instance=ExtResource( 46 )]
 
-position = Vector2( 40683.9, 5606.46 )
-scale = Vector2( 5.83425, 5.83425 )
+position = Vector2( 38953.1, 3781.13 )
+_sections_unfolded = [ "Animation", "Offset", "Region", "Transform", "Visibility", "Z Index" ]
+
+[node name="Fog02" parent="." index="20" instance=ExtResource( 46 )]
+
+position = Vector2( 40626.8, 3831.52 )
+_sections_unfolded = [ "Animation", "Offset", "Region", "Transform", "Visibility", "Z Index" ]
+
+[node name="Fog03" parent="." index="21" instance=ExtResource( 46 )]
+
+position = Vector2( 42159, 3899.92 )
+_sections_unfolded = [ "Animation", "Offset", "Region", "Transform", "Visibility", "Z Index" ]
 
 [connection signal="button_down" from="Bird/Camera2D/CanvasLayer/PauseMenu/Continue" to="." method="_on_Continue_button_down"]
 

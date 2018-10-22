@@ -132,6 +132,8 @@ func _on_Area2D_body_entered(body):
 		
 	if(body.is_in_group("catapult")):
 		vel_linear.y = -vel_pulo*8
+		if !get_parent().get_node("catapult/catapultSound").playing:
+			get_parent().get_node("catapult/catapultSound").play()
 		body.get_node("CatapultAnimation").play("Catapult")
 		
 	if(body.is_in_group("alavanca")):
