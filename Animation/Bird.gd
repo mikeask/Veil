@@ -47,26 +47,44 @@ func _process(delta):
 				novaAnimacao = "Idle"
 			if Input.is_action_pressed("ui_up"):
 				vel_linear.y = -vel_pulo*delta*100
+				if !$Jump.playing:
+					$Jump.play()
 				novaAnimacao = "Jump"
 				
 			if(Input.is_action_pressed("pushi") ):
 				novaAnimacao = "Pushing"
 				if get_node("gancho").is_colliding() :
 					if get_node("gancho").get_collider().is_in_group("box"):
-						if direcao == "direita":
-					 		get_node("gancho").get_collider().vel_linear.x = 300
+						if(direcao == "direita"):
+							if(!$PushingBox.playing): 
+								$PushingBox.play()
+							get_node("gancho").get_collider().vel_linear.x = 300
+							pass
 						if direcao == "esquerda":
-					 		get_node("gancho").get_collider().vel_linear.x = -300
+							if(!$PushingBox.playing): 
+								$PushingBox.play()
+							get_node("gancho").get_collider().vel_linear.x = -300
 					pass
 				if get_node("gancho2").is_colliding():
 					if  get_node("gancho2").get_collider().is_in_group("box"):
 						if direcao == "direita":
-					 		get_node("gancho2").get_collider().vel_linear.x = 300
+							if(!$PushingBox.playing): 
+								$PushingBox.play()
+							get_node("gancho2").get_collider().vel_linear.x = 300
 						if direcao == "esquerda":
-					 		get_node("gancho2").get_collider().vel_linear.x = -300
+							if(!$PushingBox.playing): 
+								$PushingBox.play()
+							get_node("gancho2").get_collider().vel_linear.x = -300
+							
+				pass
+			else:
+				$PushingBox.stop()
+				pass
 			if Input.is_action_just_pressed("pickup"):
 				pickup = true
 				get_node("Body/Head/Position2D/Area2D/bico").set_disabled(false)
+				if !$Bicada.playing:	
+					$Bicada.play()
 				novaAnimacao = "Pickup"
 		else:
 			if(vel_linear.y > 0 and !get_node("pe2").is_colliding()and !get_node("pe1").is_colliding()):

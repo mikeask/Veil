@@ -43,7 +43,7 @@ tracks/1/keys = {
 "values": [ Vector2( 103.972, -77.9775 ), Vector2( 44658, -197.874 ) ]
 }
 
-[node name="Node" type="Node" index="0"]
+[node name="Node" type="Node"]
 
 [node name="Camera2D2" type="Camera2D" parent="." index="0"]
 

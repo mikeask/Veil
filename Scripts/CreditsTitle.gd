@@ -7,22 +7,24 @@ var playing = false
 func _ready():
 	# Called when the node is added to the scene for the first time.
 	# Initialization here
-	$CreditsAnimation.play()
-	playing = true
+	
 	pass
 
 func _process(delta):
     
 	if Input.is_action_just_pressed("ui_select") || Input.is_action_just_pressed("ui_accept"):
 		$EscHint.show()
-
-	if playing == true:
-		if $CreditsAnimation.is_playing() == false:
-			get_tree().change_scene("res://Scenes/MainMenu.tscn")
-			pass
-		pass
 	
 	if(Input.is_action_just_pressed("ui_cancel")):
 		get_tree().change_scene("res://Scenes/MainMenu.tscn")
 		pass
+	pass
+
+
+func initCredits():
+	$CreditsAnimation.play()
+	pass
+	
+func finishAnimation():
+	get_tree().change_scene("res://Scenes/MainMenu.tscn")
 	pass
