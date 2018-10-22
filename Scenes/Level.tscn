@@ -1692,12 +1692,12 @@ tracks/1/keys = {
 "values": [ -27.1061, 32.4814 ]
 }
 
-[sub_resource type="RectangleShape2D" id=23]
+[sub_resource type="RectangleShape2D" id=18]
 
 custom_solver_bias = 0.0
 extents = Vector2( 10, 10 )
 
-[sub_resource type="Animation" id=18]
+[sub_resource type="Animation" id=19]
 
 length = 40.0
 loop = false
@@ -1899,12 +1899,12 @@ tracks/15/keys = {
 "values": [ Vector2( 69082.7, 199.862 ), Vector2( 69082.7, 199.862 ) ]
 }
 
-[sub_resource type="RectangleShape2D" id=19]
+[sub_resource type="RectangleShape2D" id=20]
 
 custom_solver_bias = 0.0
 extents = Vector2( 133.531, 56.9409 )
 
-[sub_resource type="Animation" id=20]
+[sub_resource type="Animation" id=21]
 
 length = 3.0
 loop = false
@@ -1958,14 +1958,13 @@ tracks/3/keys = {
 "values": [ -95.805, -95.805, -51.5813, -95.805 ]
 }
 
-[sub_resource type="RectangleShape2D" id=21]
+[sub_resource type="RectangleShape2D" id=22]
 
 custom_solver_bias = 0.0
 extents = Vector2( 221.761, 3.82904 )
 
-[sub_resource type="Animation" id=22]
+[sub_resource type="Animation" id=23]
 
-resource_name = "descer"
 length = 1.0
 loop = false
 step = 0.1
@@ -1994,7 +1993,7 @@ tracks/1/keys = {
 "values": [ Vector2( 37773, 2455.75 ), Vector2( 38697.6, 2521.34 ) ]
 }
 
-[node name="Level" type="Node2D"]
+[node name="Level" type="Node2D" index="0"]
 
 pause_mode = 2
 position = Vector2( 27202.9, -5191.39 )
@@ -2033,7 +2032,7 @@ bus = "Master"
 ]]
 
 pause_mode = 1
-position = Vector2( 6850.21, 1179.07 )
+position = Vector2( -11892.7, 464.167 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -2560,7 +2559,7 @@ bounce = 0.0
 
 position = Vector2( 157.891, 639.87 )
 scale = Vector2( 7.76609, 87.2479 )
-shape = SubResource( 23 )
+shape = SubResource( 18 )
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="." index="9" groups=[
 "tree",
@@ -2579,7 +2578,7 @@ autoplay = ""
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 1.0
-anims/TreeFall = SubResource( 18 )
+anims/TreeFall = SubResource( 19 )
 blend_times = [  ]
 _sections_unfolded = [ "Playback Options" ]
 
@@ -2601,7 +2600,7 @@ _sections_unfolded = [ "Transform" ]
 
 position = Vector2( 1417.38, 3863.61 )
 scale = Vector2( 1.2924, 5.58267 )
-shape = SubResource( 19 )
+shape = SubResource( 20 )
 one_way_collision = true
 
 [node name="Treefall" type="AudioStreamPlayer" parent="KinematicBody2D" index="4"]
@@ -2671,7 +2670,7 @@ autoplay = ""
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 1.0
-anims/Catapult = SubResource( 20 )
+anims/Catapult = SubResource( 21 )
 blend_times = [  ]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="catapult" index="3"]
@@ -2686,7 +2685,7 @@ _sections_unfolded = [ "Transform" ]
 
 position = Vector2( -855.901, 64.8088 )
 rotation = -0.0200053
-shape = SubResource( 21 )
+shape = SubResource( 22 )
 one_way_collision = true
 
 [node name="Rope" type="Sprite" parent="." index="14"]
@@ -2739,7 +2738,7 @@ autoplay = ""
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 1.0
-anims/descer = SubResource( 22 )
+anims/descer = SubResource( 23 )
 blend_times = [  ]
 
 [node name="pilar" parent="." index="16" instance=ExtResource( 45 )]
