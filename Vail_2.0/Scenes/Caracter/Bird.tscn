@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Vail_2.0/Sprites/Bird/bird.png" type="Texture" id=1]
 [ext_resource path="res://Vail_2.0/Sprites/Bird/bird_leg.png" type="Texture" id=2]
@@ -7,11 +7,12 @@
 [ext_resource path="res://Vail_2.0/Sprites/Bird/Tail.png" type="Texture" id=5]
 [ext_resource path="res://Vail_2.0/Sprites/Bird/Wing01.png" type="Texture" id=6]
 [ext_resource path="res://Vail_2.0/Sprites/Bird/Eye.png" type="Texture" id=7]
+[ext_resource path="res://Vail_2.0/Scripts/Bird.gd" type="Script" id=8]
 
-[node name="Bird" type="Node2D"]
+[node name="Bird" type="KinematicBody2D"]
+script = ExtResource( 8 )
 
 [node name="Corpo" type="Sprite" parent="."]
-rotation = 0.288234
 scale = Vector2( 0.0552474, 0.0552474 )
 texture = ExtResource( 1 )
 
@@ -41,6 +42,12 @@ rotation = -0.2843
 scale = Vector2( 0.949622, 0.949622 )
 texture = ExtResource( 4 )
 
+[node name="Olho" type="Sprite" parent="Corpo/Cabeca"]
+position = Vector2( 164.043, -154.913 )
+rotation = -0.00393401
+scale = Vector2( 1.2965, 1.2965 )
+texture = ExtResource( 7 )
+
 [node name="Calda" type="Sprite" parent="Corpo"]
 position = Vector2( -1010.62, 238.932 )
 rotation = -0.2843
@@ -53,7 +60,7 @@ rotation = -0.2843
 scale = Vector2( 0.949622, 0.949622 )
 texture = ExtResource( 6 )
 
-[node name="Olho" type="Sprite" parent="."]
-position = Vector2( 56.0547, -47.4448 )
-scale = Vector2( 0.06802, 0.06802 )
-texture = ExtResource( 7 )
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2( 11.5614, -2.94597 )
+scale = Vector2( 1, 1 )
+polygon = PoolVector2Array( 14.5488, 29.3019, 27.2844, 19.1883, 35.8996, 9.82393, 39.2708, -10.0286, 34.0268, -23.5134, 25.0369, -32.5033, 12.3013, -36.9982, 1.43857, -37.3728, -6.42755, -31.7541, -13.5445, -23.1388, -19.5377, -18.6439, -25.531, -14.8981, -33.0225, -8.90491, -45.009, -1.0388, -51.0022, 5.32901, -51.0022, 13.9443, -45.009, 27.0545, -36.7683, 36.4189, -35.0512, 45.3138, -18.6843, 82.6712, -11.8114, 87.446, 22.1886, 87.696, 26.4386, 82.446, 9.30468, 37.9172 )

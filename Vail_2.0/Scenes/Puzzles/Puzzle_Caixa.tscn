@@ -538,8 +538,6 @@ position = Vector2( -10322.9, 558.887 )
 [node name="chao_1" type="Node2D" parent="StaticBody2D"]
 position = Vector2( 2525.13, -459.725 )
 script = ExtResource( 5 )
-editor_debug = false
-curve_bake_interval = 20.0
 _points = SubResource( 73 )
 material_overrides = {
 
