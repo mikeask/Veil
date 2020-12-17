@@ -1,0 +1,4 @@
+[gd_scene format=2]
+
+[node name="Puzzle_caixa" type="Node2D"]
+position = Vector2( 1.68164, -1.68179 )
