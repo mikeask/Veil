@@ -173,7 +173,7 @@ window/stretch/aspect="expand"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "rmsmartshape", "ui_design_tool" )
+enabled=PoolStringArray( "polygon2d_generator", "rmsmartshape", "ui_design_tool" )
 
 [input]
 
