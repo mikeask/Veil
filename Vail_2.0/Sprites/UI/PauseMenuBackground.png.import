@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/PauseMenuBackground.png-2c8ef740acc6410f8917c46e7fa18a04.stex"
+path="res://.import/PauseMenuBackground.png-2c2f86914eb2a98e5b22f725d4960685.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/UI/PauseMenuBackground.png"
-dest_files=[ "res://.import/PauseMenuBackground.png-2c8ef740acc6410f8917c46e7fa18a04.stex" ]
+source_file="res://Vail_2.0/Sprites/UI/PauseMenuBackground.png"
+dest_files=[ "res://.import/PauseMenuBackground.png-2c2f86914eb2a98e5b22f725d4960685.stex" ]
 
 [params]
 

@@ -33,7 +33,7 @@ func _on_Quit_button_down():
 
 
 func _on_Credits_button_down():
-	get_tree().change_scene("res://Scenes/CreditsTitle.tscn");
+	get_tree().change_scene("res://Vail_2.0/Scenes/CreditsTitle.tscn");
 	pass # replace with function body
 
 
@@ -46,7 +46,7 @@ func _on_StartGame_button_down():
 func _on_Continue_button_down():
 	print("playerProgress on continue: ", GameManager.playerProgress["level"])
 	if GameManager.playerProgress["level"] == 0:
-		get_tree().change_scene("res://Scenes/UI/CreditsTitle.tscn");
+		get_tree().change_scene("res://Vail_2.0/Scenes/UI/CreditsTitle.tscn");
 		pass
 	if GameManager.playerProgress["level"] == 1:
 		get_tree().change_scene("res://Vail_1.0/Scenes/Level.tscn");

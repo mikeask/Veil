@@ -2,24 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-<<<<<<< HEAD:Sprites/UI/Quit.png.import
-path="res://.import/Quit.png-4d19234fb555e7ec89dc3a278585b477.stex"
-=======
-path="res://.import/icon.png-7dfaf6695552cd3022f38267a08ae58c.stex"
->>>>>>> 5d3c7c43a92077814c9d955dfd0e3821e98a710b:Vail_1.0/Scripts/icon.png.import
+path="res://.import/Quit.png-1334b072faa8c23e53305a15f8036c26.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<< HEAD:Sprites/UI/Quit.png.import
-source_file="res://Sprites/UI/Quit.png"
-dest_files=[ "res://.import/Quit.png-4d19234fb555e7ec89dc3a278585b477.stex" ]
-=======
-source_file="res://Vail_1.0/Scripts/icon.png"
-dest_files=[ "res://.import/icon.png-7dfaf6695552cd3022f38267a08ae58c.stex" ]
->>>>>>> 5d3c7c43a92077814c9d955dfd0e3821e98a710b:Vail_1.0/Scripts/icon.png.import
+source_file="res://Vail_2.0/Sprites/UI/Quit.png"
+dest_files=[ "res://.import/Quit.png-1334b072faa8c23e53305a15f8036c26.stex" ]
 
 [params]
 

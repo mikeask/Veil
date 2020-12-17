@@ -1,6 +1,6 @@
 [gd_scene load_steps=27 format=2]
 
-[ext_resource path="res://Scripts/MainMenu.gd" type="Script" id=1]
+[ext_resource path="res://Vail_2.0/Scripts/MainMenu.gd" type="Script" id=1]
 [ext_resource path="res://Vail_1.0/Sprites/Menu/MenuBackground.png" type="Texture" id=2]
 [ext_resource path="res://Vail_1.0/Sprites/Menu/Start.png" type="Texture" id=3]
 [ext_resource path="res://Vail_1.0/Sprites/Menu/StartClick.png" type="Texture" id=4]
@@ -23,9 +23,9 @@
 [ext_resource path="res://Vail_1.0/Audio/The Outer Forest.wav" type="AudioStream" id=21]
 [ext_resource path="res://Vail_1.0/Prefabs/Vegetation05.tscn" type="PackedScene" id=22]
 [ext_resource path="res://Vail_1.0/Prefabs/Vegetation05_2.tscn" type="PackedScene" id=23]
-[ext_resource path="res://Sprites/UI/ContinueHover.png" type="Texture" id=24]
-[ext_resource path="res://Sprites/UI/Continue.png" type="Texture" id=25]
-[ext_resource path="res://Sprites/UI/ContinueClick.png" type="Texture" id=26]
+[ext_resource path="res://Vail_2.0/Sprites/UI/ContinueHover.png" type="Texture" id=24]
+[ext_resource path="res://Vail_2.0/Sprites/UI/Continue.png" type="Texture" id=25]
+[ext_resource path="res://Vail_2.0/Sprites/UI/ContinueClick.png" type="Texture" id=26]
 
 [node name="Title" type="Node2D"]
 script = ExtResource( 1 )

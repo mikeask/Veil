@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/MenuBackground.png-ae80389e015b0174776d23dfc346fe81.stex"
+path="res://.import/MenuBackground.png-aae2d6beb5040e121c1c1a9656169d6f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/UI/MenuBackground.png"
-dest_files=[ "res://.import/MenuBackground.png-ae80389e015b0174776d23dfc346fe81.stex" ]
+source_file="res://Vail_2.0/Sprites/UI/MenuBackground.png"
+dest_files=[ "res://.import/MenuBackground.png-aae2d6beb5040e121c1c1a9656169d6f.stex" ]
 
 [params]
 

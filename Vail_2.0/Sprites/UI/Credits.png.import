@@ -2,24 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-<<<<<<< HEAD:Sprites/UI/Credits.png.import
-path="res://.import/Credits.png-4b504e9a0324c2196802f12ea5b673a5.stex"
-=======
-path="res://.import/Credits.png-ccd82f564432c182f73cae47440f9cff.stex"
->>>>>>> 5d3c7c43a92077814c9d955dfd0e3821e98a710b:Vail_1.0/Sprites/Menu/Credits.png.import
+path="res://.import/Credits.png-bfa9e1fc0b4040f389173525cef36a52.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<< HEAD:Sprites/UI/Credits.png.import
-source_file="res://Sprites/UI/Credits.png"
-dest_files=[ "res://.import/Credits.png-4b504e9a0324c2196802f12ea5b673a5.stex" ]
-=======
-source_file="res://Vail_1.0/Sprites/Menu/Credits.png"
-dest_files=[ "res://.import/Credits.png-ccd82f564432c182f73cae47440f9cff.stex" ]
->>>>>>> 5d3c7c43a92077814c9d955dfd0e3821e98a710b:Vail_1.0/Sprites/Menu/Credits.png.import
+source_file="res://Vail_2.0/Sprites/UI/Credits.png"
+dest_files=[ "res://.import/Credits.png-bfa9e1fc0b4040f389173525cef36a52.stex" ]
 
 [params]
 

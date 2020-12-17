@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/CreditsHover.png-ea4bf002796c088e5507a46aa1b122a8.stex"
+path="res://.import/CreditsHover.png-eb19bf92a7669cc86a0ad01c7480be74.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/UI/CreditsHover.png"
-dest_files=[ "res://.import/CreditsHover.png-ea4bf002796c088e5507a46aa1b122a8.stex" ]
+source_file="res://Vail_2.0/Sprites/UI/CreditsHover.png"
+dest_files=[ "res://.import/CreditsHover.png-eb19bf92a7669cc86a0ad01c7480be74.stex" ]
 
 [params]
 

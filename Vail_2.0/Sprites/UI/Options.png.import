@@ -2,24 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-<<<<<<< HEAD:Sprites/UI/Options.png.import
-path="res://.import/Options.png-ba6d2b7e95aa3f8d1256c21423b65047.stex"
-=======
-path="res://.import/Options.png-79fb9b78823b4aa85d1b451fd07ff9b9.stex"
->>>>>>> 5d3c7c43a92077814c9d955dfd0e3821e98a710b:Vail_1.0/Sprites/Menu/Options.png.import
+path="res://.import/Options.png-6611c8c07d1dbeb139c03db25d9c5218.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<< HEAD:Sprites/UI/Options.png.import
-source_file="res://Sprites/UI/Options.png"
-dest_files=[ "res://.import/Options.png-ba6d2b7e95aa3f8d1256c21423b65047.stex" ]
-=======
-source_file="res://Vail_1.0/Sprites/Menu/Options.png"
-dest_files=[ "res://.import/Options.png-79fb9b78823b4aa85d1b451fd07ff9b9.stex" ]
->>>>>>> 5d3c7c43a92077814c9d955dfd0e3821e98a710b:Vail_1.0/Sprites/Menu/Options.png.import
+source_file="res://Vail_2.0/Sprites/UI/Options.png"
+dest_files=[ "res://.import/Options.png-6611c8c07d1dbeb139c03db25d9c5218.stex" ]
 
 [params]
 
