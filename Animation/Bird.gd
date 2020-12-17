@@ -1,8 +1,8 @@
 extends KinematicBody2D
 
-const vel_andar = 600
-const gravidade = 90
-const vel_pulo = 1600
+const vel_andar = 1800
+const gravidade = 70
+const vel_pulo = 4800
 const normal = Vector2(0,-1)
 
 var vel_linear = Vector2(0,0)

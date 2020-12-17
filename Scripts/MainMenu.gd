@@ -4,12 +4,28 @@ extends Node2D
 # var a = 2
 # var b = "textvar"
 var lumini = -1;
+var playerProgress = {
+	"level": 0,
+	"checkpoint": 1
+}
 
 func _ready():
+	print("ready")
+	var save_game = File.new()
+	if save_game.file_exists("user://savegame.save"):
+		save_game.open("user://savegame.save", File.READ)
+		# Get the saved dictionary from the next line in the save file
+		playerProgress = parse_json(save_game.get_as_text())
+		print("playerProgress: ",playerProgress)
+	else:
+		save_game.open("user://savegame.save", File.WRITE)
+		save_game.store_line(to_json(playerProgress))
+		print(to_json(playerProgress))
+	save_game.close()
 	# Called when the node is added to the scene for the first time.
 	# Initialization here
-	
 	pass
+
 
 func _process(delta):
 	$Light2D.energy = $Light2D.energy+(delta/10)*lumini
