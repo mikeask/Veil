@@ -162,10 +162,6 @@ config/name="Veil"
 run/main_scene="res://Vail_1.0/Scenes/MainMenu.tscn"
 config/icon="res://Vail_1.0/Sprites/VeilLOGO.png"
 
-[autoload]
-
-GameManager="*res://Vail_2.0/Scripts/GameManager.gd"
-
 [display]
 
 window/size/width=1920
@@ -174,6 +170,10 @@ window/size/test_width=1280
 window/size/test_height=720
 window/stretch/mode="viewport"
 window/stretch/aspect="expand"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "polygon2d_generator", "rmsmartshape", "ui_design_tool" )
 
 [input]
 
