@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/pickupBird.wav-275fc3834f842c4d16acb626b2058ce4.sample"
+
+[deps]
+
+source_file="res://Vail_1.0/Audio/pickupBird.wav"
+dest_files=[ "res://.import/pickupBird.wav-275fc3834f842c4d16acb626b2058ce4.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

@@ -159,8 +159,8 @@ _global_script_class_icons={
 [application]
 
 config/name="Veil"
-run/main_scene="res://Scenes/MainMenu.tscn"
-config/icon="res://Sprites/VeilLOGO.png"
+run/main_scene="res://Vail_1.0/Scenes/MainMenu.tscn"
+config/icon="res://Vail_1.0/Sprites/VeilLOGO.png"
 
 [display]
 

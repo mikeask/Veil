@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/lock_open_door.wav-f07a36552ba15f5de384b9c6ac04d0ba.sample"
+
+[deps]
+
+source_file="res://Vail_1.0/Audio/lock_open_door.wav"
+dest_files=[ "res://.import/lock_open_door.wav-f07a36552ba15f5de384b9c6ac04d0ba.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

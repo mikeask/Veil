@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/jumpland.wav-79e1a747965bdf1a5ee4f2a8d6968a3c.sample"
+
+[deps]
+
+source_file="res://Vail_1.0/Audio/jumpland.wav"
+dest_files=[ "res://.import/jumpland.wav-79e1a747965bdf1a5ee4f2a8d6968a3c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

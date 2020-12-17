@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/The Outer Forest.wav-22a03e2939308550c9f9e5acda7a52a5.sample"
+
+[deps]
+
+source_file="res://Vail_1.0/Audio/The Outer Forest.wav"
+dest_files=[ "res://.import/The Outer Forest.wav-22a03e2939308550c9f9e5acda7a52a5.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=true
+compress/mode=0

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/MachinimaSound.com_-_A_day_in_the_sun.wav-2c528ac816b0dd6bf85ef136db63ddc6.sample"
+
+[deps]
+
+source_file="res://Vail_1.0/Audio/MachinimaSound.com_-_A_day_in_the_sun.wav"
+dest_files=[ "res://.import/MachinimaSound.com_-_A_day_in_the_sun.wav-2c528ac816b0dd6bf85ef136db63ddc6.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

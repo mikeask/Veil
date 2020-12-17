@@ -1,0 +1,258 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Vail_1.0/Scenes/CreditsTitle.gd" type="Script" id=1]
+[ext_resource path="res://Vail_1.0/Sprites/logo.png" type="Texture" id=2]
+[ext_resource path="res://Vail_1.0/Others/TextHintsTheme.tres" type="Theme" id=3]
+[ext_resource path="res://Vail_1.0/Others/TextThemeCredits.tres" type="Theme" id=4]
+[ext_resource path="res://Vail_1.0/Audio/MachinimaSound.com_-_A_day_in_the_sun.wav" type="AudioStream" id=5]
+
+
+[sub_resource type="Animation" id=1]
+
+resource_name = "Credits"
+length = 40.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Text:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 34 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -108.511, 1231.83 ), Vector2( -108.511, -4919.17 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Fixo:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 26.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Fixo:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 12, 26.5, 33, 51 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -7.53687, -21.1027 ), Vector2( 1708.12, 837.385 ), Vector2( 1708.12, 837.385 ), Vector2( 938.245, 387.225 ), Vector2( -7.53687, -21.1027 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Fixo:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 12, 26.5, 33, 51 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1, 1 ), Vector2( 1, 1 ), Vector2( 2.67821, 2.67821 ), Vector2( 1, 1 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("EscHint:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 30, 32, 33, 34, 36, 38, 40 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.196078 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.196078 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.196078 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.196078 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.196078 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.196078 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.196078 ), Color( 1, 1, 1, 0.196078 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.196078 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.196078 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[node name="CreditsTitle" type="Node2D"]
+
+script = ExtResource( 1 )
+_sections_unfolded = [ "Pause" ]
+
+[node name="ColorRect" type="ColorRect" parent="." index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 1925.0
+margin_bottom = 1083.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 0, 0, 0, 1 )
+
+[node name="Fixo" type="Node2D" parent="." index="1"]
+
+visible = false
+position = Vector2( -7.53687, -21.1027 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="logoFixo" type="Sprite" parent="Fixo" index="0"]
+
+scale = Vector2( 0.121465, 0.121465 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="ThanksForPlayingFixo" type="Label" parent="Fixo" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -334.0
+margin_top = 143.0
+margin_right = 353.0
+margin_bottom = 218.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+text = "THANKS TO EVERYONE 
+FOR PLAYING Veil ! "
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "Theme" ]
+
+[node name="EscHint" type="Label" parent="." index="2"]
+
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 8.0
+margin_top = 1031.0
+margin_right = 161.0
+margin_bottom = 1067.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+text = "Exit (Esc)"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Theme", "Visibility" ]
+
+[node name="Text" type="Node2D" parent="." index="3"]
+
+position = Vector2( -108.511, 1231.83 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="logo" type="Sprite" parent="Text" index="0"]
+
+position = Vector2( 1047.16, 205.699 )
+scale = Vector2( 0.22041, 0.22041 )
+texture = ExtResource( 2 )
+
+[node name="Names" type="Label" parent="Text" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 214.0
+margin_top = 477.0
+margin_right = 1924.0
+margin_bottom = 3714.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+theme = ExtResource( 4 )
+text = "						
+PROGRAMMING
+Michael Vivaldini
+Tacio Barreto
+
+GENERAL DESIGN
+Daniel Quevedo
+
+							LEVEL DESIGN
+							Daniel Quevedo
+							Douglas Rodrigues
+							Tacio Barreto
+							
+							
+UI DEVELOPMENT
+Daniel Quevedo
+Michael Vivaldini
+		
+							
+							IDEALIZATION AND HISTORY
+							Daniel Quevedo
+							Douglas Rodrigues
+							Michael Vivaldini
+							Tacio Barreto
+						
+							
+							MUSIC CREDITS
+							Main Menu and Ingame Theme
+							Winter Dawn - Jens Kiilstofte
+							
+							Credits Theme
+							A Day In The Sun - Per Kiilstofte
+							
+							End Game Theme
+							Fields of Green - Per Kiilstofte
+							
+							SFX CREDITS
+							remaxim - Falling Tree
+							MentalSanityOff - Jump
+							Blender Foundation - Florest Ambient
+							GuntherDorksen - Box Pushing
+							
+							
+					"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Theme" ]
+
+[node name="CreditsTheme" type="AudioStreamPlayer" parent="." index="4"]
+
+stream = ExtResource( 5 )
+volume_db = 0.0
+pitch_scale = 1.0
+autoplay = true
+mix_target = 0
+bus = "Master"
+
+[node name="CreditsAnimation" type="AnimationPlayer" parent="." index="5"]
+
+root_node = NodePath("..")
+autoplay = "Credits"
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+playback_speed = 1.0
+anims/Credits = SubResource( 1 )
+blend_times = [  ]
+_sections_unfolded = [ "Playback Options" ]
+
+

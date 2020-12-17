@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Vail_1.0/Animation/Bird.tscn" type="PackedScene" id=1]
+
+
+[node name="flortest" type="Node2D" index="0"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 0.0
+bounce = 0.22
+_sections_unfolded = [ "Collision" ]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -2053.58, -1210.1, -1408.48, -1257.02, -1396.75, 490.627, 433.004, 514.086, 456.462, 150.481, 749.692, 127.023, 773.15, -177.936, 1078.11, -177.936, 1089.84, -576.728, 1488.63, -564.998, 1500.36, -1515.06, 2028.17, -1421.23, 1512.09, 830.774, -1431.94, 971.524 )
+
+[node name="Bird" parent="." index="1" groups=[
+"player",
+] instance=ExtResource( 1 )]
+
+
+[editable path="Bird"]

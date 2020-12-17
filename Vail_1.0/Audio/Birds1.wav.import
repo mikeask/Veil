@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Birds1.wav-27ecf763d40b72e9644ea5b8766dcc32.sample"
+
+[deps]
+
+source_file="res://Vail_1.0/Audio/Birds1.wav"
+dest_files=[ "res://.import/Birds1.wav-27ecf763d40b72e9644ea5b8766dcc32.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

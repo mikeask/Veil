@@ -1,0 +1,1205 @@
+[gd_scene load_steps=23 format=2]
+
+[ext_resource path="res://Vail_1.0/Scenes/FullLevelPoly2d.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Vail_1.0/Prefabs/Vegetation02.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Vail_1.0/Prefabs/Vegetation03.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Vail_1.0/Prefabs/Vegetation01.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Vail_1.0/Sprites/Environment/Box.png" type="Texture" id=5]
+[ext_resource path="res://Vail_1.0/Prefabs/Vegetation05.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Vail_1.0/Prefabs/Vegetation05_2.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Vail_1.0/Sprites/Environment/Tree01.png" type="Texture" id=8]
+[ext_resource path="res://Vail_1.0/Sprites/Environment/Tree05.png" type="Texture" id=9]
+[ext_resource path="res://Vail_1.0/Sprites/Environment/Vine02.png" type="Texture" id=10]
+[ext_resource path="res://Vail_1.0/Sprites/Environment/Vine01.png" type="Texture" id=11]
+[ext_resource path="res://Vail_1.0/Sprites/Environment/Rock01.png" type="Texture" id=12]
+[ext_resource path="res://Vail_1.0/Sprites/Environment/Tree02.png" type="Texture" id=13]
+[ext_resource path="res://Vail_1.0/Sprites/Environment/Tree03.png" type="Texture" id=14]
+[ext_resource path="res://Vail_1.0/Sprites/Environment/Vegetation04.png" type="Texture" id=15]
+[ext_resource path="res://Vail_1.0/Sprites/Environment/Vegetation01.png" type="Texture" id=16]
+[ext_resource path="res://Vail_1.0/Sprites/Environment/BackBushes.png" type="Texture" id=17]
+[ext_resource path="res://Vail_1.0/Prefabs/Fog01.tscn" type="PackedScene" id=18]
+[ext_resource path="res://Vail_1.0/Sprites/Environment/SkyBG.png" type="Texture" id=19]
+[ext_resource path="res://Vail_1.0/Sprites/Environment/Tree01white.png" type="Texture" id=20]
+[ext_resource path="res://Vail_1.0/Sprites/Environment/blurTree.png" type="Texture" id=21]
+[ext_resource path="res://Vail_1.0/Sprites/Environment/Nest.png" type="Texture" id=22]
+
+
+[node name="Node2D" type="Node2D"]
+
+__meta__ = {
+"_edit_horizontal_guides_": [ -11799.0 ]
+}
+
+[node name="01" parent="." index="0" instance=ExtResource( 1 )]
+
+position = Vector2( 47950, 10258.1 )
+rotation = 0.0019476
+scale = Vector2( 57.2664, 49.9851 )
+polygon = PoolVector2Array( -2140.58, -551.292, -2166.76, -553.109, -2160.91, 280.958, -1114.68, 268.106, -1113.76, -173.962, -1376.54, -173.392, -1380.1, -161.616, -1398.25, -159.112, -1400.15, -148.708, -1421.4, -146.471, -1422.82, -137.983, -1442.4, -133.834, -1443.9, -127.24, -1460.07, -125.037, -1467.84, -117.253, -1475.28, -117.253, -1479.81, -117.253, -1490.32, -117.253, -1507.35, -115.657, -1520.11, -113.681, -1530.89, -111.458, -1537.14, -110.511, -1542.17, -109.847, -1580.13, -108.456, -1612.09, -107.302, -1617.02, -107.398, -1622.82, -107.373, -1626.14, -107.376, -1630.61, -107.107, -1635.79, -106.899, -1651.53, -106.84, -1655.55, -106.145, -1662.6, -106.37, -1663.13, -111.548, -1663.78, -117.083, -1663.79, -121.935, -1664.06, -126.787, -1795.14, -128.854, -1797.53, -130.764, -1798.73, -132.951, -1796.12, -145.565, -1796.14, -147.148, -1796.51, -148.574, -1795.96, -150.905, -1795.97, -151.975, -1798.79, -165.246, -1797.36, -167.439, -1795.69, -169.906, -1732.69, -170.727, -1670.28, -166.962, -1665.66, -166.468, -1662.58, -163.504, -1652.74, -157.866, -1641.96, -153.351, -1635.13, -147.737, -1628.94, -137.127, -1626.99, -134.661, -1623.97, -132.445, -1577.43, -130.757, -1573.86, -130.765, -1569.14, -131.759, -1566.42, -133.076, -1563.85, -134.72, -1561.84, -135.802, -1561.85, -138.812, -1564.86, -141.436, -1569.19, -141.452, -1576.77, -141.878, -1581.1, -141.868, -1591.19, -144.327, -1590.21, -157.275, -1582.5, -166.469, -1567.34, -166.666, -1560.47, -167.173, -1554.87, -165.912, -1550.59, -163.95, -1544.3, -163.655, -1536.42, -165.454, -1529.18, -167.972, -1522.36, -167.776, -1520.44, -166.697, -1518.7, -162.911, -1517.8, -157.042, -1518.09, -152.119, -1519.3, -148.546, -1520.71, -147.606, -1525.83, -145.998, -1528.52, -145.266, -1530.11, -144.718, -1532.16, -142.897, -1532.79, -139.265, -1534.05, -136.72, -1535, -133.086, -1540.19, -131.303, -1543.15, -130.792, -1548.49, -126.597, -1537.69, -129.551, -1533.35, -131.309, -1529.64, -133.227, -1526.18, -135.869, -1522.3, -137.866, -1516.32, -138.956, -1512.16, -141.101, -1512.95, -148.713, -1509.21, -157.605, -1507.67, -173.414, -1511.19, -179.589, -1517, -185.809, -1527.25, -186.752, -1537.15, -184.529, -1544.92, -186.354, -1557.18, -195.397, -1565.1, -210.711, -1577.2, -221.826, -1590.57, -227.597, -1600.08, -225.284, -1608.67, -225.037, -1617.32, -226.687, -1619.01, -225.531, -1622.31, -214.169, -1622.75, -205.277, -1619.01, -197.373, -1615.49, -190.21, -1615.43, -182.715, -1622.47, -181.168, -1629.06, -181.759, -1635.38, -183.386, -1645, -182.794, -1647.24, -181.02, -1649.74, -181.199, -1650.43, -186.594, -1652.57, -189.93, -1654.6, -193.134, -1652.69, -197.004, -1653.05, -200.875, -1654.33, -202.124, -1659.47, -202.61, -1664.23, -201.542, -1668.03, -198.472, -1672.79, -198.472, -1676.59, -195.67, -1678.95, -191.754, -1681.83, -188.729, -1686.46, -186.994, -1691.58, -187.394, -1695.97, -188.996, -1700.31, -193.533, -1701.45, -197.426, -1706.63, -198.457, -1707.37, -203.394, -1708.06, -204.573, -1712.53, -204.708, -1714.01, -211.45, -1715.06, -213.014, -1719.9, -214.689, -1721.3, -219.561, -1722.6, -220.326, -1728.87, -221.146, -1730.99, -230.776, -1732.24, -231.572, -1768.05, -233.221, -1771.72, -232.774, -1775.64, -228.503, -1779.09, -226.368, -1782.93, -225.778, -1780.99, -224.499, -1776.71, -224.499, -1770.53, -225.967, -1764.7, -225.033, -1756.5, -220.095, -1748.77, -216.358, -1740.44, -216.224, -1733.07, -213.154, -1727.96, -208.483, -1723.2, -199.941, -1721.3, -195.269, -1721.18, -190.737, -1722.01, -187.261, -1723.54, -185.831, -1725.46, -184.858, -1732.72, -185.34, -1734.27, -189.237, -1740.34, -195.768, -1751.07, -203.885, -1762.72, -205.061, -1773.09, -204.37, -1782.16, -205.534, -1795.6, -206.202, -1815.04, -207.917, -1824.06, -209.673, -1833.54, -210.449, -1858.81, -211.462, -1890.85, -210.449, -1896.75, -209.298, -1903.62, -206.254, -1916.12, -204.371, -1926.29, -204.406, -1933.26, -205.384, -1936.2, -207.006, -1941.06, -209.824, -1943.9, -210.995, -1947.21, -211.321, -1977.48, -212.475, -2045.36, -212.443, -2081.99, -213.743, -2097.32, -215.999, -2109.99, -221.315, -2118.03, -243.437, -2128.85, -338.082, -2130.49, -350.424, -2135.33, -363.504 )
+_sections_unfolded = [ "Invert", "Material", "Pause", "Texture", "Transform", "Visibility", "Z Index" ]
+
+[node name="02" type="Polygon2D" parent="." index="1"]
+
+position = Vector2( -449923, -14207.9 )
+scale = Vector2( 24.5838, 1 )
+polygon = PoolVector2Array( 17874.6, 40783.3, 19423, 40679.6, 19434.9, 20192.4, 19399.2, 17559.3, 19354.1, 15994.7, 19275, 15193.3, 19208.6, 15040.2, 19078.2, 15031.6, 19064, 14653.6, 19056.9, 14653.9, 19051.9, 14962.5, 18992.6, 14962.5, 18899.7, 14999.6, 18760.6, 15024.3, 18695.3, 14987.2, 18687.8, 14667.3, 18678.9, 14667.6, 18662.9, 15004.2, 18421.8, 14940.2, 18412.2, 15001.8, 18226.6, 17793.9, 18161.5, 18845, 18094.5, 19488.6, 18036.8, 19488.6, 18003.9, 19350.4, 17976.4, 19100.2, 17941.6, 18410.6, 17906.7, 17500.8, 17885.5, 16652.2, 17866.5, 15727.8, 17841.3, 15727.8 )
+uv = PoolVector2Array(  )
+color = Color( 0, 0, 0, 1 )
+vertex_colors = PoolColorArray(  )
+offset = Vector2( 0, 0 )
+antialiased = false
+texture = null
+texture_offset = Vector2( 0, 0 )
+texture_scale = Vector2( 1, 1 )
+texture_rotation_degrees = 0.0
+invert_enable = false
+invert_border = 100.0
+_sections_unfolded = [ "Invert", "Material", "Pause", "Texture", "Transform", "Visibility", "Z Index" ]
+
+[node name="03" type="Polygon2D" parent="." index="2"]
+
+position = Vector2( -99648.3, -19262 )
+polygon = PoolVector2Array( 83895.2, 887.774, 83895.2, 6369.47, 84176.3, 8337.26, 83988.9, 9836.53, 83660.7, 11101.5, 83702.3, 13053.1, 83402.1, 13048.8, 83069.5, 13093.2, 82655.5, 13026.6, 82322.8, 13122.7, 82108.5, 13255.8, 82095.5, 13356.3, 82367.2, 13270.6, 82685.1, 13233.6, 83032.5, 13366.7, 83357.8, 13381.5, 83702.3, 13432.1, 83779.2, 14884.4, 83945.9, 16157.7, 84082.4, 16703.4, 83665.3, 17127.9, 83660.7, 17581, 83878.7, 17772.1, 84176.3, 17848.2, 85881.5, 17568.9, 87596.5, 17051.8, 89361.6, 16266.2, 91063.6, 15271.4, 94015.2, 13537.8, 96217.3, 12694.5, 96685.8, 11991.7, 96123.6, 1496.85, 95701, 1286.55, 84255.7, 697.46 )
+uv = PoolVector2Array(  )
+color = Color( 0, 0, 0, 1 )
+vertex_colors = PoolColorArray(  )
+offset = Vector2( 0, 0 )
+antialiased = false
+texture = null
+texture_offset = Vector2( 0, 0 )
+texture_scale = Vector2( 1, 1 )
+texture_rotation_degrees = 0.0
+invert_enable = false
+invert_border = 100.0
+
+[node name="04" type="Polygon2D" parent="." index="3"]
+
+position = Vector2( -46645.8, -5088.43 )
+polygon = PoolVector2Array( 37668.3, -8749.16, 38556.5, 7150.88, 38860.3, 7429.36, 39493.2, 7657.21, 42135.6, 7612.57, 42531.3, 7682.53, 42799.3, 7562.29, 42911, 7302.78, 43249.8, -8833.72 )
+uv = PoolVector2Array(  )
+color = Color( 0, 0, 0, 1 )
+vertex_colors = PoolColorArray(  )
+offset = Vector2( 0, 0 )
+antialiased = false
+texture = null
+texture_offset = Vector2( 0, 0 )
+texture_scale = Vector2( 1, 1 )
+texture_rotation_degrees = 0.0
+invert_enable = false
+invert_border = 100.0
+
+[node name="05" type="Polygon2D" parent="." index="4"]
+
+position = Vector2( -42529.1, -6066.44 )
+polygon = PoolVector2Array( 39090.8, -7813.43, 39629.8, 6230.1, 39781.7, 6660.49, 40262.7, 6837.71, 42161.5, 6761.76, 42478.1, 6596.44, 42617.2, 6204.79, 43403.8, -7771.15 )
+uv = PoolVector2Array(  )
+color = Color( 0, 0, 0, 1 )
+vertex_colors = PoolColorArray(  )
+offset = Vector2( 0, 0 )
+antialiased = false
+texture = null
+texture_offset = Vector2( 0, 0 )
+texture_scale = Vector2( 1, 1 )
+texture_rotation_degrees = 0.0
+invert_enable = false
+invert_border = 100.0
+
+[node name="06" type="Polygon2D" parent="." index="5"]
+
+position = Vector2( -38685.3, -7887.02 )
+polygon = PoolVector2Array( 39559.9, -5866, 39561.4, 7370.41, 39590.8, 7683.5, 39795.9, 7851.92, 40055.2, 7913.66, 40549.7, 7773.16, 41515.1, 7451.36, 42586.3, 7259.29, 42846.6, 7006.95, 42993.7, 6716.05, 42308.4, -5866 )
+uv = PoolVector2Array(  )
+color = Color( 0, 0, 0, 1 )
+vertex_colors = PoolColorArray(  )
+offset = Vector2( 0, 0 )
+antialiased = false
+texture = null
+texture_offset = Vector2( 0, 0 )
+texture_scale = Vector2( 1, 1 )
+texture_rotation_degrees = 0.0
+invert_enable = false
+invert_border = 100.0
+
+[node name="07" type="Polygon2D" parent="." index="6"]
+
+position = Vector2( 47757.9, 10546.3 )
+rotation = 0.0019476
+scale = Vector2( 57.2664, 49.9851 )
+polygon = PoolVector2Array( -1502.3, -525.654, -1485.9, -192.641, -1485.12, -187.962, -1480.99, -164.341, -1481.74, -145.391, -1481.41, -144.047, -1480.43, -143.276, -1469.38, -142.928, -1468.49, -143.606, -1468.12, -145.422, -1466.8, -171.283, -1463.51, -181.099, -1460.22, -194.482, -1456.76, -218.342, -1440.99, -522.737 )
+uv = PoolVector2Array(  )
+color = Color( 0, 0, 0, 1 )
+vertex_colors = PoolColorArray(  )
+offset = Vector2( 0, 0 )
+antialiased = false
+texture = null
+texture_offset = Vector2( 0, 0 )
+texture_scale = Vector2( 1, 1 )
+texture_rotation_degrees = 0.0
+invert_enable = false
+invert_border = 100.0
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." index="7"]
+
+position = Vector2( 45280.3, 10568 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Transform" ]
+
+[node name="Col01" type="CollisionPolygon2D" parent="StaticBody2D" index="0"]
+
+position = Vector2( 2677.43, -310.138 )
+rotation = 0.0019476
+scale = Vector2( 57.2664, 49.9851 )
+build_mode = 0
+polygon = PoolVector2Array( -2140.58, -551.292, -2166.76, -553.109, -2160.91, 280.958, -1114.68, 268.106, -1113.76, -173.962, -1376.54, -173.392, -1380.1, -161.616, -1398.25, -159.112, -1400.15, -148.708, -1421.4, -146.471, -1422.82, -137.983, -1442.4, -133.834, -1443.9, -127.24, -1460.07, -125.037, -1467.84, -117.253, -1475.28, -117.253, -1479.81, -117.253, -1490.32, -117.253, -1507.35, -115.657, -1520.11, -113.681, -1530.89, -111.458, -1537.14, -110.511, -1542.17, -109.847, -1580.13, -108.456, -1612.09, -107.302, -1617.02, -107.398, -1622.82, -107.373, -1626.14, -107.376, -1630.61, -107.107, -1635.79, -106.899, -1651.53, -106.84, -1655.55, -106.145, -1662.6, -106.37, -1663.13, -111.548, -1663.78, -117.083, -1663.79, -121.935, -1664.06, -126.787, -1795.14, -128.854, -1797.53, -130.764, -1798.73, -132.951, -1796.12, -145.565, -1796.14, -147.148, -1796.51, -148.574, -1795.96, -150.905, -1795.97, -151.975, -1798.79, -165.246, -1797.36, -167.439, -1795.69, -169.906, -1732.69, -170.727, -1670.28, -166.962, -1665.66, -166.468, -1662.58, -163.504, -1652.74, -157.866, -1641.96, -153.351, -1635.13, -147.737, -1628.94, -137.127, -1626.99, -134.661, -1623.97, -132.445, -1577.43, -130.757, -1573.86, -130.765, -1569.14, -131.759, -1566.42, -133.076, -1563.85, -134.72, -1561.84, -135.802, -1561.85, -138.812, -1564.86, -141.436, -1569.19, -141.452, -1576.77, -141.878, -1581.1, -141.868, -1591.19, -144.327, -1590.21, -157.275, -1582.5, -166.469, -1567.34, -166.666, -1560.47, -167.173, -1554.87, -165.912, -1550.59, -163.95, -1544.3, -163.655, -1536.42, -165.454, -1529.18, -167.972, -1522.36, -167.776, -1520.44, -166.697, -1518.7, -162.911, -1517.8, -157.042, -1518.09, -152.119, -1519.3, -148.546, -1520.71, -147.606, -1525.83, -145.998, -1528.52, -145.266, -1530.11, -144.718, -1532.16, -142.897, -1532.79, -139.265, -1534.05, -136.72, -1535, -133.086, -1540.19, -131.303, -1543.15, -130.792, -1548.49, -126.597, -1537.69, -129.551, -1533.35, -131.309, -1529.64, -133.227, -1526.18, -135.869, -1522.3, -137.866, -1516.32, -138.956, -1512.16, -141.101, -1512.95, -148.713, -1509.21, -157.605, -1507.67, -173.414, -1511.19, -179.589, -1517, -185.809, -1527.25, -186.752, -1537.15, -184.529, -1544.92, -186.354, -1557.18, -195.397, -1565.1, -210.711, -1577.2, -221.826, -1590.57, -227.597, -1600.08, -225.284, -1608.67, -225.037, -1617.32, -226.687, -1619.01, -225.531, -1622.31, -214.169, -1622.75, -205.277, -1619.01, -197.373, -1615.49, -190.21, -1615.43, -182.715, -1622.47, -181.168, -1629.06, -181.759, -1635.38, -183.386, -1645, -182.794, -1647.24, -181.02, -1649.74, -181.199, -1650.43, -186.594, -1652.57, -189.93, -1654.6, -193.134, -1652.69, -197.004, -1653.05, -200.875, -1654.33, -202.124, -1659.47, -202.61, -1664.23, -201.542, -1668.03, -198.472, -1672.79, -198.472, -1676.59, -195.67, -1678.95, -191.754, -1681.83, -188.729, -1686.46, -186.994, -1691.58, -187.394, -1695.97, -188.996, -1700.31, -193.533, -1701.45, -197.426, -1706.63, -198.457, -1707.37, -203.394, -1708.06, -204.573, -1712.53, -204.708, -1714.01, -211.45, -1715.06, -213.014, -1719.9, -214.689, -1721.3, -219.561, -1722.6, -220.326, -1728.87, -221.146, -1730.99, -230.776, -1732.24, -231.572, -1768.05, -233.221, -1771.72, -232.774, -1775.64, -228.503, -1779.09, -226.368, -1782.93, -225.778, -1780.99, -224.499, -1776.71, -224.499, -1770.53, -225.967, -1764.7, -225.033, -1756.5, -220.095, -1748.77, -216.358, -1740.44, -216.224, -1733.07, -213.154, -1727.96, -208.483, -1723.2, -199.941, -1721.3, -195.269, -1721.18, -190.737, -1722.01, -187.261, -1723.54, -185.831, -1725.46, -184.858, -1732.72, -185.34, -1734.27, -189.237, -1740.34, -195.768, -1751.07, -203.885, -1762.72, -205.061, -1773.09, -204.37, -1782.16, -205.534, -1795.6, -206.202, -1815.04, -207.917, -1824.06, -209.673, -1833.54, -210.449, -1858.81, -211.462, -1890.85, -210.449, -1896.75, -209.298, -1903.62, -206.254, -1916.12, -204.371, -1926.29, -204.406, -1933.26, -205.384, -1936.2, -207.006, -1941.06, -209.824, -1943.9, -210.995, -1947.21, -211.321, -1977.48, -212.475, -2045.36, -212.443, -2081.99, -213.743, -2097.32, -215.999, -2109.99, -221.315, -2118.03, -243.437, -2128.85, -338.082, -2130.49, -350.424, -2135.33, -363.504 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Col02" type="CollisionPolygon2D" parent="StaticBody2D" index="1"]
+
+position = Vector2( -495192, -24767.9 )
+scale = Vector2( 24.5838, 1 )
+build_mode = 0
+polygon = PoolVector2Array( 17874.6, 40783.3, 19423, 40679.6, 19434.9, 20192.4, 19399.2, 17559.3, 19354.1, 15994.7, 19275, 15193.3, 19208.6, 15040.2, 19078.6, 14925, 18695.1, 14933.8, 18421.8, 14940.2, 18412.2, 15001.8, 18226.6, 17793.9, 18161.5, 18845, 18094.5, 19488.6, 18036.8, 19488.6, 18003.9, 19350.4, 17976.4, 19100.2, 17941.6, 18410.6, 17906.7, 17500.8, 17885.5, 16652.2, 17866.5, 15727.8, 17841.3, 15727.8 )
+
+[node name="Col03" type="CollisionPolygon2D" parent="StaticBody2D" index="2"]
+
+position = Vector2( -144938, -29849.8 )
+build_mode = 0
+polygon = PoolVector2Array( 83895.2, 887.774, 83895.2, 6369.47, 84176.3, 8337.26, 83988.9, 9836.53, 83660.7, 11101.5, 83702.3, 13053.1, 83402.1, 13048.8, 83069.5, 13093.2, 82655.5, 13026.6, 82322.8, 13122.7, 82108.5, 13255.8, 82095.5, 13356.3, 82367.2, 13270.6, 82685.1, 13233.6, 83032.5, 13366.7, 83357.8, 13381.5, 83702.3, 13432.1, 83779.2, 14884.4, 83945.9, 16157.7, 84082.4, 16703.4, 83665.3, 17127.9, 83660.7, 17581, 83878.7, 17772.1, 84176.3, 17848.2, 85881.5, 17568.9, 87596.5, 17051.8, 89361.6, 16266.2, 91063.6, 15271.4, 94015.2, 13537.8, 96217.3, 12694.5, 96685.8, 11991.7, 96123.6, 1496.85, 95701, 1286.55, 84255.7, 697.46 )
+
+[node name="Col04" type="CollisionPolygon2D" parent="StaticBody2D" index="3"]
+
+position = Vector2( -91918.7, -15650.4 )
+build_mode = 0
+polygon = PoolVector2Array( 37668.3, -8749.16, 38556.5, 7150.88, 38860.3, 7429.36, 39493.2, 7657.21, 42135.6, 7612.57, 42531.3, 7682.53, 42799.3, 7562.29, 42911, 7302.78, 43249.8, -8833.72 )
+
+[node name="Col05" type="CollisionPolygon2D" parent="StaticBody2D" index="4"]
+
+position = Vector2( -87810.5, -16637.3 )
+build_mode = 0
+polygon = PoolVector2Array( 39090.8, -7813.43, 39629.8, 6230.1, 39781.7, 6660.49, 40262.7, 6837.71, 42161.5, 6761.76, 42478.1, 6596.44, 42617.2, 6204.79, 43403.8, -7771.15 )
+
+[node name="Col06" type="CollisionPolygon2D" parent="StaticBody2D" index="5"]
+
+position = Vector2( -83976.7, -18452.6 )
+build_mode = 0
+polygon = PoolVector2Array( 39559.9, -5866, 39561.4, 7370.41, 39590.8, 7683.5, 39795.9, 7851.92, 40055.2, 7913.66, 40549.7, 7773.16, 41515.1, 7451.36, 42586.3, 7259.29, 42846.6, 7006.95, 42993.7, 6716.05, 42308.4, -5866 )
+
+[node name="Col07" type="CollisionPolygon2D" parent="StaticBody2D" index="6"]
+
+position = Vector2( 2476.45, -21.7344 )
+rotation = 0.0019476
+scale = Vector2( 57.2664, 49.9851 )
+build_mode = 0
+polygon = PoolVector2Array( -1502.3, -525.654, -1485.9, -192.641, -1485.12, -187.962, -1480.99, -164.341, -1481.74, -145.391, -1481.41, -144.047, -1480.43, -143.276, -1469.38, -142.928, -1468.49, -143.606, -1468.12, -145.422, -1466.8, -171.283, -1463.51, -181.099, -1460.22, -194.482, -1456.76, -218.342, -1440.99, -522.737 )
+
+[node name="Mid" type="ParallaxLayer" parent="." index="8"]
+
+editor/display_folded = true
+motion_scale = Vector2( 1, 1 )
+motion_offset = Vector2( 0, 0 )
+motion_mirroring = Vector2( 0, 0 )
+_sections_unfolded = [ "Material", "Motion", "Transform", "Visibility", "Z Index" ]
+
+[node name="Vegetation02" parent="Mid" index="0" instance=ExtResource( 2 )]
+
+position = Vector2( -50760.9, 618.167 )
+rotation = -0.130699
+
+[node name="Vegetation10" parent="Mid" index="1" instance=ExtResource( 2 )]
+
+position = Vector2( -48958.9, 3692.56 )
+rotation = -0.130699
+
+[node name="Vegetation32" parent="Mid" index="2" instance=ExtResource( 2 )]
+
+modulate = Color( 1, 1, 1, 1 )
+position = Vector2( -49442.8, 3301.52 )
+rotation = -0.130699
+scale = Vector2( 3.73818, 3.73818 )
+
+[node name="Vegetation11" parent="Mid" index="3" instance=ExtResource( 2 )]
+
+position = Vector2( -42268, 3119.75 )
+rotation = -0.130699
+
+[node name="Vegetation12" parent="Mid" index="4" instance=ExtResource( 2 )]
+
+position = Vector2( -27969.1, 1326.77 )
+rotation = -0.130699
+
+[node name="Vegetation13" parent="Mid" index="5" instance=ExtResource( 2 )]
+
+modulate = Color( 1, 1, 1, 1 )
+position = Vector2( -27511.9, 1172.3 )
+rotation = -0.130699
+scale = Vector2( 3.14324, 3.14324 )
+
+[node name="Vegetation14" parent="Mid" index="6" instance=ExtResource( 2 )]
+
+modulate = Color( 1, 1, 1, 1 )
+position = Vector2( -15813.9, -2740.51 )
+rotation = -0.130699
+scale = Vector2( 3.14324, 3.14324 )
+
+[node name="Vegetation15" parent="Mid" index="7" instance=ExtResource( 2 )]
+
+modulate = Color( 1, 1, 1, 1 )
+position = Vector2( -7825.64, 4676.77 )
+rotation = 1.70801
+scale = Vector2( 3.79413, 3.79413 )
+
+[node name="Vegetation24" parent="Mid" index="8" instance=ExtResource( 2 )]
+
+modulate = Color( 1, 1, 1, 1 )
+self_modulate = Color( 1, 1, 1, 0.723765 )
+position = Vector2( -8478.88, 4388.02 )
+rotation = -0.130699
+scale = Vector2( 2.7654, 2.7654 )
+
+[node name="Vegetation25" parent="Mid" index="9" instance=ExtResource( 2 )]
+
+modulate = Color( 1, 1, 1, 1 )
+self_modulate = Color( 1, 1, 1, 0.723765 )
+position = Vector2( 7150.89, 642.059 )
+rotation = -0.130699
+scale = Vector2( 2.7654, 2.7654 )
+
+[node name="Vegetation26" parent="Mid" index="10" instance=ExtResource( 2 )]
+
+modulate = Color( 1, 1, 1, 1 )
+self_modulate = Color( 1, 1, 1, 0.723765 )
+position = Vector2( -36961.1, 2735.36 )
+rotation = -0.130699
+scale = Vector2( 2.7654, 2.7654 )
+
+[node name="Vegetation27" parent="Mid" index="11" instance=ExtResource( 2 )]
+
+modulate = Color( 1, 1, 1, 1 )
+self_modulate = Color( 1, 1, 1, 0.723765 )
+position = Vector2( -36203, 1715.14 )
+rotation = -2.70165
+scale = Vector2( 2.7654, 2.7654 )
+
+[node name="Vegetation29" parent="Mid" index="12" instance=ExtResource( 2 )]
+
+modulate = Color( 1, 1, 1, 1 )
+self_modulate = Color( 1, 1, 1, 0.723765 )
+position = Vector2( 3124.31, 444.223 )
+rotation = -0.130699
+scale = Vector2( 2.7654, 2.7654 )
+
+[node name="Vegetation30" parent="Mid" index="13" instance=ExtResource( 2 )]
+
+modulate = Color( 1, 1, 1, 1 )
+self_modulate = Color( 1, 1, 1, 0.723765 )
+position = Vector2( 21480.4, -8388.44 )
+rotation = -0.130699
+scale = Vector2( 2.7654, 2.7654 )
+
+[node name="Vegetation31" parent="Mid" index="14" instance=ExtResource( 2 )]
+
+modulate = Color( 1, 1, 1, 1 )
+self_modulate = Color( 1, 1, 1, 0.723765 )
+position = Vector2( 21480.4, -8388.44 )
+rotation = -0.130699
+scale = Vector2( 2.7654, 2.7654 )
+
+[node name="Vegetation16" parent="Mid" index="15" instance=ExtResource( 2 )]
+
+modulate = Color( 1, 1, 1, 1 )
+position = Vector2( 3238.84, 1818.61 )
+rotation = -0.130699
+scale = Vector2( 3.14324, 3.14324 )
+
+[node name="Vegetation17" parent="Mid" index="16" instance=ExtResource( 2 )]
+
+modulate = Color( 1, 1, 1, 1 )
+position = Vector2( 19772.9, 749.865 )
+rotation = -0.130699
+scale = Vector2( 4.1236, 4.1236 )
+
+[node name="Vegetation18" parent="Mid" index="17" instance=ExtResource( 2 )]
+
+modulate = Color( 1, 1, 1, 1 )
+position = Vector2( -1680.63, 3321.43 )
+rotation = -0.130699
+scale = Vector2( 3.14324, 3.14324 )
+
+[node name="Vegetation19" parent="Mid" index="18" instance=ExtResource( 2 )]
+
+modulate = Color( 1, 1, 1, 1 )
+position = Vector2( -34762.1, 4036.93 )
+rotation = 0.441217
+scale = Vector2( 4.45512, 4.45512 )
+
+[node name="Vegetation21" parent="Mid" index="19" instance=ExtResource( 2 )]
+
+modulate = Color( 1, 1, 1, 1 )
+position = Vector2( 3503.21, 832.271 )
+rotation = 1.41522
+scale = Vector2( 3.14324, 3.14324 )
+
+[node name="Vegetation22" parent="Mid" index="20" instance=ExtResource( 2 )]
+
+modulate = Color( 1, 1, 1, 1 )
+position = Vector2( 9073.29, 348.077 )
+rotation = 1.41522
+scale = Vector2( 3.14324, 3.14324 )
+
+[node name="Vegetation23" parent="Mid" index="21" instance=ExtResource( 2 )]
+
+modulate = Color( 1, 1, 1, 1 )
+position = Vector2( 21088.1, -8772.32 )
+rotation = 1.41522
+scale = Vector2( 3.14324, 3.14324 )
+
+[node name="Vegetation03" parent="Mid" index="22" instance=ExtResource( 3 )]
+
+position = Vector2( -53654.2, -176.282 )
+rotation = 0.382438
+
+[node name="Vegetation04" parent="Mid" index="23" instance=ExtResource( 3 )]
+
+position = Vector2( -54014.9, -1259.2 )
+rotation = -0.0561015
+scale = Vector2( 0.636433, 0.636433 )
+
+[node name="Vegetation01" parent="Mid" index="24" instance=ExtResource( 4 )]
+
+position = Vector2( -55961.9, -325.255 )
+scale = Vector2( 0.615944, 0.615944 )
+
+[node name="Box" type="Sprite" parent="Mid" index="25"]
+
+position = Vector2( 7718.43, 5383.52 )
+texture = ExtResource( 5 )
+
+[node name="Vegetation06" parent="Mid" index="26" instance=ExtResource( 6 )]
+
+position = Vector2( -54114.4, -237.419 )
+
+[node name="Vegetation08" parent="Mid" index="27" instance=ExtResource( 6 )]
+
+position = Vector2( -54966, -278.098 )
+scale = Vector2( 0.807248, 0.807248 )
+
+[node name="Vegetation34" parent="Mid" index="28" instance=ExtResource( 6 )]
+
+position = Vector2( -55561.3, -305.993 )
+scale = Vector2( 0.807248, 0.807248 )
+
+[node name="Vegetation35" parent="Mid" index="29" instance=ExtResource( 6 )]
+
+position = Vector2( -53903.7, -1346.34 )
+scale = Vector2( 0.807248, 0.807248 )
+
+[node name="Vegetation37" parent="Mid" index="30" instance=ExtResource( 6 )]
+
+position = Vector2( -48647.7, 683.229 )
+scale = Vector2( 0.807248, 0.807248 )
+
+[node name="Vegetation39" parent="Mid" index="31" instance=ExtResource( 6 )]
+
+position = Vector2( -44727.6, -914.067 )
+scale = Vector2( 0.807248, 0.807248 )
+
+[node name="Vegetation42" parent="Mid" index="32" instance=ExtResource( 6 )]
+
+position = Vector2( -39723.1, 2865.61 )
+scale = Vector2( 0.807248, 0.807248 )
+
+[node name="Vegetation44" parent="Mid" index="33" instance=ExtResource( 6 )]
+
+position = Vector2( -34188.5, 3162.52 )
+scale = Vector2( 0.807248, 0.807248 )
+
+[node name="Vegetation46" parent="Mid" index="34" instance=ExtResource( 6 )]
+
+position = Vector2( -30980.9, 1477.69 )
+scale = Vector2( 0.807248, 0.807248 )
+
+[node name="Vegetation48" parent="Mid" index="35" instance=ExtResource( 6 )]
+
+position = Vector2( -30055.9, 1429 )
+scale = Vector2( 0.807248, 0.807248 )
+
+[node name="Vegetation50" parent="Mid" index="36" instance=ExtResource( 6 )]
+
+position = Vector2( -29812.2, 1413.86 )
+scale = Vector2( 0.807248, 0.807248 )
+
+[node name="Vegetation52" parent="Mid" index="37" instance=ExtResource( 6 )]
+
+position = Vector2( -25447.2, 1449.33 )
+scale = Vector2( 0.807248, 0.807248 )
+
+[node name="Vegetation54" parent="Mid" index="38" instance=ExtResource( 6 )]
+
+position = Vector2( -23241, 1438.51 )
+scale = Vector2( 0.807248, 0.807248 )
+
+[node name="Vegetation56" parent="Mid" index="39" instance=ExtResource( 6 )]
+
+position = Vector2( -20577.3, 1440.92 )
+rotation = 0.815479
+scale = Vector2( 0.807248, 0.807248 )
+
+[node name="Vegetation09" parent="Mid" index="40" instance=ExtResource( 6 )]
+
+modulate = Color( 1, 1, 1, 1 )
+position = Vector2( -54876.4, -282.913 )
+
+[node name="Vegetation33" parent="Mid" index="41" instance=ExtResource( 6 )]
+
+modulate = Color( 1, 1, 1, 1 )
+position = Vector2( -55420.6, -313.938 )
+
+[node name="Vegetation36" parent="Mid" index="42" instance=ExtResource( 6 )]
+
+modulate = Color( 1, 1, 1, 1 )
+position = Vector2( -53814.1, -1351.17 )
+
+[node name="Vegetation38" parent="Mid" index="43" instance=ExtResource( 6 )]
+
+modulate = Color( 1, 1, 1, 1 )
+position = Vector2( -48558.1, 678.414 )
+
+[node name="Vegetation40" parent="Mid" index="44" instance=ExtResource( 6 )]
+
+modulate = Color( 1, 1, 1, 1 )
+position = Vector2( -44638, -918.882 )
+
+[node name="Vegetation41" parent="Mid" index="45" instance=ExtResource( 6 )]
+
+modulate = Color( 1, 1, 1, 1 )
+position = Vector2( -39582.6, 2808.13 )
+
+[node name="Vegetation43" parent="Mid" index="46" instance=ExtResource( 6 )]
+
+modulate = Color( 1, 1, 1, 1 )
+position = Vector2( -34098.9, 3157.7 )
+
+[node name="Vegetation45" parent="Mid" index="47" instance=ExtResource( 6 )]
+
+modulate = Color( 1, 1, 1, 1 )
+position = Vector2( -30891.3, 1472.87 )
+
+[node name="Vegetation47" parent="Mid" index="48" instance=ExtResource( 6 )]
+
+modulate = Color( 1, 1, 1, 1 )
+position = Vector2( -29966.3, 1424.19 )
+
+[node name="Vegetation49" parent="Mid" index="49" instance=ExtResource( 6 )]
+
+modulate = Color( 1, 1, 1, 1 )
+position = Vector2( -29722.6, 1409.04 )
+
+[node name="Vegetation51" parent="Mid" index="50" instance=ExtResource( 6 )]
+
+modulate = Color( 1, 1, 1, 1 )
+position = Vector2( -25357.6, 1444.51 )
+
+[node name="Vegetation53" parent="Mid" index="51" instance=ExtResource( 6 )]
+
+modulate = Color( 1, 1, 1, 1 )
+position = Vector2( -23151.3, 1433.7 )
+
+[node name="Vegetation55" parent="Mid" index="52" instance=ExtResource( 6 )]
+
+modulate = Color( 1, 1, 1, 1 )
+position = Vector2( -20662.4, 1417.85 )
+rotation = 0.401523
+
+[node name="Vegetation05" parent="Mid" index="53" instance=ExtResource( 7 )]
+
+position = Vector2( -54769.9, -263.248 )
+
+[node name="Vegetation07" parent="Mid" index="54" instance=ExtResource( 7 )]
+
+position = Vector2( -54343.4, -238.528 )
+
+[node name="coliders" type="Node2D" parent="." index="9"]
+
+[node name="Tree01" type="Sprite" parent="coliders" index="0"]
+
+position = Vector2( -57518.8, -6496.21 )
+scale = Vector2( 1.58088, 1.58088 )
+texture = ExtResource( 8 )
+
+[node name="Tree08" type="Sprite" parent="coliders" index="1"]
+
+position = Vector2( -30722, -1762.7 )
+scale = Vector2( 1.86364, 1.86364 )
+texture = ExtResource( 9 )
+
+[node name="Vine02" type="Sprite" parent="coliders" index="2"]
+
+position = Vector2( -54643.7, 2258.29 )
+texture = ExtResource( 10 )
+
+[node name="Vine01" type="Sprite" parent="coliders" index="3"]
+
+position = Vector2( -53211.8, -724.14 )
+scale = Vector2( 0.670598, 0.670598 )
+texture = ExtResource( 11 )
+
+[node name="Rock01" type="Sprite" parent="coliders" index="4"]
+
+position = Vector2( -48971.5, 626.159 )
+rotation = 0.266401
+texture = ExtResource( 12 )
+
+[node name="Tree02" type="Sprite" parent="coliders" index="5"]
+
+position = Vector2( -45518.2, 598.844 )
+texture = ExtResource( 13 )
+
+[node name="Tree03" type="Sprite" parent="coliders" index="6"]
+
+position = Vector2( -4527.97, 4845.56 )
+rotation = 1.03582
+texture = ExtResource( 14 )
+
+[node name="Vegetation04" type="Sprite" parent="coliders" index="7"]
+
+position = Vector2( -2473.96, 3924.96 )
+texture = ExtResource( 15 )
+
+[node name="Vegetation05" type="Sprite" parent="coliders" index="8"]
+
+modulate = Color( 1, 1, 1, 0.762431 )
+position = Vector2( -2379.42, 3919.61 )
+rotation = -0.333431
+scale = Vector2( 0.723765, 0.723765 )
+texture = ExtResource( 15 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="Vegetation01" type="Sprite" parent="coliders" index="9"]
+
+position = Vector2( -1989.04, 1073.37 )
+rotation = 0.00470011
+scale = Vector2( 0.48587, 0.48587 )
+texture = ExtResource( 16 )
+
+[node name="Tree04" type="Sprite" parent="coliders" index="10"]
+
+position = Vector2( 3704.95, -5955.89 )
+scale = Vector2( 2.06748, 2.06748 )
+texture = ExtResource( 8 )
+
+[node name="Tree07" type="Sprite" parent="coliders" index="11"]
+
+position = Vector2( -66917.1, -8322.32 )
+scale = Vector2( 2.06748, 2.06748 )
+texture = ExtResource( 8 )
+
+[node name="Tree05" type="Sprite" parent="coliders" index="12"]
+
+position = Vector2( 24862.9, -4873.5 )
+scale = Vector2( 2.06748, 2.06748 )
+texture = ExtResource( 8 )
+
+[node name="BackBushes" type="Sprite" parent="coliders" index="13"]
+
+position = Vector2( -59261.6, 663.281 )
+scale = Vector2( 2.49478, 2.49478 )
+z_index = -5
+texture = ExtResource( 17 )
+_sections_unfolded = [ "Z Index" ]
+
+[node name="BackBushes8" type="Sprite" parent="coliders" index="14"]
+
+position = Vector2( -48578.6, 611.167 )
+scale = Vector2( 1.05285, 1.05285 )
+z_index = -5
+texture = ExtResource( 17 )
+_sections_unfolded = [ "Z Index" ]
+
+[node name="BackBushes9" type="Sprite" parent="coliders" index="15"]
+
+modulate = Color( 1, 1, 1, 0.795569 )
+position = Vector2( -50008.3, 295.436 )
+rotation = 0.77367
+scale = Vector2( 0.774766, 0.774766 )
+z_index = -5
+texture = ExtResource( 17 )
+_sections_unfolded = [ "Visibility", "Z Index" ]
+
+[node name="BackBushes2" type="Sprite" parent="coliders" index="16"]
+
+position = Vector2( -30325.2, 1938.01 )
+scale = Vector2( 2.49478, 2.49478 )
+z_index = -5
+texture = ExtResource( 17 )
+_sections_unfolded = [ "Z Index" ]
+
+[node name="BackBushes3" type="Sprite" parent="coliders" index="17"]
+
+position = Vector2( 1918.49, 5057.99 )
+rotation = 1.08232
+scale = Vector2( 2.16599, 2.16599 )
+z_index = -5
+texture = ExtResource( 17 )
+_sections_unfolded = [ "Z Index" ]
+
+[node name="BackBushes4" type="Sprite" parent="coliders" index="18"]
+
+modulate = Color( 1, 1, 1, 0.66298 )
+position = Vector2( -948.264, 4679.58 )
+rotation = 1.08232
+scale = Vector2( 0.929387, 0.929387 )
+z_index = -5
+texture = ExtResource( 17 )
+_sections_unfolded = [ "Visibility", "Z Index" ]
+
+[node name="BackBushes5" type="Sprite" parent="coliders" index="19"]
+
+modulate = Color( 1, 1, 1, 0.66298 )
+position = Vector2( 5445.75, 1175.69 )
+rotation = 3.12476
+scale = Vector2( 1.70599, 1.70599 )
+z_index = -5
+texture = ExtResource( 17 )
+_sections_unfolded = [ "Visibility", "Z Index" ]
+
+[node name="BackBushes6" type="Sprite" parent="coliders" index="20"]
+
+modulate = Color( 1, 1, 1, 0.66298 )
+position = Vector2( -4554.28, 5688.17 )
+rotation = 3.12476
+scale = Vector2( 2.66562, 2.66562 )
+z_index = -5
+texture = ExtResource( 17 )
+_sections_unfolded = [ "Visibility", "Z Index" ]
+
+[node name="BackBushes7" type="Sprite" parent="coliders" index="21"]
+
+position = Vector2( 24265.7, 10094.4 )
+rotation = 3.12476
+scale = Vector2( 1.85234, 1.85234 )
+z_index = -5
+texture = ExtResource( 17 )
+_sections_unfolded = [ "Visibility", "Z Index" ]
+
+[node name="Fog04" parent="coliders" index="22" instance=ExtResource( 18 )]
+
+modulate = Color( 1, 1, 1, 0.795569 )
+position = Vector2( -10183.2, 8919.04 )
+
+[node name="Fog03" parent="coliders" index="23" instance=ExtResource( 18 )]
+
+modulate = Color( 1, 1, 1, 0.795569 )
+position = Vector2( -8140.22, 8664.61 )
+scale = Vector2( 1.06619, 1.03826 )
+
+[node name="Fog01" parent="coliders" index="24" instance=ExtResource( 18 )]
+
+modulate = Color( 1, 1, 1, 0.674039 )
+position = Vector2( -45287.7, 6632.96 )
+
+[node name="Fog02" parent="coliders" index="25" instance=ExtResource( 18 )]
+
+modulate = Color( 1, 1, 1, 0.674039 )
+position = Vector2( -43244.7, 6378.53 )
+scale = Vector2( 1.06619, 1.03826 )
+
+[node name="SkyBG" type="Sprite" parent="coliders" index="26"]
+
+position = Vector2( -28316.8, 4557.82 )
+scale = Vector2( 93.2044, 98.1681 )
+z_index = -10
+texture = ExtResource( 19 )
+_sections_unfolded = [ "Visibility", "Z Index" ]
+
+[node name="SkyBG2" type="Sprite" parent="coliders" index="27"]
+
+position = Vector2( 83906.9, 3860.13 )
+rotation = -3.14159
+scale = Vector2( 125.588, -95.8076 )
+z_index = -10
+texture = ExtResource( 19 )
+_sections_unfolded = [ "Visibility", "Z Index" ]
+
+[node name="Tree01white" type="Sprite" parent="coliders" index="28"]
+
+modulate = Color( 0.0820313, 0.0820313, 0.0820313, 1 )
+position = Vector2( 5217.48, -8563.35 )
+scale = Vector2( 2.51502, 2.51502 )
+z_index = -1
+texture = ExtResource( 20 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="Tree01white2" type="Sprite" parent="coliders" index="29"]
+
+modulate = Color( 0.046875, 0.046875, 0.046875, 1 )
+position = Vector2( 12600.9, -8505.83 )
+rotation = -0.0732373
+scale = Vector2( 2.51502, 2.51502 )
+z_index = -1
+texture = ExtResource( 20 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="Tree01white3" type="Sprite" parent="coliders" index="30"]
+
+modulate = Color( 0.113281, 0.113281, 0.113281, 1 )
+position = Vector2( 23962.9, -8508.67 )
+rotation = -0.0341153
+scale = Vector2( 2.51502, 2.51502 )
+z_index = -1
+texture = ExtResource( 20 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="Tree01white4" type="Sprite" parent="coliders" index="31"]
+
+modulate = Color( 0.03125, 0.03125, 0.03125, 1 )
+position = Vector2( 11402.3, -7541.93 )
+scale = Vector2( 2.29503, 2.29503 )
+z_index = -1
+texture = ExtResource( 20 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="Tree01white5" type="Sprite" parent="coliders" index="32"]
+
+modulate = Color( 0.0820313, 0.0820313, 0.0820313, 1 )
+position = Vector2( 10121.7, -8620.88 )
+scale = Vector2( 2.0377, 2.51502 )
+z_index = -1
+texture = ExtResource( 20 )
+flip_h = true
+_sections_unfolded = [ "Offset", "Visibility" ]
+
+[node name="Tree01white6" type="Sprite" parent="coliders" index="33"]
+
+modulate = Color( 0.0820313, 0.0820313, 0.0820313, 1 )
+position = Vector2( 20616.9, -6210.4 )
+rotation = 0.049206
+scale = Vector2( 2.51502, 2.51502 )
+z_index = -1
+texture = ExtResource( 20 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="Tree01white7" type="Sprite" parent="coliders" index="34"]
+
+modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 18159.9, -8597.8 )
+scale = Vector2( 2.51502, 2.51502 )
+z_index = -1
+texture = ExtResource( 20 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="Tree01white8" type="Sprite" parent="coliders" index="35"]
+
+modulate = Color( 0.0820313, 0.0820313, 0.0820313, 1 )
+position = Vector2( 15571.9, -8563.36 )
+scale = Vector2( 2.51502, 2.51502 )
+z_index = -1
+texture = ExtResource( 20 )
+flip_h = true
+_sections_unfolded = [ "Offset", "Visibility" ]
+
+[node name="Vegetation02" parent="coliders" index="36" instance=ExtResource( 4 )]
+
+position = Vector2( 6045.48, 788.873 )
+
+[node name="Vegetation03" parent="coliders" index="37" instance=ExtResource( 4 )]
+
+position = Vector2( 24114.9, 920.08 )
+scale = Vector2( 1.26402, 1.26402 )
+
+[node name="Vegetation06" parent="coliders" index="38" instance=ExtResource( 3 )]
+
+modulate = Color( 1, 1, 1, 0.751373 )
+position = Vector2( 8727.79, 722.978 )
+rotation = -0.53952
+
+[node name="Vegetation07" parent="coliders" index="39" instance=ExtResource( 6 )]
+
+position = Vector2( 4087.29, 682.38 )
+
+[node name="Vegetation08" parent="coliders" index="40" instance=ExtResource( 6 )]
+
+position = Vector2( 5042.48, 676.682 )
+scale = Vector2( 1.93838, 1.93838 )
+
+[node name="Vegetation09" parent="coliders" index="41" instance=ExtResource( 6 )]
+
+position = Vector2( 19973.9, 731.182 )
+scale = Vector2( 1.93838, 1.93838 )
+
+[node name="Vegetation10" parent="coliders" index="42" instance=ExtResource( 2 )]
+
+modulate = Color( 1, 1, 1, 0.723765 )
+position = Vector2( 25454.9, 1136.58 )
+rotation = 2.25693
+scale = Vector2( 6.20818, 6.20818 )
+
+[node name="blurTree36" type="Sprite" parent="coliders" index="43"]
+
+modulate = Color( 0, 0, 0, 0.784549 )
+position = Vector2( -1115.06, -3693.31 )
+scale = Vector2( 2.96191, 2.96191 )
+z_index = -6
+texture = ExtResource( 21 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="blurTree45" type="Sprite" parent="coliders" index="44"]
+
+modulate = Color( 0, 0, 0, 0.784549 )
+position = Vector2( -38409.3, -5223.74 )
+scale = Vector2( 2.96191, 2.96191 )
+z_index = -6
+texture = ExtResource( 21 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="blurTree52" type="Sprite" parent="coliders" index="45"]
+
+modulate = Color( 0, 0, 0, 0.784549 )
+position = Vector2( -63381.1, -9174.23 )
+scale = Vector2( 2.96191, 2.96191 )
+z_index = -6
+texture = ExtResource( 21 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="blurTree32" type="Sprite" parent="coliders" index="46"]
+
+modulate = Color( 0, 0, 0, 0.784549 )
+position = Vector2( 10147, -3624.43 )
+rotation = -0.0644646
+scale = Vector2( 2.9619, 2.96191 )
+z_index = -6
+texture = ExtResource( 21 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="blurTree37" type="Sprite" parent="coliders" index="47"]
+
+modulate = Color( 0, 0, 0, 0.784549 )
+position = Vector2( -27931.9, -8856.96 )
+rotation = -0.0644646
+scale = Vector2( 2.9619, 2.96191 )
+z_index = -6
+texture = ExtResource( 21 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="blurTree50" type="Sprite" parent="coliders" index="48"]
+
+modulate = Color( 0, 0, 0, 0.784549 )
+position = Vector2( -66201.4, -11262 )
+rotation = -0.0644646
+scale = Vector2( 2.9619, 2.96191 )
+z_index = -6
+texture = ExtResource( 21 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="blurTree16" type="Sprite" parent="coliders" index="49"]
+
+modulate = Color( 0, 0, 0, 0.392274 )
+position = Vector2( 17823, 996.371 )
+rotation = -0.0644646
+scale = Vector2( 2.96191, 2.96191 )
+z_index = -6
+texture = ExtResource( 21 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="blurTree30" type="Sprite" parent="coliders" index="50"]
+
+modulate = Color( 0, 0, 0, 0.784549 )
+position = Vector2( 1592.08, 783.974 )
+rotation = 0.0421531
+scale = Vector2( 2.9619, 2.96191 )
+z_index = -6
+texture = ExtResource( 21 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="blurTree51" type="Sprite" parent="coliders" index="51"]
+
+modulate = Color( 0, 0, 0, 0.784549 )
+position = Vector2( -73075.9, -11411.1 )
+rotation = 0.0421531
+scale = Vector2( 2.9619, 2.96191 )
+z_index = -6
+texture = ExtResource( 21 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="blurTree33" type="Sprite" parent="coliders" index="52"]
+
+modulate = Color( 0, 0, 0, 0.784549 )
+position = Vector2( 3568.87, -628.092 )
+rotation = 0.0421531
+scale = Vector2( 2.9619, 2.96191 )
+z_index = -6
+texture = ExtResource( 21 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="blurTree40" type="Sprite" parent="coliders" index="53"]
+
+modulate = Color( 0, 0, 0, 0.784549 )
+position = Vector2( -34379.8, -724.165 )
+rotation = 0.0421531
+scale = Vector2( 2.9619, 2.96191 )
+z_index = -6
+texture = ExtResource( 21 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="blurTree49" type="Sprite" parent="coliders" index="54"]
+
+modulate = Color( 0, 0, 0, 0.784549 )
+position = Vector2( -71274.7, -11425.9 )
+rotation = 0.0421531
+scale = Vector2( 2.9619, 2.96191 )
+z_index = -6
+texture = ExtResource( 21 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="blurTree34" type="Sprite" parent="coliders" index="55"]
+
+modulate = Color( 0, 0, 0, 0.784549 )
+position = Vector2( 7598.42, -352.565 )
+rotation = 0.0421531
+scale = Vector2( 2.9619, 2.96191 )
+z_index = -6
+texture = ExtResource( 21 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="blurTree42" type="Sprite" parent="coliders" index="56"]
+
+visible = false
+modulate = Color( 0, 0, 0, 0.784549 )
+position = Vector2( -30387.4, -448.638 )
+rotation = 0.0421531
+scale = Vector2( 2.9619, 2.96191 )
+z_index = -6
+texture = ExtResource( 21 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="blurTree46" type="Sprite" parent="coliders" index="57"]
+
+modulate = Color( 0, 0, 0, 0.784549 )
+position = Vector2( -68626.9, -11287.1 )
+rotation = 0.0421531
+scale = Vector2( 2.9619, 2.96191 )
+z_index = -6
+texture = ExtResource( 21 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="blurTree29" type="Sprite" parent="coliders" index="58"]
+
+modulate = Color( 0, 0, 0, 0.784549 )
+position = Vector2( 14586.1, -10403.8 )
+rotation = 0.0421531
+scale = Vector2( 2.9619, 2.96191 )
+z_index = -6
+texture = ExtResource( 21 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="blurTree41" type="Sprite" parent="coliders" index="59"]
+
+modulate = Color( 0, 0, 0, 0.784549 )
+position = Vector2( -24194.8, -9708.3 )
+rotation = 0.0421531
+scale = Vector2( 2.9619, 2.96191 )
+z_index = -6
+texture = ExtResource( 21 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="blurTree53" type="Sprite" parent="coliders" index="60"]
+
+modulate = Color( 0, 0, 0, 0.784549 )
+position = Vector2( -62591.7, -9868.47 )
+rotation = -0.0482893
+scale = Vector2( 2.9619, 2.96191 )
+z_index = -6
+texture = ExtResource( 21 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="blurTree31" type="Sprite" parent="coliders" index="61"]
+
+modulate = Color( 0, 0, 0, 0.784549 )
+position = Vector2( 16687.7, -723.571 )
+rotation = 0.0421531
+scale = Vector2( 2.9619, 2.96191 )
+z_index = -6
+texture = ExtResource( 21 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="blurTree39" type="Sprite" parent="coliders" index="62"]
+
+modulate = Color( 0, 0, 0, 0.784549 )
+position = Vector2( -21169.6, -8343.29 )
+rotation = 0.0421531
+scale = Vector2( 2.9619, 2.96191 )
+z_index = -6
+texture = ExtResource( 21 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="blurTree48" type="Sprite" parent="coliders" index="63"]
+
+modulate = Color( 0, 0, 0, 0.784549 )
+position = Vector2( -59767.7, -10469.2 )
+rotation = 0.0421531
+scale = Vector2( 2.9619, 2.96191 )
+z_index = -6
+texture = ExtResource( 21 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="blurTree26" type="Sprite" parent="coliders" index="64"]
+
+modulate = Color( 0, 0, 0, 0.784549 )
+position = Vector2( 3184.43, -8240.43 )
+rotation = 0.0421531
+scale = Vector2( 2.96191, 2.96191 )
+z_index = -6
+texture = ExtResource( 21 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="blurTree35" type="Sprite" parent="coliders" index="65"]
+
+modulate = Color( 0, 0, 0, 0.784549 )
+position = Vector2( 22355.5, -1352.8 )
+rotation = 0.0421531
+scale = Vector2( 2.9619, 2.96191 )
+z_index = -6
+texture = ExtResource( 21 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="blurTree43" type="Sprite" parent="coliders" index="66"]
+
+modulate = Color( 0, 0, 0, 0.784549 )
+position = Vector2( -17433.3, -9968.27 )
+rotation = 0.0421531
+scale = Vector2( 2.9619, 2.96191 )
+z_index = -6
+texture = ExtResource( 21 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="blurTree47" type="Sprite" parent="coliders" index="67"]
+
+modulate = Color( 0, 0, 0, 0.784549 )
+position = Vector2( -56046.7, -10987.4 )
+rotation = 0.0421531
+scale = Vector2( 2.9619, 2.96191 )
+z_index = -6
+texture = ExtResource( 21 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="blurTree9" type="Sprite" parent="coliders" index="68"]
+
+modulate = Color( 0, 0, 0, 0.784549 )
+position = Vector2( 25049.3, -3440.39 )
+rotation = 0.0421531
+scale = Vector2( 2.96191, 2.96191 )
+z_index = -6
+texture = ExtResource( 21 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="blurTree28" type="Sprite" parent="coliders" index="69"]
+
+modulate = Color( 0, 0, 0, 0.784549 )
+position = Vector2( -5573.98, -5913.33 )
+rotation = -0.124982
+scale = Vector2( 2.96191, 2.96191 )
+z_index = -6
+texture = ExtResource( 21 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="blurTree38" type="Sprite" parent="coliders" index="70"]
+
+modulate = Color( 0, 0, 0, 0.784549 )
+position = Vector2( -40763.9, -6167.89 )
+rotation = 0.0421531
+scale = Vector2( 2.96191, 2.96191 )
+z_index = -6
+texture = ExtResource( 21 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="blurTree54" type="Sprite" parent="coliders" index="71"]
+
+modulate = Color( 0, 0, 0, 0.784549 )
+position = Vector2( -52065.7, -12375.4 )
+rotation = 0.0421531
+scale = Vector2( 2.96191, 2.96191 )
+z_index = -6
+texture = ExtResource( 21 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="Vine03" type="Sprite" parent="coliders" index="72"]
+
+position = Vector2( -3134.81, 1291.94 )
+texture = ExtResource( 11 )
+
+[node name="Vine04" type="Sprite" parent="coliders" index="73"]
+
+position = Vector2( -2383.21, 1360.27 )
+texture = ExtResource( 10 )
+
+[node name="BackBushes10" type="Sprite" parent="coliders" index="74"]
+
+position = Vector2( 26853.6, 3945.33 )
+rotation = 0.336878
+scale = Vector2( 2.35741, 2.35741 )
+z_index = -1
+texture = ExtResource( 17 )
+_sections_unfolded = [ "Visibility", "Z Index" ]
+
+[node name="BackBushes11" type="Sprite" parent="coliders" index="75"]
+
+modulate = Color( 1, 1, 1, 0.674039 )
+position = Vector2( 26380.6, 2439.08 )
+rotation = 0.336878
+scale = Vector2( 1.05124, 1.05124 )
+z_index = -1
+texture = ExtResource( 17 )
+_sections_unfolded = [ "Visibility", "Z Index" ]
+
+[node name="BackBushes12" type="Sprite" parent="coliders" index="76"]
+
+position = Vector2( 8622.71, 12098.3 )
+rotation = -3.01572
+scale = Vector2( 1.05124, 1.05124 )
+z_index = -1
+texture = ExtResource( 17 )
+_sections_unfolded = [ "Visibility", "Z Index" ]
+
+[node name="BackBushes13" type="Sprite" parent="coliders" index="77"]
+
+modulate = Color( 1, 1, 1, 0.685059 )
+position = Vector2( 9899.82, 11683.7 )
+rotation = -2.97551
+scale = Vector2( 1.37457, 1.37457 )
+z_index = -1
+texture = ExtResource( 17 )
+_sections_unfolded = [ "Visibility", "Z Index" ]
+
+[node name="Vegetation11" parent="coliders" index="78" instance=ExtResource( 4 )]
+
+position = Vector2( -316.522, 2671.55 )
+rotation = -0.221631
+
+[node name="Polygon2D" type="Polygon2D" parent="." index="10"]
+
+polygon = PoolVector2Array(  )
+uv = PoolVector2Array(  )
+color = Color( 1, 1, 1, 1 )
+vertex_colors = PoolColorArray(  )
+offset = Vector2( 0, 0 )
+antialiased = false
+texture = null
+texture_offset = Vector2( 0, 0 )
+texture_scale = Vector2( 1, 1 )
+texture_rotation_degrees = 0.0
+invert_enable = false
+invert_border = 100.0
+
+[node name="Nest" type="Sprite" parent="." index="11"]
+
+position = Vector2( -66279.1, -688.645 )
+rotation = 0.404635
+scale = Vector2( 1.28744, 1.28744 )
+texture = ExtResource( 22 )
+
+
