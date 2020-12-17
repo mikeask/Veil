@@ -261,6 +261,8 @@ collision_mask = 3
 [node name="SS2D_Shape_Closed" type="Node2D" parent="StaticBody2D"]
 position = Vector2( 64.1835, -32.0917 )
 script = ExtResource( 6 )
+editor_debug = false
+curve_bake_interval = 20.0
 _points = SubResource( 67 )
 material_overrides = {
 
@@ -284,3 +286,10 @@ collision_mask = 6
 
 [node name="Caixa" parent="." instance=ExtResource( 8 )]
 position = Vector2( 1088.6, 863.356 )
+
+[node name="Label" type="Label" parent="."]
+margin_right = 40.0
+margin_bottom = 14.0
+__meta__ = {
+"_edit_use_anchors_": false
+}

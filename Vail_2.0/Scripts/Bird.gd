@@ -33,12 +33,15 @@ func _physics_process(delta):
 	# Check for jumping. is_on_floor() must be called after movement code.
 	if is_on_floor() and Input.is_action_just_pressed("ui_up"):
 		velocity.y = -JUMP_SPEED
+	if walk > 0 and scale.x < 0:
+		scale.x = 1
+	elif walk < 0 and scale.x > 0:
+		scale.x = 0   
 		
 	
 	if Input.get_action_strength("push") and raycasatCabeca.is_colliding():
-		print(raycasatCabeca.get_collider().name)
-		print(walk)
-		get_node("Sprits/Corpo/Cabeca/RayCastCabeca").get_collider().move_and_collide(Vector2(20*delta,0))
+		if raycasatCabeca.get_collider().is_in_group("CAIXA"):
+			get_node("Sprits/Corpo/Cabeca/RayCastCabeca").get_collider().move_and_collide(Vector2((walk*0.05)*delta,0))
 		pass
 		
 		
