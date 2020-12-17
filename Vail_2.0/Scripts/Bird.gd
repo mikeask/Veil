@@ -5,9 +5,12 @@ const WALK_MAX_SPEED = 350
 const STOP_FORCE = 1300
 const JUMP_SPEED = 800
 const GRAVITY = 1100
-
+var raycasatCabeca 
 var velocity = Vector2()
 
+func _ready():
+	raycasatCabeca = get_node("Sprits/Corpo/Cabeca/RayCastCabeca")
+	pass
 
 func _physics_process(delta):
 	# Horizontal movement code. First, get the player's input.
@@ -32,9 +35,10 @@ func _physics_process(delta):
 		velocity.y = -JUMP_SPEED
 		
 	
-	if Input.get_action_strength("push") and get_node("Sprits/Corpo/Cabeca/RayCastCabeca").is_colliding():
-		print(get_node("Sprits/Corpo/Cabeca/RayCastCabeca").get_collider().name)
-		
+	if Input.get_action_strength("push") and raycasatCabeca.is_colliding():
+		print(raycasatCabeca.get_collider().name)
+		print(walk)
+		get_node("Sprits/Corpo/Cabeca/RayCastCabeca").get_collider().move_and_collide(Vector2(20*delta,0))
 		pass
 		
 		
