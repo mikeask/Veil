@@ -2,7 +2,6 @@
 
 [ext_resource path="res://Vail_1.0/Others/YandereFont.ttf" type="DynamicFontData" id=1]
 
-
 [sub_resource type="DynamicFont" id=1]
 size = 100
 font_data = ExtResource( 1 )

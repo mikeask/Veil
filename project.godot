@@ -171,6 +171,10 @@ window/size/test_height=720
 window/stretch/mode="viewport"
 window/stretch/aspect="expand"
 
+[editor_plugins]
+
+enabled=PoolStringArray( "rmsmartshape", "ui_design_tool" )
+
 [input]
 
 ui_left={
