@@ -1,0 +1,43 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+<<<<<<< HEAD:Sprites/UI/Credits.png.import
+path="res://.import/Credits.png-4b504e9a0324c2196802f12ea5b673a5.stex"
+=======
+path="res://.import/Credits.png-ccd82f564432c182f73cae47440f9cff.stex"
+>>>>>>> 5d3c7c43a92077814c9d955dfd0e3821e98a710b:Vail_1.0/Sprites/Menu/Credits.png.import
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+<<<<<<< HEAD:Sprites/UI/Credits.png.import
+source_file="res://Sprites/UI/Credits.png"
+dest_files=[ "res://.import/Credits.png-4b504e9a0324c2196802f12ea5b673a5.stex" ]
+=======
+source_file="res://Vail_1.0/Sprites/Menu/Credits.png"
+dest_files=[ "res://.import/Credits.png-ccd82f564432c182f73cae47440f9cff.stex" ]
+>>>>>>> 5d3c7c43a92077814c9d955dfd0e3821e98a710b:Vail_1.0/Sprites/Menu/Credits.png.import
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
