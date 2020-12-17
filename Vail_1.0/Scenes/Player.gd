@@ -42,7 +42,6 @@ func _process(delta):
 	move_and_slide(vel_linear, normal)
 	
 	if get_node("RayCast2D").is_colliding():
-		print("foi")
 		print(get_node("RayCast2D").get_collider().name)
 		pass
 	

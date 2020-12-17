@@ -12,55 +12,64 @@
 [node name="Bird" type="KinematicBody2D"]
 script = ExtResource( 8 )
 
-[node name="Corpo" type="Sprite" parent="."]
+[node name="Sprits" type="Node2D" parent="."]
+
+[node name="Corpo" type="Sprite" parent="Sprits"]
 scale = Vector2( 0.0552474, 0.0552474 )
 texture = ExtResource( 1 )
 
-[node name="Coxa_Esquerda" type="Sprite" parent="Corpo"]
+[node name="Coxa_Esquerda" type="Sprite" parent="Sprits/Corpo"]
 position = Vector2( 230.746, 989.669 )
 rotation = -0.240622
 scale = Vector2( 3.02368, 3.02368 )
 texture = ExtResource( 2 )
 
-[node name="Pe_Esquerdo" type="Sprite" parent="Corpo/Coxa_Esquerda"]
+[node name="Pe_Esquerdo" type="Sprite" parent="Sprits/Corpo/Coxa_Esquerda"]
 position = Vector2( 22.8281, 91.8494 )
 texture = ExtResource( 3 )
 
-[node name="Coxa_Direita" type="Sprite" parent="Corpo"]
+[node name="Coxa_Direita" type="Sprite" parent="Sprits/Corpo"]
 position = Vector2( 31.418, 1068.19 )
 rotation = -0.2843
 scale = Vector2( 3.02368, 3.02368 )
 texture = ExtResource( 2 )
 
-[node name="Pe_Direito" type="Sprite" parent="Corpo/Coxa_Direita"]
+[node name="Pe_Direito" type="Sprite" parent="Sprits/Corpo/Coxa_Direita"]
 position = Vector2( 22.8281, 91.8494 )
 texture = ExtResource( 3 )
 
-[node name="Cabeca" type="Sprite" parent="Corpo"]
+[node name="Cabeca" type="Sprite" parent="Sprits/Corpo"]
 position = Vector2( 635.84, -931.443 )
 rotation = -0.2843
 scale = Vector2( 0.949622, 0.949622 )
 texture = ExtResource( 4 )
 
-[node name="Olho" type="Sprite" parent="Corpo/Cabeca"]
+[node name="Olho" type="Sprite" parent="Sprits/Corpo/Cabeca"]
 position = Vector2( 164.043, -154.913 )
 rotation = -0.00393401
 scale = Vector2( 1.2965, 1.2965 )
 texture = ExtResource( 7 )
 
-[node name="Calda" type="Sprite" parent="Corpo"]
-position = Vector2( -1010.62, 238.932 )
-rotation = -0.2843
-scale = Vector2( 0.949622, 0.949622 )
-texture = ExtResource( 5 )
+[node name="RayCastCabeca" type="RayCast2D" parent="Sprits/Corpo/Cabeca"]
+position = Vector2( 122.615, 774.25 )
+rotation = -1.29235
+enabled = true
+cast_to = Vector2( 0, 200 )
+collision_mask = 7
+collide_with_areas = true
 
-[node name="Asa" type="Sprite" parent="Corpo"]
+[node name="Asa" type="Sprite" parent="Sprits/Corpo"]
 position = Vector2( -555.188, -570.638 )
 rotation = -0.2843
 scale = Vector2( 0.949622, 0.949622 )
 texture = ExtResource( 6 )
 
+[node name="Calda" type="Sprite" parent="Sprits/Corpo"]
+position = Vector2( -1010.62, 238.932 )
+rotation = -0.2843
+scale = Vector2( 0.949622, 0.949622 )
+texture = ExtResource( 5 )
+
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 position = Vector2( 11.5614, -2.94597 )
-scale = Vector2( 1, 1 )
 polygon = PoolVector2Array( 14.5488, 29.3019, 27.2844, 19.1883, 35.8996, 9.82393, 39.2708, -10.0286, 34.0268, -23.5134, 25.0369, -32.5033, 12.3013, -36.9982, 1.43857, -37.3728, -6.42755, -31.7541, -13.5445, -23.1388, -19.5377, -18.6439, -25.531, -14.8981, -33.0225, -8.90491, -45.009, -1.0388, -51.0022, 5.32901, -51.0022, 13.9443, -45.009, 27.0545, -36.7683, 36.4189, -35.0512, 45.3138, -18.6843, 82.6712, -11.8114, 87.446, 22.1886, 87.696, 26.4386, 82.446, 9.30468, 37.9172 )
