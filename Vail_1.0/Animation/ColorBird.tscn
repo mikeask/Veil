@@ -4,10 +4,10 @@
 [ext_resource path="res://Vail_1.0/Sprites/Wings/w1.png" type="Texture" id=2]
 [ext_resource path="res://Vail_1.0/Sprites/Colorful/color_tail.png" type="Texture" id=3]
 [ext_resource path="res://Vail_1.0/Sprites/Colorful/color_head.png" type="Texture" id=4]
-[ext_resource path="res://Vail_1.0/Sprites/Characters/ColorEye.png" type="Texture" id=5]
-[ext_resource path="res://Vail_1.0/Sprites/Characters/Eye3.png" type="Texture" id=6]
+[ext_resource path="res://Vail_2.0/Sprites/Characters/ColorEye.png" type="Texture" id=5]
+[ext_resource path="res://Vail_2.0/Sprites/Characters/Eye3.png" type="Texture" id=6]
 [ext_resource path="res://Vail_1.0/Sprites/Colorful/color_bird_leg.png" type="Texture" id=7]
-[ext_resource path="res://Vail_1.0/Sprites/Characters/bird_leg2.png" type="Texture" id=8]
+[ext_resource path="res://Vail_2.0/Sprites/Characters/bird_leg2.png" type="Texture" id=8]
 [ext_resource path="res://Vail_1.0/Sprites/Colorful/color_w1.png" type="Texture" id=9]
 [ext_resource path="res://Vail_1.0/Sprites/Colorful/color_w2.png" type="Texture" id=10]
 [ext_resource path="res://Vail_1.0/Sprites/Colorful/color_w3.png" type="Texture" id=11]
@@ -17,8 +17,9 @@
 [ext_resource path="res://Vail_1.0/Sprites/Colorful/color_w7.png" type="Texture" id=15]
 [ext_resource path="res://Vail_1.0/Sprites/Colorful/color_w8.png" type="Texture" id=16]
 [ext_resource path="res://Vail_1.0/Sprites/Colorful/color_w9.png" type="Texture" id=17]
-[ext_resource path="res://Vail_1.0/Sprites/Characters/Eye.png" type="Texture" id=18]
-[ext_resource path="res://Vail_1.0/Sprites/Characters/Eye2.png" type="Texture" id=19]
+[ext_resource path="res://Vail_2.0/Sprites/Characters/Eye.png" type="Texture" id=18]
+[ext_resource path="res://Vail_2.0/Sprites/Characters/Eye2.png" type="Texture" id=19]
+
 
 
 [sub_resource type="SpriteFrames" id=1]

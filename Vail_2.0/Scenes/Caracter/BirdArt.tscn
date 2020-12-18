@@ -2,18 +2,18 @@
 
 [ext_resource path="res://Vail_1.0/Sprites/Wings/w7.png" type="Texture" id=5]
 [ext_resource path="res://Vail_1.0/Sprites/Wings/w4.png" type="Texture" id=6]
-[ext_resource path="res://Vail_1.0/Sprites/Characters/bird_leg2.png" type="Texture" id=10]
+[ext_resource path="res://Vail_2.0/Sprites/Characters/bird_leg2.png" type="Texture" id=10]
 [ext_resource path="res://Vail_1.0/Sprites/Wings/w8.png" type="Texture" id=11]
 [ext_resource path="res://Vail_1.0/Sprites/Wings/w3.png" type="Texture" id=12]
-[ext_resource path="res://Vail_1.0/Sprites/Characters/bird.png" type="Texture" id=14]
-[ext_resource path="res://Vail_1.0/Sprites/Characters/Head.png" type="Texture" id=15]
+[ext_resource path="res://Vail_2.0/Sprites/Characters/bird.png" type="Texture" id=14]
+[ext_resource path="res://Vail_2.0/Sprites/Characters/Head.png" type="Texture" id=15]
 [ext_resource path="res://Vail_1.0/Sprites/Wings/w2.png" type="Texture" id=16]
-[ext_resource path="res://Vail_1.0/Sprites/Characters/Eye.png" type="Texture" id=17]
-[ext_resource path="res://Vail_1.0/Sprites/Characters/Tail.png" type="Texture" id=19]
+[ext_resource path="res://Vail_2.0/Sprites/Characters/Eye.png" type="Texture" id=17]
+[ext_resource path="res://Vail_2.0/Sprites/Characters/Tail.png" type="Texture" id=19]
 [ext_resource path="res://Vail_1.0/Sprites/Wings/w1.png" type="Texture" id=20]
 [ext_resource path="res://Vail_1.0/Sprites/Wings/w6.png" type="Texture" id=22]
-[ext_resource path="res://Vail_1.0/Sprites/Characters/Eye3.png" type="Texture" id=23]
-[ext_resource path="res://Vail_1.0/Sprites/Characters/bird_leg.png" type="Texture" id=24]
+[ext_resource path="res://Vail_2.0/Sprites/Characters/Eye3.png" type="Texture" id=23]
+[ext_resource path="res://Vail_2.0/Sprites/Characters/bird_leg.png" type="Texture" id=24]
 [ext_resource path="res://Vail_1.0/Sprites/Wings/w5.png" type="Texture" id=26]
 [ext_resource path="res://Vail_1.0/Sprites/Wings/w9.png" type="Texture" id=27]
 
@@ -25,7 +25,7 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=2]
 length = 5.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("Body:position")
@@ -64,7 +64,7 @@ tracks/2/keys = {
 "values": [ false, false ]
 }
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=3]
 length = 4.0
 loop = true
 tracks/0/type = "value"
@@ -248,7 +248,7 @@ tracks/14/keys = {
 "values": [ true ]
 }
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=4]
 length = 9.0
 loop = true
 step = 1.0
@@ -445,7 +445,7 @@ tracks/15/keys = {
 "values": [ false, false ]
 }
 
-[sub_resource type="Animation" id=6]
+[sub_resource type="Animation" id=5]
 length = 6.0
 loop = true
 tracks/0/type = "value"
@@ -629,7 +629,7 @@ tracks/14/keys = {
 "values": [ false, false ]
 }
 
-[sub_resource type="Animation" id=7]
+[sub_resource type="Animation" id=6]
 length = 4.0
 loop = true
 tracks/0/type = "value"
@@ -801,7 +801,7 @@ tracks/13/keys = {
 "values": [ true, true ]
 }
 
-[sub_resource type="Animation" id=8]
+[sub_resource type="Animation" id=7]
 length = 4.0
 loop = true
 tracks/0/type = "value"
@@ -975,7 +975,7 @@ tracks/13/keys = {
 "values": [ true, false, true, true ]
 }
 
-[sub_resource type="Animation" id=9]
+[sub_resource type="Animation" id=8]
 length = 5.0
 loop = true
 tracks/0/type = "value"
@@ -1171,7 +1171,7 @@ tracks/15/keys = {
 "values": [ false, false ]
 }
 
-[sub_resource type="Animation" id=10]
+[sub_resource type="Animation" id=9]
 length = 5.0
 loop = true
 tracks/0/type = "value"
@@ -1355,7 +1355,7 @@ tracks/14/keys = {
 "values": [ false, false ]
 }
 
-[sub_resource type="Animation" id=11]
+[sub_resource type="Animation" id=10]
 length = 2.5
 loop = true
 tracks/0/type = "value"
@@ -1589,7 +1589,6 @@ flip_h = true
 [node name="Tail" type="Node2D" parent="Body"]
 position = Vector2( 103.559, 202.169 )
 rotation = -0.102075
-scale = Vector2( 1, 1 )
 
 [node name="Tail_root" type="Node2D" parent="Body/Tail"]
 position = Vector2( -490.961, -645.75 )
@@ -1610,16 +1609,13 @@ offset = Vector2( 23.1897, -599.485 )
 [node name="Head" type="Node2D" parent="Body"]
 position = Vector2( -278.531, 413.671 )
 rotation = -1.49012e-08
-scale = Vector2( 1, 1 )
 
 [node name="Head_root" type="Node2D" parent="Body/Head"]
 position = Vector2( 369.631, -829.521 )
 rotation = 0.0385745
-scale = Vector2( 1, 1 )
 
 [node name="Sprite_Head" type="Sprite" parent="Body/Head/Head_root"]
 rotation = 2.98023e-08
-scale = Vector2( 1, 1 )
 texture = ExtResource( 15 )
 offset = Vector2( 166.636, -322.659 )
 
@@ -1662,7 +1658,6 @@ offset = Vector2( 32.5631, 90.5692 )
 
 [node name="Sprite_L_leg2" type="Sprite" parent="L_Leg/L_leg_root"]
 position = Vector2( -8.27734, -10.6738 )
-scale = Vector2( 1, 1 )
 texture = ExtResource( 24 )
 offset = Vector2( 24.1047, 133.524 )
 
@@ -1697,12 +1692,12 @@ flip_h = true
 [node name="BirdAnimation" type="AnimationPlayer" parent="."]
 autoplay = "Idle"
 playback_speed = 4.0
-anims/Eating = SubResource( 3 )
-anims/Falling = SubResource( 4 )
-anims/Flying = SubResource( 5 )
-anims/Idle = SubResource( 6 )
-anims/Jump = SubResource( 7 )
-anims/Pickup = SubResource( 8 )
-anims/Pulling = SubResource( 9 )
-anims/Pushing = SubResource( 10 )
-anims/Walk = SubResource( 11 )
+anims/Eating = SubResource( 2 )
+anims/Falling = SubResource( 3 )
+anims/Flying = SubResource( 4 )
+anims/Idle = SubResource( 5 )
+anims/Jump = SubResource( 6 )
+anims/Pickup = SubResource( 7 )
+anims/Pulling = SubResource( 8 )
+anims/Pushing = SubResource( 9 )
+anims/Walk = SubResource( 10 )
