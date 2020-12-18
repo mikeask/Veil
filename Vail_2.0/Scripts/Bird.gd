@@ -7,6 +7,7 @@ const JUMP_SPEED = 800
 const GRAVITY = 1100
 var raycasatCabeca 
 var velocity = Vector2()
+var direction = "direita"
 
 func _ready():
 	raycasatCabeca = get_node("Sprits/Corpo/Cabeca/RayCastCabeca")
@@ -33,10 +34,13 @@ func _physics_process(delta):
 	# Check for jumping. is_on_floor() must be called after movement code.
 	if is_on_floor() and Input.is_action_just_pressed("ui_up"):
 		velocity.y = -JUMP_SPEED
-	if walk > 0 and scale.x < 0:
-		scale.x = 1
-	elif walk < 0 and scale.x > 0:
-		scale.x = 0   
+		
+	if walk > 0  and direction == "esquerda":
+		scale.x = -1
+		direction = "direita"
+	if walk < 0 and direction == "direita":
+		scale.x = -1   
+		direction = "esquerda"
 		
 	
 	if Input.get_action_strength("push") and raycasatCabeca.is_colliding():
