@@ -1554,15 +1554,15 @@ tracks/15/keys = {
 [node name="BirdArt" type="Node2D"]
 pause_mode = 1
 
-[node name="Body" type="Node2D" parent="."]
-position = Vector2( -10.2068, -91.072 )
-rotation = 0.135507
+[node name="Body" type="KinematicBody2D" parent="."]
+position = Vector2( -10.296, -90.8936 )
+rotation = 0.555032
 scale = Vector2( 0.2, 0.2 )
 
 [node name="Wing01" type="Node2D" parent="Body"]
 visible = false
 position = Vector2( 20.6953, -804.943 )
-rotation = -0.969466
+rotation = -0.921531
 scale = Vector2( 12.2891, 12.2891 )
 
 [node name="Sprite_Wing01" type="Sprite" parent="Body/Wing01"]
@@ -1576,7 +1576,7 @@ flip_h = true
 visible = false
 modulate = Color( 1, 1, 1, 0.618784 )
 position = Vector2( 479.791, -1318.5 )
-rotation = -0.331707
+rotation = -0.147471
 scale = Vector2( 10.1266, 10.1266 )
 
 [node name="Sprite_Wing02" type="Sprite" parent="Body/Wing02"]
@@ -1592,7 +1592,7 @@ rotation = -0.102075
 
 [node name="Tail_root" type="Node2D" parent="Body/Tail"]
 position = Vector2( -490.961, -645.75 )
-rotation = -0.119793
+rotation = -0.165656
 
 [node name="Sprite_Tail" type="Sprite" parent="Body/Tail/Tail_root"]
 rotation = 3.72529e-09
@@ -1611,8 +1611,8 @@ position = Vector2( -278.531, 413.671 )
 rotation = -1.49012e-08
 
 [node name="Head_root" type="Node2D" parent="Body/Head"]
-position = Vector2( 369.631, -829.521 )
-rotation = 0.0385745
+position = Vector2( 388.78, -889.292 )
+rotation = 0.223667
 
 [node name="Sprite_Head" type="Sprite" parent="Body/Head/Head_root"]
 rotation = 2.98023e-08
@@ -1620,7 +1620,6 @@ texture = ExtResource( 15 )
 offset = Vector2( 166.636, -322.659 )
 
 [node name="AngryEye" type="Node2D" parent="Body/Head/Head_root"]
-visible = false
 position = Vector2( 301.62, -361.445 )
 rotation = -0.0575343
 scale = Vector2( 1.49211, 1.49211 )
@@ -1632,6 +1631,7 @@ z_index = 3
 texture = ExtResource( 23 )
 
 [node name="Eye" type="Node2D" parent="Body/Head/Head_root"]
+visible = false
 position = Vector2( 307.329, -359.249 )
 rotation = -0.0575343
 scale = Vector2( 1.49211, 1.49211 )
@@ -1639,14 +1639,18 @@ scale = Vector2( 1.49211, 1.49211 )
 [node name="Sprite_Eye" type="Sprite" parent="Body/Head/Head_root/Eye"]
 texture = ExtResource( 17 )
 
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Body"]
+rotation = 2.98023e-08
+polygon = PoolVector2Array( -462.517, -171.534, -260.301, 110.805, -110.774, 211.876, 15.2674, 228.032, 187.859, 166.396, 343.98, 18.8901, 430.725, -301.95, 463.928, -564.512, 426.243, -742.28, 241.073, -847.409, -5.69169, -777.799, -203.908, -615.902, -442.048, -417.092 )
+
 [node name="L_Leg" type="Node2D" parent="."]
 position = Vector2( -9.16797, -101.279 )
 rotation = -0.0610358
 scale = Vector2( 0.2, 0.2 )
 
 [node name="L_leg_root" type="Node2D" parent="L_Leg"]
-position = Vector2( 25.477, -71.0161 )
-rotation = -0.0857217
+position = Vector2( 39.2725, -62.1498 )
+rotation = 0.575873
 
 [node name="Sub_L_leg" type="Node2D" parent="L_Leg/L_leg_root"]
 position = Vector2( 18.7982, 183.322 )
@@ -1667,8 +1671,8 @@ rotation = 0.00916737
 scale = Vector2( 0.2, 0.2 )
 
 [node name="R_leg" type="Node2D" parent="R_Leg"]
-position = Vector2( -21.7945, -64.3028 )
-rotation = 0.104548
+position = Vector2( -7.56386, -70.3846 )
+rotation = -0.0135985
 
 [node name="Sub_R_leg" type="Node2D" parent="R_Leg/R_leg"]
 position = Vector2( 26.918, 156.713 )
@@ -1687,6 +1691,7 @@ visible = false
 position = Vector2( 76.3408, -218.011 )
 scale = Vector2( 2.28406, 2.28406 )
 frames = SubResource( 1 )
+frame = 8
 flip_h = true
 
 [node name="BirdAnimation" type="AnimationPlayer" parent="."]
