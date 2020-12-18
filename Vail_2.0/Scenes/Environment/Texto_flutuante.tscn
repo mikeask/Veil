@@ -4,7 +4,7 @@
 [ext_resource path="res://Vail_2.0/Scripts/Texto_flutuante.gd" type="Script" id=2]
 
 [sub_resource type="CircleShape2D" id=1]
-radius = 770.798
+radius = 364.576
 
 [sub_resource type="DynamicFont" id=2]
 size = 48
@@ -39,7 +39,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 1.6 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ 0, 36 ]
+"values": [ 0, 19 ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("Label:self_modulate")

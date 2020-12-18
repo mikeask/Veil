@@ -1,0 +1,88 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Vail_1.0/Sprites/Environment/Catapult.png" type="Texture" id=1]
+[ext_resource path="res://Vail_1.0/Audio/fall.wav" type="AudioStream" id=2]
+
+[sub_resource type="Animation" id=1]
+length = 3.0
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 106.199, 0.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.2, 3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 8393.17, 2164.22 ), Vector2( 8353.14, 2477.78 ), Vector2( 8393.17, 2164.22 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("../Rope:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.15, 0.2, 3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.159214, 0.637877 ), Vector2( 0.159214, 0.0118064 ), Vector2( 0.159214, 0.145239 ), Vector2( 0.159214, 0.637877 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("../Rope:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.15, 0.2, 3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ -95.805, -95.805, -51.5813, -95.805 ]
+}
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 221.761, 3.82904 )
+
+[node name="catapult" type="KinematicBody2D" groups=[
+"catapult",
+]]
+position = Vector2( 8393.17, 2164.22 )
+scale = Vector2( 1, 6.08439 )
+
+[node name="catapultSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+
+[node name="Catapult" type="Sprite" parent="."]
+position = Vector2( 5.46094, 0.102081 )
+scale = Vector2( 1, 0.164355 )
+texture = ExtResource( 1 )
+offset = Vector2( -365.547, 137.207 )
+
+[node name="CatapultAnimation" type="AnimationPlayer" parent="."]
+anims/Catapult = SubResource( 1 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2( 1.31152, 0.494965 )
+scale = Vector2( 1, 0.164355 )
+polygon = PoolVector2Array( -0.980469, -26.6375, -28.417, 69.3884, -36.9014, 56.3904, -58.2607, 63.0476, -75.7363, 71.9241, -106.249, 89.677, -155.899, 117.39, -212.386, 147.567, -322.262, 227.267, -418.985, 317.025, -469.281, 371.19, -483.209, 376.606, -501.779, 364.226, -605.466, 378.928, -656.952, 385.142, -700.678, 381.713, -709.252, 379.998, -711.824, 356.849, -661.239, 358.563, -590.934, 353.419, -523.202, 337.987, -492.336, 314.837, -422.031, 235.959, -372.303, 188.803, -289.138, 115.927, -207.688, 61.0547, -120.236, 6.18286, -50.7891, -25.54 )
+
+[node name="corda" type="CollisionShape2D" parent="."]
+position = Vector2( -855.901, 64.8088 )
+rotation = -0.0200053
+shape = SubResource( 2 )
+one_way_collision = true

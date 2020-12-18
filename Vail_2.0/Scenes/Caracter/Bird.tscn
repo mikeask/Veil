@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Vail_2.0/Sprites/Bird/bird.png" type="Texture" id=1]
 [ext_resource path="res://Vail_2.0/Sprites/Bird/bird_leg.png" type="Texture" id=2]
@@ -10,7 +10,39 @@
 [ext_resource path="res://Vail_2.0/Scripts/Bird.gd" type="Script" id=8]
 [ext_resource path="res://Vail_2.0/Scenes/UI/Camera.tscn" type="PackedScene" id=9]
 
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 100.0
+height = 266.053
+
+[sub_resource type="Animation" id=2]
+resource_name = "bicada"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprits/Corpo/Cabeca/Bico:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 414.936, 69.1677 ), Vector2( -56.5742, 2121.34 ), Vector2( 414.936, 69.1677 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprits/Corpo/Cabeca/Bico:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 90.0, 0.0 ]
+}
+
 [node name="Bird" type="KinematicBody2D"]
+position = Vector2( 0.944946, -12.9142 )
 script = ExtResource( 8 )
 
 [node name="Sprits" type="Node2D" parent="."]
@@ -59,6 +91,16 @@ cast_to = Vector2( 0, 200 )
 collision_mask = 7
 collide_with_areas = true
 
+[node name="Bico" type="Area2D" parent="Sprits/Corpo/Cabeca"]
+position = Vector2( 414.936, 69.1677 )
+scale = Vector2( 1, 1 )
+collision_mask = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprits/Corpo/Cabeca/Bico"]
+position = Vector2( 50.7708, 0.993958 )
+rotation = 1.78373
+shape = SubResource( 1 )
+
 [node name="Asa" type="Sprite" parent="Sprits/Corpo"]
 position = Vector2( -555.188, -570.638 )
 rotation = -0.2843
@@ -77,5 +119,8 @@ polygon = PoolVector2Array( 14.5488, 29.3019, 27.2844, 19.1883, 35.8996, 9.82393
 
 [node name="Camera" parent="." instance=ExtResource( 9 )]
 position = Vector2( 0, 0 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/bicada = SubResource( 2 )
 
 [editable path="Camera"]
