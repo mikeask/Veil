@@ -52,5 +52,5 @@ func _on_Credits_button_down():
 
 
 func _on_StartGame_button_down():
-	get_tree().change_scene("res://Scenes/Level.tscn");
+	get_tree().change_scene("res://Vail_1.0//Scenes/Level.tscn");
 	pass # replace with function body

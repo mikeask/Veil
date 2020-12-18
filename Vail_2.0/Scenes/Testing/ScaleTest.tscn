@@ -13,6 +13,32 @@
 [ext_resource path="res://Vail_2.0/Fonts/Veilfont/Veilfont-Regular.ttf" type="DynamicFontData" id=11]
 [ext_resource path="res://Vail_2.0/Scripts/Texto_flutuante.gd" type="Script" id=12]
 
+[sub_resource type="Resource" id=1]
+script = ExtResource( 4 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 3 )
+position = Vector2( -77.4521, 54.3468 )
+point_in = Vector2( 0, 0 )
+point_out = Vector2( 0, 0 )
+properties = SubResource( 1 )
+
+[sub_resource type="Resource" id=3]
+script = ExtResource( 4 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=4]
+script = ExtResource( 3 )
+position = Vector2( -61.2939, 1103.78 )
+point_in = Vector2( 0, 0 )
+point_out = Vector2( 0, 0 )
+properties = SubResource( 3 )
+
 [sub_resource type="Resource" id=5]
 script = ExtResource( 4 )
 texture_idx = 0
@@ -21,7 +47,7 @@ width = 1.0
 
 [sub_resource type="Resource" id=6]
 script = ExtResource( 3 )
-position = Vector2( -77.4521, 54.3468 )
+position = Vector2( 9131.38, 204.385 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
 properties = SubResource( 5 )
@@ -34,7 +60,7 @@ width = 1.0
 
 [sub_resource type="Resource" id=8]
 script = ExtResource( 3 )
-position = Vector2( -61.2939, 1103.78 )
+position = Vector2( -77.4521, 54.3468 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
 properties = SubResource( 7 )
@@ -47,7 +73,7 @@ width = 1.0
 
 [sub_resource type="Resource" id=10]
 script = ExtResource( 3 )
-position = Vector2( 9131.38, 204.385 )
+position = Vector2( 9067.38, 1068.24 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
 properties = SubResource( 9 )
@@ -60,7 +86,7 @@ width = 1.0
 
 [sub_resource type="Resource" id=12]
 script = ExtResource( 3 )
-position = Vector2( -77.4521, 54.3468 )
+position = Vector2( 9021.39, 186.037 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
 properties = SubResource( 11 )
@@ -73,7 +99,7 @@ width = 1.0
 
 [sub_resource type="Resource" id=14]
 script = ExtResource( 3 )
-position = Vector2( 9067.38, 1068.24 )
+position = Vector2( 8975.18, 734.088 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
 properties = SubResource( 13 )
@@ -86,7 +112,7 @@ width = 1.0
 
 [sub_resource type="Resource" id=16]
 script = ExtResource( 3 )
-position = Vector2( 9021.39, 186.037 )
+position = Vector2( 8779.67, 761.948 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
 properties = SubResource( 15 )
@@ -99,7 +125,7 @@ width = 1.0
 
 [sub_resource type="Resource" id=18]
 script = ExtResource( 3 )
-position = Vector2( 8975.18, 734.088 )
+position = Vector2( 8805.83, 973.628 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
 properties = SubResource( 17 )
@@ -112,7 +138,7 @@ width = 1.0
 
 [sub_resource type="Resource" id=20]
 script = ExtResource( 3 )
-position = Vector2( 8779.67, 761.948 )
+position = Vector2( -1.55078, 72.9862 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
 properties = SubResource( 19 )
@@ -125,7 +151,7 @@ width = 1.0
 
 [sub_resource type="Resource" id=22]
 script = ExtResource( 3 )
-position = Vector2( 8805.83, 973.628 )
+position = Vector2( 417.05, 1024.35 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
 properties = SubResource( 21 )
@@ -138,7 +164,7 @@ width = 1.0
 
 [sub_resource type="Resource" id=24]
 script = ExtResource( 3 )
-position = Vector2( -1.55078, 72.9862 )
+position = Vector2( 74.5585, 810.295 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
 properties = SubResource( 23 )
@@ -151,7 +177,7 @@ width = 1.0
 
 [sub_resource type="Resource" id=26]
 script = ExtResource( 3 )
-position = Vector2( 417.05, 1024.35 )
+position = Vector2( 337.435, 1003.03 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
 properties = SubResource( 25 )
@@ -164,7 +190,7 @@ width = 1.0
 
 [sub_resource type="Resource" id=28]
 script = ExtResource( 3 )
-position = Vector2( 74.5585, 810.295 )
+position = Vector2( 274.698, 980.337 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
 properties = SubResource( 27 )
@@ -177,7 +203,7 @@ width = 1.0
 
 [sub_resource type="Resource" id=30]
 script = ExtResource( 3 )
-position = Vector2( 337.435, 1003.03 )
+position = Vector2( 217.299, 952.305 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
 properties = SubResource( 29 )
@@ -190,7 +216,7 @@ width = 1.0
 
 [sub_resource type="Resource" id=32]
 script = ExtResource( 3 )
-position = Vector2( 274.698, 980.337 )
+position = Vector2( 166.576, 924.274 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
 properties = SubResource( 31 )
@@ -203,57 +229,31 @@ width = 1.0
 
 [sub_resource type="Resource" id=34]
 script = ExtResource( 3 )
-position = Vector2( 217.299, 952.305 )
+position = Vector2( 6.11829, 186.838 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
 properties = SubResource( 33 )
 
 [sub_resource type="Resource" id=35]
-script = ExtResource( 4 )
-texture_idx = 0
-flip = false
-width = 1.0
-
-[sub_resource type="Resource" id=36]
-script = ExtResource( 3 )
-position = Vector2( 166.576, 924.274 )
-point_in = Vector2( 0, 0 )
-point_out = Vector2( 0, 0 )
-properties = SubResource( 35 )
-
-[sub_resource type="Resource" id=37]
-script = ExtResource( 4 )
-texture_idx = 0
-flip = false
-width = 1.0
-
-[sub_resource type="Resource" id=38]
-script = ExtResource( 3 )
-position = Vector2( 6.11829, 186.838 )
-point_in = Vector2( 0, 0 )
-point_out = Vector2( 0, 0 )
-properties = SubResource( 37 )
-
-[sub_resource type="Resource" id=39]
 script = ExtResource( 2 )
 _points = {
-0: SubResource( 6 ),
-1: SubResource( 8 ),
-2: SubResource( 10 ),
-3: SubResource( 12 ),
-4: SubResource( 14 ),
-5: SubResource( 16 ),
-6: SubResource( 18 ),
-7: SubResource( 20 ),
-8: SubResource( 22 ),
-9: SubResource( 24 ),
-10: SubResource( 26 ),
-11: SubResource( 28 ),
-12: SubResource( 30 ),
-13: SubResource( 32 ),
-14: SubResource( 34 ),
-15: SubResource( 36 ),
-17: SubResource( 38 )
+0: SubResource( 2 ),
+1: SubResource( 4 ),
+2: SubResource( 6 ),
+3: SubResource( 8 ),
+4: SubResource( 10 ),
+5: SubResource( 12 ),
+6: SubResource( 14 ),
+7: SubResource( 16 ),
+8: SubResource( 18 ),
+9: SubResource( 20 ),
+10: SubResource( 22 ),
+11: SubResource( 24 ),
+12: SubResource( 26 ),
+13: SubResource( 28 ),
+14: SubResource( 30 ),
+15: SubResource( 32 ),
+17: SubResource( 34 )
 }
 _point_order = [ 3, 9, 17, 11, 15, 14, 13, 12, 10, 8, 7, 6, 5, 2, 4, 1, 0 ]
 _constraints = {
@@ -261,7 +261,7 @@ _constraints = {
 }
 _next_key = 18
 
-[sub_resource type="Resource" id=40]
+[sub_resource type="Resource" id=36]
 script = ExtResource( 5 )
 _edge_meta_materials = [  ]
 fill_textures = [ ExtResource( 1 ) ]
@@ -270,16 +270,15 @@ fill_texture_z_index = -10
 fill_mesh_offset = 0.0
 render_offset = 0.0
 
-[sub_resource type="CircleShape2D" id=1]
+[sub_resource type="CircleShape2D" id=37]
 radius = 770.798
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFont" id=38]
 size = 48
 use_filter = true
 font_data = ExtResource( 11 )
 
-[sub_resource type="Animation" id=3]
-resource_name = "hidden"
+[sub_resource type="Animation" id=39]
 tracks/0/type = "value"
 tracks/0/path = NodePath("Label:self_modulate")
 tracks/0/interp = 1
@@ -293,8 +292,7 @@ tracks/0/keys = {
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
-[sub_resource type="Animation" id=4]
-resource_name = "show"
+[sub_resource type="Animation" id=40]
 length = 1.9
 tracks/0/type = "value"
 tracks/0/path = NodePath("Label:visible_characters")
@@ -333,11 +331,11 @@ position = Vector2( 64.1835, -32.0917 )
 script = ExtResource( 6 )
 editor_debug = false
 curve_bake_interval = 20.0
-_points = SubResource( 39 )
+_points = SubResource( 35 )
 material_overrides = {
 
 }
-shape_material = SubResource( 40 )
+shape_material = SubResource( 36 )
 tessellation_stages = 5
 tessellation_tolerence = 4.0
 flip_edges = false
@@ -380,7 +378,7 @@ collision_layer = 8
 script = ExtResource( 12 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AncientBird/Texto_flutuante"]
-shape = SubResource( 1 )
+shape = SubResource( 37 )
 
 [node name="Label" type="Label" parent="AncientBird/Texto_flutuante"]
 margin_left = -304.412
@@ -388,7 +386,7 @@ margin_top = -613.384
 margin_right = 245.588
 margin_bottom = -482.384
 rect_scale = Vector2( -1, 1 )
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 38 )
 text = "tudo passa meu filho,
 ate a uva passa ho ho ho"
 __meta__ = {
@@ -396,7 +394,7 @@ __meta__ = {
 }
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="AncientBird/Texto_flutuante"]
-anims/hidden = SubResource( 3 )
-anims/show = SubResource( 4 )
+anims/hidden = SubResource( 39 )
+anims/show = SubResource( 40 )
 [connection signal="body_entered" from="AncientBird/Texto_flutuante" to="AncientBird/Texto_flutuante" method="_on_Texto_flutuante_body_entered"]
 [connection signal="body_exited" from="AncientBird/Texto_flutuante" to="AncientBird/Texto_flutuante" method="_on_Texto_flutuante_body_exited"]
