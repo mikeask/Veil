@@ -7,9 +7,10 @@
 [ext_resource path="res://addons/rmsmartshape/materials/shape_material.gd" type="Script" id=5]
 [ext_resource path="res://Vail_2.0/Scenes/Environment/Caixa.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Vail_2.0/Scenes/Caracter/Bird.tscn" type="PackedScene" id=7]
-[ext_resource path="res://Vail_2.0/Sprites/ambiente/textura_chao.png" type="Texture" id=8]
+[ext_resource path="res://Vail_2.0/Sprites/Environment/textura_chao.png" type="Texture" id=8]
 [ext_resource path="res://Vail_2.0/Fonts/Veilfont/Veilfont-Regular.ttf" type="DynamicFontData" id=9]
 [ext_resource path="res://Vail_2.0/Scripts/Texto_flutuante.gd" type="Script" id=10]
+
 
 [sub_resource type="Resource" id=35]
 script = ExtResource( 4 )
@@ -255,7 +256,7 @@ fill_mesh_offset = 0.0
 render_offset = 0.0
 
 [sub_resource type="CircleShape2D" id=1]
-radius = 770.798
+radius = 364.576
 
 [sub_resource type="DynamicFont" id=2]
 size = 48
@@ -290,7 +291,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 1.6 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ 0, 36 ]
+"values": [ 0, 19 ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("Label:self_modulate")
@@ -314,8 +315,6 @@ collision_mask = 3
 [node name="SS2D_Shape_Closed" type="Node2D" parent="StaticBody2D"]
 position = Vector2( 64.1835, -32.0917 )
 script = ExtResource( 3 )
-editor_debug = false
-curve_bake_interval = 20.0
 _points = SubResource( 67 )
 material_overrides = {
 

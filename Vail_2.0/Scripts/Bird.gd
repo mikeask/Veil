@@ -45,7 +45,14 @@ func _physics_process(delta):
 	
 	if Input.get_action_strength("push") and raycasatCabeca.is_colliding():
 		if raycasatCabeca.get_collider().is_in_group("CAIXA"):
-			get_node("Sprits/Corpo/Cabeca/RayCastCabeca").get_collider().move_and_collide(Vector2((walk*0.05)*delta,0))
+			get_node("Sprits/Corpo/Cabeca/RayCastCabeca").get_collider().move_and_collide(Vector2((walk*0.09)*delta,0))
 		pass
+	if Input.get_action_strength("bicada") :
+		get_node("AnimationPlayer").play("bicada")
+		pass
+
+func jump():
+	velocity.y = -2300
+	pass
 		
 		
