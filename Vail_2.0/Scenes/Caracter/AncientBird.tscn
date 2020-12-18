@@ -97,7 +97,7 @@ tracks/6/keys = {
 "values": [ Vector2( -147.746, 82.3894 ), Vector2( -147.746, 82.3894 ) ]
 }
 
-[node name="Bird" type="KinematicBody2D"]
+[node name="AncientBird" type="KinematicBody2D"]
 script = ExtResource( 8 )
 
 [node name="Sprites" type="Node2D" parent="."]
