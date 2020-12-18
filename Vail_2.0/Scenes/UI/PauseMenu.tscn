@@ -1,0 +1,74 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Vail_1.0/Scenes/MenuOpts.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Vail_2.0/Fonts/VeilFont-Dynamic80.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Vail_2.0/Fonts/Veilfont/Veilfont-Regular.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Vail_1.0/Others/TextThemeCredits.tres" type="Theme" id=4]
+[ext_resource path="res://Vail_1.0/Sprites/Menu/PauseMenuBackground.png" type="Texture" id=5]
+[ext_resource path="res://Vail_2.0/Scenes/UI/PauseMenu.gd" type="Script" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+size = 60
+use_filter = true
+font_data = ExtResource( 3 )
+
+[node name="PauseMenu" type="Control"]
+pause_mode = 2
+visible = false
+anchor_left = -0.000826772
+anchor_right = -0.000826772
+margin_right = 1920.0
+margin_bottom = 1080.0
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="PauseMenuBackground" type="Sprite" parent="."]
+position = Vector2( 964.093, 536.649 )
+texture = ExtResource( 5 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 753.112
+margin_top = 414.049
+margin_right = 1130.11
+margin_bottom = 417.049
+color = Color( 0.501961, 0.917647, 1, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Continue" type="Button" parent="."]
+margin_left = 817.063
+margin_top = 474.986
+margin_right = 1074.06
+margin_bottom = 555.986
+rect_scale = Vector2( 1.05, 1.05 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 0.501961, 0.917647, 1, 1 )
+text = "continue"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MenuOpts" parent="." instance=ExtResource( 1 )]
+position = Vector2( 822.26, 565.088 )
+z_index = 1
+
+[node name="PauseLabel" type="Label" parent="."]
+margin_left = 847.636
+margin_top = 300.35
+margin_right = 1050.64
+margin_bottom = 387.35
+theme = ExtResource( 4 )
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.501961, 0.917647, 1, 1 )
+text = "pause"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="button_down" from="Continue" to="." method="_on_Continue_button_down"]

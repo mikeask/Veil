@@ -11,12 +11,12 @@ func _ready():
 	pass
 
 func _process(delta):
-	
-	if Input.is_action_just_pressed("ui_select") || Input.is_action_just_pressed("ui_accept"):
+	if Input.is_action_just_pressed("ui_accept") || Input.is_action_just_pressed("ui_select"):
 		$EscHint.show()
+		$EscHint/EscHintAnimation.play()
 	
 	if(Input.is_action_just_pressed("ui_cancel")):
-		get_tree().change_scene("res://Scenes/MainMenu.tscn")
+		finishAnimation()
 		pass
 	pass
 
@@ -26,5 +26,5 @@ func initCredits():
 	pass
 	
 func finishAnimation():
-	get_tree().change_scene("res://Scenes/MainMenu.tscn")
+	get_tree().change_scene("res://Vail_2.0/Scenes/UI/MainMenu.tscn")
 	pass
