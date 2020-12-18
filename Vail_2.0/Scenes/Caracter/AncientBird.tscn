@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Vail_2.0/Sprites/AncientBird/Body.PNG" type="Texture" id=1]
 [ext_resource path="res://Vail_2.0/Sprites/AncientBird/ShortBeard.PNG" type="Texture" id=2]
@@ -6,14 +6,13 @@
 [ext_resource path="res://Vail_2.0/Sprites/AncientBird/Eye.PNG" type="Texture" id=4]
 [ext_resource path="res://Vail_2.0/Sprites/AncientBird/Legs.PNG" type="Texture" id=5]
 [ext_resource path="res://Vail_2.0/Sprites/AncientBird/LongBeard.PNG" type="Texture" id=6]
-[ext_resource path="res://Vail_2.0/Scripts/Bird.gd" type="Script" id=8]
 
 [sub_resource type="Animation" id=1]
 resource_name = "AncientBirdIdle"
 length = 4.0
 loop = true
 tracks/0/type = "value"
-tracks/0/path = NodePath("Sprites/Head:position")
+tracks/0/path = NodePath("Body/Sprites/Head:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -25,7 +24,7 @@ tracks/0/keys = {
 "values": [ Vector2( -15.3777, -226.596 ), Vector2( -13.9635, -211.747 ), Vector2( -15.3777, -226.596 ) ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("Sprites/Body:position")
+tracks/1/path = NodePath("Body/Sprites/Body:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -37,7 +36,7 @@ tracks/1/keys = {
 "values": [ Vector2( 26.927, -63.015 ), Vector2( 26.2199, -58.0653 ), Vector2( 26.927, -63.015 ), Vector2( 26.927, -63.015 ) ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("Sprites/ShortBeard:position")
+tracks/2/path = NodePath("Body/Sprites/ShortBeard:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
@@ -49,7 +48,7 @@ tracks/2/keys = {
 "values": [ Vector2( -14.0592, -116.229 ), Vector2( -16.1805, -101.379 ), Vector2( -14.0592, -116.229 ) ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("Sprites/Eye2:position")
+tracks/3/path = NodePath("Body/Sprites/Eye2:position")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
@@ -61,7 +60,7 @@ tracks/3/keys = {
 "values": [ Vector2( -59.1013, -197.703 ), Vector2( -57.7664, -183.687 ), Vector2( -59.1013, -197.703 ) ]
 }
 tracks/4/type = "value"
-tracks/4/path = NodePath("Sprites/Eye:position")
+tracks/4/path = NodePath("Body/Sprites/Eye:position")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/imported = false
@@ -73,7 +72,7 @@ tracks/4/keys = {
 "values": [ Vector2( -20.1237, -209.06 ), Vector2( -18.7888, -195.044 ), Vector2( -20.1237, -209.06 ) ]
 }
 tracks/5/type = "value"
-tracks/5/path = NodePath("Sprites/LongBeard:scale")
+tracks/5/path = NodePath("Body/Sprites/LongBeard:scale")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/imported = false
@@ -85,7 +84,7 @@ tracks/5/keys = {
 "values": [ Vector2( 0.284925, 0.284925 ), Vector2( 0.284925, 0.267402 ), Vector2( 0.284925, 0.284925 ) ]
 }
 tracks/6/type = "value"
-tracks/6/path = NodePath("Sprites/LongBeard:position")
+tracks/6/path = NodePath("Body/Sprites/LongBeard:position")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/imported = false
@@ -97,50 +96,53 @@ tracks/6/keys = {
 "values": [ Vector2( -147.746, 82.3894 ), Vector2( -147.746, 82.3894 ) ]
 }
 
-[node name="AncientBird" type="KinematicBody2D"]
-script = ExtResource( 8 )
-
-[node name="Sprites" type="Node2D" parent="."]
-
-[node name="Head" type="Sprite" parent="Sprites"]
-position = Vector2( -15.3777, -226.596 )
-scale = Vector2( 0.284925, 0.284925 )
-texture = ExtResource( 3 )
-
-[node name="Legs" type="Sprite" parent="Sprites"]
-position = Vector2( 24.4757, 51.5144 )
-scale = Vector2( 0.339238, 0.339238 )
-texture = ExtResource( 5 )
-
-[node name="Eye" type="Sprite" parent="Sprites"]
-position = Vector2( -20.1237, -209.06 )
-scale = Vector2( 0.284925, 0.284925 )
-texture = ExtResource( 4 )
-
-[node name="Eye2" type="Sprite" parent="Sprites"]
-position = Vector2( -59.1013, -197.703 )
-scale = Vector2( 0.284925, 0.284925 )
-texture = ExtResource( 4 )
-
-[node name="Body" type="Sprite" parent="Sprites"]
-position = Vector2( 26.927, -63.015 )
-scale = Vector2( 0.284925, 0.284925 )
-texture = ExtResource( 1 )
-
-[node name="ShortBeard" type="Sprite" parent="Sprites"]
-position = Vector2( -14.0592, -116.229 )
-scale = Vector2( 0.284925, 0.284925 )
-texture = ExtResource( 2 )
-
-[node name="LongBeard" type="Sprite" parent="Sprites"]
-position = Vector2( -147.746, 82.3894 )
-scale = Vector2( 0.284925, 0.284925 )
-texture = ExtResource( 6 )
-offset = Vector2( 9.10294, -390.926 )
+[node name="AncientBird" type="Node2D"]
+scale = Vector2( 2, 2 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "AncientBirdIdle"
 anims/AncientBirdIdle = SubResource( 1 )
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+[node name="Body" type="KinematicBody2D" parent="."]
+scale = Vector2( 2, 2 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Body"]
 polygon = PoolVector2Array( -89.9318, -289.49, -97.4828, -264.005, -71.9982, -156.403, -93.7073, -106.378, -73.886, 31.4276, -86.1563, 61.6315, -70.1105, 70.1264, 86.5727, 70.1264, 131.879, 11.6062, 141.317, -101.659, 123.384, -159.235, 75.2462, -210.204, 60.1442, -277.219, 26.1647, -308.367, -9.70251, -316.862, -60.6717, -312.143 )
+
+[node name="Sprites" type="Node2D" parent="Body"]
+
+[node name="Head" type="Sprite" parent="Body/Sprites"]
+position = Vector2( -15.3777, -226.596 )
+scale = Vector2( 0.284925, 0.284925 )
+texture = ExtResource( 3 )
+
+[node name="Legs" type="Sprite" parent="Body/Sprites"]
+position = Vector2( 24.4757, 51.5144 )
+scale = Vector2( 0.339238, 0.339238 )
+texture = ExtResource( 5 )
+
+[node name="Eye" type="Sprite" parent="Body/Sprites"]
+position = Vector2( -20.1237, -209.06 )
+scale = Vector2( 0.284925, 0.284925 )
+texture = ExtResource( 4 )
+
+[node name="Eye2" type="Sprite" parent="Body/Sprites"]
+position = Vector2( -59.1013, -197.703 )
+scale = Vector2( 0.284925, 0.284925 )
+texture = ExtResource( 4 )
+
+[node name="Body" type="Sprite" parent="Body/Sprites"]
+position = Vector2( 26.927, -63.015 )
+scale = Vector2( 0.284925, 0.284925 )
+texture = ExtResource( 1 )
+
+[node name="ShortBeard" type="Sprite" parent="Body/Sprites"]
+position = Vector2( -14.0592, -116.229 )
+scale = Vector2( 0.284925, 0.284925 )
+texture = ExtResource( 2 )
+
+[node name="LongBeard" type="Sprite" parent="Body/Sprites"]
+position = Vector2( -147.746, 82.3894 )
+scale = Vector2( 0.284925, 0.284925 )
+texture = ExtResource( 6 )
+offset = Vector2( 9.10294, -390.926 )
