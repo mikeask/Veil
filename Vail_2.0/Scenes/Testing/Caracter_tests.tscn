@@ -1,13 +1,15 @@
-[gd_scene load_steps=43 format=2]
+[gd_scene load_steps=49 format=2]
 
-[ext_resource path="res://Vail_2.0/Sprites/ambiente/textura_chao.png" type="Texture" id=1]
+[ext_resource path="res://addons/rmsmartshape/shapes/point.gd" type="Script" id=1]
 [ext_resource path="res://addons/rmsmartshape/shapes/point_array.gd" type="Script" id=2]
-[ext_resource path="res://addons/rmsmartshape/shapes/point.gd" type="Script" id=3]
+[ext_resource path="res://addons/rmsmartshape/shapes/shape_closed.gd" type="Script" id=3]
 [ext_resource path="res://addons/rmsmartshape/vertex_properties.gd" type="Script" id=4]
 [ext_resource path="res://addons/rmsmartshape/materials/shape_material.gd" type="Script" id=5]
-[ext_resource path="res://addons/rmsmartshape/shapes/shape_closed.gd" type="Script" id=6]
+[ext_resource path="res://Vail_2.0/Scenes/Environment/Caixa.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Vail_2.0/Scenes/Caracter/Bird.tscn" type="PackedScene" id=7]
-[ext_resource path="res://Vail_2.0/Scenes/Environment/Caixa.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Vail_2.0/Sprites/ambiente/textura_chao.png" type="Texture" id=8]
+[ext_resource path="res://Vail_2.0/Fonts/Veilfont/Veilfont-Regular.ttf" type="DynamicFontData" id=9]
+[ext_resource path="res://Vail_2.0/Scripts/Texto_flutuante.gd" type="Script" id=10]
 
 [sub_resource type="Resource" id=35]
 script = ExtResource( 4 )
@@ -16,7 +18,7 @@ flip = false
 width = 1.0
 
 [sub_resource type="Resource" id=36]
-script = ExtResource( 3 )
+script = ExtResource( 1 )
 position = Vector2( -77.4521, 54.3468 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
@@ -29,7 +31,7 @@ flip = false
 width = 1.0
 
 [sub_resource type="Resource" id=38]
-script = ExtResource( 3 )
+script = ExtResource( 1 )
 position = Vector2( -61.2939, 1103.78 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
@@ -42,7 +44,7 @@ flip = false
 width = 1.0
 
 [sub_resource type="Resource" id=40]
-script = ExtResource( 3 )
+script = ExtResource( 1 )
 position = Vector2( 1872.39, 207.962 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
@@ -55,7 +57,7 @@ flip = false
 width = 1.0
 
 [sub_resource type="Resource" id=42]
-script = ExtResource( 3 )
+script = ExtResource( 1 )
 position = Vector2( -77.4521, 54.3468 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
@@ -68,7 +70,7 @@ flip = false
 width = 1.0
 
 [sub_resource type="Resource" id=44]
-script = ExtResource( 3 )
+script = ExtResource( 1 )
 position = Vector2( 1868.87, 1123.13 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
@@ -81,7 +83,7 @@ flip = false
 width = 1.0
 
 [sub_resource type="Resource" id=46]
-script = ExtResource( 3 )
+script = ExtResource( 1 )
 position = Vector2( 1791.77, 220.448 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
@@ -94,7 +96,7 @@ flip = false
 width = 1.0
 
 [sub_resource type="Resource" id=48]
-script = ExtResource( 3 )
+script = ExtResource( 1 )
 position = Vector2( 1806.04, 819.808 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
@@ -107,7 +109,7 @@ flip = false
 width = 1.0
 
 [sub_resource type="Resource" id=50]
-script = ExtResource( 3 )
+script = ExtResource( 1 )
 position = Vector2( 1425.5, 817.43 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
@@ -120,7 +122,7 @@ flip = false
 width = 1.0
 
 [sub_resource type="Resource" id=52]
-script = ExtResource( 3 )
+script = ExtResource( 1 )
 position = Vector2( 1451.66, 1029.11 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
@@ -133,7 +135,7 @@ flip = false
 width = 1.0
 
 [sub_resource type="Resource" id=54]
-script = ExtResource( 3 )
+script = ExtResource( 1 )
 position = Vector2( -1.55078, 72.9862 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
@@ -146,7 +148,7 @@ flip = false
 width = 1.0
 
 [sub_resource type="Resource" id=56]
-script = ExtResource( 3 )
+script = ExtResource( 1 )
 position = Vector2( 417.05, 1024.35 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
@@ -159,7 +161,7 @@ flip = false
 width = 1.0
 
 [sub_resource type="Resource" id=58]
-script = ExtResource( 3 )
+script = ExtResource( 1 )
 position = Vector2( 74.5585, 810.295 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
@@ -172,7 +174,7 @@ flip = false
 width = 1.0
 
 [sub_resource type="Resource" id=60]
-script = ExtResource( 3 )
+script = ExtResource( 1 )
 position = Vector2( 337.435, 1003.03 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
@@ -185,7 +187,7 @@ flip = false
 width = 1.0
 
 [sub_resource type="Resource" id=62]
-script = ExtResource( 3 )
+script = ExtResource( 1 )
 position = Vector2( 274.698, 980.337 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
@@ -198,7 +200,7 @@ flip = false
 width = 1.0
 
 [sub_resource type="Resource" id=64]
-script = ExtResource( 3 )
+script = ExtResource( 1 )
 position = Vector2( 217.299, 952.305 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
@@ -211,7 +213,7 @@ flip = false
 width = 1.0
 
 [sub_resource type="Resource" id=66]
-script = ExtResource( 3 )
+script = ExtResource( 1 )
 position = Vector2( 166.576, 924.274 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
@@ -246,11 +248,62 @@ _next_key = 16
 [sub_resource type="Resource" id=34]
 script = ExtResource( 5 )
 _edge_meta_materials = [  ]
-fill_textures = [ ExtResource( 1 ) ]
+fill_textures = [ ExtResource( 8 ) ]
 fill_texture_normals = [  ]
 fill_texture_z_index = -10
 fill_mesh_offset = 0.0
 render_offset = 0.0
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 271.741
+
+[sub_resource type="DynamicFont" id=2]
+size = 48
+use_filter = true
+font_data = ExtResource( 9 )
+
+[sub_resource type="Animation" id=3]
+resource_name = "hidden"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Label:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "show"
+length = 1.9
+tracks/0/type = "value"
+tracks/0/path = NodePath("Label:visible_characters")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0, 19 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Label:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
 
 [node name="Caracter_tests" type="Node2D"]
 
@@ -260,7 +313,7 @@ collision_mask = 3
 
 [node name="SS2D_Shape_Closed" type="Node2D" parent="StaticBody2D"]
 position = Vector2( 64.1835, -32.0917 )
-script = ExtResource( 6 )
+script = ExtResource( 3 )
 editor_debug = false
 curve_bake_interval = 20.0
 _points = SubResource( 67 )
@@ -284,12 +337,32 @@ polygon = PoolVector2Array( -17.1469, 17.3867, 64.8336, 38.978, 139.352, 777.952
 position = Vector2( 201.754, 437.536 )
 collision_mask = 6
 
-[node name="Caixa" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1088.6, 863.356 )
+[node name="Caixa" parent="." instance=ExtResource( 6 )]
+position = Vector2( 1202.47, 779.451 )
+collision_layer = 2
 
-[node name="Label" type="Label" parent="."]
-margin_right = 40.0
-margin_bottom = 14.0
+[node name="Texto_flutuante" type="Area2D" parent="Caixa"]
+collision_layer = 8
+script = ExtResource( 10 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Caixa/Texto_flutuante"]
+shape = SubResource( 1 )
+
+[node name="Label" type="Label" parent="Caixa/Texto_flutuante"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = -256.453
+margin_top = -221.492
+margin_right = 247.547
+margin_bottom = -173.492
+custom_fonts/font = SubResource( 2 )
+text = "aperte j para empurrar"
+percent_visible = 0.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Caixa/Texto_flutuante"]
+anims/hidden = SubResource( 3 )
+anims/show = SubResource( 4 )
+[connection signal="body_entered" from="Caixa/Texto_flutuante" to="Caixa/Texto_flutuante" method="_on_Texto_flutuante_body_entered"]
+[connection signal="body_exited" from="Caixa/Texto_flutuante" to="Caixa/Texto_flutuante" method="_on_Texto_flutuante_body_exited"]
