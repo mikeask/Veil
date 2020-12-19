@@ -159,12 +159,8 @@ _global_script_class_icons={
 [application]
 
 config/name="Veil"
-run/main_scene="res://Vail_2.0/Scenes/UI/MainMenu.tscn"
+run/main_scene="res://Vail_1.0/Scenes/MainMenu.tscn"
 config/icon="res://Vail_1.0/Sprites/VeilLOGO.png"
-
-[autoload]
-
-GameManager="*res://Vail_2.0/Scripts/GameManager.gd"
 
 [display]
 
