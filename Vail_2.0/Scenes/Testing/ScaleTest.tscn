@@ -1,4 +1,4 @@
-[gd_scene load_steps=196 format=2]
+[gd_scene load_steps=199 format=2]
 
 [ext_resource path="res://Vail_2.0/Sprites/Environment/textura_chao.png" type="Texture" id=1]
 [ext_resource path="res://addons/rmsmartshape/shapes/point_array.gd" type="Script" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://Vail_2.0/Fonts/Veilfont/Veilfont-Regular.ttf" type="DynamicFontData" id=11]
 [ext_resource path="res://Vail_2.0/Scripts/Texto_flutuante.gd" type="Script" id=12]
 [ext_resource path="res://Vail_2.0/Scenes/Environment/ParallaxBackground.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Vail_2.0/Scenes/Environment/TreePlatform01.tscn" type="PackedScene" id=14]
 
 [sub_resource type="Resource" id=183]
 script = ExtResource( 4 )
@@ -1158,6 +1159,19 @@ point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
 properties = SubResource( 357 )
 
+[sub_resource type="Resource" id=397]
+script = ExtResource( 4 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=398]
+script = ExtResource( 3 )
+position = Vector2( 550.758, 1035.45 )
+point_in = Vector2( 0, 0 )
+point_out = Vector2( 0, 0 )
+properties = SubResource( 397 )
+
 [sub_resource type="Resource" id=359]
 script = ExtResource( 2 )
 _points = {
@@ -1248,13 +1262,14 @@ _points = {
 85: SubResource( 352 ),
 86: SubResource( 354 ),
 87: SubResource( 356 ),
-88: SubResource( 358 )
+88: SubResource( 358 ),
+89: SubResource( 398 )
 }
-_point_order = [ 3, 9, 17, 11, 15, 14, 13, 12, 10, 84, 85, 86, 87, 88, 22, 18, 83, 59, 24, 29, 30, 80, 47, 31, 48, 32, 49, 45, 33, 34, 35, 52, 65, 51, 66, 82, 50, 70, 71, 40, 81, 41, 42, 43, 72, 73, 20, 74, 75, 21, 76, 53, 54, 55, 56, 57, 58, 39, 44, 79, 38, 37, 77, 78, 36, 64, 28, 27, 63, 26, 61, 25, 62, 60, 46, 67, 68, 69, 19, 23, 8, 7, 6, 5, 2, 4, 1, 0 ]
+_point_order = [ 3, 9, 17, 11, 15, 14, 13, 12, 10, 89, 84, 85, 86, 87, 88, 22, 18, 83, 59, 24, 29, 30, 80, 47, 31, 48, 32, 49, 45, 33, 34, 35, 52, 65, 51, 66, 82, 50, 70, 71, 40, 81, 41, 42, 43, 72, 73, 20, 74, 75, 21, 76, 53, 54, 55, 56, 57, 58, 39, 44, 79, 38, 37, 77, 78, 36, 64, 28, 27, 63, 26, 61, 25, 62, 60, 46, 67, 68, 69, 19, 23, 8, 7, 6, 5, 2, 4, 1, 0 ]
 _constraints = {
 [ 0, 3 ]: 15
 }
-_next_key = 89
+_next_key = 90
 
 [sub_resource type="Resource" id=178]
 script = ExtResource( 5 )
@@ -1317,6 +1332,8 @@ tracks/1/keys = {
 [node name="Caracter_tests" type="Node2D"]
 position = Vector2( -398.808, 50.9116 )
 
+[node name="Tree01" parent="." instance=ExtResource( 14 )]
+
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 collision_layer = 2
 collision_mask = 3
@@ -1339,7 +1356,7 @@ collision_polygon_node_path = NodePath("../CollisionPolygon2D")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
 visible = false
-polygon = PoolVector2Array( -17.037, 17.4395, 64.9946, 38.9107, 70.3053, 154.746, 139.338, 777.955, 230.951, 891.954, 281.485, 920.209, 338.89, 948.224, 401.623, 970.924, 481.252, 992.119, 6197.09, 969.171, 6247.98, 940.709, 6573.39, 966.77, 6723.6, 951.651, 6734.87, 960.412, 6936.97, 960.526, 6959.79, 1010.33, 6871.65, 1049.87, 6833.9, 1214.68, 6852.08, 1250.37, 7088.78, 1286.5, 7092.3, 1403.59, 7052.47, 1469.24, 6926.09, 1571.17, 6847.02, 1693.75, 6815.21, 1866.52, 6839.66, 1963.33, 6932.5, 2006.05, 7075.85, 2003.61, 7094.7, 2066.06, 6956.12, 2242.46, 6816.15, 2314.99, 6798.01, 2626.33, 6855.6, 2706.63, 7045.19, 2757.12, 7090.65, 2809.03, 7089.2, 2963.92, 7123.89, 2996.23, 7121.31, 3057.94, 7161.6, 3121.32, 7268.12, 3120.57, 7293.51, 3134.59, 7297.33, 3169.1, 7253.21, 3224.04, 6873.33, 3385.09, 6820.05, 3615.34, 6825.54, 3720.96, 6869.15, 3781.65, 6998.81, 3791.72, 7180.23, 3806.68, 7254.86, 3789.57, 7270.7, 3711.09, 7252.5, 3616.9, 7306.06, 3505.83, 7427.9, 3453.06, 7576.19, 3405.4, 7602.37, 3317.65, 7598.89, 2930.9, 7557.54, 2733.31, 7320.55, 2593.43, 7207.81, 2540.44, 7193.51, 2456.51, 7278.86, 2402.2, 7329.59, 2321.1, 7470.66, 2326.91, 7527.56, 2287.35, 7553.09, 2189.98, 7495.6, 2000.63, 7312.08, 1835.09, 7246.72, 1783.41, 7228.94, 1719.14, 7352.04, 1698.44, 7377.46, 1681.69, 7337.32, 1585.01, 7346.81, 1541.93, 7476.06, 1525.05, 7463.7, 1170.1, 7274.47, 1098.37, 7292.26, 1022.97, 7456.48, 977.825, 7494.2, 948.704, 8865.98, 937.992, 8840.22, 727.072, 9036.83, 699.604, 9082.41, 149.875, 9198.58, 169.8, 9110.77, 3950.61, -24.4171, 3986.26 )
+polygon = PoolVector2Array( -17.037, 17.4395, 64.9946, 38.9107, 70.3053, 154.746, 139.338, 777.955, 230.951, 891.954, 281.485, 920.209, 338.89, 948.224, 401.623, 970.924, 481.244, 992.195, 614.942, 1003.34, 6197.09, 969.175, 6247.98, 940.709, 6573.39, 966.77, 6723.6, 951.651, 6734.87, 960.412, 6936.97, 960.526, 6959.79, 1010.33, 6871.65, 1049.87, 6833.9, 1214.68, 6852.08, 1250.37, 7088.78, 1286.5, 7092.3, 1403.59, 7052.47, 1469.24, 6926.09, 1571.17, 6847.02, 1693.75, 6815.21, 1866.52, 6839.66, 1963.33, 6932.5, 2006.05, 7075.85, 2003.61, 7094.7, 2066.06, 6956.12, 2242.46, 6816.15, 2314.99, 6798.01, 2626.33, 6855.6, 2706.63, 7045.19, 2757.12, 7090.65, 2809.03, 7089.2, 2963.92, 7123.89, 2996.23, 7121.31, 3057.94, 7161.6, 3121.32, 7268.12, 3120.57, 7293.51, 3134.59, 7297.33, 3169.1, 7253.21, 3224.04, 6873.33, 3385.09, 6820.05, 3615.34, 6825.54, 3720.96, 6869.15, 3781.65, 6998.81, 3791.72, 7180.23, 3806.68, 7254.86, 3789.57, 7270.7, 3711.09, 7252.5, 3616.9, 7306.06, 3505.83, 7427.9, 3453.06, 7576.19, 3405.4, 7602.37, 3317.65, 7598.89, 2930.9, 7557.54, 2733.31, 7320.55, 2593.43, 7207.81, 2540.44, 7193.51, 2456.51, 7278.86, 2402.2, 7329.59, 2321.1, 7470.66, 2326.91, 7527.56, 2287.35, 7553.09, 2189.98, 7495.6, 2000.63, 7312.08, 1835.09, 7246.72, 1783.41, 7228.94, 1719.14, 7352.04, 1698.44, 7377.46, 1681.69, 7337.32, 1585.01, 7346.81, 1541.93, 7476.06, 1525.05, 7463.7, 1170.1, 7274.47, 1098.37, 7292.26, 1022.97, 7456.48, 977.825, 7494.2, 948.704, 8865.98, 937.992, 8840.22, 727.072, 9036.83, 699.604, 9082.41, 149.875, 9198.58, 169.8, 9110.77, 3950.61, -24.4171, 3986.26 )
 
 [node name="Caixa" parent="." instance=ExtResource( 8 )]
 position = Vector2( 1088.6, 863.356 )
@@ -1352,7 +1369,7 @@ __meta__ = {
 }
 
 [node name="Node2D" parent="." instance=ExtResource( 10 )]
-position = Vector2( 4149.83, 108.523 )
+position = Vector2( 4149.83, 113.862 )
 
 [node name="AncientBird" parent="." instance=ExtResource( 9 )]
 position = Vector2( 3628.97, 791.581 )
@@ -1385,11 +1402,9 @@ anims/show = SubResource( 182 )
 [node name="ParallaxBackground" parent="." instance=ExtResource( 13 )]
 
 [node name="BirdArt" parent="." instance=ExtResource( 7 )]
-position = Vector2( 3631.52, -742.333 )
+position = Vector2( 1010.18, 796.569 )
 
 [node name="Node2D2" type="Node2D" parent="."]
 position = Vector2( 12361.3, 7653.86 )
 [connection signal="body_entered" from="AncientBird/Texto_flutuante" to="AncientBird/Texto_flutuante" method="_on_Texto_flutuante_body_entered"]
 [connection signal="body_exited" from="AncientBird/Texto_flutuante" to="AncientBird/Texto_flutuante" method="_on_Texto_flutuante_body_exited"]
-
-[editable path="BirdArt"]

@@ -3,9 +3,10 @@
 [ext_resource path="res://Vail_1.0/Sprites/Environment/GateFrame.png" type="Texture" id=1]
 [ext_resource path="res://Vail_1.0/Sprites/Environment/Gate.png" type="Texture" id=2]
 [ext_resource path="res://Vail_1.0/Sprites/Environment/Cage.png" type="Texture" id=3]
-[ext_resource path="res://Vail_1.0/Sprites/Environment/TreesBackground2.png" type="Texture" id=4]
+[ext_resource path="res://Vail_2.0/Sprites/Environment/TreesBackground2.png" type="Texture" id=4]
 [ext_resource path="res://Vail_1.0/Sprites/Environment/BackBushesWhite.png" type="Texture" id=5]
 [ext_resource path="res://Vail_1.0/Animation/ColorBird.tscn" type="PackedScene" id=6]
+
 
 
 [sub_resource type="Animation" id=1]

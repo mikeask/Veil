@@ -9,9 +9,10 @@
 [ext_resource path="res://Vail_1.0/Sprites/Environment/GateFrame.png" type="Texture" id=7]
 [ext_resource path="res://Vail_1.0/Sprites/Environment/Gate.png" type="Texture" id=8]
 [ext_resource path="res://Vail_1.0/Sprites/Environment/Cage.png" type="Texture" id=9]
-[ext_resource path="res://Vail_1.0/Sprites/Environment/TreesBackground2.png" type="Texture" id=10]
+[ext_resource path="res://Vail_2.0/Sprites/Environment/TreesBackground2.png" type="Texture" id=10]
 [ext_resource path="res://Vail_1.0/Sprites/Environment/BackBushesWhite.png" type="Texture" id=11]
 [ext_resource path="res://Vail_1.0/Animation/ColorBird.tscn" type="PackedScene" id=12]
+
 
 
 [sub_resource type="Animation" id=2]

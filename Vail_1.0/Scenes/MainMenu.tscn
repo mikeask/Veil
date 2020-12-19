@@ -15,14 +15,15 @@
 [ext_resource path="res://Vail_1.0/Prefabs/Vegetation03.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Vail_1.0/Prefabs/Vegetation02.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Vail_1.0/Prefabs/Vegetation01.tscn" type="PackedScene" id=15]
-[ext_resource path="res://Vail_1.0/Sprites/Environment/Tree01.png" type="Texture" id=16]
+[ext_resource path="res://Vail_2.0/Sprites/Environment/Tree01.png" type="Texture" id=16]
 [ext_resource path="res://Vail_1.0/Sprites/logo.png" type="Texture" id=17]
-[ext_resource path="res://Vail_1.0/Sprites/Environment/Tree03.png" type="Texture" id=18]
+[ext_resource path="res://Vail_2.0/Sprites/Environment/Tree03.png" type="Texture" id=18]
 [ext_resource path="res://Vail_1.0/Sprites/light.png" type="Texture" id=19]
 [ext_resource path="res://Vail_1.0/Sprites/Environment/Vine01.png" type="Texture" id=20]
 [ext_resource path="res://Vail_1.0/Audio/The Outer Forest.wav" type="AudioStream" id=21]
 [ext_resource path="res://Vail_1.0/Prefabs/Vegetation05.tscn" type="PackedScene" id=22]
 [ext_resource path="res://Vail_1.0/Prefabs/Vegetation05_2.tscn" type="PackedScene" id=23]
+
 
 [node name="Title" type="Node2D"]
 script = ExtResource( 1 )
