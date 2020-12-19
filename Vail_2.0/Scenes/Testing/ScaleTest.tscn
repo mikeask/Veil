@@ -1,6 +1,6 @@
-[gd_scene load_steps=53 format=2]
+[gd_scene load_steps=54 format=2]
 
-[ext_resource path="res://Vail_2.0/Sprites/ambiente/textura_chao.png" type="Texture" id=1]
+[ext_resource path="res://Vail_2.0/Sprites/Environment/textura_chao.png" type="Texture" id=1]
 [ext_resource path="res://addons/rmsmartshape/shapes/point_array.gd" type="Script" id=2]
 [ext_resource path="res://addons/rmsmartshape/shapes/point.gd" type="Script" id=3]
 [ext_resource path="res://addons/rmsmartshape/vertex_properties.gd" type="Script" id=4]
@@ -12,6 +12,7 @@
 [ext_resource path="res://Vail_2.0/Scenes/Environment/House.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Vail_2.0/Fonts/Veilfont/Veilfont-Regular.ttf" type="DynamicFontData" id=11]
 [ext_resource path="res://Vail_2.0/Scripts/Texto_flutuante.gd" type="Script" id=12]
+[ext_resource path="res://Vail_2.0/Sprites/Environment/background.png" type="Texture" id=13]
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 4 )
@@ -329,8 +330,6 @@ collision_mask = 3
 [node name="SS2D_Shape_Closed" type="Node2D" parent="StaticBody2D"]
 position = Vector2( 64.1835, -32.0917 )
 script = ExtResource( 6 )
-editor_debug = false
-curve_bake_interval = 20.0
 _points = SubResource( 35 )
 material_overrides = {
 
@@ -347,14 +346,6 @@ collision_polygon_node_path = NodePath("../CollisionPolygon2D")
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
 visible = false
 polygon = PoolVector2Array( -17.1469, 17.3867, 64.9946, 38.9107, 70.3053, 154.746, 139.338, 777.955, 230.951, 891.954, 281.485, 920.209, 338.89, 948.224, 401.623, 970.924, 481.252, 992.116, 8865.98, 937.994, 8840.22, 727.072, 9036.83, 699.604, 9082.41, 149.875, 9198.85, 169.711, 9134.47, 1039.26, -0.346527, 1074.99 )
-
-[node name="Bird" parent="." instance=ExtResource( 7 )]
-position = Vector2( 3747.94, -550.017 )
-collision_mask = 6
-
-[node name="Camera2D" type="Camera2D" parent="Bird"]
-position = Vector2( 32.0723, -302.906 )
-current = true
 
 [node name="Caixa" parent="." instance=ExtResource( 8 )]
 position = Vector2( 1088.6, 863.356 )
@@ -396,5 +387,37 @@ __meta__ = {
 [node name="AnimationPlayer" type="AnimationPlayer" parent="AncientBird/Texto_flutuante"]
 anims/hidden = SubResource( 39 )
 anims/show = SubResource( 40 )
+
+[node name="Bird" parent="." instance=ExtResource( 7 )]
+position = Vector2( 7.88928, -86.6109 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.2, 0.03 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( -9329.06, 314.854 )
+scale = Vector2( 2.03946, 2.03946 )
+texture = ExtResource( 13 )
+offset = Vector2( 1734.01, -98.3959 )
+
+[node name="Sprite2" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( -5453.37, 314.854 )
+scale = Vector2( 2.03946, 2.03946 )
+texture = ExtResource( 13 )
+offset = Vector2( 1734.01, -98.3959 )
+
+[node name="Sprite3" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( -1569.06, 314.854 )
+scale = Vector2( 2.03946, 2.03946 )
+texture = ExtResource( 13 )
+offset = Vector2( 1734.01, -98.3959 )
+
+[node name="Sprite4" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 2306.63, 314.854 )
+scale = Vector2( 2.03946, 2.03946 )
+texture = ExtResource( 13 )
+offset = Vector2( 1734.01, -98.3959 )
 [connection signal="body_entered" from="AncientBird/Texto_flutuante" to="AncientBird/Texto_flutuante" method="_on_Texto_flutuante_body_entered"]
 [connection signal="body_exited" from="AncientBird/Texto_flutuante" to="AncientBird/Texto_flutuante" method="_on_Texto_flutuante_body_exited"]

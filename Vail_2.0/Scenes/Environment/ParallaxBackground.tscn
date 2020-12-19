@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Vail_2.0/Sprites/Environment/background.png" type="Texture" id=1]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 0.2, 0.03 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxLayer"]
+position = Vector2( -9329.06, 314.854 )
+scale = Vector2( 2.03946, 2.03946 )
+texture = ExtResource( 1 )
+offset = Vector2( 1734.01, -98.3959 )
+
+[node name="Sprite2" type="Sprite" parent="ParallaxLayer"]
+position = Vector2( -5453.37, 314.854 )
+scale = Vector2( 2.03946, 2.03946 )
+texture = ExtResource( 1 )
+offset = Vector2( 1734.01, -98.3959 )
+
+[node name="Sprite3" type="Sprite" parent="ParallaxLayer"]
+position = Vector2( -1569.06, 314.854 )
+scale = Vector2( 2.03946, 2.03946 )
+texture = ExtResource( 1 )
+offset = Vector2( 1734.01, -98.3959 )
+
+[node name="Sprite4" type="Sprite" parent="ParallaxLayer"]
+position = Vector2( 2306.63, 314.854 )
+scale = Vector2( 2.03946, 2.03946 )
+texture = ExtResource( 1 )
+offset = Vector2( 1734.01, -98.3959 )
