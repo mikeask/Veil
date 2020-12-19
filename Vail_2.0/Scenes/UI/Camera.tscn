@@ -8,6 +8,7 @@ position = Vector2( 960.828, 543.272 )
 current = true
 smoothing_enabled = true
 smoothing_speed = 2.0
+offset_v = -1.0
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 pause_mode = 2
