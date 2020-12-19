@@ -5,7 +5,7 @@
 [ext_resource path="res://Vail_2.0/Scripts/Catapulta.gd" type="Script" id=3]
 
 [sub_resource type="CircleShape2D" id=1]
-radius = 20.0296
+radius = 14.0848
 
 [sub_resource type="Animation" id=2]
 resource_name = "jump"
@@ -20,18 +20,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.2, 0.7, 2 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
-"values": [ 0.0, 60.0, 60.0, 0.0 ]
-}
-tracks/1/type = "method"
-tracks/1/path = NodePath(".")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray(  ),
-"transitions": PoolRealArray(  ),
-"values": [  ]
+"values": [ 7.47561, 83.5756, 83.5756, 7.47561 ]
 }
 
 [node name="Catapulta" type="Node2D"]
@@ -43,7 +32,8 @@ scale = Vector2( 0.181919, 0.181919 )
 texture = ExtResource( 1 )
 
 [node name="galho" type="KinematicBody2D" parent="."]
-position = Vector2( -27.9488, 0.418112 )
+position = Vector2( -35.0279, 24.4869 )
+rotation = 0.130474
 scale = Vector2( 0.181919, 0.181919 )
 collision_layer = 2
 
