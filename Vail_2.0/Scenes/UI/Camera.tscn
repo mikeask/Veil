@@ -64,7 +64,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="MenuOpts" type="Node2D" parent="CanvasLayer/PauseMenu" instance=ExtResource( 1 )]
+[node name="MenuOpts" parent="CanvasLayer/PauseMenu" instance=ExtResource( 1 )]
 position = Vector2( 846.071, 546.039 )
 z_index = 1
 
