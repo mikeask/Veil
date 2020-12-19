@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Vail_2.0/Sprites/Bird/Eye.png" type="Texture" id=1]
+
+[node name="Snow" type="Node2D"]
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+amount = 100
+lifetime = 10.0
+preprocess = 600.0
+speed_scale = 1.4
+texture = ExtResource( 1 )
+emission_shape = 2
+emission_rect_extents = Vector2( 3000, 0 )
+gravity = Vector2( -30, 40 )
+initial_velocity = 0.32
+initial_velocity_random = 0.48
+scale_amount = 0.0
+scale_amount_random = 0.12
