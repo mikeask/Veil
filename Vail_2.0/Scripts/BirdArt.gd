@@ -23,14 +23,14 @@ func _physics_process(delta):
 		animacao = "Idle"
 	else:
 		velocity.x += walk * delta
+		animacao = "Walk"
 		if(!$BirdStep.playing && is_on_floor()):
 			rng.randomize()
 			$BirdStep.pitch_scale = rng.randf_range(0.6, 1.2)
 			$BirdStep.attenuation = rng.randf_range(1.3, 3.0)
 			$BirdStep.play()
-			animacao = "Walk"
 			pass
-	$BirdAnimation.play(animacao)
+	
 	# Clamp to the maximum horizontal movement speed.
 	velocity.x = clamp(velocity.x, -WALK_MAX_SPEED, WALK_MAX_SPEED)
 

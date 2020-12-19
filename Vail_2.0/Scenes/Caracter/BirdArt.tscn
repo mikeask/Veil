@@ -29,7 +29,7 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=2]
 length = 4.0
 loop = true
 tracks/0/type = "value"
@@ -212,8 +212,32 @@ tracks/14/keys = {
 "update": 1,
 "values": [ true ]
 }
+tracks/15/type = "value"
+tracks/15/path = NodePath("Bico:position")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 119.46, -226.869 ) ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("Bico:rotation_degrees")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 182.2 ]
+}
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=3]
 length = 9.0
 loop = true
 step = 1.0
@@ -409,8 +433,32 @@ tracks/15/keys = {
 "update": 1,
 "values": [ false, false ]
 }
+tracks/16/type = "value"
+tracks/16/path = NodePath("Bico:position")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 119.46, -226.869 ) ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("Bico:rotation_degrees")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 182.2 ]
+}
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=4]
 length = 6.0
 loop = true
 tracks/0/type = "value"
@@ -593,8 +641,32 @@ tracks/14/keys = {
 "update": 1,
 "values": [ false, false ]
 }
+tracks/15/type = "value"
+tracks/15/path = NodePath("Bico:position")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 119.46, -226.869 ) ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("Bico:rotation_degrees")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 182.2 ]
+}
 
-[sub_resource type="Animation" id=6]
+[sub_resource type="Animation" id=5]
 length = 4.0
 loop = true
 tracks/0/type = "value"
@@ -765,8 +837,32 @@ tracks/13/keys = {
 "update": 1,
 "values": [ true, true ]
 }
+tracks/14/type = "value"
+tracks/14/path = NodePath("Bico:position")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 119.46, -226.869 ) ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("Bico:rotation_degrees")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 182.2 ]
+}
 
-[sub_resource type="Animation" id=7]
+[sub_resource type="Animation" id=6]
 length = 4.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("R_Leg/R_leg:position")
@@ -945,10 +1041,10 @@ tracks/14/loop_wrap = true
 tracks/14/imported = false
 tracks/14/enabled = true
 tracks/14/keys = {
-"times": PoolRealArray( 0, 0.6, 1, 1.2, 1.5, 2, 2.6 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.6, 1, 1.2, 1.5, 2, 2.6, 3, 3.5, 4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 119.46, -226.869 ), Vector2( 154.023, -134.927 ), Vector2( 147.176, -75.2051 ), Vector2( 133.842, -46.7601 ), Vector2( 143.628, -62.2819 ), Vector2( 152.008, -95.1993 ), Vector2( 151.683, -136.588 ) ]
+"values": [ Vector2( 119.46, -226.869 ), Vector2( 154.023, -134.927 ), Vector2( 147.176, -75.2051 ), Vector2( 133.842, -46.7601 ), Vector2( 143.628, -62.2819 ), Vector2( 152.008, -95.1993 ), Vector2( 151.683, -136.588 ), Vector2( 149.305, -161.561 ), Vector2( 140.98, -188.913 ), Vector2( 119.46, -226.869 ) ]
 }
 tracks/15/type = "value"
 tracks/15/path = NodePath("Bico:rotation_degrees")
@@ -957,13 +1053,13 @@ tracks/15/loop_wrap = true
 tracks/15/imported = false
 tracks/15/enabled = true
 tracks/15/keys = {
-"times": PoolRealArray( 0, 0.6, 1, 1.2, 1.5, 2, 2.6 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.6, 1, 1.2, 1.5, 2, 2.6, 3, 3.5, 3.9, 4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 0,
-"values": [ 182.2, 225.85, 254.95, 269.5, 260.146, 244.557, 225.85 ]
+"values": [ 182.2, 225.85, 254.95, 269.5, 260.146, 244.557, 225.85, 225.85, 225.85, 209.5, 182.2 ]
 }
 
-[sub_resource type="Animation" id=8]
+[sub_resource type="Animation" id=7]
 length = 5.0
 loop = true
 tracks/0/type = "value"
@@ -1158,8 +1254,32 @@ tracks/15/keys = {
 "update": 1,
 "values": [ false, false ]
 }
+tracks/16/type = "value"
+tracks/16/path = NodePath("Bico:position")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 119.46, -226.869 ) ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("Bico:rotation_degrees")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 182.2 ]
+}
 
-[sub_resource type="Animation" id=9]
+[sub_resource type="Animation" id=8]
 length = 5.0
 loop = true
 tracks/0/type = "value"
@@ -1342,8 +1462,32 @@ tracks/14/keys = {
 "update": 1,
 "values": [ false, false ]
 }
+tracks/15/type = "value"
+tracks/15/path = NodePath("Bico:position")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 119.46, -226.869 ) ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("Bico:rotation_degrees")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 182.2 ]
+}
 
-[sub_resource type="Animation" id=10]
+[sub_resource type="Animation" id=9]
 length = 2.5
 loop = true
 tracks/0/type = "value"
@@ -1538,8 +1682,32 @@ tracks/15/keys = {
 "update": 1,
 "values": [ false, false ]
 }
+tracks/16/type = "value"
+tracks/16/path = NodePath("Bico:position")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 119.46, -226.869 ) ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("Bico:rotation_degrees")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 182.2 ]
+}
 
-[sub_resource type="CapsuleShape2D" id=11]
+[sub_resource type="CapsuleShape2D" id=10]
 
 [node name="BirdArt" type="KinematicBody2D"]
 pause_mode = 1
@@ -1556,12 +1724,11 @@ volume_db = -5.0
 max_distance = 9999.0
 
 [node name="Body" type="Node2D" parent="."]
-position = Vector2( -9.07874, -108.841 )
-rotation = 0.159951
+position = Vector2( -11.0794, -89.3268 )
+rotation = -0.197131
 scale = Vector2( 0.2, 0.2 )
 
 [node name="Wing01" type="Node2D" parent="Body"]
-visible = false
 position = Vector2( 20.6953, -804.943 )
 rotation = -0.969466
 scale = Vector2( 12.2891, 12.2891 )
@@ -1574,7 +1741,6 @@ offset = Vector2( -6.56946, 1.10078 )
 flip_h = true
 
 [node name="Wing02" type="Node2D" parent="Body"]
-visible = false
 modulate = Color( 1, 1, 1, 0.618784 )
 position = Vector2( 479.791, -1318.5 )
 rotation = -0.331707
@@ -1593,7 +1759,7 @@ rotation = -0.102075
 
 [node name="Tail_root" type="Node2D" parent="Body/Tail"]
 position = Vector2( -490.961, -645.75 )
-rotation = -9.31323e-10
+rotation = -0.595278
 
 [node name="Sprite_Tail" type="Sprite" parent="Body/Tail/Tail_root"]
 rotation = 3.72529e-09
@@ -1612,8 +1778,8 @@ position = Vector2( -278.531, 413.671 )
 rotation = -1.49012e-08
 
 [node name="Head_root" type="Node2D" parent="Body/Head"]
-position = Vector2( 388.78, -889.292 )
-rotation = -1.86265e-09
+position = Vector2( 572.999, -872.629 )
+rotation = -0.802654
 
 [node name="Sprite_Head" type="Sprite" parent="Body/Head/Head_root"]
 rotation = 2.98023e-08
@@ -1646,8 +1812,8 @@ rotation = -0.0610358
 scale = Vector2( 0.2, 0.2 )
 
 [node name="L_leg_root" type="Node2D" parent="L_Leg"]
-position = Vector2( 25.3047, -86.9807 )
-rotation = -0.440999
+position = Vector2( 19.4476, -72.5235 )
+rotation = 0.739323
 
 [node name="Sub_L_leg" type="Node2D" parent="L_Leg/L_leg_root"]
 position = Vector2( 18.7982, 183.322 )
@@ -1668,8 +1834,8 @@ rotation = 0.00916737
 scale = Vector2( 0.2, 0.2 )
 
 [node name="R_leg" type="Node2D" parent="R_Leg"]
-position = Vector2( 11.3228, -151.049 )
-rotation = -0.0468886
+position = Vector2( -21.7945, -64.3028 )
+rotation = 0.623761
 
 [node name="Sub_R_leg" type="Node2D" parent="R_Leg/R_leg"]
 position = Vector2( 26.918, 156.713 )
@@ -1693,14 +1859,14 @@ flip_h = true
 [node name="BirdAnimation" type="AnimationPlayer" parent="."]
 autoplay = "Idle"
 playback_speed = 4.0
-anims/Falling = SubResource( 3 )
-anims/Flying = SubResource( 4 )
-anims/Idle = SubResource( 5 )
-anims/Jump = SubResource( 6 )
-anims/Pickup = SubResource( 7 )
-anims/Pulling = SubResource( 8 )
-anims/Pushing = SubResource( 9 )
-anims/Walk = SubResource( 10 )
+anims/Falling = SubResource( 2 )
+anims/Flying = SubResource( 3 )
+anims/Idle = SubResource( 4 )
+anims/Jump = SubResource( 5 )
+anims/Pickup = SubResource( 6 )
+anims/Pulling = SubResource( 7 )
+anims/Pushing = SubResource( 8 )
+anims/Walk = SubResource( 9 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 position = Vector2( -9.07874, -89.2682 )
@@ -1719,7 +1885,7 @@ collision_mask = 2147483656
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bico"]
 position = Vector2( 0.719841, -0.777374 )
 rotation = -1.57079
-shape = SubResource( 11 )
+shape = SubResource( 10 )
 
 [node name="RayPush" type="RayCast2D" parent="."]
 position = Vector2( 107.799, -189.761 )
