@@ -1,10 +1,25 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Vail_1.0/Scenes/CreditsTitle.gd" type="Script" id=1]
 [ext_resource path="res://Vail_1.0/Sprites/logo.png" type="Texture" id=2]
 [ext_resource path="res://Vail_1.0/Others/TextHintsTheme.tres" type="Theme" id=3]
 [ext_resource path="res://Vail_1.0/Others/TextThemeCredits.tres" type="Theme" id=4]
 [ext_resource path="res://Vail_1.0/Audio/MachinimaSound.com_-_A_day_in_the_sun.wav" type="AudioStream" id=5]
+
+[sub_resource type="Animation" id=2]
+resource_name = "EscHintBlind"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 0.6, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0.588235 ), Color( 1, 1, 1, 0.588235 ), Color( 1, 1, 1, 0 ) ]
+}
 
 [sub_resource type="Animation" id=1]
 resource_name = "Credits"
@@ -98,6 +113,7 @@ align = 1
 
 [node name="EscHint" type="Label" parent="."]
 visible = false
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 8.0
 margin_top = 1031.0
 margin_right = 161.0
@@ -105,6 +121,12 @@ margin_bottom = 1067.0
 theme = ExtResource( 3 )
 text = "Exit (Esc)"
 align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="EscHintAnimation" type="AnimationPlayer" parent="EscHint"]
+anims/EscHintBlind = SubResource( 2 )
 
 [node name="Text" type="Node2D" parent="."]
 position = Vector2( -108.511, 1231.83 )

@@ -8,9 +8,9 @@ var lumini = -1;
 func _ready():
 	GameManager.load_game()
 	if GameManager.playerProgress == null:
-		$Continue.visible = false
+		$Menu/Continue.visible = false
 	else:
-		$Continue.visible = true
+		$Menu/Continue.visible = true
 		pass
 
 
@@ -33,13 +33,13 @@ func _on_Quit_button_down():
 
 
 func _on_Credits_button_down():
-	get_tree().change_scene("res://Vail_2.0/Scenes/CreditsTitle.tscn");
+	get_tree().change_scene("res://Vail_2.0/Scenes/UI/CreditsTitle.tscn");
 	pass # replace with function body
 
 
 func _on_StartGame_button_down():
 	GameManager.save_game(0,0)
-	get_tree().change_scene("res://Vail_1.0/Scenes/Level.tscn");
+	get_tree().change_scene("res://Vail_2.0/Scenes/Testing/Caracter_tests.tscn");
 	pass # replace with function body
 
 
