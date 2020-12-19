@@ -6,13 +6,13 @@
 [ext_resource path="res://addons/rmsmartshape/vertex_properties.gd" type="Script" id=4]
 [ext_resource path="res://addons/rmsmartshape/materials/shape_material.gd" type="Script" id=5]
 [ext_resource path="res://addons/rmsmartshape/shapes/shape_closed.gd" type="Script" id=6]
-[ext_resource path="res://Vail_2.0/Scenes/Caracter/Bird.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Vail_2.0/Scenes/Caracter/BirdArt.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Vail_2.0/Scenes/Environment/Caixa.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Vail_2.0/Scenes/Caracter/AncientBird.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Vail_2.0/Scenes/Environment/House.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Vail_2.0/Fonts/Veilfont/Veilfont-Regular.ttf" type="DynamicFontData" id=11]
 [ext_resource path="res://Vail_2.0/Scripts/Texto_flutuante.gd" type="Script" id=12]
-[ext_resource path="res://Vail_2.0/Sprites/Environment/background.png" type="Texture" id=13]
+[ext_resource path="res://Vail_2.0/Scenes/Environment/ParallaxBackground.tscn" type="PackedScene" id=13]
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 4 )
@@ -388,36 +388,11 @@ __meta__ = {
 anims/hidden = SubResource( 39 )
 anims/show = SubResource( 40 )
 
-[node name="Bird" parent="." instance=ExtResource( 7 )]
-position = Vector2( 7.88928, -86.6109 )
+[node name="ParallaxBackground" parent="." instance=ExtResource( 13 )]
 
-[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_scale = Vector2( 0.2, 0.03 )
-
-[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2( -9329.06, 314.854 )
-scale = Vector2( 2.03946, 2.03946 )
-texture = ExtResource( 13 )
-offset = Vector2( 1734.01, -98.3959 )
-
-[node name="Sprite2" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2( -5453.37, 314.854 )
-scale = Vector2( 2.03946, 2.03946 )
-texture = ExtResource( 13 )
-offset = Vector2( 1734.01, -98.3959 )
-
-[node name="Sprite3" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2( -1569.06, 314.854 )
-scale = Vector2( 2.03946, 2.03946 )
-texture = ExtResource( 13 )
-offset = Vector2( 1734.01, -98.3959 )
-
-[node name="Sprite4" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2( 2306.63, 314.854 )
-scale = Vector2( 2.03946, 2.03946 )
-texture = ExtResource( 13 )
-offset = Vector2( 1734.01, -98.3959 )
+[node name="BirdArt" parent="." instance=ExtResource( 7 )]
+position = Vector2( 3797.38, -613.1 )
 [connection signal="body_entered" from="AncientBird/Texto_flutuante" to="AncientBird/Texto_flutuante" method="_on_Texto_flutuante_body_entered"]
 [connection signal="body_exited" from="AncientBird/Texto_flutuante" to="AncientBird/Texto_flutuante" method="_on_Texto_flutuante_body_exited"]
+
+[editable path="BirdArt"]
