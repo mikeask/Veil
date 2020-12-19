@@ -2,8 +2,8 @@
 
 [ext_resource path="res://Vail_2.0/Scripts/BirdArt.gd" type="Script" id=1]
 [ext_resource path="res://Vail_2.0/Scenes/UI/Camera.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Vail_2.0/Audio/Bird/BirdStep.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Vail_2.0/Audio/Bird/BirdTweet.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Vail_2.0/Audio/Bird/BirdTweet.wav" type="AudioStream" id=3]
+[ext_resource path="res://Vail_2.0/Audio/Bird/Step.wav" type="AudioStream" id=4]
 [ext_resource path="res://Vail_1.0/Sprites/Wings/w7.png" type="Texture" id=5]
 [ext_resource path="res://Vail_1.0/Sprites/Wings/w4.png" type="Texture" id=6]
 [ext_resource path="res://Vail_2.0/Sprites/Bird/bird_leg2.png" type="Texture" id=10]
@@ -1584,9 +1584,15 @@ tracks/15/keys = {
 pause_mode = 1
 script = ExtResource( 1 )
 
-[node name="BirdTweet" parent="." instance=ExtResource( 4 )]
+[node name="BirdTweet" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 3 )
+volume_db = -5.0
+max_distance = 9999.0
 
-[node name="BirdStep" parent="." instance=ExtResource( 3 )]
+[node name="BirdStep" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 4 )
+volume_db = -20.0
+max_distance = 9999.0
 
 [node name="Body" type="Node2D" parent="."]
 position = Vector2( -10.296, -90.8936 )
