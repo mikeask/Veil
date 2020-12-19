@@ -17,7 +17,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.2, 0.7, 2 ),
+"times": PoolRealArray( 0, 0.5, 1, 2 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
 "values": [ 7.47561, 83.5756, 83.5756, 7.47561 ]
@@ -48,7 +48,7 @@ scale = Vector2( 5.49696, 5.49696 )
 collision_layer = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="galho/Ativador"]
-position = Vector2( -104.735, 61.9378 )
+position = Vector2( -79.0424, 44.4464 )
 shape = SubResource( 1 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="galho"]
