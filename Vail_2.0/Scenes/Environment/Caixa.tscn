@@ -5,7 +5,7 @@
 [ext_resource path="res://Vail_2.0/Audio/Box/BoxDraging.wav" type="AudioStream" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 59, 54 )
+extents = Vector2( 59.2213, 54 )
 
 [node name="Caixa" type="KinematicBody2D" groups=[
 "CAIXA",

@@ -47,9 +47,6 @@
 [ext_resource path="res://Vail_1.0/Animation/Token.tscn" type="PackedScene" id=45]
 [ext_resource path="res://Vail_1.0/Prefabs/Fog01.tscn" type="PackedScene" id=46]
 
-
-
-
 [sub_resource type="CapsuleShape2D" id=1]
 height = 87.3691
 
@@ -2210,7 +2207,7 @@ position = Vector2( -650.676, 5000.97 )
 
 [node name="aste" type="Sprite" parent="alavanca"]
 position = Vector2( 27.2364, 188.07 )
-rotation = -0.473091
+rotation = 0.566907
 scale = Vector2( 0.3, 0.3 )
 texture = ExtResource( 34 )
 offset = Vector2( -8.13219, -288.004 )

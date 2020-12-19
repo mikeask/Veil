@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 const WALK_FORCE = 1200
-const WALK_MAX_SPEED = 350
+const WALK_MAX_SPEED = 500
 const STOP_FORCE = 1300
 const JUMP_SPEED = 800
 const GRAVITY = 1100
