@@ -1584,7 +1584,7 @@ script = ExtResource( 1 )
 
 [node name="Body" type="Node2D" parent="."]
 position = Vector2( -10.296, -90.8936 )
-rotation = 0.0254561
+rotation = 0.511226
 scale = Vector2( 0.2, 0.2 )
 
 [node name="Wing01" type="Node2D" parent="Body"]
@@ -1620,6 +1620,7 @@ rotation = -0.102075
 
 [node name="Tail_root" type="Node2D" parent="Body/Tail"]
 position = Vector2( -490.961, -645.75 )
+rotation = -0.114957
 
 [node name="Sprite_Tail" type="Sprite" parent="Body/Tail/Tail_root"]
 rotation = 3.72529e-09
@@ -1638,8 +1639,8 @@ position = Vector2( -278.531, 413.671 )
 rotation = -1.49012e-08
 
 [node name="Head_root" type="Node2D" parent="Body/Head"]
-position = Vector2( 346.275, -833.268 )
-rotation = 0.0320781
+position = Vector2( 388.78, -889.292 )
+rotation = 0.298875
 
 [node name="Sprite_Head" type="Sprite" parent="Body/Head/Head_root"]
 rotation = 2.98023e-08
@@ -1647,7 +1648,6 @@ texture = ExtResource( 15 )
 offset = Vector2( 166.636, -322.659 )
 
 [node name="AngryEye" type="Node2D" parent="Body/Head/Head_root"]
-visible = false
 position = Vector2( 301.62, -361.445 )
 rotation = -0.0575343
 scale = Vector2( 1.49211, 1.49211 )
@@ -1659,6 +1659,7 @@ z_index = 3
 texture = ExtResource( 23 )
 
 [node name="Eye" type="Node2D" parent="Body/Head/Head_root"]
+visible = false
 position = Vector2( 307.329, -359.249 )
 rotation = -0.0575343
 scale = Vector2( 1.49211, 1.49211 )
@@ -1672,8 +1673,8 @@ rotation = -0.0610358
 scale = Vector2( 0.2, 0.2 )
 
 [node name="L_leg_root" type="Node2D" parent="L_Leg"]
-position = Vector2( 25.477, -71.0161 )
-rotation = -0.0857217
+position = Vector2( 39.2725, -62.1498 )
+rotation = 0.124006
 
 [node name="Sub_L_leg" type="Node2D" parent="L_Leg/L_leg_root"]
 position = Vector2( 18.7982, 183.322 )
@@ -1694,8 +1695,8 @@ rotation = 0.00916737
 scale = Vector2( 0.2, 0.2 )
 
 [node name="R_leg" type="Node2D" parent="R_Leg"]
-position = Vector2( -21.7945, -64.3028 )
-rotation = 0.209473
+position = Vector2( -7.06167, -61.8473 )
+rotation = 0.472305
 
 [node name="Sub_R_leg" type="Node2D" parent="R_Leg/R_leg"]
 position = Vector2( 26.918, 156.713 )

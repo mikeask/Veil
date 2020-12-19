@@ -8,6 +8,8 @@ const GRAVITY = 1100
 var raycasatCabeca 
 var velocity = Vector2()
 var direction = "direita"
+var animacao = "Idle"
+var animacao_ant = ""
 
 
 
@@ -18,10 +20,10 @@ func _physics_process(delta):
 	if abs(walk) < WALK_FORCE * 0.2:
 		# The velocity, slowed down a bit, and then reassigned.
 		velocity.x = move_toward(velocity.x, 0, STOP_FORCE * delta)
-		$BirdAnimation.play("Idle")
+		animacao = "Idle"
 	else:
 		velocity.x += walk * delta
-		$BirdAnimation.play("Walk")
+		animacao = "Walk"
 	# Clamp to the maximum horizontal movement speed.
 	velocity.x = clamp(velocity.x, -WALK_MAX_SPEED, WALK_MAX_SPEED)
 
@@ -43,19 +45,22 @@ func _physics_process(delta):
 		direction = "esquerda"
 		
 	
-	if Input.get_action_strength("push") and $RayPush.is_colliding():
+	if Input.is_action_pressed("push") and $RayPush.is_colliding():
 		if $RayPush.get_collider().is_in_group("CAIXA"):
 			$RayPush.get_collider().move_and_collide(Vector2((walk*0.09)*delta,0))
-			$BirdAnimation.play("Pushing")
+			animacao = "Pushing"
 		pass
-	if Input.get_action_strength("bicada") and is_on_floor():
-		$BirdAnimation.play("Pickup")
+	if Input.is_action_pressed("bicada") and is_on_floor():
+		animacao = "Pickup"
 		pass
 	if not is_on_floor():
 		if velocity.y >=0:
-			$BirdAnimation.play("Falling")
+			animacao = "Falling"
 		else:
-			$BirdAnimation.play("Jump")
+			animacao = "Jump"
+	if animacao != animacao_ant:
+		$BirdAnimation.play(animacao)
+		animacao_ant = animacao
 
 func jump():
 	velocity.y = -2300
