@@ -9,9 +9,7 @@ var raycasatCabeca
 var velocity = Vector2()
 var direction = "direita"
 
-func _ready():
-	raycasatCabeca = get_node("Sprits/Corpo/Cabeca/RayCastCabeca")
-	pass
+
 
 func _physics_process(delta):
 	# Horizontal movement code. First, get the player's input.
@@ -20,8 +18,10 @@ func _physics_process(delta):
 	if abs(walk) < WALK_FORCE * 0.2:
 		# The velocity, slowed down a bit, and then reassigned.
 		velocity.x = move_toward(velocity.x, 0, STOP_FORCE * delta)
+		$BirdAnimation.play("Idle")
 	else:
 		velocity.x += walk * delta
+		$BirdAnimation.play("Walk")
 	# Clamp to the maximum horizontal movement speed.
 	velocity.x = clamp(velocity.x, -WALK_MAX_SPEED, WALK_MAX_SPEED)
 
@@ -36,20 +36,26 @@ func _physics_process(delta):
 		velocity.y = -JUMP_SPEED
 		
 	if walk > 0  and direction == "esquerda":
-		scale.x = -1
+		scale.x *= -1
 		direction = "direita"
 	if walk < 0 and direction == "direita":
-		scale.x = -1   
+		scale.x *= -1   
 		direction = "esquerda"
 		
 	
-	if Input.get_action_strength("push") and raycasatCabeca.is_colliding():
-		if raycasatCabeca.get_collider().is_in_group("CAIXA"):
-			get_node("Sprits/Corpo/Cabeca/RayCastCabeca").get_collider().move_and_collide(Vector2((walk*0.09)*delta,0))
+	if Input.get_action_strength("push") and $RayPush.is_colliding():
+		if $RayPush.get_collider().is_in_group("CAIXA"):
+			$RayPush.get_collider().move_and_collide(Vector2((walk*0.09)*delta,0))
+			$BirdAnimation.play("Pushing")
 		pass
-	if Input.get_action_strength("bicada") :
-		get_node("AnimationPlayer").play()
+	if Input.get_action_strength("bicada") and is_on_floor():
+		$BirdAnimation.play("Pickup")
 		pass
+	if not is_on_floor():
+		if velocity.y >=0:
+			$BirdAnimation.play("Falling")
+		else:
+			$BirdAnimation.play("Jump")
 
 func jump():
 	velocity.y = -2300

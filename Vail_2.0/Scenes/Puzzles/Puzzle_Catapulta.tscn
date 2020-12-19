@@ -5,7 +5,7 @@
 [ext_resource path="res://addons/rmsmartshape/shapes/shape_closed.gd" type="Script" id=3]
 [ext_resource path="res://addons/rmsmartshape/vertex_properties.gd" type="Script" id=4]
 [ext_resource path="res://addons/rmsmartshape/materials/shape_material.gd" type="Script" id=5]
-[ext_resource path="res://Vail_2.0/Scenes/Caracter/Bird.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Vail_2.0/Scenes/Caracter/BirdArt.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Vail_2.0/Sprites/Environment/textura_chao.png" type="Texture" id=7]
 [ext_resource path="res://Vail_2.0/Scenes/Environment/Catapulta.tscn" type="PackedScene" id=8]
 
@@ -264,9 +264,11 @@ collision_polygon_node_path = NodePath("../../chão/CollisionPolygon2D")
 position = Vector2( -18.8458, -55.6472 )
 polygon = PoolVector2Array( -20.1653, 315.14, 572.091, 310.698, 697.273, 338.605, 802.563, 369.343, 850.951, 387.743, 890.813, 407.717, 923.262, 429.57, 952.146, 452.861, 998.257, 498.432, 1037.54, 547.599, 1262.6, 671.544, 2608.54, 663.687, 2403.2, -721.276, 2456.17, -760.662, 2504.35, -794.665, 2553.84, -823.526, 2556.87, -825.932, 2560.44, -828.265, 2569.12, -832.624, 2579.75, -836.596, 2592.16, -840.232, 2656.72, -851.42, 2825.97, -861.26, 3054.18, -859.37, 3703.9, -860.89, 3805.41, 1035.61, 278.806, 1337.07, -1125.43, 600.362, -660.576, 199.731 )
 
-[node name="Bird" parent="." instance=ExtResource( 6 )]
-position = Vector2( 185.681, 231.665 )
-
 [node name="Catapulta" parent="." instance=ExtResource( 8 )]
 position = Vector2( 1944.56, 470.35 )
 scale = Vector2( 3.05703, 3.05703 )
+
+[node name="BirdArt" parent="." instance=ExtResource( 6 )]
+position = Vector2( -390.325, 245.438 )
+scale = Vector2( 0.664016, 0.664016 )
+collision_mask = 30
