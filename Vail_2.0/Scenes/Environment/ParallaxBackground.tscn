@@ -33,7 +33,7 @@ texture = ExtResource( 1 )
 offset = Vector2( 1734.01, -98.3959 )
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
-motion_scale = Vector2( 0.4, 0.2 )
+motion_scale = Vector2( 0.2, 0.2 )
 
 [node name="Snow" parent="ParallaxLayer2" instance=ExtResource( 2 )]
 position = Vector2( 352.005, -960.879 )

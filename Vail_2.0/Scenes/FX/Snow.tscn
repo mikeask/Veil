@@ -5,13 +5,13 @@
 [node name="Snow" type="Node2D"]
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="."]
-amount = 100
+amount = 120
 lifetime = 10.0
 preprocess = 600.0
 speed_scale = 1.4
 texture = ExtResource( 1 )
 emission_shape = 2
-emission_rect_extents = Vector2( 3000, 0 )
+emission_rect_extents = Vector2( 6000, 0 )
 gravity = Vector2( -30, 40 )
 initial_velocity = 0.32
 initial_velocity_random = 0.48
