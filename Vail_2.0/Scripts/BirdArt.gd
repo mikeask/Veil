@@ -11,6 +11,7 @@ var direction = "direita"
 var rng = RandomNumberGenerator.new()
 var animacao = "Idle"
 var animacao_ant = ""
+var lastCollider
 
 func _physics_process(delta):
 	# Horizontal movement code. First, get the player's input.
@@ -57,8 +58,12 @@ func _physics_process(delta):
 	
 	if Input.is_action_pressed("push") and $RayPush.is_colliding():
 		if $RayPush.get_collider().is_in_group("CAIXA"):
+			$RayPush.get_collider().drag()
 			$RayPush.get_collider().move_and_collide(Vector2((walk*0.09)*delta,0))
+			lastCollider = $RayPush.get_collider()
 			animacao = "Pushing"
+		else:
+			$RayPush.get_collider().stop_drag()
 		pass
 	if Input.is_action_pressed("bicada") and is_on_floor():
 		animacao = "Pickup"
@@ -71,6 +76,7 @@ func _physics_process(delta):
 	if animacao != animacao_ant:
 		$BirdAnimation.play(animacao)
 		animacao_ant = animacao
+	pass
 
 func jump():
 	velocity.y = -2300
