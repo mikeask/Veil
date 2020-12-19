@@ -8,8 +8,7 @@ const GRAVITY = 1100
 var raycasatCabeca 
 var velocity = Vector2()
 var direction = "direita"
-
-
+var rng = RandomNumberGenerator.new()
 
 func _physics_process(delta):
 	# Horizontal movement code. First, get the player's input.
@@ -22,6 +21,12 @@ func _physics_process(delta):
 	else:
 		velocity.x += walk * delta
 		$BirdAnimation.play("Walk")
+		if(!$BirdStep.playing && is_on_floor()):
+			rng.randomize()
+			$BirdStep.pitch_scale = rng.randf_range(0.6, 1.2)
+			$BirdStep.attenuation = rng.randf_range(1.3, 3.0)
+			$BirdStep.play()
+			pass
 	# Clamp to the maximum horizontal movement speed.
 	velocity.x = clamp(velocity.x, -WALK_MAX_SPEED, WALK_MAX_SPEED)
 
@@ -33,6 +38,10 @@ func _physics_process(delta):
 
 	# Check for jumping. is_on_floor() must be called after movement code.
 	if is_on_floor() and Input.is_action_just_pressed("ui_up"):
+		rng.randomize()
+		$BirdTweet.pitch_scale = rng.randf_range(0.5, 3.0)
+		$BirdTweet.attenuation = rng.randf_range(0.5, 5.0)
+		$BirdTweet.play()
 		velocity.y = -JUMP_SPEED
 		
 	if walk > 0  and direction == "esquerda":
