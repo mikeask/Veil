@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Vail_2.0/Scenes/Caracter/BirdArt.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Vail_2.0/Scenes/Environment/Caixa.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Vail_2.0/Scenes/Environment/Buton.tscn" type="PackedScene" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 976.58, 106.499 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 0.608459, 1036.12 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 2551.78, 747.962 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 1327.06, 1290.39 )
+shape = SubResource( 1 )
+
+[node name="Caixa" parent="." instance=ExtResource( 2 )]
+position = Vector2( 773.17, 763.191 )
+scale = Vector2( 2.57944, 2.57944 )
+
+[node name="BirdArt" parent="." instance=ExtResource( 1 )]
+position = Vector2( 455, 662.987 )
+scale = Vector2( 0.679027, 0.696212 )
+
+[node name="buton" parent="." instance=ExtResource( 3 )]
+position = Vector2( -338.067, 937.894 )
+scale = Vector2( 1.17467, 1.17467 )

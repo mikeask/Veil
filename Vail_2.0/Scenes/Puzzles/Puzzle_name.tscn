@@ -1,0 +1,3 @@
+[gd_scene format=2]
+
+[node name="puzzle_name" type="Node2D"]
