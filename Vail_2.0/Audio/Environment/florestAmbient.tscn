@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Vail_1.0/Audio/amb_forest.wav" type="AudioStream" id=1]
+
+[node name="florestAmbient" type="AudioStreamPlayer"]
+stream = ExtResource( 1 )
+volume_db = -40.0
+autoplay = true

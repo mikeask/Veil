@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=33 format=2]
 
 [ext_resource path="res://Vail_2.0/Sprites/Environment/textura_chao.png" type="Texture" id=1]
 [ext_resource path="res://Vail_2.0/Scenes/Caracter/BirdArt.tscn" type="PackedScene" id=2]
@@ -9,101 +9,145 @@
 [ext_resource path="res://addons/rmsmartshape/shapes/point.gd" type="Script" id=7]
 [ext_resource path="res://addons/rmsmartshape/materials/shape_material.gd" type="Script" id=8]
 [ext_resource path="res://addons/rmsmartshape/shapes/shape_closed.gd" type="Script" id=9]
-[ext_resource path="res://Vail_2.0/Scripts/NextLevelTrigger.gd" type="Script" id=10]
+[ext_resource path="res://Vail_2.0/Scenes/Levels/NextLevelTrigger.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Vail_2.0/Audio/Environment/florestAmbient.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Vail_2.0/Audio/Environment/InGameTheme.tscn" type="PackedScene" id=12]
 
-[sub_resource type="Resource" id=16]
+[sub_resource type="Resource" id=15]
 script = ExtResource( 6 )
 texture_idx = 0
 flip = false
 width = 1.7
 
-[sub_resource type="Resource" id=17]
+[sub_resource type="Resource" id=16]
 script = ExtResource( 7 )
 position = Vector2( -2635.3, 610.985 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
-properties = SubResource( 16 )
+properties = SubResource( 15 )
 
-[sub_resource type="Resource" id=18]
+[sub_resource type="Resource" id=17]
 script = ExtResource( 6 )
 texture_idx = 0
 flip = false
 width = 1.0
 
-[sub_resource type="Resource" id=19]
+[sub_resource type="Resource" id=18]
 script = ExtResource( 7 )
 position = Vector2( -2344.63, 1420.18 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
-properties = SubResource( 18 )
+properties = SubResource( 17 )
 
-[sub_resource type="Resource" id=20]
-script = ExtResource( 6 )
-texture_idx = 0
-flip = false
-width = 1.0
-
-[sub_resource type="Resource" id=21]
-script = ExtResource( 7 )
-position = Vector2( 8458.06, 439.106 )
-point_in = Vector2( 0, 0 )
-point_out = Vector2( 0, 0 )
-properties = SubResource( 20 )
-
-[sub_resource type="Resource" id=22]
+[sub_resource type="Resource" id=19]
 script = ExtResource( 6 )
 texture_idx = 0
 flip = false
 width = 1.7
 
-[sub_resource type="Resource" id=23]
+[sub_resource type="Resource" id=20]
 script = ExtResource( 7 )
 position = Vector2( -2635.3, 610.985 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
-properties = SubResource( 22 )
+properties = SubResource( 19 )
+
+[sub_resource type="Resource" id=21]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=22]
+script = ExtResource( 7 )
+position = Vector2( 9776.17, 1167.16 )
+point_in = Vector2( 0, 0 )
+point_out = Vector2( 0, 0 )
+properties = SubResource( 21 )
+
+[sub_resource type="Resource" id=23]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
 
 [sub_resource type="Resource" id=24]
-script = ExtResource( 6 )
-texture_idx = 0
-flip = false
-width = 1.0
+script = ExtResource( 7 )
+position = Vector2( 8047.46, 434.582 )
+point_in = Vector2( 0, 0 )
+point_out = Vector2( 0, 0 )
+properties = SubResource( 23 )
 
 [sub_resource type="Resource" id=25]
-script = ExtResource( 7 )
-position = Vector2( 8214.88, 1201.1 )
-point_in = Vector2( 0, 0 )
-point_out = Vector2( 0, 0 )
-properties = SubResource( 24 )
-
-[sub_resource type="Resource" id=26]
 script = ExtResource( 6 )
 texture_idx = 0
 flip = false
 width = 1.0
 
-[sub_resource type="Resource" id=27]
+[sub_resource type="Resource" id=26]
 script = ExtResource( 7 )
-position = Vector2( 7447.83, 428.925 )
+position = Vector2( 10020.6, 408.989 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
-properties = SubResource( 26 )
+properties = SubResource( 25 )
+
+[sub_resource type="Resource" id=27]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
 
 [sub_resource type="Resource" id=28]
+script = ExtResource( 7 )
+position = Vector2( 7950.15, 1223.58 )
+point_in = Vector2( 0, 0 )
+point_out = Vector2( 0, 0 )
+properties = SubResource( 27 )
+
+[sub_resource type="Resource" id=29]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=30]
+script = ExtResource( 7 )
+position = Vector2( 2774.12, 505.16 )
+point_in = Vector2( 0, 0 )
+point_out = Vector2( 0, 0 )
+properties = SubResource( 29 )
+
+[sub_resource type="Resource" id=31]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=32]
+script = ExtResource( 7 )
+position = Vector2( 2564.82, 318.483 )
+point_in = Vector2( 0, 0 )
+point_out = Vector2( 0, 0 )
+properties = SubResource( 31 )
+
+[sub_resource type="Resource" id=33]
 script = ExtResource( 5 )
 _points = {
-0: SubResource( 17 ),
-1: SubResource( 19 ),
-2: SubResource( 21 ),
-3: SubResource( 23 ),
-4: SubResource( 25 ),
-5: SubResource( 27 )
+0: SubResource( 16 ),
+1: SubResource( 18 ),
+3: SubResource( 20 ),
+4: SubResource( 22 ),
+5: SubResource( 24 ),
+8: SubResource( 26 ),
+9: SubResource( 28 ),
+12: SubResource( 30 ),
+13: SubResource( 32 )
 }
-_point_order = [ 3, 5, 2, 4, 1, 0 ]
+_point_order = [ 3, 13, 12, 5, 8, 4, 9, 1, 0 ]
 _constraints = {
 [ 0, 3 ]: 15
 }
-_next_key = 8
+_next_key = 14
 
 [sub_resource type="Resource" id=14]
 script = ExtResource( 8 )
@@ -114,10 +158,13 @@ fill_texture_z_index = -10
 fill_mesh_offset = 0.0
 render_offset = 0.0
 
-[sub_resource type="RectangleShape2D" id=15]
-extents = Vector2( 199.859, 187.191 )
-
 [node name="Level1" type="Node2D"]
+
+[node name="InGameTheme" parent="." instance=ExtResource( 12 )]
+volume_db = -35.0
+
+[node name="florestAmbient" parent="." instance=ExtResource( 11 )]
+volume_db = -60.0
 
 [node name="Map" type="StaticBody2D" parent="."]
 position = Vector2( -43.6015, -405.507 )
@@ -128,7 +175,7 @@ position = Vector2( -560.354, -482.92 )
 script = ExtResource( 9 )
 editor_debug = false
 curve_bake_interval = 20.0
-_points = SubResource( 28 )
+_points = SubResource( 33 )
 material_overrides = {
 
 }
@@ -143,7 +190,7 @@ collision_polygon_node_path = NodePath("../../SS2D_Shape_Meta/chao_1/Collision_c
 
 [node name="Collision_chao_1" type="CollisionPolygon2D" parent="Map"]
 position = Vector2( 395.105, -754.294 )
-polygon = PoolVector2Array( -619.549, -4112.82, -44.8477, 808.055, 7074.07, 808.055, 7240.19, -2556.77, 11544.3, -2556.77, 11529.2, 1483.01, 6945.7, 1490.51, -727.305, 1490.51 )
+polygon = PoolVector2Array( -619.549, -4112.82, -44.8477, 808.055, 9070.76, 691.676, 8827.52, 1444.04, -727.305, 1490.51 )
 
 [node name="BirthTree" type="Sprite" parent="."]
 position = Vector2( -433.37, -2375.27 )
@@ -158,11 +205,4 @@ position = Vector2( 1247.89, -191.724 )
 scale = Vector2( 3.21125, 3.21125 )
 texture = ExtResource( 4 )
 
-[node name="NextLevelTrigger" type="Area2D" parent="."]
-position = Vector2( 7315.86, -745.421 )
-script = ExtResource( 10 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="NextLevelTrigger"]
-position = Vector2( 365.51, 100.818 )
-shape = SubResource( 15 )
-[connection signal="area_entered" from="NextLevelTrigger" to="NextLevelTrigger" method="_on_NextLevelTrigger_area_entered"]
+[node name="NextLevelTrigger" parent="." instance=ExtResource( 10 )]

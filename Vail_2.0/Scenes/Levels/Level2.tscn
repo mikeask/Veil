@@ -1,9 +1,15 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Vail_2.0/Scenes/Puzzles/Puzzle_Faze_2.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Vail_2.0/Scenes/Caracter/BirdArt.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Vail_2.0/Audio/Environment/florestAmbient.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Vail_2.0/Audio/Environment/InGameTheme.tscn" type="PackedScene" id=4]
 
 [node name="Caracter_tests" type="Node2D"]
+
+[node name="InGameTheme" parent="." instance=ExtResource( 4 )]
+
+[node name="florestAmbient" parent="." instance=ExtResource( 3 )]
 
 [node name="BirdArt" parent="." instance=ExtResource( 2 )]
 position = Vector2( -565.49, -100.922 )
