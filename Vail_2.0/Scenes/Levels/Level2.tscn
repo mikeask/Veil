@@ -11,8 +11,7 @@
 
 [node name="florestAmbient" parent="." instance=ExtResource( 3 )]
 
-[node name="BirdArt" parent="." instance=ExtResource( 2 )]
-position = Vector2( -565.49, -100.922 )
-scale = Vector2( 0.434943, 0.434943 )
-
 [node name="Puzzle_Faze_2" parent="." instance=ExtResource( 1 )]
+
+[node name="BirdArt" parent="." instance=ExtResource( 2 )]
+position = Vector2( -546.066, -384.151 )
