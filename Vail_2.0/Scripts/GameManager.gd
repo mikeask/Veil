@@ -6,6 +6,26 @@ var playerProgress;
 func _ready():
 	pass # Replace with function body.
 
+func get_new_scene_path(next):
+	if GameManager.playerProgress == null:
+		return "res://Vail_2.0/Scenes/UI/MainMenu.tscn"
+		pass
+		
+	var level = GameManager.playerProgress["level"]
+		
+	var plus = 0
+	if next: 
+		plus = 1
+		save_game(level+1, 0)
+		pass
+		
+	if level+plus == 0:
+		return "res://Vail_2.0/Scenes/Levels/Level1_Tutorial.tscn"
+		pass
+	if level+plus >= 1:
+		return "res://Vail_2.0/Scenes/Levels/Level2.tscn"
+		pass
+	pass
 
 func load_game():
 	var open_file = File.new()
@@ -13,14 +33,14 @@ func load_game():
 		open_file.open("user://savegame.save", File.READ)
 		# Get the saved dictionary from the next line in the save file
 		playerProgress = parse_json(open_file.get_as_text())
-		print("gameLoaded: ",playerProgress)
+		print("gameLoaded: ", playerProgress)
 	open_file.close()
 	pass
 
 
 func save_game(level, checkpoint):
 	print("level e checkpoint: ",level, checkpoint)
-	var playerProgress = {
+	playerProgress = {
 		"level": level,
 		"checkpoint": checkpoint
 	}

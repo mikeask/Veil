@@ -5,7 +5,7 @@
 [ext_resource path="res://Vail_2.0/Fonts/Veilfont/Veilfont-Regular.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://Vail_1.0/Others/TextThemeCredits.tres" type="Theme" id=4]
 [ext_resource path="res://Vail_1.0/Sprites/Menu/PauseMenuBackground.png" type="Texture" id=5]
-[ext_resource path="res://Vail_2.0/Scenes/UI/PauseMenu.gd" type="Script" id=6]
+[ext_resource path="res://Vail_2.0/Scripts/PauseMenu.gd" type="Script" id=6]
 
 [sub_resource type="DynamicFont" id=1]
 size = 60
@@ -40,9 +40,9 @@ __meta__ = {
 
 [node name="Continue" type="Button" parent="."]
 margin_left = 817.063
-margin_top = 474.986
+margin_top = 452.359
 margin_right = 1074.06
-margin_bottom = 555.986
+margin_bottom = 533.359
 rect_scale = Vector2( 1.05, 1.05 )
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
@@ -53,8 +53,24 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Recomecar_nivel" type="Button" parent="."]
+margin_left = 817.063
+margin_top = 530.931
+margin_right = 1269.06
+margin_bottom = 611.931
+rect_scale = Vector2( 1.05, 1.05 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 0.501961, 0.917647, 1, 1 )
+text = "recomeçar"
+flat = true
+align = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="MenuOpts" parent="." instance=ExtResource( 1 )]
-position = Vector2( 822.26, 565.088 )
+position = Vector2( 822.26, 616.543 )
 z_index = 1
 
 [node name="PauseLabel" type="Label" parent="."]
@@ -72,3 +88,4 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 [connection signal="button_down" from="Continue" to="." method="_on_Continue_button_down"]
+[connection signal="button_down" from="Recomecar_nivel" to="." method="_on_Recomecar_nivel_button_down"]

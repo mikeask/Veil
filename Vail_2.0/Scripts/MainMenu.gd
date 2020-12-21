@@ -39,16 +39,11 @@ func _on_Credits_button_down():
 
 func _on_StartGame_button_down():
 	GameManager.save_game(0,0)
-	get_tree().change_scene("res://Vail_2.0/Scenes/Testing/Caracter_tests.tscn");
+	get_tree().change_scene("res://Vail_2.0/Scenes/Levels/Level1_Tutorial.tscn")
 	pass # replace with function body
 
 
 func _on_Continue_button_down():
-	print("playerProgress on continue: ", GameManager.playerProgress["level"])
-	if GameManager.playerProgress["level"] == 0:
-		get_tree().change_scene("res://Vail_2.0/Scenes/UI/CreditsTitle.tscn");
-		pass
-	if GameManager.playerProgress["level"] == 1:
-		get_tree().change_scene("res://Vail_1.0/Scenes/Level.tscn");
-		pass
+	var next = false
+	get_tree().change_scene(GameManager.get_new_scene_path(next))
 	pass # Replace with function body.

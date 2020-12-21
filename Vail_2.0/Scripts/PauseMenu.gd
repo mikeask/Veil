@@ -27,15 +27,18 @@ func _process(delta):
 	pass
 
 func _on_Quit_button_down():
-	print("quit")
 	get_tree().paused = false
-	get_tree().change_scene("res://Scenes/MainMenu.tscn")
+	get_tree().change_scene("res://Vail_2.0/Scenes/UI/MainMenu.tscn")
 	pass # replace with function body
 
 
 func _on_Continue_button_down():
-	print("continue")
 	hide()
 	get_tree().paused = false
 	pass # replace with function body
-#	pass
+
+func _on_Recomecar_nivel_button_down():
+	hide()
+	get_tree().paused = false
+	get_tree().change_scene(GameManager.get_new_scene_path(false))
+	pass # Replace with function body.
