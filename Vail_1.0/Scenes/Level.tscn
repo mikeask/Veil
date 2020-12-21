@@ -2341,6 +2341,16 @@ anims/descer = SubResource( 23 )
 [node name="pilar" parent="." instance=ExtResource( 45 )]
 position = Vector2( 31197.9, 2353.96 )
 
+[node name="Light2D" parent="pilar" index="0"]
+color = Color( 0.0392157, 0.34902, 0.305882, 1 )
+energy = 0.01
+
+[node name="light" parent="pilar/Light2D" index="0"]
+modulate = Color( 1, 1, 1, 0 )
+
+[node name="Token" parent="pilar" index="1"]
+position = Vector2( -31.9586, -144.82 )
+
 [node name="CollisionShape2D" parent="pilar" index="2"]
 one_way_collision = true
 

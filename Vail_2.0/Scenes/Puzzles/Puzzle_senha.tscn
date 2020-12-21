@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://addons/rmsmartshape/shapes/point_array.gd" type="Script" id=1]
 [ext_resource path="res://Vail_2.0/Scripts/Puzzle_senha.gd" type="Script" id=2]
@@ -8,6 +8,8 @@
 [ext_resource path="res://addons/rmsmartshape/shapes/shape_closed.gd" type="Script" id=6]
 [ext_resource path="res://Vail_2.0/Sprites/Environment/textura_chao.png" type="Texture" id=7]
 [ext_resource path="res://Vail_2.0/Sprites/Environment/Token1.png" type="Texture" id=8]
+[ext_resource path="res://Vail_2.0/Sprites/Environment/light2.png" type="Texture" id=9]
+[ext_resource path="res://Vail_1.0/Sprites/light.png" type="Texture" id=10]
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 5 )
@@ -125,7 +127,7 @@ collision_offset = 0.0
 collision_polygon_node_path = NodePath("../CollisionPolygon2D")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="chao"]
-polygon = PoolVector2Array( -3.39499, 1004.87, 1923.42, 1005.23, 1923.31, 1083.24, 329.205, 1086.58, -3.24346, 1083.2 )
+polygon = PoolVector2Array( -3.39499, 1004.87, 1923.42, 1005.23, 1923.32, 1083.26, -3.29082, 1083.31 )
 
 [node name="Pilar" type="Area2D" parent="."]
 position = Vector2( 750, 818 )
@@ -134,6 +136,16 @@ collision_layer = 8
 [node name="Token1" type="Sprite" parent="Pilar"]
 scale = Vector2( 0.226017, 0.226017 )
 texture = ExtResource( 8 )
+
+[node name="Light2D" type="Light2D" parent="Pilar"]
+position = Vector2( 4, -74 )
+scale = Vector2( 0.138092, 0.138092 )
+texture = ExtResource( 9 )
+energy = 0.0
+
+[node name="light" type="Sprite" parent="Pilar/Light2D"]
+position = Vector2( -10.3989, -5.19946 )
+texture = ExtResource( 10 )
 
 [node name="Pilar_Area_1" type="CollisionShape2D" parent="Pilar"]
 position = Vector2( 0, 145 )
@@ -151,6 +163,16 @@ texture = ExtResource( 8 )
 position = Vector2( 0, 145 )
 shape = SubResource( 13 )
 
+[node name="Light2D2" type="Light2D" parent="Pilar2"]
+position = Vector2( 6, -74 )
+scale = Vector2( 0.138092, 0.138092 )
+texture = ExtResource( 9 )
+energy = 0.0
+
+[node name="light" type="Sprite" parent="Pilar2/Light2D2"]
+position = Vector2( -10.3989, -5.19946 )
+texture = ExtResource( 10 )
+
 [node name="Pilar3" type="Area2D" parent="."]
 position = Vector2( 1249, 818 )
 collision_layer = 8
@@ -162,6 +184,17 @@ texture = ExtResource( 8 )
 [node name="Pilar_Area_3" type="CollisionShape2D" parent="Pilar3"]
 position = Vector2( 0, 145 )
 shape = SubResource( 13 )
+
+[node name="Light2D3" type="Light2D" parent="Pilar3"]
+position = Vector2( 7, -73 )
+scale = Vector2( 0.138092, 0.138092 )
+texture = ExtResource( 9 )
+energy = 0.0
+shadow_item_cull_mask = 2
+
+[node name="light" type="Sprite" parent="Pilar3/Light2D3"]
+position = Vector2( -10.3989, -5.19946 )
+texture = ExtResource( 10 )
 [connection signal="area_entered" from="Pilar" to="." method="_on_Pilar_area_entered"]
 [connection signal="area_entered" from="Pilar2" to="." method="_on_Pilar2_area_entered"]
 [connection signal="area_entered" from="Pilar3" to="." method="_on_Pilar3_area_entered"]
