@@ -1,9 +1,41 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Vail_2.0/Scripts/Buton.gd" type="Script" id=1]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 96.5099, 12.0163 )
+
+[sub_resource type="Animation" id=2]
+resource_name = "DownAnimation"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("ButtonSprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -1.12247, 2.24492 ), Vector2( -1.12247, 11.164 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "UpAnimation"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("ButtonSprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -1.122, 11.164 ), Vector2( -1.12247, 2.24492 ) ]
+}
 
 [node name="buton" type="Area2D"]
 collision_layer = 8
@@ -22,5 +54,18 @@ __meta__ = {
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -0.420441, -13.0339 )
 shape = SubResource( 1 )
+
+[node name="SlotSprite" type="Polygon2D" parent="."]
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( -113.466, 5.31451, -112.574, -0.631523, -95.6277, -2.71263, -95.3304, 1.15229, -87.6005, 8.58483, 89.5913, 8.88213, 97.3212, 3.2334, 97.3212, -2.11803, 114.267, 0.557686, 115.457, 5.01721, 86.6315, 26.1121, -86.7889, 26.1121 )
+
+[node name="ButtonSprite" type="Polygon2D" parent="."]
+position = Vector2( -1.12247, 2.24492 )
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( -91.84, -7.56172, -85.1052, -1.38818, -60.9722, -0.265717, -51.9926, 10.9589, 46.2229, 10.9589, 55.7638, -2.51065, 88.3152, -1.94942, 97.2949, -8.12296, 95.05, -13.7353, -90.1563, -13.174 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/DownAnimation = SubResource( 2 )
+anims/UpAnimation = SubResource( 3 )
 [connection signal="body_entered" from="." to="." method="_on_buton_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_buton_body_exited"]
