@@ -19,8 +19,6 @@
 [ext_resource path="res://Vail_1.0/Prefabs/Vegetation05_2.tscn" type="PackedScene" id=23]
 [ext_resource path="res://Vail_2.0/Fonts/VeilFont-Dynamic60.tres" type="DynamicFont" id=27]
 
-
-
 [node name="MainMenu" type="Node2D"]
 script = ExtResource( 1 )
 
