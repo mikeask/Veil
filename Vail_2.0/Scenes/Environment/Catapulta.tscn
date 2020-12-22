@@ -4,8 +4,8 @@
 [ext_resource path="res://Vail_2.0/Sprites/Environment/Catapult2.png" type="Texture" id=2]
 [ext_resource path="res://Vail_2.0/Scripts/Catapulta.gd" type="Script" id=3]
 
-[sub_resource type="CircleShape2D" id=1]
-radius = 14.0848
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 54.201, 13.8779 )
 
 [sub_resource type="Animation" id=2]
 resource_name = "jump"
@@ -49,7 +49,8 @@ scale = Vector2( 5.49696, 5.49696 )
 collision_layer = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="galho/Ativador"]
-position = Vector2( -79.0424, 44.4464 )
+position = Vector2( -81.8164, 57.1999 )
+rotation = -0.141372
 shape = SubResource( 1 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="galho"]
