@@ -2053,26 +2053,26 @@ properties = SubResource( 312 )
 
 [sub_resource type="Resource" id=314]
 script = ExtResource( 4 )
-texture_idx = 5
+texture_idx = 12
 flip = false
 width = 1.0
 
 [sub_resource type="Resource" id=315]
 script = ExtResource( 5 )
-position = Vector2( 4893.46, -494.751 )
+position = Vector2( 4893.48, -494.751 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
 properties = SubResource( 314 )
 
 [sub_resource type="Resource" id=316]
 script = ExtResource( 4 )
-texture_idx = 10
+texture_idx = 16
 flip = false
 width = 1.0
 
 [sub_resource type="Resource" id=317]
 script = ExtResource( 5 )
-position = Vector2( 4884.19, -144.229 )
+position = Vector2( 4888.6, -146.861 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
 properties = SubResource( 316 )
@@ -4056,8 +4056,6 @@ shape = SubResource( 1 )
 
 [node name="SS2D_Shape_Closed" type="Node2D" parent="Chao/chao_1"]
 script = ExtResource( 6 )
-editor_debug = false
-curve_bake_interval = 20.0
 _points = SubResource( 328 )
 material_overrides = {
 
@@ -4074,8 +4072,6 @@ collision_polygon_node_path = NodePath("")
 [node name="SS2D_Shape_1" type="Node2D" parent="Chao/chao_1"]
 visible = false
 script = ExtResource( 6 )
-editor_debug = false
-curve_bake_interval = 20.0
 _points = SubResource( 372 )
 material_overrides = {
 
@@ -4099,8 +4095,6 @@ position = Vector2( 8.47559, -72.0435 )
 visible = false
 position = Vector2( 240, 240 )
 script = ExtResource( 6 )
-editor_debug = false
-curve_bake_interval = 20.0
 _points = SubResource( 408 )
 material_overrides = {
 
@@ -4116,8 +4110,6 @@ collision_polygon_node_path = NodePath("../Collision_2")
 
 [node name="SS2D_Shape_Closed2" type="Node2D" parent="Chao/chao_2"]
 script = ExtResource( 6 )
-editor_debug = false
-curve_bake_interval = 20.0
 _points = SubResource( 530 )
 material_overrides = {
 
@@ -4140,8 +4132,6 @@ position = Vector2( 269.638, -864.384 )
 [node name="SS2D_Shape_3" type="Node2D" parent="Chao/chao_3"]
 visible = false
 script = ExtResource( 6 )
-editor_debug = false
-curve_bake_interval = 20.0
 _points = SubResource( 562 )
 material_overrides = {
 
