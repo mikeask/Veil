@@ -206,4 +206,3 @@ scale = Vector2( 3.21125, 3.21125 )
 texture = ExtResource( 4 )
 
 [node name="NextLevelTrigger" parent="." instance=ExtResource( 10 )]
-position = Vector2( 2820.46, -1118.36 )
