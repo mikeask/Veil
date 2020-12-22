@@ -8,6 +8,12 @@
 [node name="ParallaxLayer" type="ParallaxLayer" parent="."]
 motion_scale = Vector2( 0.2, 0.03 )
 
+[node name="Sprite5" type="Sprite" parent="ParallaxLayer"]
+position = Vector2( -26877.8, 2341.54 )
+scale = Vector2( 16.3501, 16.3501 )
+texture = ExtResource( 1 )
+offset = Vector2( 1734.01, -98.3959 )
+
 [node name="Sprite" type="Sprite" parent="ParallaxLayer"]
 position = Vector2( -9329.06, 314.854 )
 scale = Vector2( 2.03946, 2.03946 )

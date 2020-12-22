@@ -781,4 +781,7 @@ one_way_collision = true
 position = Vector2( 7468.34, 3887.42 )
 shape = SubResource( 4 )
 [connection signal="animation_finished" from="Level/SenaFinal/AnimationPlayer" to="Level/SenaFinal" method="_on_AnimationPlayer_animation_finished"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 6079.58, -2434.76, 6154.33, -1879.47, 6218.4, -758.201, 7638.67, 384.421, 7713.42, -2958.02 )
 [connection signal="area_entered" from="Level/SenaFinal/Tronco" to="." method="_on_Tronco_area_entered"]
