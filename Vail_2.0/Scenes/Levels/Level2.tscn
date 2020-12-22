@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Vail_2.0/Scenes/Caracter/Caracter.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Vail_2.0/Scenes/Puzzles/Puzzle_Porta.tscn" type="PackedScene" id=2]
@@ -14,6 +14,7 @@
 [ext_resource path="res://Vail_2.0/Audio/Environment/florestAmbient.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Vail_2.0/Audio/Environment/InGameTheme.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Vail_2.0/Fonts/VeilFont-Dynamic80.tres" type="DynamicFont" id=14]
+[ext_resource path="res://Vail_2.0/Sprites/Environment/blurTree.png" type="Texture" id=15]
 
 [node name="Level2" type="Node2D"]
 
@@ -41,7 +42,7 @@ scale = Vector2( -1, 1 )
 texture = ExtResource( 8 )
 
 [node name="Rock05" type="Sprite" parent="Environment"]
-position = Vector2( -213.478, 1659.86 )
+position = Vector2( -208.721, 1669.37 )
 scale = Vector2( -1, 1 )
 texture = ExtResource( 8 )
 
@@ -84,12 +85,24 @@ texture = ExtResource( 6 )
 position = Vector2( 3118.06, 1852.45 )
 texture = ExtResource( 6 )
 
+[node name="blurTree" type="Sprite" parent="Environment"]
+self_modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 4572.38, 100.805 )
+scale = Vector2( 0.461826, 0.461826 )
+texture = ExtResource( 15 )
+
+[node name="blurTree2" type="Sprite" parent="Environment"]
+self_modulate = Color( 0, 0, 0, 1 )
+position = Vector2( -1193.11, -1625.24 )
+scale = Vector2( 0.461826, 0.461826 )
+texture = ExtResource( 15 )
+
 [node name="walls" type="Node2D" parent="."]
 
 [node name="Polygon2D" type="Polygon2D" parent="walls"]
 position = Vector2( 167.41, -1392.31 )
 color = Color( 0, 0, 0, 1 )
-polygon = PoolVector2Array( -455.235, 77.4188, 4996.02, 100.675, 5022.93, 685.939, 4740.09, 693.125, 4015.06, 656.043, 2557.23, 715.373, 1633.38, 609.426, 675.628, 698.421, -438.265, 688.359, -438.265, 450.771, -472.206, 303.693 )
+polygon = PoolVector2Array( -434.624, -890.445, 5035.73, -899.959, 5022.93, 685.939, 4740.09, 693.125, 4015.06, 656.043, 2557.23, 715.373, 1633.38, 609.426, 675.628, 698.421, -413.186, 696.592, -455.9, 645.868, -438.265, 450.771, -472.206, 303.693 )
 
 [node name="Polygon2D2" type="Polygon2D" parent="walls"]
 position = Vector2( 873.001, -693.85 )
