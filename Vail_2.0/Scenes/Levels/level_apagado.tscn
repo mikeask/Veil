@@ -221,6 +221,18 @@ tracks/15/keys = {
 "update": 1,
 "values": [ false ]
 }
+tracks/16/type = "value"
+tracks/16/path = NodePath("CollisionShape2D:position")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0, 4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 7468.34, 3887.42 ), Vector2( 7507.19, 4295.3 ) ]
+}
 
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 133.531, 23.9516 )
@@ -684,7 +696,7 @@ rotation = -0.221631
 [node name="Polygon2D" type="Polygon2D" parent="Level/MapEvironment"]
 
 [node name="GiantButton" type="Polygon2D" parent="Level"]
-position = Vector2( -88513.6, -13538.9 )
+position = Vector2( -88481.1, -13319.7 )
 color = Color( 0, 0, 0, 1 )
 polygon = PoolVector2Array( 152107, 15505.9, 156017, 15487.7, 156235, 15409.6, 156580, 15409.6, 156767, 15484.3, 161011, 15464.5, 161038, 15525.9, 160886, 15733.7, 157056, 15733.7, 157051, 15802.7, 157517, 15882.9, 157541, 16247.9, 155162, 16251.9, 155178, 15911, 155523, 15806.7, 155524, 15733.7, 152208, 15747.9, 152082, 15570.1 )
 
@@ -733,6 +745,7 @@ texture = ExtResource( 15 )
 
 [node name="BrokenTreeTop" type="Sprite" parent="Level/SenaFinal"]
 position = Vector2( 1399.52, 3505.82 )
+rotation = 1.58129
 scale = Vector2( 1.85495, 1.85495 )
 texture = ExtResource( 10 )
 offset = Vector2( -86.2641, -3293.21 )
@@ -750,6 +763,6 @@ shape = SubResource( 3 )
 one_way_collision = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Level/SenaFinal"]
-position = Vector2( 7468.34, 3887.42 )
+position = Vector2( 7507.19, 4295.3 )
 shape = SubResource( 4 )
 [connection signal="area_entered" from="Level/SenaFinal/Tronco" to="." method="_on_Tronco_area_entered"]
