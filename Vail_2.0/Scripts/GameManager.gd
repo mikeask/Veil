@@ -22,8 +22,11 @@ func get_new_scene_path(next):
 	if level+plus == 0:
 		return "res://Vail_2.0/Scenes/Levels/Level1_Tutorial.tscn"
 		pass
-	if level+plus >= 1:
+	if level+plus == 1:
 		return "res://Vail_2.0/Scenes/Levels/Level2.tscn"
+		pass
+	if level+plus >= 2:
+		return "res://Vail_2.0/Scenes/Levels/Level3_Final.tscn"
 		pass
 	pass
 
