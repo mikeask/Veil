@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=53 format=2]
 
 [ext_resource path="res://Vail_2.0/Sprites/Environment/textura_chao.png" type="Texture" id=1]
 [ext_resource path="res://Vail_2.0/Scenes/Caracter/BirdArt.tscn" type="PackedScene" id=2]
@@ -12,6 +12,10 @@
 [ext_resource path="res://Vail_2.0/Scenes/Levels/NextLevelTrigger.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Vail_2.0/Audio/Environment/florestAmbient.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Vail_2.0/Audio/Environment/InGameTheme.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Vail_2.0/Scenes/Environment/Caixa.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Vail_2.0/Scenes/Environment/Texto_flutuante.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Vail_2.0/Fonts/VeilFont-Dynamic80.tres" type="DynamicFont" id=15]
+[ext_resource path="res://Vail_2.0/Fonts/VeilFont-Dynamic28.tres" type="DynamicFont" id=16]
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 6 )
@@ -60,7 +64,7 @@ width = 1.0
 
 [sub_resource type="Resource" id=8]
 script = ExtResource( 7 )
-position = Vector2( 9776.17, 1167.16 )
+position = Vector2( 11526.2, 1203.12 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
 properties = SubResource( 7 )
@@ -73,7 +77,7 @@ width = 1.0
 
 [sub_resource type="Resource" id=10]
 script = ExtResource( 7 )
-position = Vector2( 8047.46, 434.582 )
+position = Vector2( 8047.46, 338.582 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
 properties = SubResource( 9 )
@@ -86,7 +90,7 @@ width = 1.0
 
 [sub_resource type="Resource" id=12]
 script = ExtResource( 7 )
-position = Vector2( 10020.6, 408.989 )
+position = Vector2( 11590.8, 456.935 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
 properties = SubResource( 11 )
@@ -112,7 +116,7 @@ width = 1.0
 
 [sub_resource type="Resource" id=16]
 script = ExtResource( 7 )
-position = Vector2( 2774.12, 505.16 )
+position = Vector2( 2788.55, 430.368 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
 properties = SubResource( 15 )
@@ -125,12 +129,116 @@ width = 1.0
 
 [sub_resource type="Resource" id=18]
 script = ExtResource( 7 )
-position = Vector2( 2564.82, 318.483 )
+position = Vector2( 2074.84, 580.431 )
 point_in = Vector2( 0, 0 )
 point_out = Vector2( 0, 0 )
 properties = SubResource( 17 )
 
 [sub_resource type="Resource" id=19]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=20]
+script = ExtResource( 7 )
+position = Vector2( 3740.32, 485.096 )
+point_in = Vector2( 0, 0 )
+point_out = Vector2( 0, 0 )
+properties = SubResource( 19 )
+
+[sub_resource type="Resource" id=21]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=22]
+script = ExtResource( 7 )
+position = Vector2( 5756.32, 515.096 )
+point_in = Vector2( 0, 0 )
+point_out = Vector2( 0, 0 )
+properties = SubResource( 21 )
+
+[sub_resource type="Resource" id=23]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=24]
+script = ExtResource( 7 )
+position = Vector2( 5768.32, 339.096 )
+point_in = Vector2( 0, 0 )
+point_out = Vector2( 0, 0 )
+properties = SubResource( 23 )
+
+[sub_resource type="Resource" id=25]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=26]
+script = ExtResource( 7 )
+position = Vector2( 4204.32, 57.0963 )
+point_in = Vector2( 0, 0 )
+point_out = Vector2( 0, 0 )
+properties = SubResource( 25 )
+
+[sub_resource type="Resource" id=27]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=28]
+script = ExtResource( 7 )
+position = Vector2( 4876.32, 109.096 )
+point_in = Vector2( 0, 0 )
+point_out = Vector2( 0, 0 )
+properties = SubResource( 27 )
+
+[sub_resource type="Resource" id=29]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=30]
+script = ExtResource( 7 )
+position = Vector2( 4560.32, 521.096 )
+point_in = Vector2( 0, 0 )
+point_out = Vector2( 0, 0 )
+properties = SubResource( 29 )
+
+[sub_resource type="Resource" id=31]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=32]
+script = ExtResource( 7 )
+position = Vector2( 4312.32, 141.096 )
+point_in = Vector2( 0, 0 )
+point_out = Vector2( 0, 0 )
+properties = SubResource( 31 )
+
+[sub_resource type="Resource" id=33]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=34]
+script = ExtResource( 7 )
+position = Vector2( 6232.32, 249.096 )
+point_in = Vector2( 0, 0 )
+point_out = Vector2( 0, 0 )
+properties = SubResource( 33 )
+
+[sub_resource type="Resource" id=35]
 script = ExtResource( 5 )
 _points = {
 0: SubResource( 2 ),
@@ -141,15 +249,23 @@ _points = {
 8: SubResource( 12 ),
 9: SubResource( 14 ),
 12: SubResource( 16 ),
-13: SubResource( 18 )
+13: SubResource( 18 ),
+14: SubResource( 20 ),
+15: SubResource( 22 ),
+16: SubResource( 24 ),
+17: SubResource( 26 ),
+18: SubResource( 28 ),
+19: SubResource( 30 ),
+20: SubResource( 32 ),
+21: SubResource( 34 )
 }
-_point_order = [ 3, 13, 12, 5, 8, 4, 9, 1, 0 ]
+_point_order = [ 3, 13, 12, 14, 19, 15, 16, 20, 17, 18, 21, 5, 8, 4, 9, 1, 0 ]
 _constraints = {
 [ 0, 3 ]: 15
 }
-_next_key = 14
+_next_key = 22
 
-[sub_resource type="Resource" id=20]
+[sub_resource type="Resource" id=36]
 script = ExtResource( 8 )
 _edge_meta_materials = [  ]
 fill_textures = [ ExtResource( 1 ) ]
@@ -168,6 +284,7 @@ volume_db = -60.0
 
 [node name="Map" type="StaticBody2D" parent="."]
 position = Vector2( -43.6015, -405.507 )
+z_index = -2
 collision_layer = 2
 
 [node name="SS2D_Shape_Closed" type="Node2D" parent="Map"]
@@ -175,11 +292,11 @@ position = Vector2( -560.354, -482.92 )
 script = ExtResource( 9 )
 editor_debug = false
 curve_bake_interval = 20.0
-_points = SubResource( 19 )
+_points = SubResource( 35 )
 material_overrides = {
 
 }
-shape_material = SubResource( 20 )
+shape_material = SubResource( 36 )
 tessellation_stages = 5
 tessellation_tolerence = 4.0
 flip_edges = false
@@ -189,20 +306,139 @@ collision_offset = 0.0
 collision_polygon_node_path = NodePath("../../SS2D_Shape_Meta/chao_1/Collision_chao_1")
 
 [node name="Collision_chao_1" type="CollisionPolygon2D" parent="Map"]
-position = Vector2( 395.105, -754.294 )
-polygon = PoolVector2Array( -619.549, -4112.82, -44.8477, 808.055, 9070.76, 691.676, 8827.52, 1444.04, -727.305, 1490.51 )
+position = Vector2( 397.35, -754.294 )
+polygon = PoolVector2Array( -619.549, -4112.82, -65.4237, 715.161, 591.778, 712.75, 949.596, 838.742, 1360.33, 818.583, 1771.06, 705.19, 2418.62, 732.47, 3022.62, 764.47, 3590.62, 788.47, 4799.31, 785.953, 4813.31, 609.953, 3334.62, 408.47, 3253.31, 327.953, 3942.62, 380.47, 5279.28, 524.822, 10578.3, 717.188, 10614.2, 1448.36, -727.305, 1490.51 )
+
+[node name="Caixa" parent="." instance=ExtResource( 13 )]
+position = Vector2( 4744.84, -433.458 )
 
 [node name="BirthTree" type="Sprite" parent="."]
 position = Vector2( -433.37, -2375.27 )
 scale = Vector2( 2.46634, 2.46634 )
+z_index = -2
 texture = ExtResource( 3 )
 
 [node name="BirdArt" parent="." instance=ExtResource( 2 )]
-position = Vector2( 2622.07, -1005.73 )
+position = Vector2( 1490.66, -385.849 )
 
 [node name="Ninho" type="Sprite" parent="."]
-position = Vector2( 1247.89, -191.724 )
-scale = Vector2( 3.21125, 3.21125 )
+position = Vector2( 1441.55, -264.744 )
+scale = Vector2( 2.64096, 2.64096 )
+z_index = -1
 texture = ExtResource( 4 )
 
 [node name="NextLevelTrigger" parent="." instance=ExtResource( 10 )]
+position = Vector2( 15494.5, -1325.37 )
+
+[node name="Texto_flutuante" parent="." instance=ExtResource( 14 )]
+position = Vector2( 3056.57, -446.012 )
+
+[node name="Label" parent="Texto_flutuante" index="1"]
+margin_left = 152.583
+margin_top = -461.949
+margin_right = 1001.58
+margin_bottom = -413.949
+text = "hum... parece muito alto para alcançar"
+
+[node name="Texto_flutuante2" parent="." instance=ExtResource( 14 )]
+position = Vector2( 4742.34, -438.453 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="CollisionShape2D" parent="Texto_flutuante2" index="0"]
+position = Vector2( -206.628, -50.3969 )
+
+[node name="Label" parent="Texto_flutuante2" index="1"]
+margin_left = -275.789
+margin_top = -240.202
+margin_right = 260.211
+margin_bottom = -192.202
+text = "pessione j para empurrar"
+
+[node name="Credits" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Designer" type="Label" parent="Credits"]
+margin_left = 6356.08
+margin_top = -1083.9
+margin_right = 6463.08
+margin_bottom = -1005.9
+custom_fonts/font = ExtResource( 16 )
+text = "designer"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Credits/Designer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -224.347
+margin_top = 55.3945
+margin_right = 234.653
+margin_bottom = 55.3945
+custom_fonts/font = ExtResource( 15 )
+text = "daniel quevedo"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Puzzles" type="Label" parent="Credits"]
+margin_left = 7424.91
+margin_top = -1011.27
+margin_right = 7953.91
+margin_bottom = -933.262
+custom_fonts/font = ExtResource( 16 )
+text = "criação de puzzles"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Credits/Puzzles"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -42.9961
+margin_top = 54.0504
+margin_right = 215.004
+margin_bottom = 54.0504
+custom_fonts/font = ExtResource( 15 )
+text = "tacio nascimento"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="UI" type="Label" parent="Credits"]
+margin_left = 8779.07
+margin_top = -954.245
+margin_right = 9308.07
+margin_bottom = -876.245
+custom_fonts/font = ExtResource( 16 )
+text = "interface de usuário"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Credits/UI"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -42.9961
+margin_top = 54.0504
+margin_right = 215.004
+margin_bottom = 54.0504
+custom_fonts/font = ExtResource( 15 )
+text = "michael vivaldini"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[editable path="Texto_flutuante"]
+
+[editable path="Texto_flutuante2"]
