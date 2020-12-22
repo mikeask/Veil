@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://addons/rmsmartshape/shapes/point_array.gd" type="Script" id=1]
 [ext_resource path="res://Vail_2.0/Scripts/Puzzle_senha.gd" type="Script" id=2]
@@ -8,7 +8,6 @@
 [ext_resource path="res://addons/rmsmartshape/shapes/shape_closed.gd" type="Script" id=6]
 [ext_resource path="res://Vail_2.0/Sprites/Environment/textura_chao.png" type="Texture" id=7]
 [ext_resource path="res://Vail_2.0/Sprites/Environment/Token1.png" type="Texture" id=8]
-[ext_resource path="res://Vail_2.0/Sprites/Environment/light2.png" type="Texture" id=9]
 [ext_resource path="res://Vail_1.0/Sprites/light.png" type="Texture" id=10]
 
 [sub_resource type="Resource" id=1]
@@ -103,6 +102,147 @@ render_offset = 0.0
 [sub_resource type="RectangleShape2D" id=13]
 extents = Vector2( 46, 47 )
 
+[sub_resource type="Animation" id=15]
+resource_name = "Acerto"
+tracks/0/type = "value"
+tracks/0/path = NodePath("light:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.411765, 0.886275, 0.341176, 1 ) ]
+}
+
+[sub_resource type="Animation" id=14]
+resource_name = "Ativado"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("light:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=16]
+resource_name = "erro"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("light:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.862745, 0.180392, 0.180392, 1 ), Color( 0.862745, 0.180392, 0.180392, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=17]
+resource_name = "Acerto"
+tracks/0/type = "value"
+tracks/0/path = NodePath("light:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.411765, 0.886275, 0.341176, 1 ) ]
+}
+
+[sub_resource type="Animation" id=18]
+resource_name = "Ativado"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("light:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=19]
+resource_name = "erro"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("light:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.862745, 0.180392, 0.180392, 1 ), Color( 0.862745, 0.180392, 0.180392, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=20]
+resource_name = "Acerto"
+tracks/0/type = "value"
+tracks/0/path = NodePath("light:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.411765, 0.886275, 0.341176, 1 ) ]
+}
+
+[sub_resource type="Animation" id=21]
+resource_name = "Ativado"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("light:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=22]
+resource_name = "erro"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("light:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.862745, 0.180392, 0.180392, 1 ), Color( 0.862745, 0.180392, 0.180392, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
 [node name="Puzzle_senha" type="Node2D"]
 script = ExtResource( 2 )
 
@@ -111,8 +251,6 @@ script = ExtResource( 2 )
 [node name="SS2D_Shape_Closed" type="Node2D" parent="chao"]
 position = Vector2( 0, 400 )
 script = ExtResource( 6 )
-editor_debug = false
-curve_bake_interval = 20.0
 _points = SubResource( 11 )
 material_overrides = {
 
@@ -137,64 +275,66 @@ collision_layer = 8
 scale = Vector2( 0.226017, 0.226017 )
 texture = ExtResource( 8 )
 
-[node name="Light2D" type="Light2D" parent="Pilar"]
-position = Vector2( 4, -74 )
+[node name="light" type="Sprite" parent="Pilar"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 2.56396, -75.718 )
 scale = Vector2( 0.138092, 0.138092 )
-texture = ExtResource( 9 )
-energy = 0.0
-
-[node name="light" type="Sprite" parent="Pilar/Light2D"]
-position = Vector2( -10.3989, -5.19946 )
 texture = ExtResource( 10 )
 
 [node name="Pilar_Area_1" type="CollisionShape2D" parent="Pilar"]
 position = Vector2( 0, 145 )
 shape = SubResource( 13 )
 
+[node name="AnimationPilar" type="AnimationPlayer" parent="Pilar"]
+anims/Acerto = SubResource( 15 )
+anims/Ativado = SubResource( 14 )
+anims/erro = SubResource( 16 )
+
 [node name="Pilar2" type="Area2D" parent="."]
-position = Vector2( 1000, 818 )
+position = Vector2( 1000, 813 )
 collision_layer = 8
 
 [node name="Token1" type="Sprite" parent="Pilar2"]
 scale = Vector2( 0.226017, 0.226017 )
 texture = ExtResource( 8 )
 
-[node name="Pilar_Area_2" type="CollisionShape2D" parent="Pilar2"]
+[node name="light" type="Sprite" parent="Pilar2"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 2.56396, -75.718 )
+scale = Vector2( 0.138092, 0.138092 )
+texture = ExtResource( 10 )
+
+[node name="Pilar_Area_1" type="CollisionShape2D" parent="Pilar2"]
 position = Vector2( 0, 145 )
 shape = SubResource( 13 )
 
-[node name="Light2D2" type="Light2D" parent="Pilar2"]
-position = Vector2( 6, -74 )
-scale = Vector2( 0.138092, 0.138092 )
-texture = ExtResource( 9 )
-energy = 0.0
-
-[node name="light" type="Sprite" parent="Pilar2/Light2D2"]
-position = Vector2( -10.3989, -5.19946 )
-texture = ExtResource( 10 )
+[node name="AnimationPilar" type="AnimationPlayer" parent="Pilar2"]
+anims/Acerto = SubResource( 17 )
+anims/Ativado = SubResource( 18 )
+anims/erro = SubResource( 19 )
 
 [node name="Pilar3" type="Area2D" parent="."]
-position = Vector2( 1249, 818 )
+position = Vector2( 1249, 813 )
 collision_layer = 8
 
 [node name="Token1" type="Sprite" parent="Pilar3"]
 scale = Vector2( 0.226017, 0.226017 )
 texture = ExtResource( 8 )
 
-[node name="Pilar_Area_3" type="CollisionShape2D" parent="Pilar3"]
+[node name="light" type="Sprite" parent="Pilar3"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 2.56396, -75.718 )
+scale = Vector2( 0.138092, 0.138092 )
+texture = ExtResource( 10 )
+
+[node name="Pilar_Area_1" type="CollisionShape2D" parent="Pilar3"]
 position = Vector2( 0, 145 )
 shape = SubResource( 13 )
 
-[node name="Light2D3" type="Light2D" parent="Pilar3"]
-position = Vector2( 7, -73 )
-scale = Vector2( 0.138092, 0.138092 )
-texture = ExtResource( 9 )
-energy = 0.0
-shadow_item_cull_mask = 2
-
-[node name="light" type="Sprite" parent="Pilar3/Light2D3"]
-position = Vector2( -10.3989, -5.19946 )
-texture = ExtResource( 10 )
+[node name="AnimationPilar" type="AnimationPlayer" parent="Pilar3"]
+anims/Acerto = SubResource( 20 )
+anims/Ativado = SubResource( 21 )
+anims/erro = SubResource( 22 )
 [connection signal="area_entered" from="Pilar" to="." method="_on_Pilar_area_entered"]
-[connection signal="area_entered" from="Pilar2" to="." method="_on_Pilar2_area_entered"]
-[connection signal="area_entered" from="Pilar3" to="." method="_on_Pilar3_area_entered"]
+[connection signal="area_entered" from="Pilar2" to="." method="_on_Pilar_area_entered"]
+[connection signal="area_entered" from="Pilar3" to="." method="_on_Pilar_area_entered"]
