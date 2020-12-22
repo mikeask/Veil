@@ -1,4 +1,4 @@
-[gd_scene load_steps=550 format=2]
+[gd_scene load_steps=556 format=2]
 
 [ext_resource path="res://Vail_2.0/Sprites/Environment/textura_chao.png" type="Texture" id=1]
 [ext_resource path="res://addons/rmsmartshape/shapes/point_array.gd" type="Script" id=2]
@@ -12,6 +12,12 @@
 [ext_resource path="res://Vail_2.0/Scripts/Porta_Faze_2.gd" type="Script" id=10]
 [ext_resource path="res://Vail_2.0/Scenes/Environment/Catapulta.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Vail_2.0/Scenes/Environment/ParallaxBackground.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Vail_2.0/Sprites/Environment/TreesBackground.png" type="Texture" id=13]
+[ext_resource path="res://Vail_2.0/Sprites/Environment/Vegetation02.png" type="Texture" id=14]
+[ext_resource path="res://Vail_2.0/Sprites/Environment/Vegetation04.png" type="Texture" id=15]
+[ext_resource path="res://Vail_2.0/Sprites/Environment/Vegetation01.png" type="Texture" id=16]
+[ext_resource path="res://Vail_2.0/Sprites/Environment/Vine01.png" type="Texture" id=17]
+[ext_resource path="res://Vail_2.0/Sprites/Environment/Vine02.png" type="Texture" id=18]
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 4 )
@@ -3801,6 +3807,11 @@ __meta__ = {
 
 [node name="EnvironmentArt" type="Node2D" parent="."]
 
+[node name="TreesBackground" type="Sprite" parent="EnvironmentArt"]
+position = Vector2( 809.172, -1381.28 )
+scale = Vector2( 2.15733, 2.15733 )
+texture = ExtResource( 13 )
+
 [node name="ParallaxBackground" parent="EnvironmentArt" instance=ExtResource( 12 )]
 
 [node name="SS2D_Shape_Closed" type="Node2D" parent="EnvironmentArt"]
@@ -3836,6 +3847,22 @@ collision_polygon_node_path = NodePath("")
 [node name="Node2D" type="Node2D" parent="EnvironmentArt"]
 position = Vector2( 171.246, -3862.54 )
 
+[node name="Vine02" type="Sprite" parent="EnvironmentArt"]
+position = Vector2( -268.491, 149.083 )
+scale = Vector2( 0.381237, 0.381237 )
+texture = ExtResource( 18 )
+
+[node name="Vine03" type="Sprite" parent="EnvironmentArt"]
+position = Vector2( 2590.52, -878.542 )
+scale = Vector2( 0.681237, 0.681237 )
+texture = ExtResource( 18 )
+flip_h = true
+
+[node name="Vine01" type="Sprite" parent="EnvironmentArt/Vine03"]
+position = Vector2( -2137.5, 1592.97 )
+scale = Vector2( 0.369583, 0.369583 )
+texture = ExtResource( 17 )
+
 [node name="Porta" type="KinematicBody2D" parent="."]
 position = Vector2( 307, -33 )
 scale = Vector2( 0.15996, 0.154865 )
@@ -3855,6 +3882,7 @@ position = Vector2( 40, 1200 )
 shape = SubResource( 89 )
 
 [node name="Chao" type="Node2D" parent="."]
+visible = false
 
 [node name="chao_1" type="StaticBody2D" parent="Chao"]
 
@@ -3943,3 +3971,17 @@ scale = Vector2( 0.723589, 1.17845 )
 [node name="Catapulta" parent="." instance=ExtResource( 11 )]
 position = Vector2( 1143.79, -52.9468 )
 scale = Vector2( -1.522, 1.474 )
+
+[node name="Vegetation02" type="Sprite" parent="."]
+position = Vector2( 2632.54, -173.66 )
+scale = Vector2( 0.742845, 0.742845 )
+texture = ExtResource( 14 )
+
+[node name="Vegetation04" type="Sprite" parent="Vegetation02"]
+position = Vector2( -927.748, 577.992 )
+texture = ExtResource( 15 )
+
+[node name="Vegetation01" type="Sprite" parent="Vegetation02/Vegetation04"]
+position = Vector2( -3460, -577.044 )
+scale = Vector2( 0.331999, 0.331999 )
+texture = ExtResource( 16 )
