@@ -336,6 +336,7 @@ position = Vector2( 7654.91, 1566.44 )
 
 [node name="Ponte" type="KinematicBody2D" parent="."]
 position = Vector2( 3631.65, 828.576 )
+rotation = 0.10472
 collision_layer = 4
 
 [node name="Polygon2D" type="Polygon2D" parent="Ponte"]
@@ -361,5 +362,7 @@ stream = ExtResource( 13 )
 
 [node name="ParallaxBackground" parent="." instance=ExtResource( 11 )]
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
 polygon = PoolVector2Array( 13818.1, -792.94, 13840.8, 734.411, 14836.4, 960.685, 14774.1, -985.273 )
