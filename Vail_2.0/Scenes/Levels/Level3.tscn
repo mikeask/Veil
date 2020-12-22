@@ -1,0 +1,22 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Vail_2.0/Scenes/Caracter/Caracter.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Vail_2.0/Audio/Environment/florestAmbient.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Vail_2.0/Audio/Environment/InGameTheme.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Vail_2.0/Scenes/Levels/NextLevelTrigger.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Vail_2.0/Scenes/Puzzles/Puzzle_Faze_3.tscn" type="PackedScene" id=5]
+
+[node name="Caracter_tests" type="Node2D"]
+
+[node name="Puzzle_Faze_2" parent="." instance=ExtResource( 5 )]
+
+[node name="florestAmbient" parent="." instance=ExtResource( 2 )]
+
+[node name="InGameTheme" parent="." instance=ExtResource( 3 )]
+
+[node name="NextLevelTrigger" parent="." instance=ExtResource( 4 )]
+position = Vector2( 5614.6, 266.352 )
+rotation = 1.57079
+
+[node name="Caracter" parent="." instance=ExtResource( 1 )]
+position = Vector2( -452.139, -69.6228 )

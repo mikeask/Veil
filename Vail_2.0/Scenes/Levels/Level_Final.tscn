@@ -4,7 +4,7 @@
 [ext_resource path="res://Vail_1.0/Audio/MachinimaSound.com_-_Winter_Dawn.wav" type="AudioStream" id=2]
 [ext_resource path="res://Vail_1.0/Audio/amb_forest.wav" type="AudioStream" id=3]
 [ext_resource path="res://Vail_1.0/Audio/MachinimaSound.com_-_Fields_of_Green(EndingTheme).wav" type="AudioStream" id=4]
-[ext_resource path="res://Vail_2.0/Scenes/Caracter/BirdArt.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Vail_2.0/Scenes/Caracter/Bird.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Vail_1.0/Prefabs/Vegetation03.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Vail_1.0/Prefabs/Vegetation02.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Vail_1.0/Prefabs/Vegetation01.tscn" type="PackedScene" id=8]
@@ -38,6 +38,7 @@
 [ext_resource path="res://Vail_1.0/Sprites/Puzzles/Rope.png" type="Texture" id=44]
 [ext_resource path="res://Vail_1.0/Animation/Token.tscn" type="PackedScene" id=45]
 [ext_resource path="res://Vail_1.0/Prefabs/Fog01.tscn" type="PackedScene" id=46]
+
 
 [sub_resource type="Animation" id=1]
 tracks/0/type = "value"

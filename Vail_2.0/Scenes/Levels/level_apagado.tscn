@@ -1,29 +1,29 @@
 [gd_scene load_steps=28 format=2]
 
-[ext_resource path="res://Vail_1.0/Scenes/Level.gd" type="Script" id=1]
-[ext_resource path="res://Vail_1.0/Audio/MachinimaSound.com_-_Winter_Dawn.wav" type="AudioStream" id=2]
-[ext_resource path="res://Vail_1.0/Audio/amb_forest.wav" type="AudioStream" id=3]
-[ext_resource path="res://Vail_1.0/Audio/MachinimaSound.com_-_Fields_of_Green(EndingTheme).wav" type="AudioStream" id=4]
-[ext_resource path="res://Vail_1.0/Prefabs/Vegetation03.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Vail_1.0/Prefabs/Vegetation02.tscn" type="PackedScene" id=7]
-[ext_resource path="res://Vail_1.0/Prefabs/Vegetation01.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Vail_1.0/Prefabs/Vegetation05.tscn" type="PackedScene" id=11]
-[ext_resource path="res://Vail_1.0/Sprites/Environment/Vegetation01.png" type="Texture" id=13]
-[ext_resource path="res://Vail_2.0/Sprites/Environment/Tree01.png" type="Texture" id=15]
-[ext_resource path="res://Vail_1.0/Sprites/Environment/blurTree.png" type="Texture" id=18]
-[ext_resource path="res://Vail_1.0/Sprites/Environment/Vine02.png" type="Texture" id=20]
-[ext_resource path="res://Vail_2.0/Sprites/Environment/Tree03.png" type="Texture" id=21]
-[ext_resource path="res://Vail_1.0/Sprites/Environment/BackBushes.png" type="Texture" id=22]
-[ext_resource path="res://Vail_2.0/Sprites/Environment/Tree01white.png" type="Texture" id=23]
-[ext_resource path="res://Vail_1.0/Sprites/Environment/Vine01.png" type="Texture" id=25]
-[ext_resource path="res://Vail_1.0/Sprites/Environment/Vegetation04.png" type="Texture" id=26]
-[ext_resource path="res://Vail_1.0/Sprites/Environment/GateFrame.png" type="Texture" id=36]
-[ext_resource path="res://Vail_1.0/Sprites/Environment/Gate.png" type="Texture" id=37]
-[ext_resource path="res://Vail_1.0/Sprites/Environment/BrokenTree1.png" type="Texture" id=38]
-[ext_resource path="res://Vail_1.0/Sprites/Environment/BrokenTree2.png" type="Texture" id=39]
-[ext_resource path="res://Vail_1.0/Audio/fall.wav" type="AudioStream" id=40]
-[ext_resource path="res://Vail_1.0/Sprites/Environment/Light.png" type="Texture" id=41]
-[ext_resource path="res://Vail_1.0/Prefabs/Fog01.tscn" type="PackedScene" id=46]
+[ext_resource path="res://Vail_1.0/Audio/MachinimaSound.com_-_Winter_Dawn.wav" type="AudioStream" id=1]
+[ext_resource path="res://Vail_1.0/Audio/amb_forest.wav" type="AudioStream" id=2]
+[ext_resource path="res://Vail_1.0/Audio/fall.wav" type="AudioStream" id=3]
+[ext_resource path="res://Vail_1.0/Prefabs/Vegetation03.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Vail_1.0/Prefabs/Vegetation02.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Vail_1.0/Prefabs/Fog01.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Vail_1.0/Prefabs/Vegetation01.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Vail_1.0/Prefabs/Vegetation05.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Vail_1.0/Scenes/Level.gd" type="Script" id=9]
+[ext_resource path="res://Vail_1.0/Sprites/Environment/BrokenTree2.png" type="Texture" id=10]
+[ext_resource path="res://Vail_1.0/Sprites/Environment/BackBushes.png" type="Texture" id=11]
+[ext_resource path="res://Vail_1.0/Sprites/Environment/blurTree.png" type="Texture" id=12]
+[ext_resource path="res://Vail_1.0/Sprites/Environment/Vine02.png" type="Texture" id=13]
+[ext_resource path="res://Vail_2.0/Sprites/Environment/Tree03.png" type="Texture" id=14]
+[ext_resource path="res://Vail_1.0/Sprites/Environment/BrokenTree1.png" type="Texture" id=15]
+[ext_resource path="res://Vail_1.0/Audio/MachinimaSound.com_-_Fields_of_Green(EndingTheme).wav" type="AudioStream" id=16]
+[ext_resource path="res://Vail_1.0/Sprites/Environment/Light.png" type="Texture" id=17]
+[ext_resource path="res://Vail_1.0/Sprites/Environment/Vegetation04.png" type="Texture" id=18]
+[ext_resource path="res://Vail_2.0/Sprites/Environment/Tree01white.png" type="Texture" id=19]
+[ext_resource path="res://Vail_1.0/Sprites/Environment/Vine01.png" type="Texture" id=20]
+[ext_resource path="res://Vail_1.0/Sprites/Environment/GateFrame.png" type="Texture" id=21]
+[ext_resource path="res://Vail_1.0/Sprites/Environment/Gate.png" type="Texture" id=22]
+[ext_resource path="res://Vail_1.0/Sprites/Environment/Vegetation01.png" type="Texture" id=23]
+[ext_resource path="res://Vail_2.0/Sprites/Environment/Tree01.png" type="Texture" id=24]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -136,20 +136,20 @@ position = Vector2( 815.078, 1102.75 )
 pause_mode = 2
 position = Vector2( -14724.6, -1621.47 )
 scale = Vector2( 0.274902, 0.274902 )
-script = ExtResource( 1 )
+script = ExtResource( 9 )
 
 [node name="InGameTheme" type="AudioStreamPlayer" parent="Level"]
-stream = ExtResource( 2 )
+stream = ExtResource( 1 )
 volume_db = -25.0
 autoplay = true
 
 [node name="florestAmbient" type="AudioStreamPlayer" parent="Level"]
-stream = ExtResource( 3 )
+stream = ExtResource( 2 )
 volume_db = -40.0
 autoplay = true
 
 [node name="EndingTheme" type="AudioStreamPlayer" parent="Level"]
-stream = ExtResource( 4 )
+stream = ExtResource( 16 )
 volume_db = -10.0
 
 [node name="MapEvironment" type="Node2D" parent="Level"]
@@ -194,78 +194,78 @@ polygon = PoolVector2Array( 19434.9, 20192.4, 19399.2, 17559.3, 19354.1, 15994.7
 
 [node name="Vegetation" type="Node2D" parent="Level/MapEvironment"]
 
-[node name="Vegetation15" parent="Level/MapEvironment/Vegetation" instance=ExtResource( 7 )]
+[node name="Vegetation15" parent="Level/MapEvironment/Vegetation" instance=ExtResource( 5 )]
 modulate = Color( 1, 1, 1, 1 )
 position = Vector2( -7825.64, 4676.77 )
 rotation = 1.70801
 scale = Vector2( 3.79413, 3.79413 )
 
-[node name="Vegetation24" parent="Level/MapEvironment/Vegetation" instance=ExtResource( 7 )]
+[node name="Vegetation24" parent="Level/MapEvironment/Vegetation" instance=ExtResource( 5 )]
 modulate = Color( 1, 1, 1, 1 )
 self_modulate = Color( 1, 1, 1, 0.723765 )
 position = Vector2( -8478.88, 4388.02 )
 rotation = -0.130699
 scale = Vector2( 2.7654, 2.7654 )
 
-[node name="Vegetation25" parent="Level/MapEvironment/Vegetation" instance=ExtResource( 7 )]
+[node name="Vegetation25" parent="Level/MapEvironment/Vegetation" instance=ExtResource( 5 )]
 modulate = Color( 1, 1, 1, 1 )
 self_modulate = Color( 1, 1, 1, 0.723765 )
 position = Vector2( 7150.89, 642.059 )
 rotation = -0.130699
 scale = Vector2( 2.7654, 2.7654 )
 
-[node name="Vegetation29" parent="Level/MapEvironment/Vegetation" instance=ExtResource( 7 )]
+[node name="Vegetation29" parent="Level/MapEvironment/Vegetation" instance=ExtResource( 5 )]
 modulate = Color( 1, 1, 1, 1 )
 self_modulate = Color( 1, 1, 1, 0.723765 )
 position = Vector2( 3124.31, 444.223 )
 rotation = -0.130699
 scale = Vector2( 2.7654, 2.7654 )
 
-[node name="Vegetation30" parent="Level/MapEvironment/Vegetation" instance=ExtResource( 7 )]
+[node name="Vegetation30" parent="Level/MapEvironment/Vegetation" instance=ExtResource( 5 )]
 modulate = Color( 1, 1, 1, 1 )
 self_modulate = Color( 1, 1, 1, 0.723765 )
 position = Vector2( 21480.4, -8388.44 )
 rotation = -0.130699
 scale = Vector2( 2.7654, 2.7654 )
 
-[node name="Vegetation31" parent="Level/MapEvironment/Vegetation" instance=ExtResource( 7 )]
+[node name="Vegetation31" parent="Level/MapEvironment/Vegetation" instance=ExtResource( 5 )]
 modulate = Color( 1, 1, 1, 1 )
 self_modulate = Color( 1, 1, 1, 0.723765 )
 position = Vector2( 21480.4, -8388.44 )
 rotation = -0.130699
 scale = Vector2( 2.7654, 2.7654 )
 
-[node name="Vegetation16" parent="Level/MapEvironment/Vegetation" instance=ExtResource( 7 )]
+[node name="Vegetation16" parent="Level/MapEvironment/Vegetation" instance=ExtResource( 5 )]
 modulate = Color( 1, 1, 1, 1 )
 position = Vector2( 3238.84, 1818.61 )
 rotation = -0.130699
 scale = Vector2( 3.14324, 3.14324 )
 
-[node name="Vegetation17" parent="Level/MapEvironment/Vegetation" instance=ExtResource( 7 )]
+[node name="Vegetation17" parent="Level/MapEvironment/Vegetation" instance=ExtResource( 5 )]
 modulate = Color( 1, 1, 1, 1 )
 position = Vector2( 19772.9, 749.865 )
 rotation = -0.130699
 scale = Vector2( 4.1236, 4.1236 )
 
-[node name="Vegetation18" parent="Level/MapEvironment/Vegetation" instance=ExtResource( 7 )]
+[node name="Vegetation18" parent="Level/MapEvironment/Vegetation" instance=ExtResource( 5 )]
 modulate = Color( 1, 1, 1, 1 )
 position = Vector2( -1680.63, 3321.43 )
 rotation = -0.130699
 scale = Vector2( 3.14324, 3.14324 )
 
-[node name="Vegetation21" parent="Level/MapEvironment/Vegetation" instance=ExtResource( 7 )]
+[node name="Vegetation21" parent="Level/MapEvironment/Vegetation" instance=ExtResource( 5 )]
 modulate = Color( 1, 1, 1, 1 )
 position = Vector2( 3503.21, 832.271 )
 rotation = 1.41522
 scale = Vector2( 3.14324, 3.14324 )
 
-[node name="Vegetation22" parent="Level/MapEvironment/Vegetation" instance=ExtResource( 7 )]
+[node name="Vegetation22" parent="Level/MapEvironment/Vegetation" instance=ExtResource( 5 )]
 modulate = Color( 1, 1, 1, 1 )
 position = Vector2( 9073.29, 348.077 )
 rotation = 1.41522
 scale = Vector2( 3.14324, 3.14324 )
 
-[node name="Vegetation23" parent="Level/MapEvironment/Vegetation" instance=ExtResource( 7 )]
+[node name="Vegetation23" parent="Level/MapEvironment/Vegetation" instance=ExtResource( 5 )]
 modulate = Color( 1, 1, 1, 1 )
 position = Vector2( 21088.1, -8772.32 )
 rotation = 1.41522
@@ -276,41 +276,41 @@ scale = Vector2( 3.14324, 3.14324 )
 [node name="Tree03" type="Sprite" parent="Level/MapEvironment/coliders"]
 position = Vector2( -4527.97, 4845.56 )
 rotation = 1.03582
-texture = ExtResource( 21 )
+texture = ExtResource( 14 )
 
 [node name="Vegetation04" type="Sprite" parent="Level/MapEvironment/coliders"]
 position = Vector2( -2473.96, 3924.96 )
-texture = ExtResource( 26 )
+texture = ExtResource( 18 )
 
 [node name="Vegetation05" type="Sprite" parent="Level/MapEvironment/coliders"]
 modulate = Color( 1, 1, 1, 0.762431 )
 position = Vector2( -2379.42, 3919.61 )
 rotation = -0.333431
 scale = Vector2( 0.723765, 0.723765 )
-texture = ExtResource( 26 )
+texture = ExtResource( 18 )
 
 [node name="Vegetation01" type="Sprite" parent="Level/MapEvironment/coliders"]
 position = Vector2( -1989.04, 1073.37 )
 rotation = 0.00470011
 scale = Vector2( 0.48587, 0.48587 )
-texture = ExtResource( 13 )
+texture = ExtResource( 23 )
 
 [node name="Tree04" type="Sprite" parent="Level/MapEvironment/coliders"]
 position = Vector2( 3704.95, -5955.89 )
 scale = Vector2( 2.06748, 2.06748 )
-texture = ExtResource( 15 )
+texture = ExtResource( 24 )
 
 [node name="Tree05" type="Sprite" parent="Level/MapEvironment/coliders"]
 position = Vector2( 24862.9, -4873.5 )
 scale = Vector2( 2.06748, 2.06748 )
-texture = ExtResource( 15 )
+texture = ExtResource( 24 )
 
 [node name="BackBushes3" type="Sprite" parent="Level/MapEvironment/coliders"]
 position = Vector2( 1918.49, 5057.99 )
 rotation = 1.08232
 scale = Vector2( 2.16599, 2.16599 )
 z_index = -5
-texture = ExtResource( 22 )
+texture = ExtResource( 11 )
 
 [node name="BackBushes4" type="Sprite" parent="Level/MapEvironment/coliders"]
 modulate = Color( 1, 1, 1, 0.66298 )
@@ -318,7 +318,7 @@ position = Vector2( -948.264, 4679.58 )
 rotation = 1.08232
 scale = Vector2( 0.929387, 0.929387 )
 z_index = -5
-texture = ExtResource( 22 )
+texture = ExtResource( 11 )
 
 [node name="BackBushes5" type="Sprite" parent="Level/MapEvironment/coliders"]
 modulate = Color( 1, 1, 1, 0.66298 )
@@ -326,7 +326,7 @@ position = Vector2( 5445.75, 1175.69 )
 rotation = 3.12476
 scale = Vector2( 1.70599, 1.70599 )
 z_index = -5
-texture = ExtResource( 22 )
+texture = ExtResource( 11 )
 
 [node name="BackBushes6" type="Sprite" parent="Level/MapEvironment/coliders"]
 modulate = Color( 1, 1, 1, 0.66298 )
@@ -334,16 +334,16 @@ position = Vector2( -4554.28, 5688.17 )
 rotation = 3.12476
 scale = Vector2( 2.66562, 2.66562 )
 z_index = -5
-texture = ExtResource( 22 )
+texture = ExtResource( 11 )
 
 [node name="BackBushes7" type="Sprite" parent="Level/MapEvironment/coliders"]
 position = Vector2( 24265.7, 10094.4 )
 rotation = 3.12476
 scale = Vector2( 1.85234, 1.85234 )
 z_index = -5
-texture = ExtResource( 22 )
+texture = ExtResource( 11 )
 
-[node name="Fog03" parent="Level/MapEvironment/coliders" instance=ExtResource( 46 )]
+[node name="Fog03" parent="Level/MapEvironment/coliders" instance=ExtResource( 6 )]
 modulate = Color( 1, 1, 1, 0.795569 )
 position = Vector2( -8140.22, 8664.61 )
 scale = Vector2( 1.06619, 1.03826 )
@@ -353,7 +353,7 @@ modulate = Color( 0.0820313, 0.0820313, 0.0820313, 1 )
 position = Vector2( 5217.48, -8563.35 )
 scale = Vector2( 2.51502, 2.51502 )
 z_index = -1
-texture = ExtResource( 23 )
+texture = ExtResource( 19 )
 
 [node name="Tree01white2" type="Sprite" parent="Level/MapEvironment/coliders"]
 modulate = Color( 0.046875, 0.046875, 0.046875, 1 )
@@ -361,7 +361,7 @@ position = Vector2( 12600.9, -8505.83 )
 rotation = -0.0732373
 scale = Vector2( 2.51502, 2.51502 )
 z_index = -1
-texture = ExtResource( 23 )
+texture = ExtResource( 19 )
 
 [node name="Tree01white3" type="Sprite" parent="Level/MapEvironment/coliders"]
 modulate = Color( 0.113281, 0.113281, 0.113281, 1 )
@@ -369,21 +369,21 @@ position = Vector2( 23962.9, -8508.67 )
 rotation = -0.0341153
 scale = Vector2( 2.51502, 2.51502 )
 z_index = -1
-texture = ExtResource( 23 )
+texture = ExtResource( 19 )
 
 [node name="Tree01white4" type="Sprite" parent="Level/MapEvironment/coliders"]
 modulate = Color( 0.03125, 0.03125, 0.03125, 1 )
 position = Vector2( 11402.3, -7541.93 )
 scale = Vector2( 2.29503, 2.29503 )
 z_index = -1
-texture = ExtResource( 23 )
+texture = ExtResource( 19 )
 
 [node name="Tree01white5" type="Sprite" parent="Level/MapEvironment/coliders"]
 modulate = Color( 0.0820313, 0.0820313, 0.0820313, 1 )
 position = Vector2( 10121.7, -8620.88 )
 scale = Vector2( 2.0377, 2.51502 )
 z_index = -1
-texture = ExtResource( 23 )
+texture = ExtResource( 19 )
 flip_h = true
 
 [node name="Tree01white6" type="Sprite" parent="Level/MapEvironment/coliders"]
@@ -392,47 +392,47 @@ position = Vector2( 20616.9, -6210.4 )
 rotation = 0.049206
 scale = Vector2( 2.51502, 2.51502 )
 z_index = -1
-texture = ExtResource( 23 )
+texture = ExtResource( 19 )
 
 [node name="Tree01white7" type="Sprite" parent="Level/MapEvironment/coliders"]
 modulate = Color( 0, 0, 0, 1 )
 position = Vector2( 18159.9, -8597.8 )
 scale = Vector2( 2.51502, 2.51502 )
 z_index = -1
-texture = ExtResource( 23 )
+texture = ExtResource( 19 )
 
 [node name="Tree01white8" type="Sprite" parent="Level/MapEvironment/coliders"]
 modulate = Color( 0.0820313, 0.0820313, 0.0820313, 1 )
 position = Vector2( 15571.9, -8563.36 )
 scale = Vector2( 2.51502, 2.51502 )
 z_index = -1
-texture = ExtResource( 23 )
+texture = ExtResource( 19 )
 flip_h = true
 
-[node name="Vegetation02" parent="Level/MapEvironment/coliders" instance=ExtResource( 8 )]
+[node name="Vegetation02" parent="Level/MapEvironment/coliders" instance=ExtResource( 7 )]
 position = Vector2( 6045.48, 788.873 )
 
-[node name="Vegetation03" parent="Level/MapEvironment/coliders" instance=ExtResource( 8 )]
+[node name="Vegetation03" parent="Level/MapEvironment/coliders" instance=ExtResource( 7 )]
 position = Vector2( 24114.9, 920.08 )
 scale = Vector2( 1.26402, 1.26402 )
 
-[node name="Vegetation06" parent="Level/MapEvironment/coliders" instance=ExtResource( 6 )]
+[node name="Vegetation06" parent="Level/MapEvironment/coliders" instance=ExtResource( 4 )]
 modulate = Color( 1, 1, 1, 0.751373 )
 position = Vector2( 8727.79, 722.978 )
 rotation = -0.53952
 
-[node name="Vegetation07" parent="Level/MapEvironment/coliders" instance=ExtResource( 11 )]
+[node name="Vegetation07" parent="Level/MapEvironment/coliders" instance=ExtResource( 8 )]
 position = Vector2( 4087.29, 682.38 )
 
-[node name="Vegetation08" parent="Level/MapEvironment/coliders" instance=ExtResource( 11 )]
+[node name="Vegetation08" parent="Level/MapEvironment/coliders" instance=ExtResource( 8 )]
 position = Vector2( 5042.48, 676.682 )
 scale = Vector2( 1.93838, 1.93838 )
 
-[node name="Vegetation09" parent="Level/MapEvironment/coliders" instance=ExtResource( 11 )]
+[node name="Vegetation09" parent="Level/MapEvironment/coliders" instance=ExtResource( 8 )]
 position = Vector2( 19973.9, 731.182 )
 scale = Vector2( 1.93838, 1.93838 )
 
-[node name="Vegetation10" parent="Level/MapEvironment/coliders" instance=ExtResource( 7 )]
+[node name="Vegetation10" parent="Level/MapEvironment/coliders" instance=ExtResource( 5 )]
 modulate = Color( 1, 1, 1, 0.723765 )
 position = Vector2( 25454.9, 1136.58 )
 rotation = 2.25693
@@ -443,7 +443,7 @@ modulate = Color( 0, 0, 0, 0.784549 )
 position = Vector2( -1115.06, -3693.31 )
 scale = Vector2( 2.96191, 2.96191 )
 z_index = -6
-texture = ExtResource( 18 )
+texture = ExtResource( 12 )
 
 [node name="blurTree32" type="Sprite" parent="Level/MapEvironment/coliders"]
 modulate = Color( 0, 0, 0, 0.784549 )
@@ -451,7 +451,7 @@ position = Vector2( 10147, -3624.43 )
 rotation = -0.0644646
 scale = Vector2( 2.9619, 2.96191 )
 z_index = -6
-texture = ExtResource( 18 )
+texture = ExtResource( 12 )
 
 [node name="blurTree16" type="Sprite" parent="Level/MapEvironment/coliders"]
 modulate = Color( 0, 0, 0, 0.392274 )
@@ -459,7 +459,7 @@ position = Vector2( 17823, 996.371 )
 rotation = -0.0644646
 scale = Vector2( 2.96191, 2.96191 )
 z_index = -6
-texture = ExtResource( 18 )
+texture = ExtResource( 12 )
 
 [node name="blurTree30" type="Sprite" parent="Level/MapEvironment/coliders"]
 modulate = Color( 0, 0, 0, 0.784549 )
@@ -467,7 +467,7 @@ position = Vector2( 1592.08, 783.974 )
 rotation = 0.0421531
 scale = Vector2( 2.9619, 2.96191 )
 z_index = -6
-texture = ExtResource( 18 )
+texture = ExtResource( 12 )
 
 [node name="blurTree33" type="Sprite" parent="Level/MapEvironment/coliders"]
 modulate = Color( 0, 0, 0, 0.784549 )
@@ -475,7 +475,7 @@ position = Vector2( 3568.87, -628.092 )
 rotation = 0.0421531
 scale = Vector2( 2.9619, 2.96191 )
 z_index = -6
-texture = ExtResource( 18 )
+texture = ExtResource( 12 )
 
 [node name="blurTree34" type="Sprite" parent="Level/MapEvironment/coliders"]
 modulate = Color( 0, 0, 0, 0.784549 )
@@ -483,7 +483,7 @@ position = Vector2( 7598.42, -352.565 )
 rotation = 0.0421531
 scale = Vector2( 2.9619, 2.96191 )
 z_index = -6
-texture = ExtResource( 18 )
+texture = ExtResource( 12 )
 
 [node name="blurTree42" type="Sprite" parent="Level/MapEvironment/coliders"]
 visible = false
@@ -492,7 +492,7 @@ position = Vector2( -30387.4, -448.638 )
 rotation = 0.0421531
 scale = Vector2( 2.9619, 2.96191 )
 z_index = -6
-texture = ExtResource( 18 )
+texture = ExtResource( 12 )
 
 [node name="blurTree29" type="Sprite" parent="Level/MapEvironment/coliders"]
 modulate = Color( 0, 0, 0, 0.784549 )
@@ -500,7 +500,7 @@ position = Vector2( 14586.1, -10403.8 )
 rotation = 0.0421531
 scale = Vector2( 2.9619, 2.96191 )
 z_index = -6
-texture = ExtResource( 18 )
+texture = ExtResource( 12 )
 
 [node name="blurTree31" type="Sprite" parent="Level/MapEvironment/coliders"]
 modulate = Color( 0, 0, 0, 0.784549 )
@@ -508,7 +508,7 @@ position = Vector2( 16687.7, -723.571 )
 rotation = 0.0421531
 scale = Vector2( 2.9619, 2.96191 )
 z_index = -6
-texture = ExtResource( 18 )
+texture = ExtResource( 12 )
 
 [node name="blurTree26" type="Sprite" parent="Level/MapEvironment/coliders"]
 modulate = Color( 0, 0, 0, 0.784549 )
@@ -516,7 +516,7 @@ position = Vector2( 3184.43, -8240.43 )
 rotation = 0.0421531
 scale = Vector2( 2.96191, 2.96191 )
 z_index = -6
-texture = ExtResource( 18 )
+texture = ExtResource( 12 )
 
 [node name="blurTree35" type="Sprite" parent="Level/MapEvironment/coliders"]
 modulate = Color( 0, 0, 0, 0.784549 )
@@ -524,7 +524,7 @@ position = Vector2( 22355.5, -1352.8 )
 rotation = 0.0421531
 scale = Vector2( 2.9619, 2.96191 )
 z_index = -6
-texture = ExtResource( 18 )
+texture = ExtResource( 12 )
 
 [node name="blurTree9" type="Sprite" parent="Level/MapEvironment/coliders"]
 modulate = Color( 0, 0, 0, 0.784549 )
@@ -532,7 +532,7 @@ position = Vector2( 25049.3, -3440.39 )
 rotation = 0.0421531
 scale = Vector2( 2.96191, 2.96191 )
 z_index = -6
-texture = ExtResource( 18 )
+texture = ExtResource( 12 )
 
 [node name="blurTree28" type="Sprite" parent="Level/MapEvironment/coliders"]
 modulate = Color( 0, 0, 0, 0.784549 )
@@ -540,22 +540,22 @@ position = Vector2( -5573.98, -5913.33 )
 rotation = -0.124982
 scale = Vector2( 2.96191, 2.96191 )
 z_index = -6
-texture = ExtResource( 18 )
+texture = ExtResource( 12 )
 
 [node name="Vine03" type="Sprite" parent="Level/MapEvironment/coliders"]
 position = Vector2( -3134.81, 1291.94 )
-texture = ExtResource( 25 )
+texture = ExtResource( 20 )
 
 [node name="Vine04" type="Sprite" parent="Level/MapEvironment/coliders"]
 position = Vector2( -2383.21, 1360.27 )
-texture = ExtResource( 20 )
+texture = ExtResource( 13 )
 
 [node name="BackBushes10" type="Sprite" parent="Level/MapEvironment/coliders"]
 position = Vector2( 26853.6, 3945.33 )
 rotation = 0.336878
 scale = Vector2( 2.35741, 2.35741 )
 z_index = -1
-texture = ExtResource( 22 )
+texture = ExtResource( 11 )
 
 [node name="BackBushes11" type="Sprite" parent="Level/MapEvironment/coliders"]
 modulate = Color( 1, 1, 1, 0.674039 )
@@ -563,14 +563,14 @@ position = Vector2( 26380.6, 2439.08 )
 rotation = 0.336878
 scale = Vector2( 1.05124, 1.05124 )
 z_index = -1
-texture = ExtResource( 22 )
+texture = ExtResource( 11 )
 
 [node name="BackBushes12" type="Sprite" parent="Level/MapEvironment/coliders"]
 position = Vector2( 8622.71, 12098.3 )
 rotation = -3.01572
 scale = Vector2( 1.05124, 1.05124 )
 z_index = -1
-texture = ExtResource( 22 )
+texture = ExtResource( 11 )
 
 [node name="BackBushes13" type="Sprite" parent="Level/MapEvironment/coliders"]
 modulate = Color( 1, 1, 1, 0.685059 )
@@ -578,9 +578,9 @@ position = Vector2( 9899.82, 11683.7 )
 rotation = -2.97551
 scale = Vector2( 1.37457, 1.37457 )
 z_index = -1
-texture = ExtResource( 22 )
+texture = ExtResource( 11 )
 
-[node name="Vegetation11" parent="Level/MapEvironment/coliders" instance=ExtResource( 8 )]
+[node name="Vegetation11" parent="Level/MapEvironment/coliders" instance=ExtResource( 7 )]
 position = Vector2( -316.522, 2671.55 )
 rotation = -0.221631
 
@@ -594,11 +594,11 @@ polygon = PoolVector2Array( 152107, 15505.9, 156017, 15487.7, 156235, 15409.6, 1
 [node name="GateFrame" type="Sprite" parent="Level"]
 position = Vector2( 75699.2, 15.1702 )
 scale = Vector2( 1.6171, 1.6171 )
-texture = ExtResource( 36 )
+texture = ExtResource( 21 )
 
 [node name="Gate" type="Sprite" parent="Level/GateFrame"]
 position = Vector2( 711.914, 423.771 )
-texture = ExtResource( 37 )
+texture = ExtResource( 22 )
 offset = Vector2( -727.191, -392.785 )
 
 [node name="StaticBody" type="StaticBody2D" parent="Level/GateFrame"]
@@ -619,12 +619,12 @@ anims/TreeFall = SubResource( 2 )
 [node name="BrokenTreeDown" type="Sprite" parent="Level/KinematicBody2D"]
 position = Vector2( 1241.7, -2612.9 )
 scale = Vector2( 1.85495, 1.85495 )
-texture = ExtResource( 38 )
+texture = ExtResource( 15 )
 
 [node name="BrokenTreeTop" type="Sprite" parent="Level/KinematicBody2D"]
 position = Vector2( 1399.52, 3505.82 )
 scale = Vector2( 1.85495, 1.85495 )
-texture = ExtResource( 39 )
+texture = ExtResource( 10 )
 offset = Vector2( -86.2641, -3293.21 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Level/KinematicBody2D"]
@@ -634,10 +634,10 @@ shape = SubResource( 3 )
 one_way_collision = true
 
 [node name="Treefall" type="AudioStreamPlayer" parent="Level/KinematicBody2D"]
-stream = ExtResource( 40 )
+stream = ExtResource( 3 )
 
 [node name="Light" type="Sprite" parent="Level"]
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 69082.7, 199.862 )
 scale = Vector2( 3.17889, 3.10709 )
-texture = ExtResource( 41 )
+texture = ExtResource( 17 )
