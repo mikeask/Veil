@@ -39,7 +39,6 @@
 [ext_resource path="res://Vail_1.0/Animation/Token.tscn" type="PackedScene" id=45]
 [ext_resource path="res://Vail_1.0/Prefabs/Fog01.tscn" type="PackedScene" id=46]
 
-
 [sub_resource type="Animation" id=1]
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:position")
@@ -231,7 +230,7 @@ tracks/7/keys = {
 [sub_resource type="RectangleShape2D" id=8]
 extents = Vector2( 133.531, 56.9409 )
 
-[sub_resource type="Animation" id=11]
+[sub_resource type="Animation" id=9]
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:rotation_degrees")
 tracks/0/interp = 1
@@ -1272,7 +1271,7 @@ rotation = -1.58176
 polygon = PoolVector2Array( 329.148, 551.684, 4989.77, 649.975, 4973.39, 559.875, 329.149, 453.393 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Level/ponte"]
-anims/descer = SubResource( 11 )
+anims/descer = SubResource( 9 )
 
 [node name="pilar" parent="Level" instance=ExtResource( 45 )]
 position = Vector2( 31197.9, 2353.96 )

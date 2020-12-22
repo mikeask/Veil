@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://Vail_1.0/Audio/MachinimaSound.com_-_Winter_Dawn.wav" type="AudioStream" id=1]
 [ext_resource path="res://Vail_1.0/Audio/amb_forest.wav" type="AudioStream" id=2]
@@ -8,7 +8,7 @@
 [ext_resource path="res://Vail_1.0/Prefabs/Fog01.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Vail_1.0/Prefabs/Vegetation01.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Vail_1.0/Prefabs/Vegetation05.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Vail_1.0/Scenes/Level.gd" type="Script" id=9]
+[ext_resource path="res://Vail_2.0/Scripts/Sena_final.gd" type="Script" id=9]
 [ext_resource path="res://Vail_1.0/Sprites/Environment/BrokenTree2.png" type="Texture" id=10]
 [ext_resource path="res://Vail_1.0/Sprites/Environment/BackBushes.png" type="Texture" id=11]
 [ext_resource path="res://Vail_1.0/Sprites/Environment/blurTree.png" type="Texture" id=12]
@@ -125,18 +125,33 @@ tracks/7/keys = {
 "update": 0,
 "values": [ Vector2( 69082.7, 199.862 ), Vector2( 69082.7, 199.862 ) ]
 }
+tracks/8/type = "value"
+tracks/8/path = NodePath("../GateFrame/StaticBody/CollisionShape2D:disabled")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 133.531, 56.9409 )
+extents = Vector2( 133.531, 23.9516 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 4515.53, 90.8912 )
 
 [node name="Level3_Final" type="Node2D"]
 position = Vector2( 815.078, 1102.75 )
+script = ExtResource( 9 )
 
 [node name="Level" type="Node2D" parent="."]
 pause_mode = 2
 position = Vector2( -14724.6, -1621.47 )
 scale = Vector2( 0.274902, 0.274902 )
-script = ExtResource( 9 )
 
 [node name="InGameTheme" type="AudioStreamPlayer" parent="Level"]
 stream = ExtResource( 1 )
@@ -608,36 +623,46 @@ position = Vector2( 157.891, 639.87 )
 scale = Vector2( 7.76609, 87.2479 )
 shape = SubResource( 1 )
 
-[node name="KinematicBody2D" type="KinematicBody2D" parent="Level" groups=[
-"tree",
-]]
-position = Vector2( 60641.6, -1865.41 )
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Level/KinematicBody2D"]
-anims/TreeFall = SubResource( 2 )
-
-[node name="BrokenTreeDown" type="Sprite" parent="Level/KinematicBody2D"]
-position = Vector2( 1241.7, -2612.9 )
-scale = Vector2( 1.85495, 1.85495 )
-texture = ExtResource( 15 )
-
-[node name="BrokenTreeTop" type="Sprite" parent="Level/KinematicBody2D"]
-position = Vector2( 1399.52, 3505.82 )
-scale = Vector2( 1.85495, 1.85495 )
-texture = ExtResource( 10 )
-offset = Vector2( -86.2641, -3293.21 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/KinematicBody2D"]
-position = Vector2( 1417.38, 3863.61 )
-scale = Vector2( 1.2924, 5.58267 )
-shape = SubResource( 3 )
-one_way_collision = true
-
-[node name="Treefall" type="AudioStreamPlayer" parent="Level/KinematicBody2D"]
-stream = ExtResource( 3 )
-
 [node name="Light" type="Sprite" parent="Level"]
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 69082.7, 199.862 )
 scale = Vector2( 3.17889, 3.10709 )
 texture = ExtResource( 17 )
+
+[node name="SenaFinal" type="KinematicBody2D" parent="Level" groups=[
+"tree",
+]]
+position = Vector2( 60641.6, -1865.41 )
+scale = Vector2( 1, 1 )
+collision_layer = 4
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Level/SenaFinal"]
+anims/TreeFall = SubResource( 2 )
+
+[node name="BrokenTreeDown" type="Sprite" parent="Level/SenaFinal"]
+position = Vector2( 1241.7, -2612.9 )
+scale = Vector2( 1.85495, 1.85495 )
+texture = ExtResource( 15 )
+
+[node name="BrokenTreeTop" type="Sprite" parent="Level/SenaFinal"]
+position = Vector2( 1399.52, 3505.82 )
+scale = Vector2( 1.85495, 1.85495 )
+texture = ExtResource( 10 )
+offset = Vector2( -86.2641, -3293.21 )
+
+[node name="Treefall" type="AudioStreamPlayer" parent="Level/SenaFinal"]
+stream = ExtResource( 3 )
+
+[node name="Tronco" type="Area2D" parent="Level/SenaFinal"]
+collision_layer = 12
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/SenaFinal/Tronco"]
+position = Vector2( 1425.09, 4010.06 )
+scale = Vector2( 1.2924, 5.58267 )
+shape = SubResource( 3 )
+one_way_collision = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/SenaFinal"]
+position = Vector2( 7468.34, 3887.42 )
+shape = SubResource( 4 )
+[connection signal="area_entered" from="Level/SenaFinal/Tronco" to="." method="_on_Tronco_area_entered"]
