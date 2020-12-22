@@ -22,11 +22,20 @@ func get_new_scene_path(next):
 	if level+plus == 0:
 		return "res://Vail_2.0/Scenes/Levels/Level1_Tutorial.tscn"
 		pass
-	if level+plus == 1:
+	elif level+plus == 1:
 		return "res://Vail_2.0/Scenes/Levels/Level2.tscn"
 		pass
-	if level+plus >= 2:
-		return "res://Vail_2.0/Scenes/Levels/Level3_Final.tscn"
+	elif level+plus == 2:
+		return "res://Vail_2.0/Scenes/Levels/Level3.tscn"
+		pass
+	elif level+plus == 3:
+		return "res://Vail_2.0/Scenes/Levels/Level4.tscn"
+		pass
+	elif level+plus == 4:
+		return "res://Vail_2.0/Scenes/Levels/Level5.tscn"
+		pass
+	elif level+plus >= 5:
+		return "res://Vail_2.0/Scenes/Levels/Level6.tscn"
 		pass
 	pass
 
@@ -42,7 +51,7 @@ func load_game():
 
 
 func save_game(level, checkpoint):
-	print("level e checkpoint: ",level, checkpoint)
+	print("save_game - level: ", level)
 	playerProgress = {
 		"level": level,
 		"checkpoint": checkpoint

@@ -6,18 +6,14 @@ extends Area2D
 # var b = "text"
 
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
 
-
 func _on_NextLevelTrigger_area_entered(area):
+	print("trigger: ", GameManager.playerProgress["level"]+1)
 	var next = true
-	GameManager.save_game(GameManager.playerProgress["level"]+1, 0)
-	get_tree().change_scene(GameManager.get_new_scene_path(next))
+	var nextLevelScenePath = GameManager.get_new_scene_path(next)
+	print("loading scene: "+nextLevelScenePath)
+	get_tree().change_scene(nextLevelScenePath)
 	pass # Replace with function body.
