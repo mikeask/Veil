@@ -4,5 +4,5 @@
 
 [node name="InGameTheme" type="AudioStreamPlayer"]
 stream = ExtResource( 1 )
-volume_db = -25.0
+volume_db = -35.0
 autoplay = true

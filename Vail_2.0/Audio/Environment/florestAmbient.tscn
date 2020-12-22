@@ -4,5 +4,5 @@
 
 [node name="florestAmbient" type="AudioStreamPlayer"]
 stream = ExtResource( 1 )
-volume_db = -40.0
+volume_db = -60.0
 autoplay = true
