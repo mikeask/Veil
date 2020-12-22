@@ -1617,10 +1617,10 @@ tracks/10/loop_wrap = true
 tracks/10/imported = false
 tracks/10/enabled = true
 tracks/10/keys = {
-"times": PoolRealArray( 0, 2.5 ),
+"times": PoolRealArray( 1.9, 2.1 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
-"values": [ false, false ]
+"values": [ true, false ]
 }
 tracks/11/type = "value"
 tracks/11/path = NodePath("Body/Head/Head_root/Eye:visible")
@@ -1629,10 +1629,10 @@ tracks/11/loop_wrap = true
 tracks/11/imported = false
 tracks/11/enabled = true
 tracks/11/keys = {
-"times": PoolRealArray( 0, 2.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 1.7, 2.2, 2.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
-"values": [ true, true ]
+"values": [ true, false, true, true ]
 }
 tracks/12/type = "value"
 tracks/12/path = NodePath("Body/Head/Head_root:position")
@@ -1725,11 +1725,12 @@ volume_db = -5.0
 max_distance = 9999.0
 
 [node name="Body" type="Node2D" parent="."]
-position = Vector2( -11.0794, -89.3268 )
-rotation = -0.197131
+position = Vector2( -9.07874, -108.841 )
+rotation = 0.159951
 scale = Vector2( 0.2, 0.2 )
 
 [node name="Wing01" type="Node2D" parent="Body"]
+visible = false
 position = Vector2( 20.6953, -804.943 )
 rotation = -0.969466
 scale = Vector2( 12.2891, 12.2891 )
@@ -1742,6 +1743,7 @@ offset = Vector2( -6.56946, 1.10078 )
 flip_h = true
 
 [node name="Wing02" type="Node2D" parent="Body"]
+visible = false
 modulate = Color( 1, 1, 1, 0.618784 )
 position = Vector2( 479.791, -1318.5 )
 rotation = -0.331707
@@ -1760,7 +1762,7 @@ rotation = -0.102075
 
 [node name="Tail_root" type="Node2D" parent="Body/Tail"]
 position = Vector2( -490.961, -645.75 )
-rotation = -0.595278
+rotation = -9.31323e-10
 
 [node name="Sprite_Tail" type="Sprite" parent="Body/Tail/Tail_root"]
 rotation = 3.72529e-09
@@ -1779,8 +1781,8 @@ position = Vector2( -278.531, 413.671 )
 rotation = -1.49012e-08
 
 [node name="Head_root" type="Node2D" parent="Body/Head"]
-position = Vector2( 572.999, -872.629 )
-rotation = -0.802654
+position = Vector2( 388.78, -889.292 )
+rotation = -1.86265e-09
 
 [node name="Sprite_Head" type="Sprite" parent="Body/Head/Head_root"]
 rotation = 2.98023e-08
@@ -1813,8 +1815,8 @@ rotation = -0.0610358
 scale = Vector2( 0.2, 0.2 )
 
 [node name="L_leg_root" type="Node2D" parent="L_Leg"]
-position = Vector2( 19.4476, -72.5235 )
-rotation = 0.739323
+position = Vector2( 25.3047, -86.9807 )
+rotation = -0.440999
 
 [node name="Sub_L_leg" type="Node2D" parent="L_Leg/L_leg_root"]
 position = Vector2( 18.7982, 183.322 )
@@ -1835,8 +1837,8 @@ rotation = 0.00916737
 scale = Vector2( 0.2, 0.2 )
 
 [node name="R_leg" type="Node2D" parent="R_Leg"]
-position = Vector2( -21.7945, -64.3028 )
-rotation = 0.623761
+position = Vector2( 11.3228, -151.049 )
+rotation = -0.0468886
 
 [node name="Sub_R_leg" type="Node2D" parent="R_Leg/R_leg"]
 position = Vector2( 26.918, 156.713 )
