@@ -18,6 +18,6 @@ func _ready():
 
 func _on_NextLevelTrigger_area_entered(area):
 	var next = true
-	#GameManager.save_game(GameManager.playerProgress["level"]+1, 0)
-	#get_tree().change_scene(GameManager.get_new_scene_path(next))
+	GameManager.save_game(GameManager.playerProgress["level"]+1, 0)
+	get_tree().change_scene(GameManager.get_new_scene_path(next))
 	pass # Replace with function body.
