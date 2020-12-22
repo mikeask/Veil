@@ -1,4 +1,4 @@
-[gd_scene load_steps=50 format=2]
+[gd_scene load_steps=51 format=2]
 
 [ext_resource path="res://addons/rmsmartshape/shapes/point_array.gd" type="Script" id=1]
 [ext_resource path="res://addons/rmsmartshape/vertex_properties.gd" type="Script" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://Vail_2.0/Sprites/Environment/textura_chao.png" type="Texture" id=8]
 [ext_resource path="res://Vail_2.0/Scenes/Caracter/Caracter.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Vail_2.0/Scripts/Level6.gd" type="Script" id=10]
+[ext_resource path="res://Vail_2.0/Audio/Environment/MachinimaSound.com_-_Fields_of_Green(PreEndingTheme).wav" type="AudioStream" id=13]
 
 [sub_resource type="Resource" id=40]
 script = ExtResource( 2 )
@@ -324,7 +325,7 @@ collision_polygon_node_path = NodePath("../../chao1/CollisionPolygon2D")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="chao/chao1"]
 position = Vector2( 2.99658, 0 )
-polygon = PoolVector2Array( -350.339, -820.032, -322.951, 140.038, -115.87, 208.497, 203.318, 205.327, 393.524, 292.602, 524.716, 352.785, 675.606, 442.152, 740.022, 572.8, 812.581, 592.243, 857.069, 654.636, 974.576, 745.715, 1026.99, 779.124, 1082.01, 808.264, 1109.46, 819.905, 1136.34, 828.87, 1162.21, 834.646, 1174.64, 836.174, 1186.67, 836.704, 3699.29, 819.325, 3685.45, 1692.15, -1153.74, 1611.12, -1042.31, 362.541, -1037.68, 147.969, -1030.79, -833.191 )
+polygon = PoolVector2Array( -350.339, -820.032, -322.95, 140.038, -115.87, 208.497, 203.319, 205.327, 393.525, 292.602, 524.716, 352.785, 675.607, 442.152, 740.023, 572.8, 812.582, 592.243, 857.072, 654.636, 974.579, 745.715, 1026.99, 779.124, 1082.01, 808.264, 1109.47, 819.905, 1136.34, 828.87, 1162.21, 834.647, 1174.65, 836.175, 1186.68, 836.704, 3699.29, 819.327, 3685.45, 1692.15, -1153.74, 1611.12, -1042.31, 362.541, -1037.67, 147.969, -1030.79, -833.191 )
 
 [node name="Puzzle_senha" parent="." instance=ExtResource( 6 )]
 position = Vector2( 1208.7, -174.944 )
@@ -351,5 +352,8 @@ polygon = PoolVector2Array( -33.6589, 16.6599, -16.6073, -1093.6, 70.585, -1090.
 anims/Abrir = SubResource( 39 )
 
 [node name="Caracter" parent="." instance=ExtResource( 9 )]
-position = Vector2( -42.4795, 14.0874 )
+position = Vector2( 13175.3, 402.255 )
 scale = Vector2( 0.675121, 0.675121 )
+
+[node name="finalMusic" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 13 )

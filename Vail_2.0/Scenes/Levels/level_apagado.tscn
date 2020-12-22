@@ -137,6 +137,90 @@ tracks/8/keys = {
 "update": 1,
 "values": [ true ]
 }
+tracks/9/type = "value"
+tracks/9/path = NodePath("Camera2D:visible")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Camera2D:current")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("../EndingTheme:playing")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("../florestAmbient:playing")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("../florestAmbient:autoplay")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("../InGameTheme:playing")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("../InGameTheme:autoplay")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
 
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 133.531, 23.9516 )
@@ -156,12 +240,10 @@ scale = Vector2( 0.274902, 0.274902 )
 [node name="InGameTheme" type="AudioStreamPlayer" parent="Level"]
 stream = ExtResource( 1 )
 volume_db = -25.0
-autoplay = true
 
 [node name="florestAmbient" type="AudioStreamPlayer" parent="Level"]
 stream = ExtResource( 2 )
 volume_db = -40.0
-autoplay = true
 
 [node name="EndingTheme" type="AudioStreamPlayer" parent="Level"]
 stream = ExtResource( 16 )
@@ -622,6 +704,7 @@ offset = Vector2( -727.191, -392.785 )
 position = Vector2( 157.891, 639.87 )
 scale = Vector2( 7.76609, 87.2479 )
 shape = SubResource( 1 )
+disabled = true
 
 [node name="Light" type="Sprite" parent="Level"]
 modulate = Color( 1, 1, 1, 0 )
@@ -633,8 +716,12 @@ texture = ExtResource( 17 )
 "tree",
 ]]
 position = Vector2( 60641.6, -1865.41 )
-scale = Vector2( 1, 1 )
 collision_layer = 4
+
+[node name="Camera2D" type="Camera2D" parent="Level/SenaFinal"]
+position = Vector2( 8219.43, -1403.64 )
+current = true
+zoom = Vector2( 4, 4 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Level/SenaFinal"]
 anims/TreeFall = SubResource( 2 )
