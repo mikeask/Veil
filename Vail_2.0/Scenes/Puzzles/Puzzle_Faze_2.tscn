@@ -3852,16 +3852,16 @@ position = Vector2( -268.491, 149.083 )
 scale = Vector2( 0.381237, 0.381237 )
 texture = ExtResource( 18 )
 
+[node name="Vine01" type="Sprite" parent="EnvironmentArt"]
+position = Vector2( 1134.37, 206.65 )
+scale = Vector2( 0.251774, 0.251774 )
+texture = ExtResource( 17 )
+
 [node name="Vine03" type="Sprite" parent="EnvironmentArt"]
 position = Vector2( 2590.52, -878.542 )
 scale = Vector2( 0.681237, 0.681237 )
 texture = ExtResource( 18 )
 flip_h = true
-
-[node name="Vine01" type="Sprite" parent="EnvironmentArt/Vine03"]
-position = Vector2( -2137.5, 1592.97 )
-scale = Vector2( 0.369583, 0.369583 )
-texture = ExtResource( 17 )
 
 [node name="Porta" type="KinematicBody2D" parent="."]
 position = Vector2( 307, -33 )
