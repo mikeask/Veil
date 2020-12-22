@@ -20,7 +20,7 @@ position = Vector2( 5614.6, 266.352 )
 rotation = 1.57079
 
 [node name="Caracter" parent="." instance=ExtResource( 1 )]
-position = Vector2( 3586.86, -228.015 )
+position = Vector2( -470.837, -308.768 )
 
 [node name="se joga" type="Label" parent="."]
 margin_left = 4632.25
