@@ -1,7 +1,7 @@
 [gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://Vail_2.0/Scripts/MainMenu.gd" type="Script" id=1]
-[ext_resource path="res://Vail_1.0/Sprites/Menu/MenuBackground.png" type="Texture" id=2]
+[ext_resource path="res://Vail_2.0/Sprites/Environment/background.png" type="Texture" id=2]
 [ext_resource path="res://Vail_1.0/Scenes/MenuOpts.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Vail_1.0/Sprites/Environment/GateFrame.png" type="Texture" id=10]
 [ext_resource path="res://Vail_1.0/Sprites/Environment/Gate.png" type="Texture" id=11]
@@ -80,10 +80,10 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="MenuBackground" type="Sprite" parent="."]
-position = Vector2( 961.654, 540.141 )
-scale = Vector2( 1.00963, 1.01633 )
-z_index = -1
+[node name="background" type="Sprite" parent="."]
+position = Vector2( 983.115, 534.062 )
+scale = Vector2( 1.14628, 1.15959 )
+z_index = -40
 texture = ExtResource( 2 )
 
 [node name="GateFrame" type="Sprite" parent="."]
